@@ -1,0 +1,48 @@
+body {
+  color: $font-color;
+  font-size: $font-size;
+  font-family: $font-family;
+  line-height: $line-height;
+}
+
+h1, .h1 {
+  @include h_text($h1-font-size);
+}
+
+h2, .h2 {
+  @include h_text($h2-font-size);
+}
+
+h3, .h3 {
+  @include h_text($h3-font-size);
+}
+
+h4, .h4 {
+  @include h_text($h4-font-size);
+}
+
+h5, .h5 {
+  @include h_text($h5-font-size);
+}
+
+h6, .h6 {
+  @include h_text($h6-font-size);
+}
+
+p {
+  font-size: $font-size;
+}
+
+.help-block,
+.help-inline {
+  color: $grey-light;
+  font-size: $font-size-sm;
+}
+
+.help-block {
+  display: block;
+}
+
+.help-inline {
+  display: inline;
+}

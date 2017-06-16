@@ -1,0 +1,13 @@
+{
+  "name": "dxy-ui",
+  "version": "0.0.1",
+  "devDependencies": {
+    "autoprefixer": "7.1.1",
+    "gulp": "3.9.1",
+    "gulp-cssmin": "0.2.0",
+    "gulp-postcss": "7.0.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "3.1.0",
+    "gulp-sass-glob": "1.0.8"
+  }
+}

@@ -1,0 +1,5 @@
+@mixin h_text($font-size) {
+  font-size: $font-size;
+  font-weight: bold;
+  line-height: $line-height-lg;
+}

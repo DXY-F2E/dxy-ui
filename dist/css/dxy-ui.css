@@ -1,0 +1,49 @@
+body {
+  color: #333;
+  font-size: 14px;
+  font-family: "Helvetica Neue", "Helvetica,Arial", "Sans-serif";
+  line-height: 1.5; }
+
+h1, .h1 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.33333; }
+
+h2, .h2 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.33333; }
+
+h3, .h3 {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.33333; }
+
+h4, .h4 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.33333; }
+
+h5, .h5 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.33333; }
+
+h6, .h6 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.33333; }
+
+p {
+  font-size: 14px; }
+
+.help-block,
+.help-inline {
+  color: #999;
+  font-size: 12px; }
+
+.help-block {
+  display: block; }
+
+.help-inline {
+  display: inline; }
