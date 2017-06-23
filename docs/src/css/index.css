@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.side-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border-right: 1px solid #eee;
+}
+
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.demo, pre {
+    padding: 10px;
+    border: 1px solid #eee;
+}

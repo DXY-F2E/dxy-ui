@@ -2,8 +2,8 @@
 @import "theme/normal";
 
 // mixins
-@import "mixins/**/*";
+@import "mixins/*";
 
-// components
-@import "layout/*";
-@import "text/*";
+@import "elements/*";
+@import "components/*";
+@import "extra/*";

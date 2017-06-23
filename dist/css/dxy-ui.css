@@ -5,31 +5,43 @@ body {
   line-height: 1.5; }
 
 h1, .h1 {
+  margin: 0;
+  padding: 0;
   font-size: 30px;
   font-weight: bold;
   line-height: 1.33333; }
 
 h2, .h2 {
+  margin: 0;
+  padding: 0;
   font-size: 28px;
   font-weight: bold;
   line-height: 1.33333; }
 
 h3, .h3 {
+  margin: 0;
+  padding: 0;
   font-size: 26px;
   font-weight: bold;
   line-height: 1.33333; }
 
 h4, .h4 {
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.33333; }
 
 h5, .h5 {
+  margin: 0;
+  padding: 0;
   font-size: 22px;
   font-weight: bold;
   line-height: 1.33333; }
 
 h6, .h6 {
+  margin: 0;
+  padding: 0;
   font-size: 20px;
   font-weight: bold;
   line-height: 1.33333; }
