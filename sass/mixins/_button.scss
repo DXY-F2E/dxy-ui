@@ -1,0 +1,25 @@
+@mixin btn-hover($bg-color) {
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}
+
+@mixin btn-active($bg-color) {
+  &:active,
+  &:focus {
+    background-color: darken($bg-color, 15%);
+  }
+}
+
+@mixin btn-size($padding, $font-size) {
+  padding: $padding;
+  font-size: $font-size;
+}
+
+@mixin btn-situation($color) {
+  color: #fff;
+  border-color: $color;
+  background-color: $color;
+  @include btn-hover($color);
+  @include btn-active($color);
+}

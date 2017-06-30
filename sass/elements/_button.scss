@@ -1,0 +1,60 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: $btn-font-weight;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border-radius: $btn-radius;
+  border: $btn-border-width solid $btn-default-bd-color;
+  background-color: $btn-default-color;
+  @include btn-size($btn-pd, $btn-font-size);
+  @include btn-hover($btn-default-color);
+  @include btn-active($btn-default-color);
+}
+
+.btn-link {
+  color: $btn-link-color;
+  border-color: transparent;
+  background-color: transparent;
+
+  &:hover {
+    color: darken($btn-link-color, 10%);
+    background-color: transparent;
+  }
+  &:active,
+  &:focus {
+    color: darken($btn-link-color, 15%);
+    background-color: transparent;
+  }
+}
+
+.btn-primary {
+  @include btn-situation($btn-primary-color);
+}
+
+.btn-success {
+  @include btn-situation($btn-success-color);
+}
+
+.btn-info {
+  @include btn-situation($btn-info-color);
+}
+
+.btn-warning {
+  @include btn-situation($btn-warning-color);
+}
+
+.btn-danger {
+  @include btn-situation($btn-danger-color);
+}
+
+
+.btn-lg {
+  @include btn-size($btn-lg-pd, $btn-lg-font-size);
+}
+
+.btn-sm {
+  @include btn-size($btn-sm-pd, $btn-sm-font-size);
+}
