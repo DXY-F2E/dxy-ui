@@ -1,3 +1,16 @@
+@charset "UTF-8";
+/* colors
+ *
+ */
+/* font
+ *
+ */
+/*
+ * 其他的不作过多定义，以元素、组件区分引用，避免与其他样式耦合
+ */
+/* button
+ *
+ */
 .btn {
   display: inline-block;
   text-align: center;
@@ -89,42 +102,42 @@ body {
   font-family: "Helvetica Neue", "Helvetica,Arial", "Sans-serif";
   line-height: 1.5; }
 
-h1, .h1 {
+h1, .dxy-h1 {
   margin: 0;
   padding: 0;
   font-size: 30px;
   font-weight: bold;
   line-height: 1.33333; }
 
-h2, .h2 {
+h2, .dxy-h2 {
   margin: 0;
   padding: 0;
   font-size: 28px;
   font-weight: bold;
   line-height: 1.33333; }
 
-h3, .h3 {
+h3, .dxy-h3 {
   margin: 0;
   padding: 0;
   font-size: 26px;
   font-weight: bold;
   line-height: 1.33333; }
 
-h4, .h4 {
+h4, .dxy-h4 {
   margin: 0;
   padding: 0;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.33333; }
 
-h5, .h5 {
+h5, .dxy-h5 {
   margin: 0;
   padding: 0;
   font-size: 22px;
   font-weight: bold;
   line-height: 1.33333; }
 
-h6, .h6 {
+h6, .dxy-h6 {
   margin: 0;
   padding: 0;
   font-size: 20px;
@@ -134,13 +147,13 @@ h6, .h6 {
 p {
   font-size: 14px; }
 
-.help-block,
-.help-inline {
+.dxy-help-block,
+.dxy-help-inline {
   color: #999;
   font-size: 12px; }
 
-.help-block {
+.dxy-help-block {
   display: block; }
 
-.help-inline {
+.dxy-help-inline {
   display: inline; }
