@@ -1,10 +1,11 @@
-// colors
-$black: #000;
-$grey-dark: #333;
-$grey: #666;
-$grey-light: #999;
-$grey-lighter: #ccc;
-$grey-lightest: #eee;
+// prefix
+$prefix: 'dxy';
+
+
+/* colors
+ *
+ */
+
 $white: #fff;
 $red: red;
 $blue: blue;
@@ -15,39 +16,90 @@ $pink: pink;
 $purple: purple;
 $brown: brown;
 $teal: teal;
+$black: #000;
 
-// font
-$font-color: $grey-dark;
+// grey
+$grey-1: #333;
+$grey-2: #555;
+$grey-3: #777;
+$grey-4: #999;
+$grey-5: #bbb;
+$grey-6: #ddd;
+$grey-7: #eee;
 
-$font-size-lg: 16px;
-$font-size: 14px;
-$font-size-sm: 12px;
+$greys: (
+  1: $grey-1,
+  2: $grey-2,
+  3: $grey-3,
+  4: $grey-4,
+  5: $grey-5,
+  6: $grey-6,
+  7: $grey-7
+);
+
+// situation colors
+$active: #2c7cec;
+$success: #22c93d;
+$warning: #ff9110;
+$info: #84c2fd;
+$danger: #ff3939;
+
+
+/* font
+ *
+ */
+
+$font-color: $grey-1;
+$font-color-tip: $grey-4;
 
 $font-family: 'Helvetica Neue', 'Helvetica,Arial', 'Sans-serif';
 
-$h1-font-size: 30px;
-$h2-font-size: 28px;
-$h3-font-size: 26px;
-$h4-font-size: 24px;
-$h5-font-size: 22px;
-$h6-font-size: 20px;
+$font-size-sm: 12px;
+$font-size: 14px;
+$font-size-lg: 16px;
 
+// h1~h6 size
+$font-size-h: (
+  h1: 30px,
+  h2: 28px,
+  h3: 26px,
+  h4: 24px,
+  h5: 22px,
+  h6: 20px
+);
+
+// line-height
+$line-height-xs: 1;
+$line-height-sm: 1.2;
 $line-height: 1.5;
 $line-height-lg: (4 / 3);
 
-// btn
+
+/*
+ * 其他的不作过多定义，以元素、组件区分引用，避免与其他样式耦合
+ */
+
+
+/* button
+ *
+ */
+
+// font-size
 $btn-font-size: 14px;
 $btn-lg-font-size: 16px;
 $btn-sm-font-size: 12px;
 $btn-font-weight: normal;
 
+// padding
 $btn-pd: 5px 10px;
 $btn-lg-pd: 10px 15px;
 $btn-sm-pd: 2px 5px;
 
+// border
 $btn-border-width: 1px;
 $btn-radius: 4px;
 
+// colors
 $btn-default-color: #fff;
 $btn-default-bd-color: #ddd;
 $btn-primary-color: #337ab7;

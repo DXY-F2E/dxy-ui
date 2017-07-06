@@ -5,44 +5,50 @@ body {
   line-height: $line-height;
 }
 
-h1, .h1 {
-  @include h_text($h1-font-size);
-}
+//h1, .#{$prefix}-h1 {
+//  @include h_text($h1-font-size);
+//}
+//
+//h2, .#{$prefix}-h2 {
+//  @include h_text($h2-font-size);
+//}
+//
+//h3, .#{$prefix}-h3 {
+//  @include h_text($h3-font-size);
+//}
+//
+//h4, .#{$prefix}-h4 {
+//  @include h_text($h4-font-size);
+//}
+//
+//h5, .#{$prefix}-h5 {
+//  @include h_text($h5-font-size);
+//}
+//
+//h6, .#{$prefix}-h6 {
+//  @include h_text($h6-font-size);
+//}
 
-h2, .h2 {
-  @include h_text($h2-font-size);
-}
-
-h3, .h3 {
-  @include h_text($h3-font-size);
-}
-
-h4, .h4 {
-  @include h_text($h4-font-size);
-}
-
-h5, .h5 {
-  @include h_text($h5-font-size);
-}
-
-h6, .h6 {
-  @include h_text($h6-font-size);
+@each $name, $value in $font-size-h {
+  #{$name}, .#{$prefix}-#{$name} {
+    @include h_text($value);
+  }
 }
 
 p {
   font-size: $font-size;
 }
 
-.help-block,
-.help-inline {
-  color: $grey-light;
+.#{$prefix}-help-block,
+.#{$prefix}-help-inline {
+  color: $font-color-tip;
   font-size: $font-size-sm;
 }
 
-.help-block {
+.#{$prefix}-help-block {
   display: block;
 }
 
-.help-inline {
+.#{$prefix}-help-inline {
   display: inline;
 }
