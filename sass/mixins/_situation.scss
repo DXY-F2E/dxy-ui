@@ -1,0 +1,7 @@
+@mixin font_situation($color) {
+  color: $color;
+}
+
+@mixin bg_situation($color) {
+  background-color: $color;
+}

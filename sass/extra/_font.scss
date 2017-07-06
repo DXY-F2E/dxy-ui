@@ -1,0 +1,50 @@
+
+$high-light: #feefcc;
+.high-light{
+  background-color: $high-light
+}
+
+.text-through{
+  text-decoration: line-through;
+}
+.text-underline{
+  text-decoration: underline;
+}
+
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+  /*&:after{
+    content: "";
+    display:inline-block;
+    width: 100%;
+  }*/
+}
+
+.text-lowercase{
+  text-transform: lowercase;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+.text-capitalize{
+  text-transform: capitalize;
+}
+
+.overflow-ellipsis{
+  text-overflow: ellipsis;
+  white-space:nowrap;
+  overflow: hidden;
+}
+

@@ -1,0 +1,44 @@
+$font-active-color: #3572fe;
+$font-success-color: #24c54a;
+$font-info-color: #0baefa;
+$font-warning-color: #f8af00;
+$font-danger-color: #f33237;
+
+$bg-active-color: #3572fe;
+$bg-success-color: #24c54a;
+$bg-info-color: #0baefa;
+$bg-warning-color: #f8af00;
+$bg-danger-color: #f33237;
+
+
+.font-active {
+  @include font_situation($font-active-color);
+}
+.font-success {
+  @include font_situation($font-success-color);
+}
+.font-info {
+  @include font_situation($font-info-color);
+}
+.font-warning {
+  @include font_situation($font-warning-color);
+}
+.font-danger {
+  @include font_situation($font-danger-color);
+}
+
+.bg-active {
+  @include bg_situation($bg-active-color);
+}
+.bg-success {
+  @include bg_situation($bg-success-color);
+}
+.bg-info {
+  @include bg_situation($bg-info-color);
+}
+.bg-warning {
+  @include bg_situation($bg-warning-color);
+}
+.bg-danger {
+  @include bg_situation($bg-danger-color);
+}
