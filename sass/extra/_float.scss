@@ -1,12 +1,12 @@
-.pull-left {
+.#{$prefix}-pull-left {
   float: left;
 }
 
-.pull-right {
+.#{$prefix}-pull-right {
   float: right;
 }
 
-.clear-fix {
+.#{$prefix}-clear-fix {
   &:after {
     content:" ";
     display: table;

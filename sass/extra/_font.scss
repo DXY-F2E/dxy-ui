@@ -1,48 +1,43 @@
-
-$high-light: #feefcc;
-.high-light{
-  background-color: $high-light
+.#{$prefix}-highlight{
+  background-color: $highlight
 }
 
-.text-through{
+.#{$prefix}-text-through{
   text-decoration: line-through;
 }
-.text-underline{
+.#{$prefix}-text-underline{
   text-decoration: underline;
 }
 
-.text-left{
+.#{$prefix}-text-left{
   text-align: left;
 }
-.text-center{
+.#{$prefix}-text-center{
   text-align: center;
 }
-.text-right{
+.#{$prefix}-text-right{
   text-align: right;
 }
-.text-justify {
+.#{$prefix}-text-justify {
   text-align: justify;
-  /*&:after{
-    content: "";
-    display:inline-block;
-    width: 100%;
-  }*/
+  //&:after{
+  //  content: "";
+  //  display:inline-block;
+  //  width: 100%;
+  //}
 }
 
-.text-lowercase{
+.#{$prefix}-lowercase{
   text-transform: lowercase;
 }
-.text-uppercase{
+.#{$prefix}-uppercase{
   text-transform: uppercase;
 }
-.text-uppercase{
-  text-transform: uppercase;
-}
-.text-capitalize{
+.#{$prefix}-capitalize{
   text-transform: capitalize;
 }
 
-.overflow-ellipsis{
+.#{$prefix}-overflow-ellipsis{
   text-overflow: ellipsis;
   white-space:nowrap;
   overflow: hidden;
