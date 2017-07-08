@@ -14,7 +14,7 @@ gulp.task('css', function() {
   return gulp
     .src('sass/dxy-ui.scss')
     .pipe(sassGlob())
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       require('autoprefixer')
     ]))

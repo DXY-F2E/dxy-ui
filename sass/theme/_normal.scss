@@ -108,3 +108,30 @@ $btn-info-color: #5bc0de;
 $btn-warning-color: #f0ad4e;
 $btn-danger-color: #d9534f;
 $btn-link-color: #337ab7;
+
+//border padding margin
+$direction: top right bottom left;
+$border-radius: 4px;
+$border-width: 1px;
+$border-color: #999;
+$padding: 10px;
+$margin: 20px;
+
+$highlight: #feefcc;
+
+//font situation and bg situation
+$font-situation: (
+        active:#3572fe,
+        success:#24c54a,
+        info:#0baefa,
+        warning:#f8af00,
+        danger:#f33237
+);
+$bg-situation:(
+        active:#3572fe,
+        success:#24c54a,
+        info:#0baefa,
+        warning:#f8af00,
+        danger:#f33237
+);
+

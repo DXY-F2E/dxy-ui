@@ -1,0 +1,15 @@
+.#{$prefix}-pull-left {
+  float: left;
+}
+
+.#{$prefix}-pull-right {
+  float: right;
+}
+
+.#{$prefix}-clear-fix {
+  &:after {
+    content:" ";
+    display: table;
+    clear: both;
+  }
+}

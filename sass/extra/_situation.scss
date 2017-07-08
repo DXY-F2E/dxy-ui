@@ -1,0 +1,12 @@
+@each $name,$value in $font-situation {
+  .#{$prefix}-font-#{$name} {
+    color: $value;
+  }
+}
+
+@each $name,$value in $font-situation {
+  .#{$prefix}-bg-#{$name} {
+    background-color: $value;
+  }
+}
+
