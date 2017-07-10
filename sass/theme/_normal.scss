@@ -2,9 +2,9 @@
 $prefix: 'dxy';
 
 
-/* colors
- *
- */
+/////////////
+// colors
+//
 
 $white: #fff;
 $red: red;
@@ -45,9 +45,9 @@ $info: #84c2fd;
 $danger: #ff3939;
 
 
-/* font
- *
- */
+////////////
+//  font
+//
 
 $font-color: $grey-1;
 $font-color-tip: $grey-4;
@@ -75,14 +75,14 @@ $line-height: 1.5;
 $line-height-lg: (4 / 3);
 
 
-/*
- * 其他的不作过多定义，以元素、组件区分引用，避免与其他样式耦合
- */
+//////////////
+// 其他的不作过多定义，以元素、组件区分引用，避免与其他样式耦合
+//
 
 
-/* button
- *
- */
+/////////////
+// button
+//
 
 // font-size
 $btn-font-size: 14px;
@@ -108,6 +108,11 @@ $btn-info-color: #5bc0de;
 $btn-warning-color: #f0ad4e;
 $btn-danger-color: #d9534f;
 $btn-link-color: #337ab7;
+
+
+/////////////
+// extra
+//
 
 //border padding margin
 $direction: top right bottom left;
@@ -135,3 +140,65 @@ $bg-situation:(
         danger:#f33237
 );
 
+
+/////////////
+// form
+//
+
+$form-bd-width: 1px; // 表单元素边框宽度
+$form-bd-color: #ccc; // 表单元素边框颜色
+$form-bd-radius: 4px; // 表单元素圆角
+$form-focus-bd-color: #0bb9fa; // 表单元素focus边框颜色
+$form-readonly-color: #999; // 表单元素只读字体颜色
+$form-readonly-bg-color: #f5f5f5; // 表单元素只读背景色
+$form-disabled-color: #999; // 表单元素禁用字体颜色
+$form-disabled-bg-color: #f5f5f5; // 表单元素禁用背景色
+
+// form group
+$form-group-x-margin: 20px;
+$form-group-y-margin: 20px;
+
+// label
+$label-width: 80px;
+$label-right: 10px;
+$label-line-height: 34px;
+$label-required-color: #f33237;
+
+// input text
+$input-pd: 5px 9px;
+$input-bd-width: $form-bd-width;
+$input-bd-color: $form-bd-color;
+$input-bd-radius: $form-bd-radius;
+$input-line-height: 22px;
+
+// textarea
+$textarea-height: auto;
+$textarea-pd: 9px;
+$textarea-bd-width: $form-bd-width;
+$textarea-bd-color: $form-bd-color;
+$textarea-bd-radius: $form-bd-radius;
+
+// radio & checkbox
+$check-bg-color: $white; // 背景色
+$check-bd-color: #b5b5b5; // 边框色
+$check-checked-color: #24c54a; // 选中的颜色
+$check-disabled-bg-color: #fff; // 禁用背景色
+$check-disabled-bd-color: #ddd; // 禁用边框色
+$check-disabled-checked-color: #ddd; // 禁用&选中颜色
+$check-x-spacing: 18px; // 同一行中选项间距
+
+$radio-width: 16px;
+$radio-height: 16px;
+$checkbox-width: 16px;
+$checkbox-height: 16px;
+
+$radio-right: 5px;
+$checkbox-right: 5px;
+
+$radio-bd-width: 1px;
+$checkbox-bd-width: 1px;
+
+$checkbox-radius: 3px;
+
+$radio-checked-width: 8px;
+$radio-checked-height: 8px;
