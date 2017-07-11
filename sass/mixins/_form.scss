@@ -1,0 +1,54 @@
+@mixin label_required {
+  &.required:before {
+    content: "*";
+    padding-right: 5px;
+    color: $label-required-color;
+  }
+}
+
+@mixin form_foucs {
+  &:focus {
+    outline: 0;
+    border-color: $form-focus-bd-color;
+    box-shadow: 0 0 2px 0 $form-focus-bd-color;
+  }
+}
+
+@mixin text_input($padding, $border-width, $border-color, $radius) {
+  box-sizing: border-box;
+  padding: $padding;
+  border: $border-width solid $border-color;
+  border-radius: $radius;
+  font-size: $font-size;
+  @include form_foucs;
+
+  &[readonly] {
+    color: $form-readonly-color;
+    background-color: $form-readonly-bg-color;
+  }
+
+  &[disabled] {
+    color: $form-disabled-color;
+    background-color: $form-disabled-bg-color;
+    cursor: not-allowed;
+  }
+
+  .justify &,
+  &.justify {
+    width: 100%;
+  }
+}
+
+@mixin check_box_wp($width, $height, $border-width, $radius) {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: $width;
+  height: $height;
+  border: $border-width solid $check-bd-color;
+  border-radius: $radius;
+  background-color: $check-bg-color;
+}

@@ -1,0 +1,171 @@
+// form group
+
+.#{$prefix}-form .#{$prefix}-form-group {
+  display: block;
+
+  &:nth-child(n + 2) {
+    margin-top: $form-group-y-margin;
+  }
+}
+
+.#{$prefix}-form-inline .#{$prefix}-form-group {
+  display: inline-block;
+
+  &:nth-child(n + 2) {
+    margin-left: $form-group-x-margin;
+  }
+}
+
+
+// label
+
+.#{$prefix}-label {
+  float: left;
+  width: $label-width;
+  padding-right: $label-right;
+  text-align: right;
+  line-height: $label-line-height;
+  @include label_required;
+}
+
+.#{$prefix}-label-block {
+  display: block;
+  line-height: $label-line-height;
+  @include label_required;
+}
+
+.#{$prefix}-form-content {
+  margin-left: $label-width + $label-right;
+}
+
+// input text
+
+.#{$prefix}-input {
+  line-height: $input-line-height;
+  @include text_input($input-pd, $input-bd-width, $input-bd-color, $input-bd-radius);
+}
+
+
+// textarea
+
+.#{$prefix}-textarea {
+  display: block;
+  resize: vertical;
+  height: $textarea-height;
+  @include text_input($textarea-pd, $textarea-bd-width, $textarea-bd-color, $textarea-bd-radius);
+}
+
+
+// radio
+
+.#{$prefix}-radio {
+  position: relative;
+
+  input[type=radio] {
+    display: none;
+
+    & + span:before {
+      @include check_box_wp($radio-width, $radio-height, $radio-bd-width, 100%);
+    }
+    &:checked + span:before {
+      border-color: $check-checked-color;
+    }
+    &:checked + span:after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: ($radio-width + $radio-bd-width * 2) / 2;
+
+      $width: ($radio-width + $radio-bd-width * 2) / 2 - 1px;
+
+      margin: auto 0 auto -#{$width / 2};
+      width: $width;
+      height: ($radio-height + $radio-bd-width * 2) / 2 - 1px;
+      border-radius: 100%;
+      background-color: $check-checked-color;
+    }
+    &[disabled] + span:before {
+      border-color: $check-disabled-bd-color;
+      background-color: $check-disabled-bg-color;
+    }
+    &[disabled]:checked + span:after {
+      background-color: $check-disabled-checked-color;
+    }
+  }
+
+  span {
+    padding-left: $radio-width + $radio-right;
+  }
+
+  &:nth-child(n + 2) {
+    margin-left: $check-x-spacing;
+  }
+}
+
+.#{$prefix}-radio-block {
+  @extend .#{$prefix}-radio;
+  display: block;
+
+  &:nth-child(n + 2) {
+    margin-left: 0;
+  }
+}
+
+
+// checkbox
+
+.#{$prefix}-checkbox {
+  position: relative;
+
+  input[type=checkbox] {
+    display: none;
+
+    & + span:before {
+      @include check_box_wp($checkbox-width, $checkbox-height, $checkbox-bd-width, $checkbox-radius);
+    }
+    &:checked + span:before {
+      border-color: $check-checked-color;
+      background-color: $check-checked-color;
+    }
+    &:checked + span:after {
+      content: " ";
+      position: absolute;
+      top: -1px;
+      bottom: 0;
+
+      $width: ($checkbox-width + $checkbox-bd-width * 2) / 2 - 1px;
+      left: $width;
+      margin: auto 0 auto -#{$width/2};
+      width: $width;
+      height: ($checkbox-height + $checkbox-bd-width * 2) / 4;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      transform: rotate(-50deg);
+    }
+    &[disabled] + span:before {
+      border-color: $check-disabled-bd-color;
+    }
+    &[disabled]:checked + span:before {
+      border-color: $check-disabled-checked-color;
+      background-color: $check-disabled-checked-color;
+    }
+  }
+
+  span {
+    padding-left: $checkbox-width + $checkbox-right;
+  }
+
+  &:nth-child(n + 2) {
+    margin-left: $check-x-spacing;
+  }
+}
+
+.#{$prefix}-checkbox-block {
+  @extend .#{$prefix}-checkbox;
+  display: block;
+
+  &:nth-child(n + 2) {
+    margin-left: 0;
+  }
+}
