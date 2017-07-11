@@ -1,0 +1,29 @@
+@mixin list-dot-style($size,$color) {
+    &:before {
+        content: '';
+        display: inline-block;
+        width: $size;
+        height: $size;
+        background-color: $color;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -$size/2;
+    }
+}
+@mixin list-circle-style($size,$color) {
+    &:before {
+        content: '';
+        display: inline-block;
+        width: $size - 1;
+        height: $size - 1;
+        border: 1px solid $color;
+        background-color: transparent;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -$size/2;
+    }
+}
