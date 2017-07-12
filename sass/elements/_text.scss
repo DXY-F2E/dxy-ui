@@ -34,6 +34,9 @@ body {
     @include h_text($value);
   }
 }
+.#{$prefix}-h-bold {
+    font-weight: bold;
+}
 
 p {
   font-size: $font-size;
@@ -51,4 +54,19 @@ p {
 
 .#{$prefix}-help-inline {
   display: inline;
+}
+.#{$prefix}-text {
+    font-size: $font-size;
+    font-family: $font-family;
+}
+.#{$prefix}-text-strong {
+    @extend .#{$prefix}-text;
+    font-weight: bold;
+}
+.#{$prefix}-text-quote {
+    @include quote_border(4px, #eee, 15px);
+}
+.#{$prefix}-text-tip {
+    font-size: $font-size-sm;
+    color: $font-color-tip;
 }

@@ -208,6 +208,9 @@ h6, .dxy-h6 {
   font-weight: normal;
   line-height: 1.33333; }
 
+.dxy-h-bold {
+  font-weight: bold; }
+
 p {
   font-size: 14px; }
 
@@ -221,6 +224,21 @@ p {
 
 .dxy-help-inline {
   display: inline; }
+
+.dxy-text, .dxy-text-strong {
+  font-size: 14px;
+  font-family: "Helvetica Neue", "Helvetica,Arial", "Sans-serif"; }
+
+.dxy-text-strong {
+  font-weight: bold; }
+
+.dxy-text-quote {
+  border-left: 4px solid #eee;
+  padding-left: 15px; }
+
+.dxy-text-tip {
+  font-size: 12px;
+  color: #999; }
 
 .dxy-border {
   border: 1px solid #999; }

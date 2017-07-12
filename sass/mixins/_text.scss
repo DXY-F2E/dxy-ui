@@ -6,3 +6,7 @@
   font-weight: $h-font-weight;
   line-height: $line-height-lg;
 }
+@mixin quote_border($width, $color, $spacing) {
+    border-left: $width solid $color;
+    padding-left: $spacing;
+}
