@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "gulp",
+    "watch": "gulp watch",
     "dev": "node preview.js",
     "doc": "node index.js"
   }
