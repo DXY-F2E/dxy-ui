@@ -19,13 +19,14 @@ $teal: teal;
 $black: #000;
 
 // grey
-$grey-1: #333;
-$grey-2: #555;
-$grey-3: #777;
-$grey-4: #999;
-$grey-5: #bbb;
-$grey-6: #ddd;
-$grey-7: #eee;
+$grey-1: #222;
+$grey-2: #333;
+$grey-3: #555;
+$grey-4: #777;
+$grey-5: #999;
+$grey-6: #b5b5b5;
+$grey-7: #ddd;
+$grey-8: #eee;
 
 $greys: (
   1: $grey-1,
@@ -34,7 +35,8 @@ $greys: (
   4: $grey-4,
   5: $grey-5,
   6: $grey-6,
-  7: $grey-7
+  7: $grey-7,
+  8: $grey-8,
 );
 
 // situation colors
