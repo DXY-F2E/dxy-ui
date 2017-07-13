@@ -254,6 +254,33 @@
   .dxy-checkbox-block:nth-child(n + 2) {
     margin-left: 0; }
 
+.dxy-table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse; }
+  .dxy-table td {
+    border-bottom: 1px solid #ddd; }
+  .dxy-table th {
+    border-bottom: 2px solid #ddd; }
+  .dxy-table td, .dxy-table th {
+    padding: 8px;
+    text-align: center; }
+  .dxy-table td:first-child,
+  .dxy-table th:first-child {
+    text-align: left; }
+  .dxy-table.dxy-hover tbody tr:hover {
+    background-color: #f9f9f9; }
+  .dxy-table.dxy-unbordered td, .dxy-table.dxy-unbordered th {
+    border: none; }
+  .dxy-table.dxy-bordered td, .dxy-table.dxy-bordered th {
+    border: 1px solid #ddd; }
+  .dxy-table.dxy-striped td, .dxy-table.dxy-striped th {
+    border: 1px solid #ddd; }
+  .dxy-table.dxy-striped tbody tr:nth-child(2n - 1) {
+    background-color: #f9f9f9; }
+  .dxy-table.dxy-bordered th, .dxy-table.dxy-striped th {
+    border-bottom-width: 2px; }
+
 body {
   color: #333;
   font-size: 14px;

@@ -1,0 +1,55 @@
+.#{$prefix}-table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  td {
+    border-bottom: 1px solid $table-border-color;
+  }
+  th {
+    border-bottom: 2px solid $table-border-color;
+  }
+
+  td, th {
+    padding: $table-td-pd;
+    text-align: center;
+  }
+
+  td:first-child,
+  th:first-child {
+    text-align: left
+  }
+
+  &.#{$prefix}-hover {
+    tbody tr:hover {
+      background-color: $table-hover-bg-color;
+    }
+  }
+
+  &.#{$prefix}-unbordered {
+    td, th {
+      border: none;
+    }
+  }
+
+  &.#{$prefix}-bordered {
+    td, th {
+      border: 1px solid $table-border-color;
+    }
+  }
+
+  &.#{$prefix}-striped {
+    td, th {
+      border: 1px solid $table-border-color;
+    }
+    tbody tr:nth-child(2n - 1) {
+      background-color: $table-striped-bg-color;
+    }
+  }
+
+  &.#{$prefix}-bordered,
+  &.#{$prefix}-striped {
+    th {
+      border-bottom-width: 2px;
+    }
+  }
+}
