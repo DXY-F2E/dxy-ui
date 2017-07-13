@@ -93,8 +93,8 @@ $btn-sm-font-size: 12px;
 $btn-font-weight: normal;
 
 // padding
-$btn-pd: 5px 10px;
-$btn-lg-pd: 10px 15px;
+$btn-pd: 10px 18px;
+$btn-lg-pd: 15px 20px;
 $btn-sm-pd: 2px 5px;
 $select-pd: 5px 0;
 $select-option-pd: 3px 9px;
@@ -103,15 +103,20 @@ $select-option-pd: 3px 9px;
 $btn-border-width: 1px;
 $btn-radius: 4px;
 
-// colors
+// background-colors
+$btn-situations: (
+  primary:#3572fe,
+  success:#3ec44a,
+  info:#0bb9fa,
+  warning:#f8af00,
+  danger:#f43338
+);
+
+// color
+$btn-color: #333333;
 $btn-default-color: #fff;
-$btn-default-bd-color: #ddd;
-$btn-primary-color: #337ab7;
-$btn-success-color: #5cb85c;
-$btn-info-color: #5bc0de;
-$btn-warning-color: #f0ad4e;
-$btn-danger-color: #d9534f;
-$btn-link-color: #337ab7;
+$btn-default-bd-color: #cccccc;
+$btn-link-color: #3572fe;
 
 
 /////////////
@@ -130,18 +135,18 @@ $highlight: #feefcc;
 
 //font situation and bg situation
 $font-situation: (
-        active:#3572fe,
-        success:#24c54a,
-        info:#0baefa,
-        warning:#f8af00,
-        danger:#f33237
+  active:#3572fe,
+  success:#24c54a,
+  info:#0baefa,
+  warning:#f8af00,
+  danger:#f33237
 );
 $bg-situation:(
-        active:#3572fe,
-        success:#24c54a,
-        info:#0baefa,
-        warning:#f8af00,
-        danger:#f33237
+  active:#3572fe,
+  success:#24c54a,
+  info:#0baefa,
+  warning:#f8af00,
+  danger:#f33237
 );
 
 

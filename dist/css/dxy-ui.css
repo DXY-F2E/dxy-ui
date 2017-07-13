@@ -1,4 +1,5 @@
-.btn {
+.dxy-btn {
+  color: #333333;
   display: inline-block;
   text-align: center;
   white-space: nowrap;
@@ -10,76 +11,109 @@
       -ms-user-select: none;
           user-select: none;
   border-radius: 4px;
-  border: 1px solid #ddd;
+  border: 1px solid #cccccc;
   background-color: #fff;
-  padding: 5px 10px;
+  padding: 10px 18px;
   font-size: 14px; }
-  .btn:hover {
+  .dxy-btn:hover {
     background-color: #e6e6e6; }
-  .btn:active, .btn:focus {
+  .dxy-btn:active, .dxy-btn:focus {
     background-color: #d9d9d9; }
+  .dxy-btn[disabled] {
+    color: #aaaaaa;
+    border-color: #ddd;
+    cursor: not-allowed;
+    background-color: #fff; }
 
-.btn-link {
-  color: #337ab7;
+.dxy-btn-link {
+  color: #3572fe;
   border-color: transparent;
   background-color: transparent; }
-  .btn-link:hover {
-    color: #285f8f;
+  .dxy-btn-link:hover {
+    color: #024ffe;
     background-color: transparent; }
-  .btn-link:active, .btn-link:focus {
-    color: #22527b;
+  .dxy-btn-link:active, .dxy-btn-link:focus {
+    color: #0146e5;
     background-color: transparent; }
+  .dxy-btn-link[disabled] {
+    color: #c6c6c6;
+    border-width: 0; }
 
-.btn-primary {
-  color: #fff;
-  border-color: #337ab7;
-  background-color: #337ab7; }
-  .btn-primary:hover {
-    background-color: #285f8f; }
-  .btn-primary:active, .btn-primary:focus {
-    background-color: #22527b; }
+.dxy-btn-primary {
+  color: #fefefe;
+  border-color: #3572fe;
+  background-color: #3572fe; }
+  .dxy-btn-primary:hover {
+    background-color: #024ffe; }
+  .dxy-btn-primary:active, .dxy-btn-primary:focus {
+    background-color: #0146e5; }
+  .dxy-btn-primary:disabled {
+    color: #bcbcbc;
+    background-color: #eeeeee;
+    border-color: #dddddd;
+    cursor: not-allowed; }
 
-.btn-success {
-  color: #fff;
-  border-color: #5cb85c;
-  background-color: #5cb85c; }
-  .btn-success:hover {
-    background-color: #449d44; }
-  .btn-success:active, .btn-success:focus {
-    background-color: #3d8b3d; }
+.dxy-btn-success {
+  color: #fefefe;
+  border-color: #3ec44a;
+  background-color: #3ec44a; }
+  .dxy-btn-success:hover {
+    background-color: #309f3a; }
+  .dxy-btn-success:active, .dxy-btn-success:focus {
+    background-color: #2a8b33; }
+  .dxy-btn-success:disabled {
+    color: #bcbcbc;
+    background-color: #eeeeee;
+    border-color: #dddddd;
+    cursor: not-allowed; }
 
-.btn-info {
-  color: #fff;
-  border-color: #5bc0de;
-  background-color: #5bc0de; }
-  .btn-info:hover {
-    background-color: #31b0d5; }
-  .btn-info:active, .btn-info:focus {
-    background-color: #28a1c5; }
+.dxy-btn-info {
+  color: #fefefe;
+  border-color: #0bb9fa;
+  background-color: #0bb9fa; }
+  .dxy-btn-info:hover {
+    background-color: #0497ce; }
+  .dxy-btn-info:active, .dxy-btn-info:focus {
+    background-color: #0485b5; }
+  .dxy-btn-info:disabled {
+    color: #bcbcbc;
+    background-color: #eeeeee;
+    border-color: #dddddd;
+    cursor: not-allowed; }
 
-.btn-warning {
-  color: #fff;
-  border-color: #f0ad4e;
-  background-color: #f0ad4e; }
-  .btn-warning:hover {
-    background-color: #ec971f; }
-  .btn-warning:active, .btn-warning:focus {
-    background-color: #df8a13; }
+.dxy-btn-warning {
+  color: #fefefe;
+  border-color: #f8af00;
+  background-color: #f8af00; }
+  .dxy-btn-warning:hover {
+    background-color: #c58b00; }
+  .dxy-btn-warning:active, .dxy-btn-warning:focus {
+    background-color: #ac7900; }
+  .dxy-btn-warning:disabled {
+    color: #bcbcbc;
+    background-color: #eeeeee;
+    border-color: #dddddd;
+    cursor: not-allowed; }
 
-.btn-danger {
-  color: #fff;
-  border-color: #d9534f;
-  background-color: #d9534f; }
-  .btn-danger:hover {
-    background-color: #c9302c; }
-  .btn-danger:active, .btn-danger:focus {
-    background-color: #b52b27; }
+.dxy-btn-danger {
+  color: #fefefe;
+  border-color: #f43338;
+  background-color: #f43338; }
+  .dxy-btn-danger:hover {
+    background-color: #e80c12; }
+  .dxy-btn-danger:active, .dxy-btn-danger:focus {
+    background-color: #cf0b10; }
+  .dxy-btn-danger:disabled {
+    color: #bcbcbc;
+    background-color: #eeeeee;
+    border-color: #dddddd;
+    cursor: not-allowed; }
 
-.btn-lg {
-  padding: 10px 15px;
+.dxy-btn-lg {
+  padding: 15px 20px;
   font-size: 16px; }
 
-.btn-sm {
+.dxy-btn-sm {
   padding: 2px 5px;
   font-size: 12px; }
 
@@ -319,7 +353,7 @@
     border-bottom-width: 2px; }
 
 body {
-  color: #333;
+  color: #222;
   font-size: 14px;
   font-family: "Helvetica Neue", "Helvetica,Arial", "Sans-serif";
   line-height: 1.5; }
@@ -371,7 +405,7 @@ p {
 
 .dxy-help-block,
 .dxy-help-inline {
-  color: #999;
+  color: #777;
   font-size: 12px; }
 
 .dxy-help-block {
