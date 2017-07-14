@@ -1,13 +1,13 @@
 @mixin btn_hover($bg-color) {
   &:hover {
-    background-color: darken($bg-color, 10%);
+    background-color: darken($bg-color, 8%);
   }
 }
 
 @mixin btn_active($bg-color) {
   &:active,
   &:focus {
-    background-color: darken($bg-color, 15%);
+    background-color: darken($bg-color, 16%);
   }
 }
 

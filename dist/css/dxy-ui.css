@@ -13,17 +13,20 @@
   border-radius: 4px;
   border: 1px solid #cccccc;
   background-color: #fff;
+  line-height: 1;
   padding: 10px 18px;
   font-size: 14px; }
   .dxy-btn:hover {
-    background-color: #e6e6e6; }
+    background-color: #ebebeb; }
   .dxy-btn:active, .dxy-btn:focus {
-    background-color: #d9d9d9; }
+    background-color: #d6d6d6; }
   .dxy-btn[disabled] {
     color: #aaaaaa;
     border-color: #ddd;
     cursor: not-allowed;
     background-color: #fff; }
+  .dxy-btn:focus {
+    outline: none; }
 
 .dxy-btn-link {
   color: #3572fe;
@@ -44,9 +47,9 @@
   border-color: #3572fe;
   background-color: #3572fe; }
   .dxy-btn-primary:hover {
-    background-color: #024ffe; }
+    background-color: #0c56fe; }
   .dxy-btn-primary:active, .dxy-btn-primary:focus {
-    background-color: #0146e5; }
+    background-color: #0145e0; }
   .dxy-btn-primary:disabled {
     color: #bcbcbc;
     background-color: #eeeeee;
@@ -58,9 +61,9 @@
   border-color: #3ec44a;
   background-color: #3ec44a; }
   .dxy-btn-success:hover {
-    background-color: #309f3a; }
+    background-color: #33a63d; }
   .dxy-btn-success:active, .dxy-btn-success:focus {
-    background-color: #2a8b33; }
+    background-color: #298732; }
   .dxy-btn-success:disabled {
     color: #bcbcbc;
     background-color: #eeeeee;
@@ -72,9 +75,9 @@
   border-color: #0bb9fa;
   background-color: #0bb9fa; }
   .dxy-btn-info:hover {
-    background-color: #0497ce; }
+    background-color: #049ed8; }
   .dxy-btn-info:active, .dxy-btn-info:focus {
-    background-color: #0485b5; }
+    background-color: #0481b0; }
   .dxy-btn-info:disabled {
     color: #bcbcbc;
     background-color: #eeeeee;
@@ -86,9 +89,9 @@
   border-color: #f8af00;
   background-color: #f8af00; }
   .dxy-btn-warning:hover {
-    background-color: #c58b00; }
+    background-color: #cf9200; }
   .dxy-btn-warning:active, .dxy-btn-warning:focus {
-    background-color: #ac7900; }
+    background-color: #a67500; }
   .dxy-btn-warning:disabled {
     color: #bcbcbc;
     background-color: #eeeeee;
@@ -100,9 +103,9 @@
   border-color: #f43338;
   background-color: #f43338; }
   .dxy-btn-danger:hover {
-    background-color: #e80c12; }
+    background-color: #f10d13; }
   .dxy-btn-danger:active, .dxy-btn-danger:focus {
-    background-color: #cf0b10; }
+    background-color: #ca0b10; }
   .dxy-btn-danger:disabled {
     color: #bcbcbc;
     background-color: #eeeeee;
@@ -110,11 +113,15 @@
     cursor: not-allowed; }
 
 .dxy-btn-lg {
-  padding: 15px 20px;
-  font-size: 16px; }
+  padding: 12px 25px;
+  font-size: 20px; }
 
 .dxy-btn-sm {
-  padding: 2px 5px;
+  padding: 8px 12px;
+  font-size: 12px; }
+
+.dxy-btn-ssm {
+  padding: 4px 10px;
   font-size: 12px; }
 
 .dxy-form .dxy-form-group {
