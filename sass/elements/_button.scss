@@ -1,4 +1,5 @@
-.btn {
+.#{$prefix}-btn {
+  color: $btn-color;
   display: inline-block;
   text-align: center;
   white-space: nowrap;
@@ -7,54 +8,57 @@
   cursor: pointer;
   user-select: none;
   border-radius: $btn-radius;
-  border: $btn-border-width solid $btn-default-bd-color;
-  background-color: $btn-default-color;
-  @include btn-size($btn-pd, $btn-font-size);
-  @include btn-hover($btn-default-color);
-  @include btn-active($btn-default-color);
+  border: $btn-border-width solid $btn-bd-color;
+  background-color: $white;
+  line-height: 1;
+  @include btn_size($btn-pd, $btn-font-size);
+  @include btn_hover($btn-bg-color);
+  @include btn_active($btn-bg-color);
+  &[disabled]{
+    color: $btn-disabled-color;
+    border-color: $btn-disabled-bd-color;
+    cursor: not-allowed;
+    background-color: $white;
+  }
+  &:focus{
+    outline:none;
+  }
 }
 
-.btn-link {
+.#{$prefix}-btn-link {
   color: $btn-link-color;
   border-color: transparent;
   background-color: transparent;
 
   &:hover {
-    color: darken($btn-link-color, 10%);
+    color: darken($btn-link-color, $btn-link-hover-darken);
     background-color: transparent;
   }
   &:active,
   &:focus {
-    color: darken($btn-link-color, 15%);
+    color: darken($btn-link-color, $btn-link-focus-darken);
     background-color: transparent;
+  }
+  &[disabled]{
+    color: $btn-link-disabled-color;
+    border-width: 0;
   }
 }
 
-.btn-primary {
-  @include btn-situation($btn-primary-color);
+@each $name,$color in $btn-situations {
+  .#{$prefix}-btn-#{$name} {
+    @include btn_situation($color);
+  }
 }
 
-.btn-success {
-  @include btn-situation($btn-success-color);
+.#{$prefix}-btn-lg {
+  @include btn_size($btn-lg-pd, $btn-lg-font-size);
 }
 
-.btn-info {
-  @include btn-situation($btn-info-color);
+.#{$prefix}-btn-sm {
+  @include btn_size($btn-sm-pd, $btn-sm-font-size);
 }
 
-.btn-warning {
-  @include btn-situation($btn-warning-color);
-}
-
-.btn-danger {
-  @include btn-situation($btn-danger-color);
-}
-
-
-.btn-lg {
-  @include btn-size($btn-lg-pd, $btn-lg-font-size);
-}
-
-.btn-sm {
-  @include btn-size($btn-sm-pd, $btn-sm-font-size);
+.#{$prefix}-btn-ssm {
+  @include btn_size($btn-xs-pd, $btn-xs-font-size);
 }

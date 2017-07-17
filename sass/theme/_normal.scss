@@ -19,13 +19,14 @@ $teal: teal;
 $black: #000;
 
 // grey
-$grey-1: #333;
-$grey-2: #555;
-$grey-3: #777;
-$grey-4: #999;
-$grey-5: #bbb;
-$grey-6: #ddd;
-$grey-7: #eee;
+$grey-1: #222;
+$grey-2: #333;
+$grey-3: #555;
+$grey-4: #777;
+$grey-5: #999;
+$grey-6: #b5b5b5;
+$grey-7: #ddd;
+$grey-8: #eee;
 
 $greys: (
   1: $grey-1,
@@ -34,7 +35,8 @@ $greys: (
   4: $grey-4,
   5: $grey-5,
   6: $grey-6,
-  7: $grey-7
+  7: $grey-7,
+  8: $grey-8,
 );
 
 // situation colors
@@ -86,30 +88,53 @@ $line-height-lg: (4 / 3);
 
 // font-size
 $btn-font-size: 14px;
-$btn-lg-font-size: 16px;
+$btn-lg-font-size: 20px;
 $btn-sm-font-size: 12px;
+$btn-xs-font-size: 12px;
 $btn-font-weight: normal;
 
 // padding
-$btn-pd: 5px 10px;
-$btn-lg-pd: 10px 15px;
-$btn-sm-pd: 2px 5px;
+$btn-pd: 10px 18px;
+$btn-lg-pd: 12px 25px;
+$btn-sm-pd: 8px 12px;
+$btn-xs-pd: 4px 10px;
 $select-pd: 5px 0;
 $select-option-pd: 3px 9px;
 
 // border
 $btn-border-width: 1px;
 $btn-radius: 4px;
+$btn-bd-color: #cccccc;
+$btn-situation-bd-color: #dddddd;
+$btn-disabled-bd-color: $grey-7;
 
-// colors
-$btn-default-color: #fff;
-$btn-default-bd-color: #ddd;
-$btn-primary-color: #337ab7;
-$btn-success-color: #5cb85c;
-$btn-info-color: #5bc0de;
-$btn-warning-color: #f0ad4e;
-$btn-danger-color: #d9534f;
-$btn-link-color: #337ab7;
+
+// background-colors
+$btn-situations: (
+  primary:#3572fe,
+  success:#3ec44a,
+  info:#0bb9fa,
+  warning:#f8af00,
+  danger:#f43338
+);
+
+// color
+$btn-color: #333333;
+$btn-link-color: #3572fe;
+$btn-disabled-color: #aaaaaa;
+$btn-situation-color: #fefefe;
+$btn-situation-disabled-color: #bcbcbc;
+$btn-link-disabled-color: #c6c6c6;
+
+// background-color
+$btn-bg-color: #fff;
+$btn-disabled-bg-color: #eeeeee;
+
+// darken
+$btn-hover-darken: 8%;
+$btn-focus-darken: 16%;
+$btn-link-hover-darken: 10%;
+$btn-link-focus-darken: 15%;
 
 
 /////////////
@@ -128,18 +153,18 @@ $highlight: #feefcc;
 
 //font situation and bg situation
 $font-situation: (
-        active:#3572fe,
-        success:#24c54a,
-        info:#0baefa,
-        warning:#f8af00,
-        danger:#f33237
+  active:#3572fe,
+  success:#24c54a,
+  info:#0baefa,
+  warning:#f8af00,
+  danger:#f33237
 );
 $bg-situation:(
-        active:#3572fe,
-        success:#24c54a,
-        info:#0baefa,
-        warning:#f8af00,
-        danger:#f33237
+  active:#3572fe,
+  success:#24c54a,
+  info:#0baefa,
+  warning:#f8af00,
+  danger:#f33237
 );
 
 
