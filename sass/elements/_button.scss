@@ -16,7 +16,7 @@
   @include btn_active($btn-bg-color);
   &[disabled]{
     color: $btn-disabled-color;
-    border-color: $grey-7;
+    border-color: $btn-disabled-bd-color;
     cursor: not-allowed;
     background-color: $white;
   }
