@@ -8,17 +8,17 @@
   cursor: pointer;
   user-select: none;
   border-radius: $btn-radius;
-  border: $btn-border-width solid $btn-default-bd-color;
+  border: $btn-border-width solid $btn-bd-color;
   background-color: $white;
   line-height: 1;
   @include btn_size($btn-pd, $btn-font-size);
-  @include btn_hover($btn-default-color);
-  @include btn_active($btn-default-color);
+  @include btn_hover($btn-bg-color);
+  @include btn_active($btn-bg-color);
   &[disabled]{
-    color: #aaaaaa;
+    color: $btn-disabled-color;
     border-color: $grey-7;
     cursor: not-allowed;
-    background-color: #fff;
+    background-color: $white;
   }
   &:focus{
     outline:none;
@@ -31,17 +31,16 @@
   background-color: transparent;
 
   &:hover {
-    color: darken($btn-link-color, 10%);
-
+    color: darken($btn-link-color, $btn-link-hover-darken);
     background-color: transparent;
   }
   &:active,
   &:focus {
-    color: darken($btn-link-color, 15%);
+    color: darken($btn-link-color, $btn-link-focus-darken);
     background-color: transparent;
   }
   &[disabled]{
-    color: #c6c6c6;
+    color: $btn-link-disabled-color;
     border-width: 0;
   }
 }

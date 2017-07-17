@@ -1,13 +1,13 @@
 @mixin btn_hover($bg-color) {
   &:hover {
-    background-color: darken($bg-color, 8%);
+    background-color: darken($bg-color, $btn-hover-darken);
   }
 }
 
 @mixin btn_active($bg-color) {
   &:active,
   &:focus {
-    background-color: darken($bg-color, 16%);
+    background-color: darken($bg-color, $btn-focus-darken);
   }
 }
 
@@ -17,15 +17,15 @@
 }
 
 @mixin btn_situation($color) {
-  color: #fefefe;
+  color: $btn-situation-color;
   border-color: $color;
   background-color: $color;
   @include btn_hover($color);
   @include btn_active($color);
-  &:disabled{
-    color: #bcbcbc;
-    background-color: #eeeeee;
-    border-color: #dddddd;
+  &[disabled]{
+    color: $btn-situation-disabled-color;
+    background-color: $btn-disabled-bg-color;
+    border-color: $btn-situation-bd-color;
     cursor: not-allowed;
   }
 }

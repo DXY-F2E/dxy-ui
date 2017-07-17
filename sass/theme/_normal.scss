@@ -104,6 +104,8 @@ $select-option-pd: 3px 9px;
 // border
 $btn-border-width: 1px;
 $btn-radius: 4px;
+$btn-bd-color: #cccccc;
+$btn-situation-bd-color: #dddddd;
 
 // background-colors
 $btn-situations: (
@@ -116,9 +118,21 @@ $btn-situations: (
 
 // color
 $btn-color: #333333;
-$btn-default-color: #fff;
-$btn-default-bd-color: #cccccc;
 $btn-link-color: #3572fe;
+$btn-disabled-color: #aaaaaa;
+$btn-situation-color: #fefefe;
+$btn-situation-disabled-color: #bcbcbc;
+$btn-link-disabled-color: #c6c6c6;
+
+// background-color
+$btn-bg-color: #fff;
+$btn-disabled-bg-color: #eeeeee;
+
+// darken
+$btn-hover-darken: 8%;
+$btn-focus-darken: 16%;
+$btn-link-hover-darken: 10%;
+$btn-link-focus-darken: 15%;
 
 
 /////////////

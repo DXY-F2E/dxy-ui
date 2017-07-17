@@ -50,7 +50,7 @@
     background-color: #0c56fe; }
   .dxy-btn-primary:active, .dxy-btn-primary:focus {
     background-color: #0145e0; }
-  .dxy-btn-primary:disabled {
+  .dxy-btn-primary[disabled] {
     color: #bcbcbc;
     background-color: #eeeeee;
     border-color: #dddddd;
@@ -64,7 +64,7 @@
     background-color: #33a63d; }
   .dxy-btn-success:active, .dxy-btn-success:focus {
     background-color: #298732; }
-  .dxy-btn-success:disabled {
+  .dxy-btn-success[disabled] {
     color: #bcbcbc;
     background-color: #eeeeee;
     border-color: #dddddd;
@@ -78,7 +78,7 @@
     background-color: #049ed8; }
   .dxy-btn-info:active, .dxy-btn-info:focus {
     background-color: #0481b0; }
-  .dxy-btn-info:disabled {
+  .dxy-btn-info[disabled] {
     color: #bcbcbc;
     background-color: #eeeeee;
     border-color: #dddddd;
@@ -92,7 +92,7 @@
     background-color: #cf9200; }
   .dxy-btn-warning:active, .dxy-btn-warning:focus {
     background-color: #a67500; }
-  .dxy-btn-warning:disabled {
+  .dxy-btn-warning[disabled] {
     color: #bcbcbc;
     background-color: #eeeeee;
     border-color: #dddddd;
@@ -106,7 +106,7 @@
     background-color: #f10d13; }
   .dxy-btn-danger:active, .dxy-btn-danger:focus {
     background-color: #ca0b10; }
-  .dxy-btn-danger:disabled {
+  .dxy-btn-danger[disabled] {
     color: #bcbcbc;
     background-color: #eeeeee;
     border-color: #dddddd;
