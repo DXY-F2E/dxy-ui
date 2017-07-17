@@ -169,3 +169,60 @@
     margin-left: 0;
   }
 }
+
+.#{$prefix}-select {
+  line-height: $input-line-height;
+  padding: $input-pd;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+  outline: none;
+  appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#555555" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+  padding-right: 30px;
+
+  .justify &,
+  &.justify {
+    width: 100%;
+  }
+
+  &[multiple] {
+    height: auto;
+    background: '';
+    padding: $select-pd;
+
+    & option {
+      padding: $select-option-pd;
+    }
+  }
+
+  // 去掉默认样式
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+// 校验状态
+.#{$prefix}-verify {
+  position: relative;
+
+  & .help-target:focus {
+    box-shadow: 0 0 2px 0 $danger;
+  }
+
+  & .help-inline {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    font-size: $font-size-sm;
+  }
+
+  &-danger {
+    & .help-target {
+      border-color: $danger;
+    }
+
+    & .help-inline {
+      color: $danger;
+    }
+  }
+}

@@ -254,6 +254,43 @@
   .dxy-checkbox-block:nth-child(n + 2) {
     margin-left: 0; }
 
+.dxy-select {
+  line-height: 22px;
+  padding: 5px 9px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#555555" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+  padding-right: 30px; }
+  .justify .dxy-select, .dxy-select.justify {
+    width: 100%; }
+  .dxy-select[multiple] {
+    height: auto;
+    background: '';
+    padding: 5px 0; }
+    .dxy-select[multiple] option {
+      padding: 3px 9px; }
+  .dxy-select::-ms-expand {
+    display: none; }
+
+.dxy-verify {
+  position: relative; }
+  .dxy-verify .help-target:focus {
+    -webkit-box-shadow: 0 0 2px 0 #ff3939;
+            box-shadow: 0 0 2px 0 #ff3939; }
+  .dxy-verify .help-inline {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    font-size: 12px; }
+  .dxy-verify-danger .help-target {
+    border-color: #ff3939; }
+  .dxy-verify-danger .help-inline {
+    color: #ff3939; }
+
 .dxy-table {
   width: 100%;
   text-align: center;
