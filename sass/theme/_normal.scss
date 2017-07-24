@@ -91,8 +91,9 @@ $list-style-size: 5px;
 $list-style-color: #333;
 $list-li-padding: 13px;
 $list-li-spacing: 20px;
-$list-tit-spacing: 20px;
-$list-tit-width: 120px;
+$list-dt-width: calc(40% - 13px);
+$list-dd-width: 60%;
+$list-dt-padding: 13px;
 
 
 /////////////

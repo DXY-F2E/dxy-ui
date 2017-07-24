@@ -96,15 +96,15 @@
   padding: 2px 5px;
   font-size: 12px; }
 
-.dxy-list, .dxy-list-dot, .dxy-list-circle, .dxy-list-horizon, .dxy-list-phrase, .dxy-list-phrase-horizon {
+.dxy-ul {
   list-style: none;
   margin: 0;
   padding: 0; }
 
-.dxy-list-dot li {
+.dxy-ul-dot li {
   padding-left: 13px;
   position: relative; }
-  .dxy-list-dot li:before {
+  .dxy-ul-dot li:before {
     content: '';
     display: inline-block;
     width: 5px;
@@ -116,10 +116,10 @@
     top: 50%;
     margin-top: -2.5px; }
 
-.dxy-list-circle li {
+.dxy-ul-circle li {
   padding-left: 13px;
   position: relative; }
-  .dxy-list-circle li:before {
+  .dxy-ul-circle li:before {
     content: '';
     display: inline-block;
     width: 4px;
@@ -132,27 +132,29 @@
     top: 50%;
     margin-top: -2.5px; }
 
-.dxy-list-horizon {
+.dxy-ul-horizon {
   font-size: 0; }
-  .dxy-list-horizon li {
+  .dxy-ul-horizon li {
     font-size: 14px;
     display: inline-block;
     padding-right: 20px; }
 
-.dxy-list-phrase li .dxy-list-phrase-tit, .dxy-list-phrase-horizon li .dxy-list-phrase-tit {
+.dxy-dl dt {
   font-weight: bold; }
 
-.dxy-list-phrase-horizon li {
+.dxy-dl-horizon {
   font-size: 0; }
-  .dxy-list-phrase-horizon li .dxy-list-phrase-tit {
+  .dxy-dl-horizon dt {
+    font-weight: bold;
     font-size: 14px;
     display: inline-block;
-    width: 120px;
-    padding-right: 20px;
+    width: calc(40% - 13px);
+    padding-right: 13px;
     text-align: right; }
-  .dxy-list-phrase-horizon li .dxy-list-phrase-txt {
+  .dxy-dl-horizon dd {
     font-size: 14px;
-    display: inline-block; }
+    display: inline-block;
+    width: 60%; }
 
 body {
   color: #333;

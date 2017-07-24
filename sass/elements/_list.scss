@@ -1,26 +1,23 @@
-.#{$prefix}-list {
+.#{$prefix}-ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.#{$prefix}-list-dot {
-    @extend .#{$prefix}-list;
+.#{$prefix}-ul-dot {
     li {
         padding-left: $list-li-padding;
         position: relative;
         @include list-dot-style($list-style-size,$list-style-color);
     }
 }
-.#{$prefix}-list-circle {
-    @extend .#{$prefix}-list;
+.#{$prefix}-ul-circle {
     li {
         padding-left: $list-li-padding;
         position: relative;
         @include list-circle-style($list-style-size,$list-style-color);
     }
 }
-.#{$prefix}-list-horizon {
-    @extend .#{$prefix}-list;
+.#{$prefix}-ul-horizon {
     font-size: 0;
     li {
         font-size: $font-size;
@@ -28,34 +25,27 @@
         padding-right: $list-li-spacing;
     }
 }
-.#{$prefix}-list-phrase {
-    @extend .#{$prefix}-list;
-    li {
-        .#{$prefix}-list-phrase-tit {
-            font-weight: bold;
-        }
-        .#{$prefix}-list-phrase-txt {
-            
-        }
+.#{$prefix}-dl {
+    dt {
+        font-weight: bold;
     }
-    
+    dd {
+        
+    }
 }
-.#{$prefix}-list-phrase-horizon {
-    @extend .#{$prefix}-list;
-    @extend .#{$prefix}-list-phrase;
-    li {
-        font-size: 0;
-        .#{$prefix}-list-phrase-tit {
-            font-size: $font-size;
-            display: inline-block;
-            width: $list-tit-width;
-            padding-right: $list-tit-spacing;
-            text-align: right;
-        }
-        .#{$prefix}-list-phrase-txt {
-            font-size: $font-size;
-            display: inline-block;
-        }
+.#{$prefix}-dl-horizon {
+    font-size: 0;
+    dt {
+        font-weight: bold;
+        font-size: $font-size;
+        display: inline-block;
+        width: $list-dt-width;
+        padding-right: $list-dt-padding;
+        text-align: right;
     }
-    
+    dd {
+        font-size: $font-size;
+        display: inline-block;
+        width: $list-dd-width;
+    }
 }
