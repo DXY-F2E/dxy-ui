@@ -62,13 +62,15 @@ $font-size-lg: 16px;
 
 // h1~h6 size
 $font-size-h: (
-  h1: 30px,
-  h2: 28px,
-  h3: 26px,
-  h4: 24px,
-  h5: 22px,
-  h6: 20px
+  h1: 36px,
+  h2: 30px,
+  h3: 24px,
+  h4: 18px,
+  h5: 14px,
+  h6: 12px
 );
+$h-font-family: '微软雅黑', 'Arial，Helvetica', 'Sans-serif';
+$h-font-weight: normal;
 
 // line-height
 $line-height-xs: 1;
@@ -80,6 +82,18 @@ $line-height-lg: (4 / 3);
 //////////////
 // 其他的不作过多定义，以元素、组件区分引用，避免与其他样式耦合
 //
+
+
+///////////////
+// list
+//
+$list-style-size: 5px;
+$list-style-color: #333;
+$list-li-padding: 13px;
+$list-li-spacing: 20px;
+$list-dt-width: calc(40% - 13px);
+$list-dd-width: 60%;
+$list-dt-padding: 13px;
 
 
 /////////////

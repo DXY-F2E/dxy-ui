@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .dxy-btn {
   color: #333333;
   display: inline-block;
@@ -332,6 +333,66 @@
   .dxy-verify-danger .help-inline {
     color: #ff3939; }
 
+.dxy-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.dxy-ul-dot li {
+  padding-left: 13px;
+  position: relative; }
+  .dxy-ul-dot li:before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -2.5px; }
+
+.dxy-ul-circle li {
+  padding-left: 13px;
+  position: relative; }
+  .dxy-ul-circle li:before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border: 1px solid #333;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -2.5px; }
+
+.dxy-ul-horizon {
+  font-size: 0; }
+  .dxy-ul-horizon li {
+    font-size: 14px;
+    display: inline-block;
+    padding-right: 20px; }
+
+.dxy-dl dt {
+  font-weight: bold; }
+
+.dxy-dl-horizon {
+  font-size: 0; }
+  .dxy-dl-horizon dt {
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    width: calc(40% - 13px);
+    padding-right: 13px;
+    text-align: right; }
+  .dxy-dl-horizon dd {
+    font-size: 14px;
+    display: inline-block;
+    width: 60%; }
+
 .dxy-table {
   width: 100%;
   text-align: center;
@@ -368,44 +429,53 @@ body {
 h1, .dxy-h1 {
   margin: 0;
   padding: 0;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 36px;
+  font-family: "微软雅黑", "Arial，Helvetica", "Sans-serif";
+  font-weight: normal;
   line-height: 1.33333; }
 
 h2, .dxy-h2 {
   margin: 0;
   padding: 0;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 30px;
+  font-family: "微软雅黑", "Arial，Helvetica", "Sans-serif";
+  font-weight: normal;
   line-height: 1.33333; }
 
 h3, .dxy-h3 {
   margin: 0;
   padding: 0;
-  font-size: 26px;
-  font-weight: bold;
+  font-size: 24px;
+  font-family: "微软雅黑", "Arial，Helvetica", "Sans-serif";
+  font-weight: normal;
   line-height: 1.33333; }
 
 h4, .dxy-h4 {
   margin: 0;
   padding: 0;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 18px;
+  font-family: "微软雅黑", "Arial，Helvetica", "Sans-serif";
+  font-weight: normal;
   line-height: 1.33333; }
 
 h5, .dxy-h5 {
   margin: 0;
   padding: 0;
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 14px;
+  font-family: "微软雅黑", "Arial，Helvetica", "Sans-serif";
+  font-weight: normal;
   line-height: 1.33333; }
 
 h6, .dxy-h6 {
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 12px;
+  font-family: "微软雅黑", "Arial，Helvetica", "Sans-serif";
+  font-weight: normal;
   line-height: 1.33333; }
+
+.dxy-h-bold {
+  font-weight: bold; }
 
 p {
   font-size: 14px; }
@@ -420,6 +490,21 @@ p {
 
 .dxy-help-inline {
   display: inline; }
+
+.dxy-text, .dxy-text-strong {
+  font-size: 14px;
+  font-family: "Helvetica Neue", "Helvetica,Arial", "Sans-serif"; }
+
+.dxy-text-strong {
+  font-weight: bold; }
+
+.dxy-text-quote {
+  border-left: 4px solid #eee;
+  padding-left: 15px; }
+
+.dxy-text-tip {
+  font-size: 12px;
+  color: #777; }
 
 .dxy-border {
   border: 1px solid #999; }
