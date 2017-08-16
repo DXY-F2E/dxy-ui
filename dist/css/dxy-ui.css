@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "//at.alicdn.com/t/font_2vesv3dkmi8jjor.css";
 .dxy-btn {
   color: #333333;
   display: inline-block;
@@ -505,6 +506,48 @@ p {
 .dxy-text-tip {
   font-size: 12px;
   color: #777; }
+
+.dxy-tag {
+  display: inline-block;
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  border-radius: 3px;
+  padding: 4px 9px;
+  font-size: inherit;
+  line-height: 1; }
+  .dxy-tag i {
+    font-size: inherit;
+    line-height: inherit;
+    margin-left: 8px; }
+
+.dxy-tag-blue {
+  color: #0bb9fa;
+  border-color: rgba(11, 185, 250, 0.5);
+  background-color: rgba(11, 185, 250, 0.05); }
+
+.dxy-tag-green {
+  color: #24c54a;
+  border-color: rgba(36, 197, 74, 0.5);
+  background-color: rgba(36, 197, 74, 0.05); }
+
+.dxy-tag-orange {
+  color: #f8af00;
+  border-color: rgba(248, 175, 0, 0.5);
+  background-color: rgba(248, 175, 0, 0.05); }
+
+.dxy-tag-red {
+  color: #f33237;
+  border-color: rgba(243, 50, 55, 0.5);
+  background-color: rgba(243, 50, 55, 0.05); }
+
+.dxy-badge {
+  color: #fff;
+  background-color: #f13737;
+  line-height: 1;
+  font-style: inherit;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 9px; }
 
 .dxy-border {
   border: 1px solid #999; }

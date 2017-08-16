@@ -252,3 +252,25 @@ $table-border-color: #ddd;
 $table-td-pd: 8px;
 $table-hover-bg-color: #f9f9f9;
 $table-striped-bg-color: #f9f9f9;
+
+////////////////////// components /////////////////////////
+
+//tag
+$tag-radius: 3px;
+$tag-bgcolor-normal: #f5f5f5;
+$tag-padding: 4px 9px;
+$tag-fontsize: inherit;
+$tag-close-ml: 8px;
+$tag-colors: (
+	blue: #0bb9fa,
+	green: #24c54a,
+	orange: #f8af00,
+	red: #f33237
+);
+
+//badge
+$badge-color: #fff;
+$badge-bgcolor: #f13737;
+$badge-padding: 2px 6px;
+$badge-fontsize: 12px;
+$badge-radius: 9px;
