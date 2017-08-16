@@ -274,3 +274,32 @@ $badge-bgcolor: #f13737;
 $badge-padding: 2px 6px;
 $badge-fontsize: 12px;
 $badge-radius: 9px;
+
+/////////////
+// navigation
+//
+
+$nav-font-size: 14px;
+$nav-font-color: #333;
+$nav-item-pd: 0 15px;
+$nav-line-height: 34px;
+$nav-item-active: #3572fe;
+$nav-item-hover: #f5f5f5;
+
+$nav-tab-bd-width: 1px;
+$nav-tab-bd-color: #ccc;
+$nav-tab-active-bd-width: 2px;
+$nav-tab-bd-radius: 4px;
+$nav-tab-font-color: $nav-font-color;
+
+$nav-crumb-pd: 0 20px;
+$nav-crumb-item-pd: 0 8px;
+$nav-crumb-line-height: 40px;
+$nav-crumb-bg-color: #f6f6f6;
+
+$nav-menu-bg-color: #fff;
+$nav-menu-bd-radius: 4px;
+$nav-menu-bd-width: 1px;
+$nav-menu-bd-color: #ccc;
+$nav-menu-active: #0bb9fa;
+$nav-menu-line-height: 30px;
