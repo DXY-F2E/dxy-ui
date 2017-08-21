@@ -123,34 +123,34 @@
   overflow: hidden; }
 
 .dxy-font-active {
-  color: #3572fe; }
+  color: #2c7cec; }
 
 .dxy-font-success {
-  color: #24c54a; }
+  color: #22c93d; }
 
 .dxy-font-info {
-  color: #0baefa; }
+  color: #84c2fd; }
 
 .dxy-font-warning {
-  color: #f8af00; }
+  color: #ff9110; }
 
 .dxy-font-danger {
-  color: #f33237; }
+  color: #ff3939; }
 
 .dxy-bg-active {
-  background-color: #3572fe; }
+  background-color: #2c7cec; }
 
 .dxy-bg-success {
-  background-color: #24c54a; }
+  background-color: #22c93d; }
 
 .dxy-bg-info {
-  background-color: #0baefa; }
+  background-color: #84c2fd; }
 
 .dxy-bg-warning {
-  background-color: #f8af00; }
+  background-color: #ff9110; }
 
 .dxy-bg-danger {
-  background-color: #f33237; }
+  background-color: #ff3939; }
 
 .dxy-btn {
   color: #333333;
@@ -198,12 +198,12 @@
 
 .dxy-btn-primary {
   color: #fefefe;
-  border-color: #3572fe;
-  background-color: #3572fe; }
+  border-color: #2c7cec;
+  background-color: #2c7cec; }
   .dxy-btn-primary:hover {
-    background-color: #0c56fe; }
+    background-color: #1467db; }
   .dxy-btn-primary:active, .dxy-btn-primary:focus {
-    background-color: #0145e0; }
+    background-color: #1055b6; }
   .dxy-btn-primary[disabled] {
     color: #bcbcbc;
     background-color: #eeeeee;
@@ -212,12 +212,12 @@
 
 .dxy-btn-success {
   color: #fefefe;
-  border-color: #3ec44a;
-  background-color: #3ec44a; }
+  border-color: #22c93d;
+  background-color: #22c93d; }
   .dxy-btn-success:hover {
-    background-color: #33a63d; }
+    background-color: #1ca632; }
   .dxy-btn-success:active, .dxy-btn-success:focus {
-    background-color: #298732; }
+    background-color: #168328; }
   .dxy-btn-success[disabled] {
     color: #bcbcbc;
     background-color: #eeeeee;
@@ -226,12 +226,12 @@
 
 .dxy-btn-info {
   color: #fefefe;
-  border-color: #0bb9fa;
-  background-color: #0bb9fa; }
+  border-color: #84c2fd;
+  background-color: #84c2fd; }
   .dxy-btn-info:hover {
-    background-color: #049ed8; }
+    background-color: #5caefc; }
   .dxy-btn-info:active, .dxy-btn-info:focus {
-    background-color: #0481b0; }
+    background-color: #349afc; }
   .dxy-btn-info[disabled] {
     color: #bcbcbc;
     background-color: #eeeeee;
@@ -240,12 +240,12 @@
 
 .dxy-btn-warning {
   color: #fefefe;
-  border-color: #f8af00;
-  background-color: #f8af00; }
+  border-color: #ff9110;
+  background-color: #ff9110; }
   .dxy-btn-warning:hover {
-    background-color: #cf9200; }
+    background-color: #e67c00; }
   .dxy-btn-warning:active, .dxy-btn-warning:focus {
-    background-color: #a67500; }
+    background-color: #bd6600; }
   .dxy-btn-warning[disabled] {
     color: #bcbcbc;
     background-color: #eeeeee;
@@ -254,12 +254,12 @@
 
 .dxy-btn-danger {
   color: #fefefe;
-  border-color: #f43338;
-  background-color: #f43338; }
+  border-color: #ff3939;
+  background-color: #ff3939; }
   .dxy-btn-danger:hover {
-    background-color: #f10d13; }
+    background-color: #ff1010; }
   .dxy-btn-danger:active, .dxy-btn-danger:focus {
-    background-color: #ca0b10; }
+    background-color: #e60000; }
   .dxy-btn-danger[disabled] {
     color: #bcbcbc;
     background-color: #eeeeee;
@@ -784,3 +784,45 @@ p {
     .dxy-nav-menu li.dxy-active {
       color: #fff;
       background-color: #0bb9fa; }
+
+.dxy-progress, .dxy-progress-sm {
+  line-height: 22px; }
+  .dxy-progress .dxy-progress-bar, .dxy-progress-sm .dxy-progress-bar {
+    display: inline-block;
+    width: 100%;
+    height: 22px;
+    border-radius: 22px;
+    background-color: #ddd;
+    overflow: hidden; }
+    .dxy-progress .dxy-progress-bar .dxy-progress-done, .dxy-progress-sm .dxy-progress-bar .dxy-progress-done {
+      height: 100%;
+      color: #fff;
+      text-align: right;
+      border-radius: inherit;
+      background-color: #3572fe; }
+      .dxy-progress .dxy-progress-bar .dxy-progress-done span, .dxy-progress-sm .dxy-progress-bar .dxy-progress-done span {
+        padding: 0 10px; }
+  .dxy-progress.dxy-progress-success .dxy-progress-done, .dxy-progress-success.dxy-progress-sm .dxy-progress-done {
+    background-color: #22c93d; }
+  .dxy-progress.dxy-progress-fail .dxy-progress-done, .dxy-progress-fail.dxy-progress-sm .dxy-progress-done {
+    background-color: #ff3939; }
+
+/* 小进度条 */
+.dxy-progress-sm {
+  position: relative;
+  padding-right: 45px;
+  line-height: 7px; }
+  .dxy-progress-sm .dxy-progress-bar {
+    height: 7px;
+    border-radius: 7px; }
+  .dxy-progress-sm .dxy-progress-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    margin-left: 10px;
+    text-align: left; }
+  .dxy-progress-sm.dxy-progress-success {
+    color: #22c93d; }
+  .dxy-progress-sm.dxy-progress-fail {
+    color: #ff3939; }
