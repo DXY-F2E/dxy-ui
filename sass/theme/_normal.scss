@@ -125,11 +125,11 @@ $btn-disabled-bd-color: $grey-7;
 
 // background-colors
 $btn-situations: (
-  primary:#3572fe,
-  success:#3ec44a,
-  info:#0bb9fa,
-  warning:#f8af00,
-  danger:#f43338
+  primary:$active,
+  success:$success,
+  info:$info,
+  warning:$warning,
+  danger:$danger
 );
 
 // color
@@ -167,18 +167,18 @@ $highlight: #feefcc;
 
 //font situation and bg situation
 $font-situation: (
-  active:#3572fe,
-  success:#24c54a,
-  info:#0baefa,
-  warning:#f8af00,
-  danger:#f33237
+  active:$active,
+  success:$success,
+  info:$info,
+  warning:$warning,
+  danger:$danger
 );
 $bg-situation:(
-  active:#3572fe,
-  success:#24c54a,
-  info:#0baefa,
-  warning:#f8af00,
-  danger:#f33237
+  active:$active,
+  success:$success,
+  info:$info,
+  warning:$warning,
+  danger:$danger
 );
 
 
@@ -303,3 +303,16 @@ $nav-menu-bd-width: 1px;
 $nav-menu-bd-color: #ccc;
 $nav-menu-active: #0bb9fa;
 $nav-menu-line-height: 30px;
+
+
+/////////////
+// progress
+//
+
+$progress-height: 22px;
+$progress-height-sm: 7px;
+
+$progress-bar-color: $grey-7;
+$progress-done-color: #3572fe;
+$progress-success-color: $success;
+$progress-fail-color: $danger;
