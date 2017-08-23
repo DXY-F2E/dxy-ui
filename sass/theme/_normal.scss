@@ -316,3 +316,13 @@ $progress-bar-color: $grey-7;
 $progress-done-color: #3572fe;
 $progress-success-color: $success;
 $progress-fail-color: $danger;
+
+
+/////////////
+// tree
+//
+
+$tree-expand-icon-width: 8px; // 只能偶数
+$tree-indent: 24px;
+$tree-content-pd: 15px;
+$tree-disabled-color: #ccc;
