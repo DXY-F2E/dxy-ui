@@ -1,0 +1,101 @@
+.#{$prefix}-tip {
+	display: inline-block;
+	position: relative;
+	line-height: 1;
+	padding: $tip-padding;
+	border: $tip-border;
+	border-radius: $tip-radius;
+}
+.#{$prefix}-tip.left {
+	&::before {
+		@include tip_arrow();
+		right: 0;
+		top: 50%;
+		margin-right: -5px;
+		margin-top: -4px;
+		transform: rotateZ(-45deg);
+	}
+}
+.#{$prefix}-tip.right {
+	&::before {
+		@include tip_arrow();
+		left: 0;
+		top: 50%;
+		margin-left: -5px;
+		margin-top: -4px;
+		transform: rotateZ(135deg);
+	}
+}
+.#{$prefix}-tip.top {
+	&::before {
+		@include tip_arrow();
+		left: 50%;
+		top: 0;
+		margin-left: -5px;
+		margin-top: -5px;
+		transform: rotateZ(-135deg);
+	}
+}
+.#{$prefix}-tip.bottom {
+	&::before {
+		@include tip_arrow();
+		left: 50%;
+		bottom: 0;
+		margin-left: -5px;
+		margin-bottom: -5px;
+		transform: rotateZ(45deg);
+	}
+}
+
+.#{$prefix}-pop {
+	display: inline-block;
+	position: relative;
+	padding: $pop-padding;
+	border: $pop-border;
+	border-radius: $pop-radius;
+	box-shadow: $pop-shadow;
+	.#{$prefix}-pop-head {
+		line-height: 1;
+		padding-bottom: $pop-head-spacing;
+	}
+}
+.#{$prefix}-pop.left {
+	&::before {
+		@include pop_arrow();
+		right: 0;
+		top: 50%;
+		margin-right: -5px;
+		margin-top: -6px;
+		transform: rotateZ(-45deg);
+	}
+}
+.#{$prefix}-pop.right {
+	&::before {
+		@include pop_arrow();
+		left: 0;
+		top: 50%;
+		margin-left: -5px;
+		margin-top: -6px;
+		transform: rotateZ(-45deg);
+	}
+}
+.#{$prefix}-pop.top {
+	&::before {
+		@include pop_arrow();
+		left: 50%;
+		bottom: 0;
+		margin-left: -5px;
+		margin-bottom: -4px;
+		transform: rotateZ(-45deg);
+	}
+}
+.#{$prefix}-pop.bottom {
+	&::before {
+		@include pop_arrow();
+		left: 50%;
+		top: 0;
+		margin-left: -5px;
+		margin-top: -4px;
+		transform: rotateZ(-45deg);
+	}
+}

@@ -333,3 +333,50 @@ $tree-disabled-color: #ccc;
 //
 
 $button-group-radius : $btn-radius;
+
+
+////////////
+// dialog & popup
+//
+
+//alert
+$alert-width: 338px;
+$alert-height: 32px;
+$alert-padding: 0 16px;
+$alert-radius: 3px;
+
+$alert-situations: (
+	info: #0bb9fa,
+	success: #33bb3f,
+	warning: #f19f00,
+	error: #f76569
+);
+
+//tip
+$tip-padding: 5px 8px;
+$tip-border: 1px solid #dddddd;
+$tip-radius: 3px;
+//pop
+$pop-padding: 12px;
+$pop-border: none;
+$pop-radius: 3px;
+$pop-shadow: 0 0 14px 2px #dddddd;
+$pop-head-spacing: 16px;
+//confirm
+$confirm-bgcolor: #fff;
+$confirm-box-sizing: border-box;
+$confirm-width: 420px;
+$confirm-padding: 20px;
+$confirm-radius: 3px;
+$confirm-hd-pb: 32px;
+$confirm-body-h: 70px;
+$confirm-close-size: 20px;
+$confirm-close-color: #bcbcbc;
+
+$modal-bgcolor: #fff;
+$modal-box-sizing: border-box;
+$modal-width: 694px;
+$modal-padding: 20px;
+$modal-radius: 3px;
+$modal-shadow: 0 0 14px 2px #dddddd;
+$modal-hd-pb: 32px;
