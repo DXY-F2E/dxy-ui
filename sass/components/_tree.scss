@@ -2,7 +2,7 @@ $tree: '#{$prefix}-tree';
 
 .#{$tree} {
 
-  &-no-child {
+  &-leaf {
     .#{$tree}-expand-icon {
       display: none;
     }

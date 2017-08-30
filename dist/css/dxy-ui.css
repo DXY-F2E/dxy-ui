@@ -827,7 +827,7 @@ p {
   .dxy-progress-sm.dxy-progress-fail {
     color: #ff3939; }
 
-.dxy-tree-no-child .dxy-tree-expand-icon {
+.dxy-tree-leaf .dxy-tree-expand-icon {
   display: none; }
 
 .dxy-tree-expanded > div > .dxy-tree-expand-icon:before {
