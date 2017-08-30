@@ -826,3 +826,50 @@ p {
     color: #22c93d; }
   .dxy-progress-sm.dxy-progress-fail {
     color: #ff3939; }
+
+.dxy-tree-leaf .dxy-tree-expand-icon {
+  display: none; }
+
+.dxy-tree-expanded > div > .dxy-tree-expand-icon:before {
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg); }
+
+.dxy-tree-expanded > .dxy-tree-children {
+  display: block; }
+
+.dxy-tree-children {
+  display: none; }
+
+.dxy-tree-expand-icon {
+  cursor: pointer;
+  position: absolute;
+  width: 24px;
+  height: 100%;
+  left: -24px;
+  top: 0; }
+  .dxy-tree-expand-icon:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+            transform: translate(-50%, -50%) rotate(-90deg);
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 4px solid #000;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; }
+
+.dxy-tree-content {
+  padding: 15px 0;
+  position: relative; }
+
+.dxy-tree-node {
+  position: relative;
+  padding-left: 24px;
+  line-height: 1; }
+  .dxy-tree-node[disabled] > .dxy-tree-content {
+    color: #ccc; }
