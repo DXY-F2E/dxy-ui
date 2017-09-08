@@ -1,0 +1,184 @@
+$step: '#{$prefix}-step';
+
+// 横向步骤条
+.#{$step}-bar {
+  display: flex;
+
+  .#{$step}-item {
+    @include step_bar(
+      $padding: ($step-text-top + $step-item-size) $step-text-right 0 0,
+      $min-width: $step-content-size,
+      $item-size: $step-item-size,
+      $font-color: $step-color,
+      $font-size: $step-font-size,
+      $bdr-width: $step-border-width,
+      $bdr-color: $step-bg-color,
+      $bg-color: $white
+    );
+
+    span {
+      top: 0;
+      left: 0;
+    }
+    &:before {
+      content: " ";
+      position: absolute;
+      top: $step-item-size / 2;
+      left: $step-item-size;
+      right: 0;
+      border-top: $step-line-width solid $step-bg-color;
+    }
+    &:last-child:before {
+      content: none;
+    }
+  }
+
+  .#{$step}-done {
+    color: $step-done-color;
+    span {
+      color: $white;
+      border-color: $step-done-color;
+      background-color: $step-done-color;
+    }
+    &:after {
+      content: " ";
+      position: absolute;
+      top: $step-item-size / 2;
+      left: 0;
+      width: 50%;
+      padding-left: $step-item-size / 2;
+      border-top: $step-line-width solid $step-done-color;
+    }
+    &:last-child:after {
+      content: none;
+    }
+  }
+
+  .#{$step}-active {
+    color: $step-active-color;
+    span {
+      color: $white;
+      background-color: $step-bg-color;
+    }
+  }
+}
+
+
+// 占满一行步骤条
+.#{$step}-bar-wide {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: $step-wide-pd;
+  background-color: $step-wide-bg-color;
+
+  .#{$step}-item {
+    @include step_bar(
+      $padding: ($step-wide-text-top + $step-wide-item-size) $step-wide-text-right 0 $step-wide-text-right,
+      $min-width: 0,
+      $item-size: $step-wide-item-size,
+      $font-color: $step-color,
+      $font-size: $step-wide-font-size,
+      $bdr-width: 0,
+      $bdr-color: transparent,
+      $bg-color: $white
+    );
+    flex: 1;
+    text-align: center;
+
+    &:before {
+      content: " ";
+      position: absolute;
+      top: ($step-wide-item-size - $step-wide-line-width) / 2;
+      left: 0;
+      right: 0;
+      border-top: $step-wide-line-width solid $white;
+    }
+  }
+  span {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .#{$step}-done {
+    color: $step-wide-done-font-color;
+    span {
+      color: $white;
+      background-color: $step-done-color;
+    }
+    &:before {
+      border-color: $step-done-color;
+    }
+  }
+
+  .#{$step}-active {
+    color: $step-wide-active-color;
+    span {
+      width: $step-wide-active-size;
+      height: $step-wide-active-size;
+      top: ($step-wide-item-size - $step-wide-active-size) / 2;
+      color: $white;
+      line-height: $step-wide-active-size;
+      background-color: $step-wide-active-color;
+    }
+    &:before {
+      border-color: $step-done-color;
+    }
+  }
+}
+
+
+// 竖向步骤条
+.#{$step}-bar-vertical {
+  .#{$step}-item {
+    @include step_bar(
+      $padding: 0 0 $step-vertical-text-bottom ($step-vertical-item-size + $step-vertical-text-left),
+      $min-width: $step-content-size,
+      $item-size: $step-vertical-item-size,
+      $font-color: $step-color,
+      $font-size: $step-vertical-font-size,
+      $bdr-width: 0,
+      $bdr-color: transparent,
+      $bg-color: $step-bg-color
+    );
+    line-height: $step-vertical-item-size;
+
+    &:before {
+      content: " ";
+      position: absolute;
+      top: $step-vertical-item-size + 2px;
+      left: ($step-vertical-item-size - $step-vertical-line-width) / 2;
+      bottom: 2px;
+      border-left: $step-vertical-line-width solid $step-bg-color;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  span {
+    top: 0;
+    left: 0;
+    color: $white;
+  }
+
+  .#{$step}-done {
+    color: $step-vertical-done-font-color;
+    span {
+      color: $white;
+      background-color: $step-done-color;
+    }
+    &:before {
+      border-color: $step-done-color;
+    }
+  }
+
+  .#{$step}-active {
+    color: $step-vertical-active-color;
+    span {
+      color: $white;
+      background-color: $step-vertical-active-color;
+    }
+  }
+}
