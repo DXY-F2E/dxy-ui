@@ -1,0 +1,25 @@
+.#{$prefix}-container {
+  @include make-container();
+  @include make-container-max-widths();
+}
+
+.#{$prefix}-container-fluid {
+  @include make-container();
+}
+
+.#{$prefix}-row {
+  @include make-row();
+  
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .#{$prefix}-col,
+    > [class*="#{$prefix}-col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }  
+}
+
+@include make-grid-columns();

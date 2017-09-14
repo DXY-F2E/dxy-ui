@@ -429,3 +429,25 @@ $select-tag-margin:0 3px 3px 0;
 $select-tag-wrap-margin:0 -3px -3px 0;
 $select-tag-font-size:14px;
 $select-tag-font-color:#555555;
+
+
+/////////////
+// grid
+//
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+$grid-columns: 12 !default; // 栅格系统列数
+$grid-gutter-width: 30px !default;
