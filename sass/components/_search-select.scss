@@ -78,15 +78,18 @@
     outline: none;
     background-color: transparent;
   }
+  .#{$prefix}-tags{
+    margin: $select-tag-wrap-margin;
+  }
   .#{$prefix}-tag{
     display: inline-block;
-    //padding:$select-tag-border-padding;
-    //background-color: $select-tag-border-bg-color;
-    //border: $select-tag-border-border;
-    //border-radius: $select-tag-border-border-radius;
-    margin:$select-tag-border-border-margin;
-    font-size: $select-tag-border-border-font-size;
-    color: $select-tag-border-border-font-color;
+    //padding:$select-tag-padding;
+    //background-color: $select-tag-bg-color;
+    //border: $select-tag-border;
+    //border-radius: $select-tag-border-radius;
+    margin:$select-tag-margin;
+    font-size: $select-tag-font-size;
+    color: $select-tag-font-color;
     cursor: pointer;
   }
 }
