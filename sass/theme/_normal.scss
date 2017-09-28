@@ -506,3 +506,20 @@ $step-vertical-text-left: 8px;
 $step-vertical-text-bottom: 20px;
 $step-vertical-done-font-color: #555;
 $step-vertical-active-color: $active;
+
+
+/////////////
+// pagination
+//
+$pagination-box-sizing: content-box;
+$pagination-height: 24px;
+$pagination-border: 1px solid #dddddd;
+$pagination-content-pd: 8px;
+$pagination-font-color: #555555;
+$pagination-btn-bgcolor: #ffffff;
+$pagination-btn-mr: 5px;
+$pagination-cur-bgcolor: #3572fe;
+$pagination-cur-color: #ffffff;
+$pagination-disabled-color: #e0e0e0;
+$pagination-input-width: 30px;
+$pagination-jump-height: 26px;
