@@ -1,0 +1,67 @@
+.#{$prefix}-input-group {
+  display: table;
+  border-collapse: separate;
+  height: $input-group-height;
+  line-height: $input-group-height;
+  input, button {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: $input-group-height;
+  }
+  input:not([type="button"]) {
+    border-radius: 0;
+    float: left;
+    width: 100%;
+    display: table-cell;
+    color: $input-group-color;
+    &:last-child {
+      border-top-right-radius: $input-group-border-radius;
+      border-bottom-right-radius: $input-group-border-radius;
+    }
+    &:first-child {
+      border-top-left-radius: $input-group-border-radius;
+      border-bottom-left-radius: $input-group-border-radius;
+    }
+  }
+
+  .#{$prefix}-input-group-addon, .#{$prefix}-input-group-btn {
+    vertical-align: middle;
+    display: table-cell;
+  }
+  .#{$prefix}-input-group-addon {
+    padding:$input-group-padding;
+    font-size: $input-group-font-size;
+    color: $input-group-addon-color;
+    background-color: $input-group-addon-bg;
+    border: $input-group-addon-bd;
+    border-radius: $input-group-border-radius;
+    &:first-child {
+      border-right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &:last-child {
+      border-left: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      padding-right: $input-group-padding-right;
+    }
+  }
+
+  .#{$prefix}-input-group-btn {
+    .dxy-btn{
+      color: $input-group-btn-color;
+    }
+    &:last-child .dxy-btn {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-left: -2px;
+    }
+    &:first-child .dxy-btn {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-right: -2px;
+    }
+
+  }
+}
