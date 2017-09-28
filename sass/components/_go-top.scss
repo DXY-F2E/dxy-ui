@@ -1,17 +1,38 @@
 .#{$prefix}-go-top {
 	display: block;
-	width: $go-top-size;
-	height: $go-top-size;
+	width: $go-top-round-size;
+	height: $go-top-round-size;
 	border-radius: 50%;
-	background: $go-top-bg-blue;
+	background: $go-top-bg-grey;
 	color: $go-top-color;
 	text-decoration: none;
 	padding: 0;
 	border: none;
 	text-align: center;
-	line-height: $go-top-size;
+	line-height: $go-top-round-size;
 	.#{$prefix}-icon {
 		font-size: $go-top-icon-size;
+	}
+	&:hover {
+		background: $go-top-bg-hover;
+	}
+}
+.#{$prefix}-go-top-white {
+	background: $go-top-bg-white;
+	box-shadow: $go-top-shadow;
+	color: $go-top-color-grey;
+	&:hover {
+		color: $go-top-color;
+	}
+}
+.#{$prefix}-go-top-square-white {
+	@extend .#{$prefix}-go-top-white;
+	width: $go-top-width;
+	height: $go-top-height;
+	line-height: $go-top-height;
+	border-radius: $go-top-square-radius;
+	.#{$prefix}-icon {
+		font-size: $go-top-square-icon-size;
 	}
 }
 .#{$prefix}-go-top-grey {
