@@ -1,0 +1,19 @@
+.#{$prefix}-go-top {
+	display: block;
+	width: $go-top-size;
+	height: $go-top-size;
+	border-radius: 50%;
+	background: $go-top-bg-blue;
+	color: $go-top-color;
+	text-decoration: none;
+	padding: 0;
+	border: none;
+	text-align: center;
+	line-height: $go-top-size;
+	.#{$prefix}-icon {
+		font-size: $go-top-icon-size;
+	}
+}
+.#{$prefix}-go-top-grey {
+	background: $go-top-bg-grey;
+}
