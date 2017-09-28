@@ -1,0 +1,92 @@
+.#{$prefix}-search-select{
+  display: inline-block;
+  position: relative;
+  min-width: $select-min-width;
+  width: 100%;
+  .#{$prefix}-search-input{
+    width: 100%;
+    height: $select-input-height;
+    font-size: $select-input-font-size;
+    color: $select-input-color;
+    line-height: 1;
+    padding: $select-input-padding;
+    border: $select-input-border;
+    border-radius: $select-input-border-radius;
+    box-sizing: border-box;
+  }
+  .#{$prefix}-search-input-icon{
+    position: absolute;
+    width: $select-icon-width;
+    height: $select-input-height;
+    right: 0;
+    top: 0;
+    font-size: $select-icon-font-size;
+    text-align: center;
+    line-height: $select-input-height;
+  }
+}
+
+.#{$prefix}-search-select, .#{$prefix}-search-select-multiple{
+  .#{$prefix}-select-list{
+    position: relative;
+    overflow-y: scroll;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin:$select-list-margin;
+    border-radius: $select-list-border-radius;
+    border: $select-list-border;
+    li{
+      padding-left: $select-li-padding-left;
+      height: $select-li-height;
+      line-height: $select-li-height;
+      cursor: pointer;
+      &:hover{
+        background-color: $select-li-hover-bg-color;
+      }
+    }
+    li.#{$prefix}-active{
+      background-color: $select-li-active-bg-color;
+      color: $select-li-active-color;
+    }
+  }
+}
+.#{$prefix}-search-select .#{$prefix}-select-list{
+  max-height: $select-list-height;
+}
+.#{$prefix}-search-select-multiple .#{$prefix}-select-list{
+  max-height: $select-list-multiple-height
+}
+
+.#{$prefix}-search-select-multiple{
+  width: 100%;
+  .#{$prefix}-search-input{
+    max-width: 100%;
+    font-size: $select-input-multiple-font-size;
+    color: $select-input-multiple-color;
+    line-height: 1;
+    padding: $select-input-multiple-padding;
+    border: $select-input-multiple-border;
+    background-color: $select-input-multiple-bg-color;
+    border-radius: $select-input-multiple-border-radius;
+    display: inline-block;
+  }
+  .#{$prefix}-cursor{
+    width: $select-cursor-border-width;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .#{$prefix}-tag{
+    display: inline-block;
+    //padding:$select-tag-border-padding;
+    //background-color: $select-tag-border-bg-color;
+    //border: $select-tag-border-border;
+    //border-radius: $select-tag-border-border-radius;
+    margin:$select-tag-border-border-margin;
+    font-size: $select-tag-border-border-font-size;
+    color: $select-tag-border-border-font-color;
+    cursor: pointer;
+  }
+}

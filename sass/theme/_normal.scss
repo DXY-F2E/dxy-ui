@@ -383,3 +383,48 @@ $modal-padding: 20px;
 $modal-radius: 3px;
 $modal-shadow: 0 0 14px 2px #dddddd;
 $modal-hd-pb: 32px;
+
+
+/////////////
+// dropdown select
+//
+
+$select-min-width: 120px;
+$select-input-font-size: 14px;
+$select-input-color: #333;
+$select-input-height: 40px;
+$select-input-padding: 0 0 0 10px;
+$select-input-border: solid 1px #cccccc;
+$select-input-border-radius:  4px;
+$select-icon-width:  40px;
+$select-icon-font-size:  17px;
+
+$select-li-padding-left: 13px;
+$select-li-height: 30px;
+$select-li-hover-bg-color: #f5f5f5;
+$select-li-active-bg-color: #3572fe;
+$select-li-active-color: #fff;
+
+$select-list-margin: 5px 0 0 0;
+$select-list-border-radius: 4px;
+$select-list-border: solid 1px #cccccc;
+$select-list-height: $select-li-height * 7;
+
+// 多选样式
+$select-list-multiple-height: $select-li-height * 7;
+$select-input-multiple-font-size: 14px;
+$select-input-multiple-color: #333;
+$select-input-multiple-padding: 5px;
+$select-input-multiple-border: solid 1px #cccccc;
+$select-input-multiple-bg-color: #ffffff;
+$select-input-multiple-border-radius: 4px;
+
+$select-cursor-border-width: 100px;
+
+$select-tag-border-padding: 2px 4px 2px 2px;
+$select-tag-border-bg-color: #f5f5f5;
+$select-tag-border-border: 1px solid #dddddd;
+$select-tag-border-border-radius:4px;
+$select-tag-border-border-margin:0 3px 3px 0;
+$select-tag-border-border-font-size:14px;
+$select-tag-border-border-font-color:#555555;
