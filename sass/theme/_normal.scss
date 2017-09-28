@@ -253,6 +253,29 @@ $table-td-pd: 8px;
 $table-hover-bg-color: #f9f9f9;
 $table-striped-bg-color: #f9f9f9;
 
+
+/////////////
+// grid
+//
+$grid-breakpoints: (
+				xs: 0,
+				sm: 576px,
+				md: 768px,
+				lg: 992px,
+				xl: 1200px
+) !default;
+
+$container-max-widths: (
+				sm: 540px,
+				md: 720px,
+				lg: 960px,
+				xl: 1140px
+) !default;
+
+$grid-columns: 12 !default; // 栅格系统列数
+$grid-gutter-width: 30px !default;
+
+
 ////////////////////// components /////////////////////////
 
 //tag
@@ -447,23 +470,39 @@ $select-tag-font-size:14px;
 $select-tag-font-color:#555555;
 
 
-/////////////
-// grid
+////////////
+// step bar
 //
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-) !default;
 
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
-) !default;
+$step-color: #b5b5b5;
+$step-bg-color: #ddd;
+$step-done-color: $active;
 
-$grid-columns: 12 !default; // 栅格系统列数
-$grid-gutter-width: 30px !default;
+$step-content-size: 165px;
+$step-item-size: 45px;
+$step-line-width: 2px;
+$step-border-width: 2px;
+$step-text-top: 8px;
+$step-text-right: 10px;
+$step-font-size: 18px;
+$step-active-color: #555;
+
+$step-wide-bg-color: #eee;
+$step-wide-font-size: 14px;
+$step-wide-pd: 35px 0;
+$step-wide-item-size: 24px;
+$step-wide-active-size: 28px;
+$step-wide-line-width: 2px;
+$step-wide-text-top: 15px;
+$step-wide-text-left: 5px;
+$step-wide-text-right: 5px;
+$step-wide-done-font-color: #555;
+$step-wide-active-color: $active;
+
+$step-vertical-item-size: 24px;
+$step-vertical-font-size: 14px;
+$step-vertical-line-width: 1px;
+$step-vertical-text-left: 8px;
+$step-vertical-text-bottom: 20px;
+$step-vertical-done-font-color: #555;
+$step-vertical-active-color: $active;

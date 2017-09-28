@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "//at.alicdn.com/t/font_2vesv3dkmi8jjor.css";
+@import "//at.alicdn.com/t/font_367972_ebexvy3fiyynwmi.css";
 .dxy-border {
   border: 1px solid #999; }
 
@@ -2083,6 +2083,165 @@ p {
     font-size: 14px;
     color: #555555;
     cursor: pointer; }
+
+.dxy-step-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .dxy-step-bar .dxy-step-item {
+    position: relative;
+    padding: 53px 10px 0 0;
+    min-width: 165px;
+    color: #b5b5b5;
+    font-size: 18px; }
+    .dxy-step-bar .dxy-step-item span {
+      position: absolute;
+      z-index: 1;
+      width: 41px;
+      height: 41px;
+      text-align: center;
+      line-height: 41px;
+      border: 2px solid #ddd;
+      border-radius: 100%;
+      background-color: #fff; }
+    .dxy-step-bar .dxy-step-item span {
+      top: 0;
+      left: 0; }
+    .dxy-step-bar .dxy-step-item:before {
+      content: " ";
+      position: absolute;
+      top: 22.5px;
+      left: 45px;
+      right: 0;
+      border-top: 2px solid #ddd; }
+    .dxy-step-bar .dxy-step-item:last-child:before {
+      content: none; }
+  .dxy-step-bar .dxy-step-done {
+    color: #2c7cec; }
+    .dxy-step-bar .dxy-step-done span {
+      color: #fff;
+      border-color: #2c7cec;
+      background-color: #2c7cec; }
+    .dxy-step-bar .dxy-step-done:after {
+      content: " ";
+      position: absolute;
+      top: 22.5px;
+      left: 0;
+      width: 50%;
+      padding-left: 22.5px;
+      border-top: 2px solid #2c7cec; }
+    .dxy-step-bar .dxy-step-done:last-child:after {
+      content: none; }
+  .dxy-step-bar .dxy-step-active {
+    color: #555; }
+    .dxy-step-bar .dxy-step-active span {
+      color: #fff;
+      background-color: #ddd; }
+
+.dxy-step-bar-wide {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 35px 0;
+  background-color: #eee; }
+  .dxy-step-bar-wide .dxy-step-item {
+    position: relative;
+    padding: 39px 5px 0 5px;
+    min-width: 0;
+    color: #b5b5b5;
+    font-size: 14px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center; }
+    .dxy-step-bar-wide .dxy-step-item span {
+      position: absolute;
+      z-index: 1;
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 24px;
+      border: 0 solid transparent;
+      border-radius: 100%;
+      background-color: #fff; }
+    .dxy-step-bar-wide .dxy-step-item:before {
+      content: " ";
+      position: absolute;
+      top: 11px;
+      left: 0;
+      right: 0;
+      border-top: 2px solid #fff; }
+  .dxy-step-bar-wide span {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .dxy-step-bar-wide .dxy-step-done {
+    color: #555; }
+    .dxy-step-bar-wide .dxy-step-done span {
+      color: #fff;
+      background-color: #2c7cec; }
+    .dxy-step-bar-wide .dxy-step-done:before {
+      border-color: #2c7cec; }
+  .dxy-step-bar-wide .dxy-step-active {
+    color: #2c7cec; }
+    .dxy-step-bar-wide .dxy-step-active span {
+      width: 28px;
+      height: 28px;
+      top: -2px;
+      color: #fff;
+      line-height: 28px;
+      background-color: #2c7cec; }
+    .dxy-step-bar-wide .dxy-step-active:before {
+      border-color: #2c7cec; }
+
+.dxy-step-bar-vertical .dxy-step-item {
+  position: relative;
+  padding: 0 0 20px 32px;
+  min-width: 165px;
+  color: #b5b5b5;
+  font-size: 14px;
+  line-height: 24px; }
+  .dxy-step-bar-vertical .dxy-step-item span {
+    position: absolute;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    border: 0 solid transparent;
+    border-radius: 100%;
+    background-color: #ddd; }
+  .dxy-step-bar-vertical .dxy-step-item:before {
+    content: " ";
+    position: absolute;
+    top: 26px;
+    left: 11.5px;
+    bottom: 2px;
+    border-left: 1px solid #ddd; }
+  .dxy-step-bar-vertical .dxy-step-item:last-child {
+    padding-bottom: 0; }
+
+.dxy-step-bar-vertical span {
+  top: 0;
+  left: 0;
+  color: #fff; }
+
+.dxy-step-bar-vertical .dxy-step-done {
+  color: #555; }
+  .dxy-step-bar-vertical .dxy-step-done span {
+    color: #fff;
+    background-color: #2c7cec; }
+  .dxy-step-bar-vertical .dxy-step-done:before {
+    border-color: #2c7cec; }
+
+.dxy-step-bar-vertical .dxy-step-active {
+  color: #2c7cec; }
+  .dxy-step-bar-vertical .dxy-step-active span {
+    color: #fff;
+    background-color: #2c7cec; }
 
 .dxy-tree-leaf .dxy-tree-expand-icon {
   display: none; }
