@@ -6,7 +6,7 @@
 	border-radius: $tag-radius;
 	@include tag_size($tag-padding, $tag-fontsize);
 	line-height: 1;
-	i {
+	.#{$prefix}-icon {
 		font-size: inherit;
 		line-height: inherit;
 		margin-left: $tag-close-ml;

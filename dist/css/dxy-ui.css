@@ -796,10 +796,10 @@ p {
   background-color: #f5f5f5;
   border: 1px solid #dddddd;
   border-radius: 3px;
-  padding: 4px 9px;
-  font-size: inherit;
+  padding: 3px 8px;
+  font-size: 14px;
   line-height: 1; }
-  .dxy-tag i {
+  .dxy-tag .dxy-icon {
     font-size: inherit;
     line-height: inherit;
     margin-left: 8px; }
@@ -1131,6 +1131,85 @@ p {
     color: #22c93d; }
   .dxy-progress-sm.dxy-progress-fail {
     color: #ff3939; }
+
+.dxy-search-select {
+  display: inline-block;
+  position: relative;
+  min-width: 120px;
+  width: 100%; }
+  .dxy-search-select .dxy-search-input {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1;
+    padding: 0 0 0 10px;
+    border: solid 1px #cccccc;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .dxy-search-select .dxy-search-input-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 0;
+    font-size: 17px;
+    text-align: center;
+    line-height: 40px; }
+
+.dxy-search-select .dxy-select-list, .dxy-search-select-multiple .dxy-select-list {
+  position: relative;
+  overflow-y: scroll;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+  border-radius: 4px;
+  border: solid 1px #cccccc; }
+  .dxy-search-select .dxy-select-list li, .dxy-search-select-multiple .dxy-select-list li {
+    padding-left: 13px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer; }
+    .dxy-search-select .dxy-select-list li:hover, .dxy-search-select-multiple .dxy-select-list li:hover {
+      background-color: #f5f5f5; }
+  .dxy-search-select .dxy-select-list li.dxy-active, .dxy-search-select-multiple .dxy-select-list li.dxy-active {
+    background-color: #3572fe;
+    color: #fff; }
+
+.dxy-search-select .dxy-select-list {
+  max-height: 210px; }
+
+.dxy-search-select-multiple .dxy-select-list {
+  max-height: 210px; }
+
+.dxy-search-select-multiple {
+  width: 100%; }
+  .dxy-search-select-multiple .dxy-search-input {
+    max-width: 100%;
+    font-size: 14px;
+    color: #333;
+    line-height: 1;
+    padding: 4px;
+    border: solid 1px #cccccc;
+    background-color: #ffffff;
+    border-radius: 4px;
+    display: inline-block; }
+  .dxy-search-select-multiple .dxy-cursor {
+    width: 100px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: transparent; }
+  .dxy-search-select-multiple .dxy-tags {
+    margin: 0 -3px -3px 0; }
+  .dxy-search-select-multiple .dxy-tag {
+    display: inline-block;
+    margin: 0 3px 3px 0;
+    font-size: 14px;
+    color: #555555;
+    cursor: pointer; }
 
 .dxy-tree-leaf .dxy-tree-expand-icon {
   display: none; }
