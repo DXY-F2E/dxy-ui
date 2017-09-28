@@ -1,0 +1,20 @@
+@mixin tip_arrow() {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #dddddd;
+	border-top-width: 0;
+	border-left-width: 0;
+	border-bottom-right-radius: 2px;
+	background-color: #fff;
+}
+
+@mixin pop_arrow() {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-bottom-right-radius: 2px;
+	background-color: #fff;
+}
