@@ -9,19 +9,29 @@
 				/*background: #000;*/
 			}
 			.box {
-				width: 400px;
+				text-align: center;
+				margin-bottom: 30px;
 				height: 300px;
 				border: 1px solid #ccc;
 				position: relative;
 			}
+			.red {
+				color: red;
+			}
 		</style>
 	</head>
 	<body>
-		<div class="dxy-loading">
-			<div class="dxy-loading-inner">
+		<h4>loading</h4>
+		<div class="box">
+			<div class="dxy-loading">
+				<div class="dxy-loading-inner">
 					<i class="dxy-loading-img dxy-icon dxy-icon-loading"></i>
+				</div>
 			</div>
+			<div>被loading盖掉的内容</div>
+			<div class="red">被loading盖掉的内容</div>
 		</div>
+		<h4>有描述文字的loading</h4>
 		<div class="box">
 			<div class="dxy-loading">
 				<div class="dxy-loading-inner">
@@ -29,6 +39,8 @@
 					<p class="dxy-loading-txt">拼命加载中</p>
 				</div>
 			</div>
+			<div>被loading盖掉的内容</div>
+			<div class="red">被loading盖掉的内容</div>
 		</div>
 	</body>
 </html>
