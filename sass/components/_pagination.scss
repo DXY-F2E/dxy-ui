@@ -1,0 +1,61 @@
+.#{$prefix}-pagination {
+	white-space: nowrap;
+	display: inline-block;
+	@extend .#{$prefix}-clear-fix;
+	.#{$prefix}-pagination-btn {
+		float: left;
+		display: inline-block;
+		box-sizing: $pagination-box-sizing;
+		height: $pagination-height;
+		line-height: $pagination-height;
+		background: $pagination-btn-bgcolor;
+		padding: 0 $pagination-content-pd;
+		text-decoration: none;
+		color: $pagination-font-color;
+		border: $pagination-border;
+		margin-right: $pagination-btn-mr;
+		&:last-child {
+			margin-right: 0;
+		}
+		.#{$prefix}-icon-arrow-left, .#{$prefix}-icon-arrow-right {
+			margin: 0 -4px 0;
+		}
+	}
+	.#{$prefix}-pagination-btn-arrow {
+		padding: 0 $pagination-content-pd - 4px;
+	}
+	.#{$prefix}-pagination-cur {
+		background: $pagination-cur-bgcolor;
+		border-color: $pagination-cur-bgcolor;
+		color: $pagination-cur-color;
+	}
+	.#{$prefix}-pagination-omit {
+		border: none;
+		padding: 0;
+		cursor: none;
+	}
+	.#{$prefix}-pagination-disabled, [disabled] {
+		color: $pagination-disabled-color;
+		cursor: not-allowed;
+	}
+	.#{$prefix}-pagination-jump {
+		@extend .#{$prefix}-clear-fix;
+		display: inline-block;
+	}
+	.#{$prefix}-pagination-input {
+		width: $pagination-input-width;
+		height: $pagination-height;
+		border: $pagination-border;
+		border-right: none;
+		padding: 0;
+		outline: none;
+		float: left;
+		text-align: center;
+	}
+	.#{$prefix}-pagination-btn-jump {
+		background: $pagination-cur-bgcolor;
+		border: $pagination-border;
+		border-color: $pagination-cur-bgcolor;
+		color: #ffffff;
+	}
+}
