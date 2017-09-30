@@ -1,0 +1,44 @@
+.#{$prefix}-confirm {
+	box-sizing: $confirm-box-sizing;
+	width: $confirm-width;
+	padding: $confirm-padding;
+	background-color: $confirm-bgcolor;
+	border-radius: $confirm-radius;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	.#{$prefix}-confirm-head {
+		line-height: 1;
+		position: relative;
+		padding-bottom: $confirm-hd-pb;
+		h4 {
+			line-height: 1;
+		}
+		.close {
+			position: absolute;
+			top: 0;
+			right: 0;
+			border: none;
+			padding: 0;
+			background: transparent;
+			cursor: pointer;
+			-webkit-tap-highlight-color: transparent;
+			outline: none;
+			i {
+				font-size: $confirm-close-size;
+				color: $confirm-close-color;
+			}
+		}
+	}
+	.#{$prefix}-confirm-body {
+		height: $confirm-body-h;
+		overflow: hidden;
+	}
+	.#{$prefix}-confirm-foot {
+		text-align: right;
+		button {
+			margin-left: 8px;
+		}
+	}
+}

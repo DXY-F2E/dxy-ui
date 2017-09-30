@@ -1,0 +1,59 @@
+.#{$prefix}-border{
+  border: $border-width solid $border-color;
+}
+@each $name in $direction {
+  .#{$prefix}-border-#{$name} {
+    border-#{$name}: $border-width solid $border-color;
+  }
+}
+
+.#{$prefix}-border-radius {
+  border-radius: $border-radius;
+}
+@each $name in $direction {
+  .#{$prefix}-border-#{$name}-radius {
+    @if $name == top{
+      border-top-right-radius: $border-radius;
+      border-top-left-radius: $border-radius;
+    }@else if $name == right{
+      border-bottom-right-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }@else if $name == bottom {
+      border-bottom-right-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }@else if $name == left{
+      border-bottom-left-radius: $border-radius;
+      border-top-left-radius: $border-radius;
+    }
+  }
+}
+
+.#{$prefix}-padding{
+  padding: $padding;
+}
+@each $name in $direction {
+  .#{$prefix}-padding-#{$name} {
+    padding-#{$name}: $padding;
+  }
+}
+.#{$prefix}-padding-top-bottom{
+  padding: $padding 0;
+}
+.#{$prefix}-padding-left-right{
+  padding: 0 $padding;
+}
+
+.#{$prefix}-margin{
+  margin: $margin;
+}
+@each $name in $direction {
+  .#{$prefix}-margin-#{$name} {
+    margin-#{$name}: $padding;
+  }
+}
+.#{$prefix}-margin-top-bottom{
+  margin: $margin 0;
+}
+.#{$prefix}-margin-left-right{
+  margin: 0 $margin;
+}

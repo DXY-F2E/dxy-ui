@@ -1,0 +1,26 @@
+.#{$prefix}-alert {
+	@include alert_size($alert-width, $alert-height, $alert-padding);
+	border-radius: $alert-radius;
+	overflow: hidden;
+	.dxy-icon {
+		margin-right: 10px;
+	}
+	.close {
+		margin-right: 0;
+		float: right;
+		padding: 0;
+		background: transparent;
+		border: none;
+		color: inherit;
+		margin-top: $alert-close-mt;
+		outline: none;
+		cursor: pointer;
+	}
+}
+
+@each $name,$color in $alert-situations {
+  .#{$prefix}-alert-#{$name} {
+  		@extend .#{$prefix}-alert;
+    @include alert_color($color);
+  }
+}

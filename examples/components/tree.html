@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tree demo</title>
+  <link rel="stylesheet" href="../../dist/css/dxy-ui.min.css">
+  <style>
+    body,html {
+      margin: 0;
+    }
+    #j_main {
+      box-sizing: border-box;
+      margin: 50px auto;
+      text-align: center;
+    }
+    .tree-demo {
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      width: 300px;
+    }
+    h4 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="j_main">
+    <div class="tree-demo">
+      <h4>选项树</h4>
+      <div class="dxy-tree">
+        <div class="dxy-tree-node dxy-tree-expanded">
+          <div class="dxy-tree-content">
+            <span class="dxy-tree-expand-icon"></span>
+            <div>
+              <label class="dxy-checkbox">
+                <input type="checkbox" checked>
+                <span>parent-1</span>
+              </label>
+            </div>
+          </div>
+          <div class="dxy-tree-children">
+            <div class="dxy-tree-node" disabled>
+              <div class="dxy-tree-content">
+                <span class="dxy-tree-expand-icon"></span>
+                <div>
+                  <label class="dxy-checkbox">
+                    <input type="checkbox" checked disabled>
+                    <span>child-1</span>
+                  </label>
+                </div>
+              </div>
+              <div class="dxy-tree-children">
+                  <div class="dxy-tree-node dxy-tree-leaf" disabled>
+                    <div class="dxy-tree-content">
+                      <span class="dxy-tree-expand-icon"></span>
+                      <div>
+                        <label class="dxy-checkbox">
+                          <input type="checkbox" checked disabled>
+                          <span>child-1-1</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dxy-tree-node dxy-tree-leaf">
+                    <div class="dxy-tree-content">
+                      <span class="dxy-tree-expand-icon"></span>
+                      <div>
+                        <label class="dxy-checkbox">
+                          <input type="checkbox" checked>
+                          <span>child-1-2</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="dxy-tree-node dxy-tree-leaf">
+              <div class="dxy-tree-content">
+                <span class="dxy-tree-expand-icon"></span>
+                <div>
+                  <label class="dxy-checkbox">
+                    <input type="checkbox">
+                    <span>child-2</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tree-demo">
+      <h4>文字展示</h4>
+      <div class="dxy-tree">
+        <div class="dxy-tree-node dxy-tree-expanded">
+          <div class="dxy-tree-content">
+            <span class="dxy-tree-expand-icon"></span>
+            <div>parent-1</div>
+          </div>
+          <div class="dxy-tree-children">
+            <div class="dxy-tree-node">
+              <div class="dxy-tree-content">
+                <span class="dxy-tree-expand-icon"></span>
+                <div>child-1</div>
+              </div>
+              <div class="dxy-tree-children">
+                  <div class="dxy-tree-node dxy-tree-leaf">
+                    <div class="dxy-tree-content">
+                      <span class="dxy-tree-expand-icon"></span>
+                      <div>child-1-1</div>
+                    </div>
+                  </div>
+                  <div class="dxy-tree-node dxy-tree-leaf">
+                    <div class="dxy-tree-content">
+                      <span class="dxy-tree-expand-icon"></span>
+                      <div>child-1-2</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="dxy-tree-node dxy-tree-leaf">
+              <div class="dxy-tree-content">
+                <span class="dxy-tree-expand-icon"></span>
+                <div>child-2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  const events = {}
+  events['dxy-tree-content'] = function (thisNode) {
+    const treeNode = thisNode.parentNode
+    treeNode.classList.toggle('dxy-tree-expanded')
+  }
+  document.querySelectorAll('.dxy-tree').forEach(treeNode => {
+    treeNode.onclick = function (event) {
+      event.path.forEach(node => {
+        Object.keys(events).forEach(event => {
+          if (node.className && node.className.indexOf(event) > -1) {
+            events[event](node)
+          }
+        })
+      })
+    }
+  })
+</script>
+</html>

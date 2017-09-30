@@ -1,0 +1,34 @@
+.#{$prefix}-modal {
+	box-sizing: $modal-box-sizing;
+	width: $modal-width;
+	padding: $modal-padding;
+	background-color: $modal-bgcolor;
+	box-shadow: $modal-shadow;
+	border-radius: $modal-radius;
+	.#{$prefix}-modal-head {
+		line-height: 1;
+		position: relative;
+		padding-bottom: $confirm-hd-pb;
+		h4 {
+			line-height: 1;
+		}
+		.close {
+			position: absolute;
+			top: 0;
+			right: 0;
+			border: none;
+			padding: 0;
+			background: transparent;
+			cursor: pointer;
+			-webkit-tap-highlight-color: transparent;
+			outline: none;
+			i {
+				font-size: $confirm-close-size;
+				color: $confirm-close-color;
+			}
+		}
+	}
+	.#{$prefix}-modal-body {
+		
+	}
+}

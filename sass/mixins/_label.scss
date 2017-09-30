@@ -1,0 +1,16 @@
+@mixin tag_size($padding, $font-size) {
+  padding: $padding;
+  font-size: $font-size;
+}
+
+@mixin tag_colorful($color) {
+	color: $color;
+	border-color: rgba($color, .5);
+	background-color: rgba($color, .05);
+}
+
+@mixin badge_size($padding, $font-size, $border-radius) {
+	padding: $padding;
+	font-size: $font-size;
+	border-radius: $border-radius;
+}

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,13 +6,23 @@
 </head>
 <body>
   <div id="j_main">
-    <button type="button" class="btn">（默认样式）Default</button>
-    <button type="button" class="btn btn-primary">（首选项）Primary</button>
-    <button type="button" class="btn btn-success">（成功）Success</button>
-    <button type="button" class="btn btn-info">（一般信息）Info</button>
-    <button type="button" class="btn btn-warning">（警告）Warning</button>
-    <button type="button" class="btn btn-danger">（危险）Danger</button>
-    <button type="button" class="btn btn-link">（链接）Link</button>
+    <div>
+        <button type="button" class="dxy-btn">默认样式 Default</button>
+        <button type="button" disabled class="dxy-btn">禁用默认按钮</button>
+        <button type="button" class="dxy-btn dxy-btn-lg">大按钮</button>
+        <button type="button" class="dxy-btn dxy-btn-sm">小按钮</button>
+        <button type="button" class="dxy-btn dxy-btn-ssm">超小按钮</button>
+    </div>
+    <div>
+        <button type="button" class="dxy-btn dxy-btn-primary">主要按钮 Primary</button>
+        <button type="button" class="dxy-btn dxy-btn-success">成功 Success</button>
+        <button type="button" class="dxy-btn dxy-btn-info">一般信息 Info</button>
+        <button type="button" class="dxy-btn dxy-btn-warning">警告 Warning</button>
+        <button type="button" class="dxy-btn dxy-btn-danger">危险 Danger</button>
+        <button type="button" disabled class="dxy-btn dxy-btn-danger">禁用按钮</button>
+    </div>
+    <button type="button" class="dxy-btn dxy-btn-link">链接 Link</button>
+    <button type="button" disabled class="dxy-btn dxy-btn-link">禁用链接 Link</button>
   </div>
 </body>
 </html>

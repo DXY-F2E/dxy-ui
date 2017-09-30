@@ -1,0 +1,62 @@
+$tree: '#{$prefix}-tree';
+
+.#{$tree} {
+
+  &-leaf {
+    .#{$tree}-expand-icon {
+      display: none;
+    }
+  }
+  &-expanded {
+    & > div > .#{$tree}-expand-icon:before {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    & > .#{$tree}-children {
+      display: block;
+    }
+  }
+
+  &-children {
+    display: none;
+  }
+  &-expand-icon {
+    cursor: pointer;
+    position: absolute;
+    width: $tree-indent;
+    height: 100%;
+    left: -$tree-indent;
+    top: 0;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      transform-origin: center center;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-top: $tree-expand-icon-width / 2 solid $black;
+      border-left: $tree-expand-icon-width / 2 solid transparent;
+      border-right: $tree-expand-icon-width / 2 solid transparent;
+    }
+  }
+  &-content {
+    padding: $tree-content-pd 0;
+    position: relative;
+  }
+  &-node {
+    position: relative;
+    padding-left: $tree-indent;
+    line-height: 1;
+
+    &[disabled] {
+
+      & > .#{$tree}-content {
+        color: $tree-disabled-color;
+      }
+    }
+  }
+}

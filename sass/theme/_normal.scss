@@ -1,10 +1,11 @@
+// prefix
+$prefix: 'dxy';
+
+
+/////////////
 // colors
-$black: #000;
-$grey-dark: #333;
-$grey: #666;
-$grey-light: #999;
-$grey-lighter: #ccc;
-$grey-lightest: #eee;
+//
+
 $white: #fff;
 $red: red;
 $blue: blue;
@@ -15,44 +16,538 @@ $pink: pink;
 $purple: purple;
 $brown: brown;
 $teal: teal;
+$black: #000;
 
-// font
-$font-color: $grey-dark;
+// grey
+$grey-1: #222;
+$grey-2: #333;
+$grey-3: #555;
+$grey-4: #777;
+$grey-5: #999;
+$grey-6: #b5b5b5;
+$grey-7: #ddd;
+$grey-8: #eee;
 
-$font-size-lg: 16px;
-$font-size: 14px;
-$font-size-sm: 12px;
+$greys: (
+  1: $grey-1,
+  2: $grey-2,
+  3: $grey-3,
+  4: $grey-4,
+  5: $grey-5,
+  6: $grey-6,
+  7: $grey-7,
+  8: $grey-8,
+);
+
+// situation colors
+$active: #2c7cec;
+$success: #22c93d;
+$warning: #ff9110;
+$info: #84c2fd;
+$danger: #ff3939;
+
+
+////////////
+//  font
+//
+
+$font-color: $grey-1;
+$font-color-tip: $grey-4;
 
 $font-family: 'Helvetica Neue', 'Helvetica,Arial', 'Sans-serif';
 
-$h1-font-size: 30px;
-$h2-font-size: 28px;
-$h3-font-size: 26px;
-$h4-font-size: 24px;
-$h5-font-size: 22px;
-$h6-font-size: 20px;
+$font-size-sm: 12px;
+$font-size: 14px;
+$font-size-lg: 16px;
 
+// h1~h6 size
+$font-size-h: (
+  h1: 36px,
+  h2: 30px,
+  h3: 24px,
+  h4: 18px,
+  h5: 14px,
+  h6: 12px
+);
+$h-font-family: '微软雅黑', 'Arial，Helvetica', 'Sans-serif';
+$h-font-weight: normal;
+
+// line-height
+$line-height-xs: 1;
+$line-height-sm: 1.2;
 $line-height: 1.5;
 $line-height-lg: (4 / 3);
 
-// btn
+
+//////////////
+// 其他的不作过多定义，以元素、组件区分引用，避免与其他样式耦合
+//
+
+
+///////////////
+// list
+//
+$list-style-size: 5px;
+$list-style-color: #333;
+$list-li-padding: 13px;
+$list-li-spacing: 20px;
+$list-dt-width: calc(40% - 13px);
+$list-dd-width: 60%;
+$list-dt-padding: 13px;
+
+
+/////////////
+// button
+//
+
+// font-size
 $btn-font-size: 14px;
-$btn-lg-font-size: 16px;
+$btn-lg-font-size: 20px;
 $btn-sm-font-size: 12px;
+$btn-xs-font-size: 12px;
 $btn-font-weight: normal;
 
-$btn-pd: 5px 10px;
-$btn-lg-pd: 10px 15px;
-$btn-sm-pd: 2px 5px;
+// padding
+$btn-pd: 10px 18px;
+$btn-lg-pd: 12px 25px;
+$btn-sm-pd: 8px 12px;
+$btn-xs-pd: 4px 10px;
+$select-pd: 5px 0;
+$select-option-pd: 3px 9px;
 
+// border
 $btn-border-width: 1px;
 $btn-radius: 4px;
+$btn-bd-color: #cccccc;
+$btn-situation-bd-color: #dddddd;
+$btn-disabled-bd-color: $grey-7;
 
-$btn-default-color: #fff;
-$btn-default-bd-color: #ddd;
-$btn-primary-color: #337ab7;
-$btn-success-color: #5cb85c;
-$btn-info-color: #5bc0de;
-$btn-warning-color: #f0ad4e;
-$btn-danger-color: #d9534f;
-$btn-link-color: #337ab7;
+
+// background-colors
+$btn-situations: (
+  primary:$active,
+  success:$success,
+  info:$info,
+  warning:$warning,
+  danger:$danger
+);
+
+// color
+$btn-color: #333333;
+$btn-link-color: #3572fe;
+$btn-disabled-color: #aaaaaa;
+$btn-situation-color: #fefefe;
+$btn-situation-disabled-color: #bcbcbc;
+$btn-link-disabled-color: #c6c6c6;
+
+// background-color
+$btn-bg-color: #fff;
+$btn-disabled-bg-color: #eeeeee;
+
+// darken
+$btn-hover-darken: 8%;
+$btn-focus-darken: 16%;
+$btn-link-hover-darken: 10%;
+$btn-link-focus-darken: 15%;
+
+
+/////////////
+// extra
+//
+
+//border padding margin
+$direction: top right bottom left;
+$border-radius: 4px;
+$border-width: 1px;
+$border-color: #999;
+$padding: 10px;
+$margin: 20px;
+
+$highlight: #feefcc;
+
+//font situation and bg situation
+$font-situation: (
+  active:$active,
+  success:$success,
+  info:$info,
+  warning:$warning,
+  danger:$danger
+);
+$bg-situation:(
+  active:$active,
+  success:$success,
+  info:$info,
+  warning:$warning,
+  danger:$danger
+);
+
+
+/////////////
+// form
+//
+
+$form-bd-width: 1px; // 表单元素边框宽度
+$form-bd-color: #ccc; // 表单元素边框颜色
+$form-bd-radius: 4px; // 表单元素圆角
+$form-focus-bd-color: #0bb9fa; // 表单元素focus边框颜色
+$form-readonly-color: #999; // 表单元素只读字体颜色
+$form-readonly-bg-color: #f5f5f5; // 表单元素只读背景色
+$form-disabled-color: #999; // 表单元素禁用字体颜色
+$form-disabled-bg-color: #f5f5f5; // 表单元素禁用背景色
+
+// form group
+$form-group-x-margin: 20px;
+$form-group-y-margin: 20px;
+
+// label
+$label-width: 80px;
+$label-right: 10px;
+$label-line-height: 34px;
+$label-required-color: #f33237;
+
+// input text
+$input-pd: 5px 9px;
+$input-bd-width: $form-bd-width;
+$input-bd-color: $form-bd-color;
+$input-bd-radius: $form-bd-radius;
+$input-line-height: 22px;
+
+// textarea
+$textarea-height: auto;
+$textarea-pd: 9px;
+$textarea-bd-width: $form-bd-width;
+$textarea-bd-color: $form-bd-color;
+$textarea-bd-radius: $form-bd-radius;
+
+// radio & checkbox
+$check-bg-color: $white; // 背景色
+$check-bd-color: #b5b5b5; // 边框色
+$check-checked-color: #24c54a; // 选中的颜色
+$check-disabled-bg-color: #fff; // 禁用背景色
+$check-disabled-bd-color: #ddd; // 禁用边框色
+$check-disabled-checked-color: #ddd; // 禁用&选中颜色
+$check-x-spacing: 18px; // 同一行中选项间距
+
+$radio-width: 16px;
+$radio-height: 16px;
+$checkbox-width: 16px;
+$checkbox-height: 16px;
+
+$radio-right: 5px;
+$checkbox-right: 5px;
+
+$radio-bd-width: 1px;
+$checkbox-bd-width: 1px;
+
+$checkbox-radius: 3px;
+
+$radio-checked-width: 8px;
+$radio-checked-height: 8px;
+
+/////////////
+// table
+//
+
+$table-border-color: #ddd;
+$table-td-pd: 8px;
+$table-hover-bg-color: #f9f9f9;
+$table-striped-bg-color: #f9f9f9;
+
+
+/////////////
+// grid
+//
+$grid-breakpoints: (
+				xs: 0,
+				sm: 576px,
+				md: 768px,
+				lg: 992px,
+				xl: 1200px
+) !default;
+
+$container-max-widths: (
+				sm: 540px,
+				md: 720px,
+				lg: 960px,
+				xl: 1140px
+) !default;
+
+$grid-columns: 12 !default; // 栅格系统列数
+$grid-gutter-width: 30px !default;
+
+
+////////////////////// components /////////////////////////
+
+//tag
+$tag-radius: 3px;
+$tag-bgcolor-normal: #f5f5f5;
+$tag-bdcolor-normal: #dddddd;
+$tag-padding: 3px 8px;
+$tag-fontsize: 14px;
+$tag-close-ml: 8px;
+$tag-color-normal: #555;
+$tag-colors: (
+	blue: #0bb9fa,
+	green: #24c54a,
+	orange: #f8af00,
+	red: #f33237
+);
+
+//badge
+$badge-color: #fff;
+$badge-bgcolor: #f13737;
+$badge-padding: 2px 6px;
+$badge-fontsize: 12px;
+$badge-radius: 9px;
+
+/////////////
+// navigation
+//
+
+$nav-font-size: 14px;
+$nav-font-color: #333;
+$nav-item-pd: 0 15px;
+$nav-line-height: 34px;
+$nav-item-active: #3572fe;
+$nav-item-hover: #f5f5f5;
+
+$nav-tab-bd-width: 1px;
+$nav-tab-bd-color: #ccc;
+$nav-tab-active-bd-width: 2px;
+$nav-tab-bd-radius: 4px;
+$nav-tab-font-color: $nav-font-color;
+
+$nav-crumb-pd: 0 20px;
+$nav-crumb-item-pd: 0 8px;
+$nav-crumb-line-height: 40px;
+$nav-crumb-bg-color: #f6f6f6;
+
+$nav-menu-bg-color: #fff;
+$nav-menu-bd-radius: 4px;
+$nav-menu-bd-width: 1px;
+$nav-menu-bd-color: #ccc;
+$nav-menu-active: #0bb9fa;
+$nav-menu-line-height: 30px;
+
+
+/////////////
+// progress
+//
+
+$progress-height: 22px;
+$progress-height-sm: 7px;
+
+$progress-bar-color: $grey-7;
+$progress-done-color: #3572fe;
+$progress-success-color: $success;
+$progress-fail-color: $danger;
+
+
+/////////////
+// tree
+//
+
+$tree-expand-icon-width: 8px; // 只能偶数
+$tree-indent: 24px;
+$tree-content-pd: 15px;
+$tree-disabled-color: #ccc;
+
+
+/////////////
+// button-group
+//
+
+$button-group-radius : $btn-radius;
+
+
+/////////////
+// input-group
+//
+
+$input-group-height: 34px;
+$input-group-font-size: 14px;
+$input-group-color: #333;
+$input-group-addon-color: #bbb;
+$input-group-addon-bg: #f5f5f5;
+$input-group-addon-bd: 1px solid #ccc;
+$input-group-btn-color: #fefefe;;
+$input-group-border-radius: $border-radius;
+$input-group-padding:0 12px;
+$input-group-padding-right: 26px;
+
+
+////////////
+// dialog & popup
+//
+
+//alert
+$alert-width: 348px;
+$alert-height: 32px;
+$alert-padding: 0 9px;
+$alert-radius: 3px;
+$alert-close-mt: 8px;
+
+$alert-situations: (
+	info: #0bb9fa,
+	success: #33bb3f,
+	warning: #f19f00,
+	error: #f76569
+);
+
+//tip
+$tip-padding: 5px 8px;
+$tip-border: 1px solid #dddddd;
+$tip-radius: 3px;
+//pop
+$pop-padding: 12px;
+$pop-border: none;
+$pop-radius: 3px;
+$pop-shadow: 0 0 14px 2px #dddddd;
+$pop-head-spacing: 16px;
+//confirm
+$confirm-bgcolor: #fff;
+$confirm-box-sizing: border-box;
+$confirm-width: 420px;
+$confirm-padding: 20px;
+$confirm-radius: 3px;
+$confirm-hd-pb: 32px;
+$confirm-body-h: 70px;
+$confirm-close-size: 20px;
+$confirm-close-color: #bcbcbc;
+
+$modal-bgcolor: #fff;
+$modal-box-sizing: border-box;
+$modal-width: 694px;
+$modal-padding: 20px;
+$modal-radius: 3px;
+$modal-shadow: 0 0 14px 2px #dddddd;
+$modal-hd-pb: 32px;
+
+
+/////////////
+// dropdown select
+//
+
+$select-min-width: 120px;
+$select-input-font-size: 14px;
+$select-input-color: #333;
+$select-input-height: 40px;
+$select-input-padding: 0 0 0 10px;
+$select-input-border: solid 1px #cccccc;
+$select-input-border-radius:  4px;
+$select-icon-width:  40px;
+$select-icon-font-size:  17px;
+
+$select-li-padding-left: 13px;
+$select-li-height: 30px;
+$select-li-hover-bg-color: #f5f5f5;
+$select-li-active-bg-color: #3572fe;
+$select-li-active-color: #fff;
+
+$select-list-margin: 5px 0 0 0;
+$select-list-border-radius: 4px;
+$select-list-border: solid 1px #cccccc;
+$select-list-height: $select-li-height * 7;
+
+// 多选样式
+$select-list-multiple-height: $select-li-height * 7;
+$select-input-multiple-font-size: 14px;
+$select-input-multiple-color: #333;
+$select-input-multiple-padding: 4px;
+$select-input-multiple-border: solid 1px #cccccc;
+$select-input-multiple-bg-color: #ffffff;
+$select-input-multiple-border-radius: 4px;
+
+$select-cursor-border-width: 100px;
+
+$select-tag-padding: 2px 4px 2px 2px;
+$select-tag-bg-color: #f5f5f5;
+$select-tag-border: 1px solid #dddddd;
+$select-tag-border-radius:4px;
+$select-tag-margin:0 3px 3px 0;
+$select-tag-wrap-margin:0 -3px -3px 0;
+$select-tag-font-size:14px;
+$select-tag-font-color:#555555;
+
+
+////////////
+// step bar
+//
+
+$step-color: #b5b5b5;
+$step-bg-color: #ddd;
+$step-done-color: $active;
+
+$step-content-size: 165px;
+$step-item-size: 45px;
+$step-line-width: 2px;
+$step-border-width: 2px;
+$step-text-top: 8px;
+$step-text-right: 10px;
+$step-font-size: 18px;
+$step-active-color: #555;
+
+$step-wide-bg-color: #eee;
+$step-wide-font-size: 14px;
+$step-wide-pd: 35px 0;
+$step-wide-item-size: 24px;
+$step-wide-active-size: 28px;
+$step-wide-line-width: 2px;
+$step-wide-text-top: 15px;
+$step-wide-text-left: 5px;
+$step-wide-text-right: 5px;
+$step-wide-done-font-color: #555;
+$step-wide-active-color: $active;
+
+$step-vertical-item-size: 24px;
+$step-vertical-font-size: 14px;
+$step-vertical-line-width: 1px;
+$step-vertical-text-left: 8px;
+$step-vertical-text-bottom: 20px;
+$step-vertical-done-font-color: #555;
+$step-vertical-active-color: $active;
+
+
+/////////////
+// pagination
+//
+$pagination-box-sizing: content-box;
+$pagination-height: 24px;
+$pagination-border: 1px solid #dddddd;
+$pagination-content-pd: 8px;
+$pagination-font-color: #555555;
+$pagination-btn-bgcolor: #ffffff;
+$pagination-btn-mr: 5px;
+$pagination-cur-bgcolor: #3572fe;
+$pagination-cur-color: #ffffff;
+$pagination-disabled-color: #e0e0e0;
+$pagination-input-width: 30px;
+$pagination-jump-height: 26px;
+
+
+/////////////
+// loading
+//
+
+$loading-bgcolor: #fff;
+$loading-bg-opcity: 0.7;
+$loading-color: #3a76fe;
+$loading-size: 62px;
+$loading-txt-mg: 15px;
+
+/////////////
+// go-top
+//
+
+$go-top-round-size: 70px;
+$go-top-width: 80px;
+$go-top-height: 40px;
+$go-top-icon-size: 40px;
+$go-top-square-icon-size: 26px;
+$go-top-square-radius: 3px;
+$go-top-bg-grey: #dddddd;
+$go-top-bg-white: #ffffff;
+$go-top-bg-hover: #3572fe;
+$go-top-shadow: 0 1px 4px 2px #eeeeee;
+$go-top-color: #fff;
+$go-top-color-grey: #b5b5b5;

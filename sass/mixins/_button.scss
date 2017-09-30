@@ -1,25 +1,31 @@
-@mixin btn-hover($bg-color) {
+@mixin btn_hover($bg-color) {
   &:hover {
-    background-color: darken($bg-color, 10%);
+    background-color: darken($bg-color, $btn-hover-darken);
   }
 }
 
-@mixin btn-active($bg-color) {
+@mixin btn_active($bg-color) {
   &:active,
   &:focus {
-    background-color: darken($bg-color, 15%);
+    background-color: darken($bg-color, $btn-focus-darken);
   }
 }
 
-@mixin btn-size($padding, $font-size) {
+@mixin btn_size($padding, $font-size) {
   padding: $padding;
   font-size: $font-size;
 }
 
-@mixin btn-situation($color) {
-  color: #fff;
+@mixin btn_situation($color) {
+  color: $btn-situation-color;
   border-color: $color;
   background-color: $color;
-  @include btn-hover($color);
-  @include btn-active($color);
+  @include btn_hover($color);
+  @include btn_active($color);
+  &[disabled]{
+    color: $btn-situation-disabled-color;
+    background-color: $btn-disabled-bg-color;
+    border-color: $btn-situation-bd-color;
+    cursor: not-allowed;
+  }
 }

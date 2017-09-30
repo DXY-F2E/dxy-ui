@@ -1,0 +1,51 @@
+.#{$prefix}-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.#{$prefix}-ul-dot {
+    li {
+        padding-left: $list-li-padding;
+        position: relative;
+        @include list-dot-style($list-style-size,$list-style-color);
+    }
+}
+.#{$prefix}-ul-circle {
+    li {
+        padding-left: $list-li-padding;
+        position: relative;
+        @include list-circle-style($list-style-size,$list-style-color);
+    }
+}
+.#{$prefix}-ul-horizon {
+    font-size: 0;
+    li {
+        font-size: $font-size;
+        display: inline-block;
+        padding-right: $list-li-spacing;
+    }
+}
+.#{$prefix}-dl {
+    dt {
+        font-weight: bold;
+    }
+    dd {
+        
+    }
+}
+.#{$prefix}-dl-horizon {
+    font-size: 0;
+    dt {
+        font-weight: bold;
+        font-size: $font-size;
+        display: inline-block;
+        width: $list-dt-width;
+        padding-right: $list-dt-padding;
+        text-align: right;
+    }
+    dd {
+        font-size: $font-size;
+        display: inline-block;
+        width: $list-dd-width;
+    }
+}

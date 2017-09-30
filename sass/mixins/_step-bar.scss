@@ -1,0 +1,20 @@
+@mixin step_bar($padding, $min-width, $item-size, $font-color, $font-size, $bdr-width, $bdr-color, $bg-color) {
+  position: relative;
+  padding: $padding;
+  min-width: $min-width;
+  color: $font-color;
+  font-size: $font-size;
+
+  span {
+    position: absolute;
+    z-index: 1;
+    $size: $item-size - $bdr-width * 2;
+    width: $size;
+    height: $size;
+    text-align: center;
+    line-height: $size;
+    border: $bdr-width solid $bdr-color;
+    border-radius: 100%;
+    background-color: $bg-color;
+  }
+}

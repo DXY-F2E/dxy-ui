@@ -1,0 +1,45 @@
+.#{$prefix}-highlight{
+  background-color: $highlight
+}
+
+.#{$prefix}-text-through{
+  text-decoration: line-through;
+}
+.#{$prefix}-text-underline{
+  text-decoration: underline;
+}
+
+.#{$prefix}-text-left{
+  text-align: left;
+}
+.#{$prefix}-text-center{
+  text-align: center;
+}
+.#{$prefix}-text-right{
+  text-align: right;
+}
+.#{$prefix}-text-justify {
+  text-align: justify;
+  //&:after{
+  //  content: "";
+  //  display:inline-block;
+  //  width: 100%;
+  //}
+}
+
+.#{$prefix}-lowercase{
+  text-transform: lowercase;
+}
+.#{$prefix}-uppercase{
+  text-transform: uppercase;
+}
+.#{$prefix}-capitalize{
+  text-transform: capitalize;
+}
+
+.#{$prefix}-overflow-ellipsis{
+  text-overflow: ellipsis;
+  white-space:nowrap;
+  overflow: hidden;
+}
+

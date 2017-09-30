@@ -1,0 +1,134 @@
+// base
+
+.#{$prefix}-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: $nav-font-color;
+  font-size: $nav-font-size;
+  transition: all .3s;
+  @extend .#{$prefix}-clear-fix;
+
+  li {
+    float: left;
+    > a {
+      display: block;
+      height: 100%;
+      padding: $nav-item-pd;
+      color: inherit;
+      line-height: $nav-line-height;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &.#{$prefix}-active {
+      color: $nav-item-active;
+    }
+    &:hover {
+      background-color: $nav-item-hover;
+    }
+  }
+}
+
+
+// tab
+
+.#{$prefix}-nav-tab {
+  border-bottom: $nav-tab-bd-width solid $nav-tab-bd-color;
+
+  li {
+    margin-bottom: -$nav-tab-bd-width;
+    overflow: hidden;
+    height: $nav-line-height - $nav-tab-active-bd-width;
+    line-height: $nav-line-height - $nav-tab-active-bd-width;
+    border-bottom: $nav-tab-active-bd-width solid transparent;
+
+    a {
+      line-height: $nav-line-height;
+    }
+
+    &.#{$prefix}-active {
+      color: $nav-tab-font-color;
+      border-color: $nav-item-active;
+    }
+    &:hover:not(.#{$prefix}-active) {
+      border-bottom-width: $nav-tab-active-bd-width - $nav-tab-bd-width;
+    }
+  }
+}
+
+
+// pill
+.#{$prefix}-nav-pill {
+  li {
+    border-radius: $nav-tab-bd-radius;
+
+    &.#{$prefix}-active {
+      color: #fff;
+      background-color: $nav-item-active;
+    }
+  }
+}
+
+.#{$prefix}-nav-pill-vertical {
+  @extend .#{$prefix}-nav-pill;
+
+  li {
+    float: none;
+  }
+}
+
+
+// crumb
+.#{$prefix}-nav-crumb {
+  padding: $nav-crumb-pd;
+  background-color: $nav-crumb-bg-color;
+
+  li {
+    line-height: $nav-crumb-line-height;
+
+    &.#{$prefix}-active {
+      color: $nav-item-active;
+    }
+    &:hover {
+      color: $nav-item-active;
+      background-color: transparent;
+    }
+    &:nth-child(n+2):before {
+      content: "/";
+      display: inline-block;
+      padding: $nav-crumb-item-pd;
+    }
+    a {
+      display: inline-block;
+      padding: 0;
+    }
+  }
+}
+
+
+// menu
+.#{$prefix}-nav-menu {
+  max-width: 400px;
+  overflow: hidden;
+  border: $nav-menu-bd-width solid $nav-menu-bd-color;
+  border-radius: $nav-menu-bd-radius;
+  background-color: $nav-menu-bg-color;
+  box-shadow: 2.5px 4.3px 20px 0 $nav-menu-bd-color;
+
+  li {
+    float: none;
+    line-height: $nav-menu-line-height;
+
+    &:hover {
+      background-color: $nav-item-hover;
+    }
+    &.#{$prefix}-active {
+      color: #fff;
+      background-color: $nav-menu-active;
+    }
+  }
+}
