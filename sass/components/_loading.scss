@@ -23,13 +23,11 @@
 		line-height: 1;
 		width: $loading-size;
 		height: $loading-size;
+		font-size: $loading-size;
 		animation: loading 1s linear infinite both;
-		i {
-			font-size: $loading-size;
-		}
 	}
 	.#{$prefix}-loading-txt {
-		margin-top: 15px;
+		margin-top: $loading-txt-mg;
 	}
 }
 
