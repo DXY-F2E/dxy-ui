@@ -1,6 +1,3 @@
-/**
- * Created by liww on 17/6/19.
- */
 (function() {
 
   var docs = {

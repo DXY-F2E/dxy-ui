@@ -1,7 +1,3 @@
-/**
- * Created by liww on 17/6/15.
- */
-
 // 引入组件
 var gulp = require('gulp');
 var sass = require('gulp-sass');

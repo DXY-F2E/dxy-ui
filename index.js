@@ -1,6 +1,3 @@
-/**
- * Created by liww on 17/6/19.
- */
 const http = require('http');
 const url = require('url');
 const fs = require('fs');
