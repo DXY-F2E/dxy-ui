@@ -486,6 +486,10 @@
   .dxy-verify-danger .help-inline {
     color: #ff3939; }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 .dxy-container {
   width: 100%;
   margin-left: auto;
