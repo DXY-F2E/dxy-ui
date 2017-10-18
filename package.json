@@ -3,17 +3,20 @@
   "version": "0.0.1",
   "devDependencies": {
     "autoprefixer": "7.1.1",
+    "browser-sync": "2.18.13",
+    "ejs": "2.5.7",
     "gulp": "3.9.1",
     "gulp-cssmin": "0.2.0",
     "gulp-postcss": "7.0.0",
     "gulp-rename": "1.2.2",
     "gulp-sass": "3.1.0",
-    "gulp-sass-glob": "1.0.8"
+    "gulp-sass-glob": "1.0.8",
+    "nodemon": "1.12.1"
   },
   "scripts": {
+		"start": "nodemon -e js,html preview.js",
     "build": "gulp",
     "watch": "gulp watch",
-    "dev": "node preview.js",
     "doc": "node index.js"
   }
 }
