@@ -19,7 +19,37 @@ const allData = {
 				"title":"弹出模态框",
 				"desc":"",
 				"body":"",
-			}
+			},
+			{
+				"name":"go-top",
+				"title":"回到顶部按钮",
+				"desc":"",
+				"body":"",
+			},
+			{
+				"name":"input-group",
+				"title":"输入框组",
+				"desc":"",
+				"body":"",
+			},
+			{
+				"name":"label",
+				"title":"标签和徽章",
+				"desc":"",
+				"body":"",
+			},
+			{
+				"name":"label",
+				"title":"标签和徽章",
+				"desc":"",
+				"body":"",
+			},
+			{
+				"name":"loading",
+				"title":"加载",
+				"desc":"",
+				"body":"",
+			},
 		]
 	},
 	"elements":{

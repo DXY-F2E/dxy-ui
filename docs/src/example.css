@@ -3,3 +3,4 @@
 .example_area-components_confirm .bs-example { padding:20px; height:500px; background: rgba(0,0,0,.5);	}
 .bs-example .dxy-confirm { position:relative; }
 :not(pre) > code[class*="language-"], pre[class*="language-"] { background: none; }
+.bs-example .dxy-go-top { display: inline-block; margin-right: 20px;}
