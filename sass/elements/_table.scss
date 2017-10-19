@@ -38,9 +38,9 @@
   }
 
   &.#{$prefix}-striped {
-    td, th {
-      border: 1px solid $table-border-color;
-    }
+    //td, th {
+    //  border: 1px solid $table-border-color;
+    //}
     tbody tr:nth-child(2n - 1) {
       background-color: $table-striped-bg-color;
     }

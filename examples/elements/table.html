@@ -1,259 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>DXY-UI DEMO</title>
-  <link rel="stylesheet" href="../../dist/css/dxy-ui.css">
-  <style type="text/css">
-    #j_main {
-      text-align: center;
-    }
-    .table-content {
-      border: 1px solid #ddd;
-      width: 40%;
-      padding: 20px;
-      margin: 20px;
-      display: inline-block;
-    }
-    .table-title {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-  </style>
-  <script type="text/javascript">
-    window.dxyTableStyles = [{
-      title: '默认样式',
-      classes: []
-    }, {
-      title: '鼠标悬停',
-      classes: ['dxy-hover'],
-    }, {
-      title: '全边框',
-      classes: ['dxy-bordered'],
-    }, {
-      title: '条纹样式',
-      classes: ['dxy-striped'],
-    }, {
-      title: '无边框',
-      classes: ['dxy-unbordered']
-    }];
-  </script>
-</head>
-<body>
-  <div id="j_main">
-    <div class="table-content">
-      <h6 class="table-title">默认样式 </h6>
-      <table class="dxy-table ">
-        <thead>
-          <tr>
-            <th>表格头</th>
-            <th>表格头</th>
-            <th>表格头</th>
-            <th>表格头</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-          </tr>
-          <tr>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-          </tr>
-          <tr>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="table-content">
-      <h6 class="table-title">鼠标悬停 dxy-hover</h6>
-      <table class="dxy-table dxy-hover">
-        <thead>
-          <tr>
-            <th>表格头</th>
-            <th>表格头</th>
-            <th>表格头</th>
-            <th>表格头</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-          </tr>
-          <tr>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-          </tr>
-          <tr>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="table-content">
-      <h6 class="table-title">全边框 dxy-bordered</h6>
-      <table class="dxy-table dxy-bordered">
-        <thead>
-          <tr>
-            <th>表格头</th>
-            <th>表格头</th>
-            <th>表格头</th>
-            <th>表格头</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-          </tr>
-          <tr>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-          </tr>
-          <tr>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="table-content">
-      <h6 class="table-title">条纹样式 dxy-striped</h6>
-      <table class="dxy-table dxy-striped">
-        <thead>
-          <tr>
-            <th>表格头</th>
-            <th>表格头</th>
-            <th>表格头</th>
-            <th>表格头</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-          </tr>
-          <tr>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-          </tr>
-          <tr>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="table-content">
-      <h6 class="table-title">无边框 dxy-unbordered</h6>
-      <table class="dxy-table dxy-unbordered">
-        <thead>
-          <tr>
-            <th>表格头</th>
-            <th>表格头</th>
-            <th>表格头</th>
-            <th>表格头</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-          </tr>
-          <tr>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-          </tr>
-          <tr>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-            <td>表格列</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</body>
-<script type="text/template" id="dxy-table">
-<div class="table-content">
-  <h6 class="table-title">${table-title}</h6>
-  <table class="dxy-table ${dxy-table-classes}">
-    <thead>
-      <tr>
-        <th>表格头</th>
-        <th>表格头</th>
-        <th>表格头</th>
-        <th>表格头</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>表格列</td>
-        <td>表格列</td>
-        <td>表格列</td>
-        <td>表格列</td>
-      </tr>
-      <tr>
-        <td>表格列</td>
-        <td>表格列</td>
-        <td>表格列</td>
-        <td>表格列</td>
-      </tr>
-      <tr>
-        <td>表格列</td>
-        <td>表格列</td>
-        <td>表格列</td>
-        <td>表格列</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</script>
-<script type="text/javascript">
-  const main = document.querySelector('#j_main');
-  const table = document.querySelector('#dxy-table');
-  let tables = '';
-  // 为了作为示例方便，直接手写纯写HTML
-  // window.dxyTableStyles.forEach(style => {
-  //   const classes = style.classes.join(' ');
-  //   tables += table.innerHTML
-  //                  .replace('${dxy-table-classes}', classes)
-  //                  .replace('${table-title}', style.title + ' ' + classes)
-  // })
-  // main.innerHTML = tables;
-</script>
-</html>
+<h4>基本表格</h4>
+<table class="dxy-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>姓名</th>
+      <th>性别</th>
+      <th>兴趣</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>马克</td>
+      <td>mark</td>
+      <td>漫画</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>武冬至</td>
+      <td>dong</td>
+      <td>coding</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>夏夏</td>
+      <td>luna</td>
+      <td>算法</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>鼠标悬停</h4>
+<table class="dxy-table dxy-hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>姓名</th>
+      <th>性别</th>
+      <th>兴趣</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>马克</td>
+      <td>mark</td>
+      <td>漫画</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>武冬至</td>
+      <td>dong</td>
+      <td>coding</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>夏夏</td>
+      <td>luna</td>
+      <td>算法</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>条纹状</h4>
+<table class="dxy-table dxy-striped">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>姓名</th>
+    <th>性别</th>
+    <th>兴趣</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>马克</td>
+    <td>mark</td>
+    <td>漫画</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>武冬至</td>
+    <td>dong</td>
+    <td>coding</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>夏夏</td>
+    <td>luna</td>
+    <td>算法</td>
+  </tr>
+  </tbody>
+</table>
+
+<h4>全边框</h4>
+<table class="dxy-table dxy-bordered">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>姓名</th>
+      <th>性别</th>
+      <th>兴趣</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>马克</td>
+      <td>mark</td>
+      <td>漫画</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>武冬至</td>
+      <td>dong</td>
+      <td>coding</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>夏夏</td>
+      <td>luna</td>
+      <td>算法</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>无边框</h4>
+<table class="dxy-table dxy-unbordered">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>姓名</th>
+      <th>性别</th>
+      <th>兴趣</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>马克</td>
+      <td>mark</td>
+      <td>漫画</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>武冬至</td>
+      <td>dong</td>
+      <td>coding</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>夏夏</td>
+      <td>luna</td>
+      <td>算法</td>
+    </tr>
+  </tbody>
+</table>

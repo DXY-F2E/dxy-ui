@@ -56,10 +56,40 @@ const allData = {
 		"name":"基本元素",
 		"data":[
 			{
+				"name": "text",
+				"title": "文本",
+				"desc": "",
+				"body": ""
+			},
+			{
+				"name": "list",
+				"title": "列表",
+				"desc": "",
+				"body": ""
+			},
+      {
+        "name": "grid",
+        "title": "栅格系统",
+        "desc": "",
+        "body": ""
+      },
+			{
 				"name":"button",
 				"title":"按钮",
 				"desc":"",
 				"body":"",
+			},
+      {
+        "name": "table",
+        "title": "表格",
+        "desc": "",
+        "body": ""
+      },
+			{
+				"name": "form",
+				"title": "表单",
+				"desc": "",
+				"body": ""
 			}
 		]
 	},

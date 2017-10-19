@@ -1,224 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Form demo</title>
-  <link rel="stylesheet" href="../../dist/css/dxy-ui.min.css">
-</head>
-<body>
-  <div id="j_main">
-    <h4>行内表单</h4>
-    <form class="dxy-form-inline">
-      <div class="dxy-form-group">
-        <label class="dxy-label">姓名</label>
-        <div class="dxy-form-content">
-          <input type="text" class="dxy-input" placeholder="姓名">
-        </div>
-      </div>
-      <div class="dxy-form-group">
-        <label class="dxy-label">性别</label>
-        <div class="dxy-form-content">
-          <input type="text" class="dxy-input">
-        </div>
-      </div>
-    </form>
-
-    <h4>多行表单</h4>
-    <form class="dxy-form">
-      <div class="dxy-form-group">
-        <label class="dxy-label">姓名</label>
-        <div class="dxy-form-content">
-          <input type="text" class="dxy-input" placeholder="姓名">
-        </div>
-      </div>
-      <div class="dxy-form-group">
-        <label class="dxy-label">性别</label>
-        <div class="dxy-form-content">
-          <select>
-            <option value="male">男</option>
-            <option value="female">女</option>
-            <option value="other">其他</option>
-          </select>
-        </div>
-      </div>
-      <div class="dxy-form-group">
-        <label class="dxy-label">个人简介</label>
-        <div class="dxy-form-content">
-          <textarea class="dxy-textarea" rows="3"></textarea>
-        </div>
-      </div>
-    </form>
-
-    <h4>标签</h4>
-    <form class="dxy-form">
-      <div class="dxy-form-group">
-        <label class="dxy-label">行内标签</label>
-        <div class="dxy-form-content justify">
-          <input type="text" class="dxy-input" placeholder="内容">
-        </div>
-      </div>
-      <div class="dxy-form-group">
-        <label class="dxy-label-block">单行标签</label>
-        <input type="text" class="dxy-input justify" placeholder="内容">
-      </div>
-    </form>
-
-    <h4>输入框</h4>
-    <form class="dxy-form">
-      <div class="dxy-form-group">
-        <input class="dxy-input" placeholder="auto">
-      </div>
-      <div class="dxy-form-group">
-        <input class="dxy-input justify" placeholder="justify">
-      </div>
-      <div class="dxy-form-group">
-        <input class="dxy-input" placeholder="readonly" readonly>
-      </div>
-      <div class="dxy-form-group">
-        <input class="dxy-input" placeholder="disabled" disabled>
-      </div>
-    </form>
-
-    <h4>文本框</h4>
-    <form class="dxy-form">
-      <div class="dxy-form-group">
-        <textarea class="dxy-textarea" placeholder="auto"></textarea>
-      </div>
-      <div class="dxy-form-group">
-        <textarea class="dxy-textarea justify" placeholder="justify"></textarea>
-      </div>
-      <div class="dxy-form-group">
-        <textarea class="dxy-textarea" placeholder="readonly" readonly></textarea>
-      </div>
-      <div class="dxy-form-group">
-        <textarea class="dxy-textarea" placeholder="disabled" disabled></textarea>
-      </div>
-    </form>
-
-    <h4>单选框</h4>
-    <form>
-      <label class="dxy-radio">
-        <input type="radio">
-        <span>单选框</span>
-      </label>
-      <label class="dxy-radio">
-        <input type="radio" checked>
-        <span>选中</span>
-      </label>
-      <label class="dxy-radio">
-        <input type="radio" disabled>
-        <span>禁用</span>
-      </label>
-      <label class="dxy-radio">
-        <input type="radio" checked disabled>
-        <span>选中&禁用</span>
-      </label>
-      <label class="dxy-radio-block">
-        <input type="radio">
-        <span>块级单选框</span>
-      </label>
-    </form>
-
-    <h4>复选框</h4>
-    <form>
-      <label class="dxy-checkbox">
-        <input type="checkbox">
-        <span>复选框</span>
-      </label>
-      <label class="dxy-checkbox">
-        <input type="checkbox" checked>
-        <span>选中</span>
-      </label>
-      <label class="dxy-checkbox">
-        <input type="checkbox" disabled>
-        <span>禁用</span>
-      </label>
-      <label class="dxy-checkbox">
-        <input type="checkbox" checked disabled>
-        <span>选中&禁用</span>
-      </label>
-      <label class="dxy-checkbox-block">
-        <input type="checkbox">
-        <span>块级单选框</span>
-      </label>
-    </form>
-
-    <h4>单选下拉框</h4>
-    <form class="dxy-form">
-      <div class="dxy-form-group">
-        <select class="dxy-select">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-        </select>
-      </div>
-
-      <div class="dxy-form-group">
-        <select class="dxy-select justify">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-        </select>
-      </div>
-    </form>
-
-    <h4>多选下拉框</h4>
-    <form class="dxy-form">
-      <div class="dxy-form-group">
-        <select class="dxy-select" multiple>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-        </select>
-      </div>
-
-      <div class="dxy-form-group">
-        <select class="dxy-select justify" multiple>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-        </select>
-      </div>
-    </form>
-
-    <h4>校验状态</h4>
-    <form class="dxy-form">
-      <div class="dxy-form-group">
-        <label class="dxy-label">姓名</label>
-        <div class="dxy-form-content dxy-verify dxy-verify-danger">
-          <input type="text" id="dui-input" class="help-target dxy-input">
-          <span class="help-inline">请输入姓名</span>
-        </div>
-      </div>
-
-      <div class="dxy-form-group">
-        <label class="dxy-label">下拉框</label>
-        <div class="dxy-form-content dxy-verify dxy-verify-danger">
-          <select class="dxy-select help-target" multiple>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-          </select>
-          <span class="help-inline">错误校验</span>
-        </div>
-      </div>
-    </form>
-
+<h4>行内表单</h4>
+<form class="dxy-form-inline">
+  <div class="dxy-form-group">
+    <label class="dxy-label">姓名</label>
+    <div class="dxy-form-content">
+      <input type="text" class="dxy-input" placeholder="姓名">
+    </div>
   </div>
-</body>
-</html>
+  <div class="dxy-form-group">
+    <label class="dxy-label">性别</label>
+    <div class="dxy-form-content">
+      <input type="text" class="dxy-input">
+    </div>
+  </div>
+</form>
+
+<h4>多行表单</h4>
+<form class="dxy-form">
+  <div class="dxy-form-group">
+    <label class="dxy-label">姓名</label>
+    <div class="dxy-form-content">
+      <input type="text" class="dxy-input" placeholder="姓名">
+    </div>
+  </div>
+  <div class="dxy-form-group">
+    <label class="dxy-label">性别</label>
+    <div class="dxy-form-content">
+      <select class="dxy-select">
+        <option value="">请选择</option>
+        <option value="male">男</option>
+        <option value="female">女</option>
+        <option value="other">其他</option>
+      </select>
+    </div>
+  </div>
+  <div class="dxy-form-group">
+    <label class="dxy-label">个人简介</label>
+    <div class="dxy-form-content">
+      <textarea class="dxy-textarea" rows="3"></textarea>
+    </div>
+  </div>
+</form>
+
+<h4>标签</h4>
+<div>
+  <label class="dxy-label">行内标签</label>
+  <div class="dxy-form-content justify">
+    <input type="text" class="dxy-input" placeholder="内容">
+  </div>
+</div>
+<div>
+  <label class="dxy-label-block">单行标签</label>
+  <input type="text" class="dxy-input justify" placeholder="内容">
+</div>
+
+<h4>输入框</h4>
+<input class="dxy-input" placeholder="auto">
+<input class="dxy-input justify" placeholder="justify">
+<input class="dxy-input" placeholder="readonly" readonly>
+<input class="dxy-input" placeholder="disabled" disabled>
+
+<h4>文本框</h4>
+<textarea class="dxy-textarea" placeholder="auto"></textarea>
+<textarea class="dxy-textarea justify" placeholder="justify"></textarea>
+<textarea class="dxy-textarea" placeholder="readonly" readonly></textarea>
+<textarea class="dxy-textarea" placeholder="disabled" disabled></textarea>
+
+<h4>单选框</h4>
+<form>
+  <label class="dxy-radio">
+    <input type="radio">
+    <span>单选框</span>
+  </label>
+  <label class="dxy-radio">
+    <input type="radio" checked>
+    <span>选中</span>
+  </label>
+  <label class="dxy-radio">
+    <input type="radio" disabled>
+    <span>禁用</span>
+  </label>
+  <label class="dxy-radio">
+    <input type="radio" checked disabled>
+    <span>选中&禁用</span>
+  </label>
+  <label class="dxy-radio-block">
+    <input type="radio">
+    <span>块级单选框</span>
+  </label>
+  <label class="dxy-radio-block">
+    <input type="radio">
+    <span>块级单选框</span>
+  </label>
+</form>
+
+<h4>复选框</h4>
+<form>
+  <label class="dxy-checkbox">
+    <input type="checkbox">
+    <span>复选框</span>
+  </label>
+  <label class="dxy-checkbox">
+    <input type="checkbox" checked>
+    <span>选中</span>
+  </label>
+  <label class="dxy-checkbox">
+    <input type="checkbox" disabled>
+    <span>禁用</span>
+  </label>
+  <label class="dxy-checkbox">
+    <input type="checkbox" checked disabled>
+    <span>选中&禁用</span>
+  </label>
+  <label class="dxy-checkbox-block">
+    <input type="checkbox">
+    <span>块级复选框</span>
+  </label>
+  <label class="dxy-checkbox-block">
+    <input type="checkbox">
+    <span>块级复选框</span>
+  </label>
+</form>
+
+<h4>单选下拉框</h4>
+<select class="dxy-select">
+  <option>选项1</option>
+  <option>选项2</option>
+  <option>选项3</option>
+  <option>选项4</option>
+  <option>选项5</option>
+  <option>选项6</option>
+</select>
+
+<select class="dxy-select justify">
+  <option>选项1</option>
+  <option>选项2</option>
+  <option>选项3</option>
+  <option>选项4</option>
+  <option>选项5</option>
+  <option>选项6</option>
+</select>
+
+<h4>多选下拉框</h4>
+<select class="dxy-select" multiple>
+  <option>选项1</option>
+  <option>选项2</option>
+  <option>选项3</option>
+  <option>选项4</option>
+  <option>选项5</option>
+  <option>选项6</option>
+</select>
+
+<select class="dxy-select justify" multiple>
+  <option>选项1</option>
+  <option>选项2</option>
+  <option>选项3</option>
+  <option>选项4</option>
+  <option>选项5</option>
+  <option>选项6</option>
+</select>
+
+<h4>校验状态</h4>
+<form class="dxy-form">
+  <div class="dxy-form-group">
+    <label class="dxy-label">姓名</label>
+    <div class="dxy-form-content dxy-verify dxy-verify-danger">
+      <input type="text" id="dui-input" class="help-target dxy-input">
+      <span class="help-inline">请输入姓名</span>
+    </div>
+  </div>
+  <div class="dxy-form-group">
+    <label class="dxy-label">下拉框</label>
+    <div class="dxy-form-content dxy-verify dxy-verify-danger">
+      <select class="dxy-select help-target" multiple>
+        <option>选项1</option>
+        <option>选项2</option>
+        <option>选项3</option>
+        <option>选项4</option>
+        <option>选项5</option>
+        <option>选项6</option>
+      </select>
+      <span class="help-inline">错误校验</span>
+    </div>
+  </div>
+</form>

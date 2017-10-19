@@ -686,8 +686,6 @@ template {
 
 .dxy-input {
   line-height: 22px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 5px 9px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -711,8 +709,6 @@ template {
   display: block;
   resize: vertical;
   height: auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 9px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -798,7 +794,7 @@ template {
     .dxy-checkbox input[type=checkbox]:checked + span:after, .dxy-checkbox-block input[type=checkbox]:checked + span:after {
       content: " ";
       position: absolute;
-      top: -1px;
+      top: -2px;
       bottom: 0;
       left: 8px;
       margin: auto 0 auto -4px;
@@ -806,8 +802,8 @@ template {
       height: 4.5px;
       border-left: 2px solid #fff;
       border-bottom: 2px solid #fff;
-      -webkit-transform: rotate(-50deg);
-              transform: rotate(-50deg); }
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
     .dxy-checkbox input[type=checkbox][disabled] + span:before, .dxy-checkbox-block input[type=checkbox][disabled] + span:before {
       border-color: #ddd; }
     .dxy-checkbox input[type=checkbox][disabled]:checked + span:before, .dxy-checkbox-block input[type=checkbox][disabled]:checked + span:before {
@@ -1766,8 +1762,6 @@ template {
   .dxy-table.dxy-unbordered td, .dxy-table.dxy-unbordered th {
     border: none; }
   .dxy-table.dxy-bordered td, .dxy-table.dxy-bordered th {
-    border: 1px solid #ddd; }
-  .dxy-table.dxy-striped td, .dxy-table.dxy-striped th {
     border: 1px solid #ddd; }
   .dxy-table.dxy-striped tbody tr:nth-child(2n - 1) {
     background-color: #f9f9f9; }

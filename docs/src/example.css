@@ -1,6 +1,41 @@
-.container {max-width:1200px; margin:0 auto;}
-.bs-example > div, .bs-example > button { margin-bottom:10px; margin-right:10px; }
-.example_area-components_confirm .bs-example { padding:20px; height:500px; background: rgba(0,0,0,.5);	}
-.bs-example .dxy-confirm { position:relative; }
-:not(pre) > code[class*="language-"], pre[class*="language-"] { background: none; }
-.bs-example .dxy-go-top { display: inline-block; margin-right: 20px;}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bs-example > div, .bs-example > h4, .bs-example > button, .bs-example > ul, .bs-example > dl, .bs-example > table, .bs-example > form, .bs-example > input, .bs-example > textarea, .bs-example > select {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.example_area-components_confirm .bs-example {
+    padding: 20px;
+    height: 500px;
+    background: rgba(0, 0, 0, .5);
+}
+
+.bs-example .dxy-confirm {
+    position: relative;
+}
+
+.bs-example .dxy-row {
+    margin-bottom: 10px;
+}
+
+.bs-example .dxy-row > div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 1.5;
+    background-color: #f4fbff;
+    border: 1px solid #89d9fd;
+    font-size: 14px;
+}
+
+.bs-example .dxy-go-top {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+    background: none;
+}
