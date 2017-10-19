@@ -2,3 +2,4 @@
 .bs-example > div, .bs-example > button { margin-bottom:10px; margin-right:10px; }
 .example_area-components_confirm .bs-example { padding:20px; height:500px; background: rgba(0,0,0,.5);	}
 .bs-example .dxy-confirm { position:relative; }
+:not(pre) > code[class*="language-"], pre[class*="language-"] { background: none; }

@@ -5,8 +5,9 @@
   <title>DXY-UI DEMO INDEX</title>
   <link rel="stylesheet" href="/dist/css/dxy-ui.min.css">
   <link rel="stylesheet" href="/docs/src/docs.css">
-  <link rel="stylesheet" href="/docs/src/example.css">
   <link rel="stylesheet" href="/docs/src/code.css">
+	<link rel="stylesheet" href="/docs/src/prism.css">
+	<link rel="stylesheet" href="/docs/src/example.css">
 </head>
 <body>
 <div class="container">
@@ -27,11 +28,7 @@
 				<%-data[sortName].data[itP].body%>
 			</div>
 			<figure class="highlight">
-				<pre>
-					<code class="language-html">
-						<%=data[sortName].data[itP].body%>
-					</code>
-				</pre>
+				<pre><code class="language-html"><%=data[sortName].data[itP].body%></code></pre>
 			</figure>
 		</div>
 		<% } %>
@@ -62,5 +59,6 @@
 </div>
 
 </div>
+<script src="/docs/src/prism.js"></script>
 </body>
 </html>
