@@ -5,7 +5,7 @@ const allData = {
 			{
 				"name":"alert",
 				"title":"警告框",
-				"desc":"简介",
+				"desc":"",
 				"body":"",
 			},
 			{
@@ -16,7 +16,7 @@ const allData = {
 			},
 			{
 				"name":"confirm",
-				"title":"弹出模态框",
+				"title":"弹出确认框",
 				"desc":"",
 				"body":"",
 			},
@@ -39,14 +39,56 @@ const allData = {
 				"body":"",
 			},
 			{
-				"name":"label",
-				"title":"标签和徽章",
+				"name":"loading",
+				"title":"加载",
 				"desc":"",
 				"body":"",
 			},
 			{
-				"name":"loading",
-				"title":"加载",
+				"name":"modal",
+				"title":"模态框",
+				"desc":"",
+				"body":"",
+			},
+			{
+				"name":"navigation",
+				"title":"导航栏",
+				"desc":"",
+				"body":"",
+			},
+			{
+				"name":"pagination",
+				"title":"翻页",
+				"desc":"",
+				"body":"",
+			},
+			{
+				"name":"popover",
+				"title":"气泡提示",
+				"desc":"",
+				"body":"",
+			},
+			{
+				"name":"progress",
+				"title":"进度条",
+				"desc":"",
+				"body":"",
+			},
+			{
+				"name":"search-select",
+				"title":"下拉选择框",
+				"desc":"",
+				"body":"",
+			},
+			{
+				"name":"step-bar",
+				"title":"步骤条",
+				"desc":"",
+				"body":"",
+			},
+			{
+				"name":"tree",
+				"title":"选项树",
 				"desc":"",
 				"body":"",
 			},

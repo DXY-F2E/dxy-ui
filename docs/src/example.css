@@ -39,3 +39,15 @@
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
     background: none;
 }
+
+.bs-example .loading-box {
+	text-align: center;
+	margin-bottom: 30px;
+	height: 300px;
+	border: 1px solid #ccc;
+	position: relative;
+}
+
+.bs-example .loading-box > .red {
+	color: red;
+}
