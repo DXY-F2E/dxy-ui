@@ -136,11 +136,11 @@ const allData = {
 		]
 	},
 	"extra":{
-		"name":"",
+		"name":"辅助和修饰",
 		"data":[
 			{
 				"name":"appearance",
-				"title":"",
+				"title":"外观",
 				"desc":"",
 				"body":"",
 			}

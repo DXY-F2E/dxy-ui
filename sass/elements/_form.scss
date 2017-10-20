@@ -10,9 +10,10 @@
 
 .#{$prefix}-form-inline .#{$prefix}-form-group {
   display: inline-block;
+  margin-right: $form-group-x-margin;
 
-  &:nth-child(n + 2) {
-    margin-left: $form-group-x-margin;
+  &:last-child {
+    margin-left: 0;
   }
 }
 

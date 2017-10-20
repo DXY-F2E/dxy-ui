@@ -59,6 +59,6 @@
   @include btn_size($btn-sm-pd, $btn-sm-font-size);
 }
 
-.#{$prefix}-btn-ssm {
+.#{$prefix}-btn-xs {
   @include btn_size($btn-xs-pd, $btn-xs-font-size);
 }

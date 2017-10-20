@@ -51,3 +51,8 @@
 .bs-example .loading-box > .red {
 	color: red;
 }
+
+.bs-example [class*=dxy-margin], .bs-example > [class*=dxy-padding] {
+    background-color: #f4fbff;
+    border: 1px solid #89d9fd;
+}

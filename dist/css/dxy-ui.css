@@ -648,7 +648,7 @@ template {
   padding: 8px 12px;
   font-size: 12px; }
 
-.dxy-btn-ssm {
+.dxy-btn-xs {
   padding: 4px 10px;
   font-size: 12px; }
 
@@ -658,9 +658,10 @@ template {
     margin-top: 20px; }
 
 .dxy-form-inline .dxy-form-group {
-  display: inline-block; }
-  .dxy-form-inline .dxy-form-group:nth-child(n + 2) {
-    margin-left: 20px; }
+  display: inline-block;
+  margin-right: 20px; }
+  .dxy-form-inline .dxy-form-group:last-child {
+    margin-left: 0; }
 
 .dxy-label {
   float: left;
@@ -2606,10 +2607,10 @@ p {
     .dxy-step-bar .dxy-step-item span {
       position: absolute;
       z-index: 1;
-      width: 41px;
-      height: 41px;
+      width: 45px;
+      height: 45px;
       text-align: center;
-      line-height: 41px;
+      line-height: 45px;
       border: 2px solid #ddd;
       border-radius: 100%;
       background-color: #fff; }

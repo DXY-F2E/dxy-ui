@@ -8,11 +8,10 @@
   span {
     position: absolute;
     z-index: 1;
-    $size: $item-size - $bdr-width * 2;
-    width: $size;
-    height: $size;
+    width: $item-size;
+    height: $item-size;
     text-align: center;
-    line-height: $size;
+    line-height: $item-size;
     border: $bdr-width solid $bdr-color;
     border-radius: 100%;
     background-color: $bg-color;
