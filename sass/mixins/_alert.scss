@@ -1,5 +1,6 @@
 @mixin alert_size($width, $height, $padding) {
 	width: $width;
+	max-width: 100%;
 	height: $height;
 	line-height: $height;
 	padding: $padding;

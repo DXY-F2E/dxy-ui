@@ -1860,6 +1860,7 @@ p {
 
 .dxy-alert, .dxy-alert-info, .dxy-alert-success, .dxy-alert-warning, .dxy-alert-error {
   width: 348px;
+  max-width: 100%;
   height: 32px;
   line-height: 32px;
   padding: 0 9px;
@@ -2170,6 +2171,7 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 694px;
+  max-width: 100%;
   padding: 20px;
   background-color: #fff;
   -webkit-box-shadow: 0 0 14px 2px #dddddd;

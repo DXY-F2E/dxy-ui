@@ -95,21 +95,3 @@
     </div>
   </div>
 </div>
-<script>
-  const events = {}
-  events['dxy-tree-content'] = function (thisNode) {
-    const treeNode = thisNode.parentNode
-    treeNode.classList.toggle('dxy-tree-expanded')
-  }
-  document.querySelectorAll('.dxy-tree').forEach(treeNode => {
-    treeNode.onclick = function (event) {
-      event.path.forEach(node => {
-        Object.keys(events).forEach(event => {
-          if (node.className && node.className.indexOf(event) > -1) {
-            events[event](node)
-          }
-        })
-      })
-    }
-  })
-</script>
