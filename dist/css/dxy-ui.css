@@ -1737,7 +1737,10 @@ template {
     width: 120px;
     padding-right: 13px;
     text-align: right;
-    vertical-align: top; }
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .dxy-dl-horizon dd {
     font-size: 14px;
     display: inline-block;

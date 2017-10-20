@@ -43,6 +43,9 @@
         padding-right: $list-dt-padding;
         text-align: right;
         vertical-align: top;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     dd {
         font-size: $font-size;
