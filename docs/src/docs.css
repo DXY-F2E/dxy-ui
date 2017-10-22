@@ -600,7 +600,7 @@ h4 code {
 .bs-docs-sidebar .nav .nav > .active > a,
 .bs-docs-sidebar .nav .nav > .active:hover > a,
 .bs-docs-sidebar .nav .nav > .active:focus > a {
-  padding-left: 28px;
+  /*padding-left: 28px;*/
   font-weight: 500;
 }
 
@@ -1633,4 +1633,22 @@ h1[id] {
   a[href]:after {
     content: "" !important;
   }
+}
+
+.highlight {
+  overflow: hidden;
+}
+
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+  background: none;
+}
+
+.bs-docs-sidebar .dxy-go-top {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+}
+
+.nav .dxy-tree-content {
+  padding: 0;
 }

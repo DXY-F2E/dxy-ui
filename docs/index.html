@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <title>DXY-UI DEMO INDEX</title>
   <link rel="stylesheet" href="/dist/css/dxy-ui.min.css">
+	<link rel="stylesheet" href="/docs/src/prism.css">
   <link rel="stylesheet" href="/docs/src/docs.css">
   <link rel="stylesheet" href="/docs/src/code.css">
-	<link rel="stylesheet" href="/docs/src/prism.css">
 	<link rel="stylesheet" href="/docs/src/example.css">
 </head>
 <body>
@@ -14,51 +14,49 @@
 
 <div class="dxy-row">
 	<div class="dxy-col-9">
-		<% for(sortName in data){ %>
-		<h2 id="<%=sortName%>"><%=data[sortName].name%></h2>
-		<% for(itP in data[sortName].data){ %>
-		<div class="bs-docs-section example_area-<%=data[sortName].data[itP].path.replace(".","_")%>">
-			<h3 id="<%=data[sortName].data[itP].path.replace(".","_")%>" class="page-header">
-				<%=data[sortName].data[itP].title%>
+		<% data.forEach(function(item) { %>
+		<h2 id="<%=item.name%>"><%=item.title%></h2>
+		<% for(itP in item.data){ %>
+		<div class="bs-docs-section example_area-<%=item.data[itP].path.replace(".","_")%>">
+			<h3 id="<%=item.data[itP].path.replace(/\./g,'_')%>" class="page-header">
+				<%=item.data[itP].title%>
 			</h3>
-			<p>
-				<%=data[sortName].data[itP].desc%>
-			</p>
+			<p><%=item.data[itP].desc%></p>
 			<div class="bs-example">
-				<%-data[sortName].data[itP].body%>
+				<%-item.data[itP].body%>
 			</div>
 			<figure class="highlight">
-				<pre><code class="language-html"><%=data[sortName].data[itP].body%></code></pre>
+				<pre><code class="language-html"><%=item.data[itP].body%></code></pre>
 			</figure>
+
+			<% for (subName in item.data[itP].data) { var subItem = item.data[itP].data[subName]; %>
+			<h4 id="<%=subItem.path.replace(/\./g,'_')%>"><%= subItem.title %></h4>
+			<p><%= subItem.desc %></p>
+			<div class="bs-example">
+				<%- subItem.body %>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html"><%=subItem.body%></code></pre>
+			</figure>
+			<% } %>
 		</div>
 		<% } %>
-		<% } %>
+		<% }) %>
 	</div>
 	
-	<div class="dxy-col-3">
-		<nav class="bs-docs-sidebar affix">
-			<ul class="nav bs-docs-sidenav">
-				<% for(sortName in data){ %>
-				<li>
-					<a href="#<%=sortName%>"><%=data[sortName].name%></a>
-					<ul class="nav">
-						<% for(itIndex in data[sortName].data){ %>
-						<li><a href="#<%=data[sortName].data[itIndex].path.replace(".","_")%>"><%=data[sortName].data[itIndex].title%></a></li>
-						<% } %>
-						
-					</ul>
-				</li>
-				<% } %>
-			</ul>
-			<a class="back-to-top" href="#top">
-				返回顶部
-			</a>
-			
+	<div class="dxy-col-3 dxy-tree">
+		<nav class="bs-docs-sidebar affix" id="j_nav">
+			<%- nav %>
+			<a class="dxy-go-top dxy-go-top-square-white" href="#top"><i class="dxy-icon dxy-icon-arrow-up"></i></a>
+			<!--<a class="back-to-top" href="#top">-->
+				<!--返回顶部-->
+			<!--</a>-->
 		</nav>
 	</div>
 </div>
 
 </div>
 <script src="/docs/src/prism.js"></script>
+<script src="/docs/src/index.js"></script>
 </body>
 </html>

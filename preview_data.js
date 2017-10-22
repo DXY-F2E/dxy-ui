@@ -1,6 +1,59 @@
-const allData = {
-	"components":{
-		"name":"组件",
+const allData = [
+  {
+    "name": "elements",
+    "title":"基本元素",
+    "expanded": true,
+    "data":[
+      {
+        "name": "text",
+        "title": "文本",
+        "desc": "",
+        "body": ""
+      },
+      {
+        "name": "list",
+        "title": "列表",
+        "desc": "",
+        "body": ""
+      },
+      {
+        "name": "grid",
+        "title": "栅格系统",
+        "desc": "",
+        "body": ""
+      },
+      {
+        "name":"button",
+        "title":"按钮",
+        "desc":"",
+        "body":"",
+      },
+      {
+        "name": "table",
+        "title": "表格",
+        "desc": "",
+        "body": ""
+      },
+      {
+        "name": "form",
+        "title": "表单",
+        "desc": "",
+        "body": "",
+        "data": [
+          {
+            "name": "label",
+            "title": "label",
+            "desc": "",
+            "body": ""
+          }
+        ]
+      }
+    ]
+  },
+	{
+		"name": "components",
+		"title":"组件",
+		"expanded": true,
 		"data":[
 			{
 				"name":"button-group",
@@ -94,49 +147,10 @@ const allData = {
 			},
 		]
 	},
-	"elements":{
-		"name":"基本元素",
-		"data":[
-			{
-				"name": "text",
-				"title": "文本",
-				"desc": "",
-				"body": ""
-			},
-			{
-				"name": "list",
-				"title": "列表",
-				"desc": "",
-				"body": ""
-			},
-      {
-        "name": "grid",
-        "title": "栅格系统",
-        "desc": "",
-        "body": ""
-      },
-			{
-				"name":"button",
-				"title":"按钮",
-				"desc":"",
-				"body":"",
-			},
-      {
-        "name": "table",
-        "title": "表格",
-        "desc": "",
-        "body": ""
-      },
-			{
-				"name": "form",
-				"title": "表单",
-				"desc": "",
-				"body": ""
-			}
-		]
-	},
-	"extra":{
-		"name":"辅助和修饰",
+	{
+		"name": "extra",
+		"title":"辅助和修饰",
+    "expanded": true,
 		"data":[
 			{
 				"name":"appearance",
@@ -146,19 +160,33 @@ const allData = {
 			}
 		]
 	}
-};
+];
 
 let dataMap={};
-for(sortName in allData){
-	var sort = allData[sortName];
-	for(index in sort.data){
-		var it = sort.data[index];
-		it.path = sortName+"."+it.name;
-		dataMap[it.path] = it;
-	}
+
+// 递归生成路径，第一层是没有对应文件的，所以不生成path
+function createPath(data, lastName) {
+	data.forEach(function (item) {
+		if (lastName) {
+      item.path = lastName + "." + item.name;
+      dataMap[item.path] = item;
+		}
+		if (item.data) {
+			createPath(item.data, (lastName ? lastName + "." : "") + item.name);
+		}
+  });
 }
+createPath(allData);
+
+// allData.forEach(function (sort, i) {
+//   for(let index in sort.data){
+//     var it = sort.data[index];
+//     it.path = sort.name+"."+it.name;
+//     dataMap[it.path] = it;
+//   }
+// });
 
 module.exports = {
 	data:allData,
 	map:dataMap
-}
+};

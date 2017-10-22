@@ -374,6 +374,14 @@ template {
 [hidden] {
   display: none; }
 
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
 .dxy-border {
   border: 1px solid #999; }
 
@@ -2794,6 +2802,8 @@ p {
 .dxy-tree-content {
   padding: 15px 0;
   position: relative; }
+  .dxy-tree-content > .dxy-checkbox, .dxy-tree-content > .dxy-checkbox-block {
+    margin-left: 0; }
 
 .dxy-tree-node {
   position: relative;
