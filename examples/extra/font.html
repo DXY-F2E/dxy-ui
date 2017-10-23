@@ -1,38 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>DXY-UI DEMO</title>
-    <link rel="stylesheet" href="../../dist/css/dxy-ui.min.css">
-</head>
-<body>
-<div id="j_main">
-    <h3>高亮</h3>
-    <div>
-        <p class="dxy-highlight">高亮</p>
-    </div>
-    <h3>text-decoration</h3>
-    <div>
-        <p class="dxy-text-through">中划线</p>
-        <p class="dxy-text-underline">中划线</p>
-    </div>
-    <h3>text-align</h3>
-    <div>
-        <p class="dxy-text-left">文字靠左</p>
-        <p class="dxy-text-center">文字居中</p>
-        <p class="dxy-text-right">文字靠右</p>
-        <p class="dxy-text-justify">文字两端对齐(仅对非最后一行进行两端对齐有效) Mixins copy all of the properties into a selector, which can lead to unnecessary duplication. Therefore you can use extends instead of mixins to move the selector up to the properties you wish to use, which leads to less css being generated.</p>
-    </div>
-    <h3>字母大小写</h3>
-    <div>
-        <p class="dxy-lowercase">字母小写HELLO WORD</p>
-        <p class="dxy-uppercase">字母大写hello word</p>
-        <p class="dxy-capitalize">首字母大写hello word</p>
-    </div>
-    <h3>文字截断</h3>
-    <div>
-        <p class="dxy-overflow-ellipsis">截断文字(需要设定宽度)</p>
-    </div>
-</div>
-</body>
-</html>
+<p class="dxy-highlight">高亮</p>
+<p class="dxy-text-through">中划线</p>
+<p class="dxy-text-underline">下划线</p>
+<hr>
+<h4>对齐</h4>
+<p class="dxy-text-left">文字靠左</p>
+<p class="dxy-text-center">文字居中</p>
+<p class="dxy-text-right">文字靠右</p>
+<p>文字不加修饰：一段中文的测试文本一段中文的测试文本一段中文的测试文本。The common situation is that the words in the English sentence can not be aligned, so we test the situation in English. The common situation is that the words in the English sentence can not be aligned, so we test the situation in English.</p>
+<p class="dxy-text-justify">文字两端对齐：一段中文的测试文本一段中文的测试文本一段中文的测试文本。The common situation is that the words in the English sentence can not be aligned, so we test the situation in English. The common situation is that the words in the English sentence can not be aligned, so we test the situation in English.</p>
+<hr>
+<h4>字母大小写</h4>
+<p class="dxy-lowercase">字母小写 HELLO WORD</p>
+<p class="dxy-uppercase">字母大写 hello word</p>
+<p class="dxy-capitalize">首字母大写 hello word</p>
+<hr>
+<h4>文字截断</h4>
+<p class="dxy-overflow-ellipsis" style="width: 160px;">截断文字(需要设定宽度)文字</p>

@@ -454,12 +454,56 @@ const allData = [
 		"title":"辅助和修饰",
     "expanded": true,
 		"data":[
+      {
+        "name": "font",
+        "title": "文本修饰",
+        "desc": "",
+        "body": ""
+      },
+      {
+        "name": "situation",
+        "title": "情景色",
+        "desc": "",
+        "body": ""
+      },
 			{
 				"name":"appearance",
 				"title":"外观",
 				"desc":"",
 				"body":"",
-			}
+        "data": [
+          {
+            "name": "border",
+            "title": "边框",
+            "desc": "",
+            "body": ""
+          },
+          {
+            "name": "border-radius",
+            "title": "圆角",
+            "desc": "",
+            "body": ""
+          },
+          {
+            "name": "margin",
+            "title": "外边距 margin",
+            "desc": "",
+            "body": ""
+          },
+          {
+            "name": "padding",
+            "title": "内边距 padding",
+            "desc": "",
+            "body": ""
+          }
+        ]
+			},
+      {
+        "name": "float",
+        "title": "浮动",
+        "desc": "",
+        "body": ""
+      }
 		]
 	}
 ];

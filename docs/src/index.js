@@ -41,17 +41,25 @@
       let self = this;
       if (!anchor) {
         let treeNodes = nav.querySelectorAll('.dxy-tree-content');
-        for (let treeNode of treeNodes) {
-          let id = treeNode.querySelector('a').getAttribute('href');
-          let target = document.querySelector(id);
-          if (target.offsetTop - 40 > (document.documentElement.scrollTop || document.body.scrollTop)) {
-            // if (nav.querySelector('.dxy-tree-content.active')) {
-            //   nav.querySelector('.dxy-tree-content.active').classList.remove('active');
-            // }
-            // treeNode.classList.add('active');
-            break;
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        let clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+        let scrollHeight = document.documentElement.scrollHeight || documenet.body.scrollHeight;
+        if (scrollTop === scrollHeight - clientHeight) {
+          let allLink = nav.querySelectorAll('.dxy-tree-content a');
+          anchor = allLink[allLink.length - 1].getAttribute('href');
+        } else {
+          for (let treeNode of treeNodes) {
+            let id = treeNode.querySelector('a').getAttribute('href');
+            let target = document.querySelector(id);
+            if (target.offsetTop - 40 > scrollTop) {
+              // if (nav.querySelector('.dxy-tree-content.active')) {
+              //   nav.querySelector('.dxy-tree-content.active').classList.remove('active');
+              // }
+              // treeNode.classList.add('active');
+              break;
+            }
+            anchor = id;
           }
-          anchor = id;
         }
       }
       let items = anchor.replace('#', '').split('_');

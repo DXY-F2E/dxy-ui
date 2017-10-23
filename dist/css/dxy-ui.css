@@ -458,10 +458,10 @@ a {
 .dxy-margin-left-right {
   margin: 0 20px; }
 
-.dxy-pull-left {
+.dxy-float-left {
   float: left; }
 
-.dxy-pull-right {
+.dxy-float-right {
   float: right; }
 
 .dxy-clear-fix:after, .dxy-nav:after, .dxy-pagination:after, .dxy-pagination .dxy-pagination-jump:after {

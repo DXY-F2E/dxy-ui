@@ -147,7 +147,12 @@ body {
   }
   .bs-docs-sidebar.affix {
     position: fixed; /* Undo the static from mobile first approach */
-    top: 20px;
+    /*top: 20px;*/
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 90%;
+    overflow: auto;
   }
   .bs-docs-sidebar.affix-bottom {
     position: absolute; /* Undo the static from mobile first approach */

@@ -67,41 +67,47 @@ function getFile(url, res) {
 		return;
 	}
 	console.log('return', type, filePath);
-	
+
+	// 找不到文件也能正常显示页面
+  var data = '';
   try {
     var stat = fs.statSync(filePath);
     if (stat && stat.isFile()) {
-      var data = fs.readFileSync(filePath, 'utf8');
-			
-			if(type=='example' && tpl_item){
-				renderPageInfo.body = data;
-				// console.log("renderPageInfo",renderPageInfo);
-				data = tpl_item(renderPageInfo);
-				
-			}else if(type=='docs' && tpl_docs){
-				// console.log("tpl_docs",tpl_docs)
-				// 所有页面的数据
-				for(var itPath in PAGE_INFO.map){
-					var item = PAGE_INFO.map[itPath];
-					var t_filePath = path.resolve(__dirname, 'examples/'+item.path.replace(/\./g,"/")+'.html');
-					console.log("filePath",t_filePath);
-					item.body = fs.readFileSync(t_filePath, 'utf8');
-				}
-				renderPageInfo.map = PAGE_INFO.map;
-				renderPageInfo.data = PAGE_INFO.data;
-				renderPageInfo.nav = createNav(PAGE_INFO.data);
-				data = tpl_docs(renderPageInfo);
-				
-			}
-			
-      res.statusCode = 200;
-      res.end(data);
+      data = fs.readFileSync(filePath, 'utf8');
     }
   } catch (e) {
-    res.statusCode = 404;
-    res.end('未找到文件');
+    // res.statusCode = 404;
+    // res.end('未找到文件');
     console.log(e);
   }
+
+  if(type=='example' && tpl_item){
+    renderPageInfo.body = data;
+    // console.log("renderPageInfo",renderPageInfo);
+    data = tpl_item(renderPageInfo);
+
+  }else if(type=='docs' && tpl_docs){
+    // console.log("tpl_docs",tpl_docs)
+    // 所有页面的数据
+    for(var itPath in PAGE_INFO.map){
+      var item = PAGE_INFO.map[itPath];
+      var t_filePath = path.resolve(__dirname, 'examples/'+item.path.replace(/\./g,"/")+'.html');
+      console.log("filePath",t_filePath);
+      try {
+        item.body = fs.readFileSync(t_filePath, 'utf8');
+			} catch (e) {
+      	item.body = "";
+      	console.log(e);
+			}
+    }
+    renderPageInfo.map = PAGE_INFO.map;
+    renderPageInfo.data = PAGE_INFO.data;
+    renderPageInfo.nav = createNav(PAGE_INFO.data);
+    data = tpl_docs(renderPageInfo);
+
+  }
+  res.statusCode = 200;
+  res.end(data);
 }
 
 // 递归生成侧边栏导航

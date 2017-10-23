@@ -22,12 +22,14 @@
 				<%=item.data[itP].title%>
 			</h3>
 			<p><%=item.data[itP].desc%></p>
+			<% if (item.data[itP].body) { %>
 			<div class="bs-example">
 				<%-item.data[itP].body%>
 			</div>
 			<figure class="highlight">
 				<pre><code class="language-html"><%=item.data[itP].body%></code></pre>
 			</figure>
+			<% } %>
 
 			<% for (subName in item.data[itP].data) { var subItem = item.data[itP].data[subName]; %>
 			<h4 id="<%=subItem.path.replace(/\./g,'_')%>"><%= subItem.title %></h4>
