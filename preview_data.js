@@ -14,7 +14,39 @@ const allData = [
         "name": "list",
         "title": "列表",
         "desc": "",
-        "body": ""
+        "body": "",
+				"data": [
+					{
+						"name": "horizon",
+						"title": "水平列表",
+						"desc": "",
+						"body": ""
+					},
+          {
+            "name": "dot",
+            "title": "实心符号列表",
+            "desc": "",
+            "body": ""
+          },
+          {
+            "name": "circle",
+            "title": "空心符号列表",
+            "desc": "",
+            "body": ""
+          },
+          {
+            "name": "dl",
+            "title": "短语列表",
+            "desc": "",
+            "body": ""
+          },
+          {
+            "name": "dl-horizon",
+            "title": "水平短语列表",
+            "desc": "",
+            "body": ""
+          }
+				]
       },
       {
         "name": "grid",
@@ -27,12 +59,64 @@ const allData = [
         "title":"按钮",
         "desc":"",
         "body":"",
+				"data": [
+					{
+						"name": "size",
+						"title": "多个尺寸",
+						"desc": "",
+						"body": ""
+					},
+					{
+						"name": "situation",
+						"title": "情景色",
+						"desc": "",
+						"body": ""
+					},
+          {
+            "name": "link",
+            "title": "链接/文字",
+            "desc": "",
+            "body": ""
+          },
+          {
+            "name": "disabled",
+            "title": "禁用状态",
+            "desc": "",
+            "body": ""
+          }
+				]
       },
       {
         "name": "table",
         "title": "表格",
         "desc": "",
-        "body": ""
+        "body": "",
+        "data": [
+          {
+            "name": "hover",
+            "title": "鼠标悬停",
+            "desc": "",
+            "body": ""
+          },
+          {
+            "name": "striped",
+            "title": "条纹状",
+            "desc": "",
+            "body": ""
+          },
+          {
+            "name": "bordered",
+            "title": "全边框",
+            "desc": "",
+            "body": ""
+          },
+          {
+            "name": "no-border",
+            "title": "无边框",
+            "desc": "",
+            "body": ""
+          }
+        ]
       },
       {
         "name": "form",
@@ -41,11 +125,53 @@ const allData = [
         "body": "",
         "data": [
           {
+            "name": "inline",
+            "title": "行内表单",
+            "desc": "",
+            "body": ""
+          },
+          {
             "name": "label",
             "title": "label",
             "desc": "",
             "body": ""
-          }
+          },
+          {
+            "name": "input",
+            "title": "输入框",
+            "desc": "",
+            "body": ""
+          },
+          {
+            "name": "textarea",
+            "title": "文本框",
+            "desc": "",
+            "body": ""
+          },
+          {
+            "name": "radio",
+            "title": "单选框",
+            "desc": "",
+            "body": ""
+          },
+          {
+            "name": "checkbox",
+            "title": "复选框",
+            "desc": "",
+            "body": ""
+          },
+          {
+            "name": "select",
+            "title": "下拉框",
+            "desc": "",
+            "body": ""
+          },
+          {
+            "name": "validate",
+            "title": "表单校验",
+            "desc": "",
+            "body": ""
+          },
         ]
       }
     ]

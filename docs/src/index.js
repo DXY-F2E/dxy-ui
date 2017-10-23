@@ -9,6 +9,8 @@
     initView: function () {
       if (location.hash && document.querySelector(location.hash)) {
         this.activeNavItem(this.nav, location.hash);
+      } else {
+        this.activeNavItem(this.nav);
       }
     },
     initEvent: function () {

@@ -3,7 +3,7 @@
     margin: 0 auto;
 }
 
-.bs-example > div, .bs-example > h4, .bs-example > button, .bs-example > ul, .bs-example > dl, .bs-example > table, .bs-example > form, .bs-example > input, .bs-example > textarea, .bs-example > select {
+.bs-example > div, .bs-example > h1, .bs-example > h2, .bs-example > h3, .bs-example > h4, .bs-example > h5, .bs-example > h6, .bs-example > p, .bs-example > a, .bs-example > button, .bs-example > ul, .bs-example > dl, .bs-example > table, .bs-example > form, .bs-example > input, .bs-example > textarea, .bs-example > select {
     margin-bottom: 10px;
     margin-right: 10px;
 }
