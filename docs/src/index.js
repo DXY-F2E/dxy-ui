@@ -60,6 +60,14 @@
         let treeNode = target.parentNode.parentNode;
         target.parentNode.classList.add('active');
         treeNode.classList.add('dxy-tree-expanded');
+
+        // 清除该树节点的子节点和兄弟节点的样式
+        if (treeNode.querySelector('.dxy-tree-children')) {
+          treeNode.querySelector('.dxy-tree-children').querySelectorAll('.dxy-tree-content.active').forEach(function (item) {
+            item.classList.remove('active');
+            item.parentNode.classList.remove('dxy-tree-expanded');
+          });
+        }
         let siblings = treeNode.parentNode.children;
         for (let node of siblings) {
           if (node !== treeNode && node.querySelector('.dxy-tree-content.active')) {
