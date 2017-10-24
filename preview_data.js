@@ -226,7 +226,7 @@ const allData = [
 			{
 				"name":"search-select",
 				"title":"下拉选择框",
-				"desc":"具有搜索功能的下拉选择框，需结合JavaScript实现",
+				"desc":"具有搜索功能的下拉选择框，需结合`JavaScript`实现",
 				"body":"",
 				"data":[
 					{
@@ -240,7 +240,7 @@ const allData = [
 			{
 				"name":"label",
 				"title":"标签",
-				"desc":"用于标记或选择",
+				"desc":"用于标记或选择，色值仅仅表示颜色，不表达具体含义",
 				"body":"",
 				"data":[
 					{
@@ -274,7 +274,7 @@ const allData = [
 			{
 				"name":"alert",
 				"title":"警告框",
-				"desc":"一般用于代替浏览器原生的alert，统一形式，提供四种色值来代表不同意义",
+				"desc":"一般用于代替浏览器原生的`alert`，统一形式，提供四种色值来代表不同意义",
 				"body":"",
 				"data":[
 					{
@@ -300,7 +300,7 @@ const allData = [
 			{
 				"name":"confirm",
 				"title":"弹出确认框",
-				"desc":"一般用于代替浏览器原生的confirm，统一形式，可添加标题与主体文案",
+				"desc":"一般用于代替浏览器原生的`confirm`，统一形式，可添加标题与主体文案",
 				"body":"",
 			},
 			{
@@ -350,7 +350,7 @@ const allData = [
 			{
 				"name":"pagination",
 				"title":"分页",
-				"desc":"提供翻页样式，需结合JavaScript实现功能",
+				"desc":"提供翻页样式，需结合`JavaScript`实现功能",
 				"body":"",
 				"data":[
 					{
