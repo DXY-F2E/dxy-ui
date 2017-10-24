@@ -14,6 +14,7 @@
   @include btn_size($btn-pd, $btn-font-size);
   @include btn_hover($btn-bg-color);
   @include btn_active($btn-bg-color);
+  &.disabled,
   &[disabled]{
     color: $btn-disabled-color;
     border-color: $btn-disabled-bd-color;
@@ -39,6 +40,7 @@
     color: darken($btn-link-color, $btn-link-focus-darken);
     background-color: transparent;
   }
+  &.disabled,
   &[disabled]{
     color: $btn-link-disabled-color;
     border-width: 0;

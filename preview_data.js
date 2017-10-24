@@ -2,48 +2,49 @@ const allData = [
   {
     "name": "elements",
     "title":"基本元素",
+		"desc": "",
     "expanded": true,
     "data":[
       {
         "name": "text",
         "title": "文本",
-        "desc": "",
+        "desc": "为 HTML 中不同的标题标签定制了大小，可使用 `<h1>` 到 `<h6>` 或 `.dxy-h1` 到 `.dxy-h2` 类。正文提供了不同语境的样式，可用于 `<p>` 标签或其他文字标签中。",
         "body": ""
       },
       {
         "name": "list",
         "title": "列表",
-        "desc": "",
+        "desc": "和原生列表不同，基本列表是去除样式的。",
         "body": "",
 				"data": [
 					{
 						"name": "horizon",
 						"title": "水平列表",
-						"desc": "",
+						"desc": "所有列表项放置在一行的列表。",
 						"body": ""
 					},
           {
             "name": "dot",
             "title": "实心符号列表",
-            "desc": "",
+            "desc": "左侧带实心圆符号的列表。",
             "body": ""
           },
           {
             "name": "circle",
             "title": "空心符号列表",
-            "desc": "",
+            "desc": "左侧带空心圆圈的列表。",
             "body": ""
           },
           {
             "name": "dl",
             "title": "短语列表",
-            "desc": "",
+            "desc": "为 `<dl>` 提供的样式，适用于短语后有对应定义或长句的情况。",
             "body": ""
           },
           {
             "name": "dl-horizon",
             "title": "水平短语列表",
-            "desc": "",
+            "desc": "短语和定义放置在一行的列表。",
             "body": ""
           }
 				]
@@ -57,31 +58,31 @@ const allData = [
       {
         "name":"button",
         "title":"按钮",
-        "desc":"",
+        "desc":"提供按钮样式，可用在 `<button>`、`<input>` 和 `<a>` 标签。",
         "body":"",
 				"data": [
 					{
 						"name": "size",
 						"title": "多个尺寸",
-						"desc": "",
+						"desc": "提供其他尺寸的按钮样式，使用 `lg`、`sm` 和 `xs` 区分。",
 						"body": ""
 					},
 					{
 						"name": "situation",
 						"title": "情景色",
-						"desc": "",
+						"desc": "提供在不同情景下的按钮样式。",
 						"body": ""
 					},
           {
             "name": "link",
             "title": "链接/文字",
-            "desc": "",
+            "desc": "当按钮是链接或文字时可用无边框和文字颜色突出的按钮。",
             "body": ""
           },
           {
             "name": "disabled",
             "title": "禁用状态",
-            "desc": "",
+            "desc": "提供按钮或链接禁用的样式。",
             "body": ""
           }
 				]
@@ -179,6 +180,7 @@ const allData = [
 	{
 		"name": "components",
 		"title":"组件",
+    "desc": "",
 		"expanded": true,
 		"data":[
 			{
@@ -452,6 +454,7 @@ const allData = [
 	{
 		"name": "extra",
 		"title":"辅助和修饰",
+    "desc": "",
     "expanded": true,
 		"data":[
       {
@@ -517,6 +520,12 @@ function createPath(data, lastName) {
       item.path = lastName + "." + item.name;
       dataMap[item.path] = item;
 		}
+		item.desc = item.desc.replace(/<|>/g, function (word) {
+			if (word === '<') {
+				return '&lt;';
+			}
+			return '&gt;';
+    }).replace(/`(.+?)`/g, '<code>$1</code>');
 		if (item.data) {
 			createPath(item.data, (lastName ? lastName + "." : "") + item.name);
 		}

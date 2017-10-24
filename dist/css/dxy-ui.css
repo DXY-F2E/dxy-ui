@@ -556,7 +556,7 @@ a {
     background-color: #ebebeb; }
   .dxy-btn:active, .dxy-btn:focus {
     background-color: #d6d6d6; }
-  .dxy-btn[disabled] {
+  .dxy-btn.disabled, .dxy-btn[disabled] {
     color: #aaaaaa;
     border-color: #ddd;
     cursor: not-allowed;
@@ -574,7 +574,7 @@ a {
   .dxy-btn-link:active, .dxy-btn-link:focus {
     color: #0146e5;
     background-color: transparent; }
-  .dxy-btn-link[disabled] {
+  .dxy-btn-link.disabled, .dxy-btn-link[disabled] {
     color: #c6c6c6;
     border-width: 0; }
 

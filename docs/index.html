@@ -16,12 +16,13 @@
 	<div class="dxy-col-9">
 		<% data.forEach(function(item) { %>
 		<h2 id="<%=item.name%>"><%=item.title%></h2>
+		<p><%- item.desc %></p>
 		<% for(itP in item.data){ %>
 		<div class="bs-docs-section example_area-<%=item.data[itP].path.replace(".","_")%>">
 			<h3 id="<%=item.data[itP].path.replace(/\./g,'_')%>" class="page-header">
 				<%=item.data[itP].title%>
 			</h3>
-			<p><%=item.data[itP].desc%></p>
+			<p><%-item.data[itP].desc%></p>
 			<% if (item.data[itP].body) { %>
 			<div class="bs-example">
 				<%-item.data[itP].body%>
@@ -33,7 +34,7 @@
 
 			<% for (subName in item.data[itP].data) { var subItem = item.data[itP].data[subName]; %>
 			<h4 id="<%=subItem.path.replace(/\./g,'_')%>"><%= subItem.title %></h4>
-			<p><%= subItem.desc %></p>
+			<p><%- subItem.desc %></p>
 			<div class="bs-example">
 				<%- subItem.body %>
 			</div>
