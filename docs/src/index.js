@@ -34,6 +34,19 @@
           });
         }
       });
+
+      document.querySelectorAll('.j_preview_code').forEach(node => {
+        node.onclick = function (e) {
+          let target = e.currentTarget;
+          let child = target.querySelector('span');
+          child.innerText = child.innerText.replace(/查看|收起/, function (word) {
+            return word === '查看' ? '收起' : '查看';
+          });
+          target.parentNode.classList.toggle('fold');
+          let pre = target.parentNode.querySelector('pre');
+          pre.style.height = parseFloat(pre.style.height) > 0 ? 0 : pre.querySelector('code').offsetHeight + 'px';
+        };
+      });
     },
 
     // 滚动和导航栏显示绑定

@@ -33,7 +33,6 @@ gulp.task('docscss', function() {
 	return gulp
 		.src(['docs/src/prism.css', 'docs/src/code.css', 'docs/src/docs.css', 'docs/src/example.css'])
 		.pipe(concat('docs.css'))
-		.pipe(gulp.dest('docs/dist'))
 		.pipe(cssmin())
 		.pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('docs/dist'));
@@ -43,7 +42,6 @@ gulp.task('docsjs', function() {
 	return gulp
 		.src(['docs/src/prism.js', 'docs/src/index.js'])
 		.pipe(concat('docs.js'))
-		.pipe(gulp.dest('docs/dist'))
 		.pipe(babel({presets:[es2015]}))
 		.pipe(uglify())
 		.pipe(rename({suffix: '.min'}))

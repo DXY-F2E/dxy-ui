@@ -263,13 +263,14 @@ h1[id] {
 }
 
 .highlight {
-  padding: 9px 14px;
+  /*padding: 9px 14px;*/
   margin-bottom: 14px;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
   border-radius: 4px;
 }
 .highlight pre {
+  height: 0;
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -277,14 +278,41 @@ h1[id] {
   white-space: nowrap;
   background-color: transparent;
   border: 0;
+  transition: all .2s;
+  overflow: hidden;
 }
 .highlight pre code {
+  padding: 20px;
   font-size: inherit;
   color: #333;
 }
 .highlight pre code:first-child {
   display: inline-block;
   padding-right: 45px;
+}
+.highlight > a {
+  display: block;
+  width: 100%;
+  color: #555;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  box-sizing: border-box;
+}
+.highlight > a:hover {
+  color: #3572fe;
+}
+.highlight > a i {
+  /*transition: all .2s;*/
+  display: inline-block;
+}
+.highlight.fold pre {
+  border-bottom: 1px solid #e1e1e8;
+}
+.highlight.fold > a i {
+  transform: rotate(180deg);
 }
 
 @media print {

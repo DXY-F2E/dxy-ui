@@ -146,7 +146,7 @@ bs.init({
 				
 				// 显示变更的行为，文件路径
 				if( e=="change" ){
-					if( /\.scss$/.test(e_path) ){
+					if( /\.(scss|css|js)$/.test(e_path) ){
 						var exec_cmd = "npm run build"
 						var child = exec(exec_cmd, function(err, stdout, stderr) {
 							if (err) throw err;
@@ -157,10 +157,10 @@ bs.init({
 					}else{
 						bs.reload();
 					}
-					
+
 				}else{
-					
-					
+
+
 				}
 				
 			}
