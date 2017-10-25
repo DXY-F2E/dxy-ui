@@ -75,6 +75,14 @@ body {
   padding-bottom: 10px;
 }
 
+.du-docs-sidebar .nav .nav:first-child {
+	padding-top: 10px;
+}
+
+.du-docs-sidebar .nav .nav .nav:last-child {
+	padding-bottom: 0;
+}
+
 .du-docs-sidebar .nav .nav > li > a {
   padding-top: 1px;
   padding-bottom: 1px;
