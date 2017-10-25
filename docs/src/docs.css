@@ -3,62 +3,44 @@ body {
   position: relative;
 }
 
-
-/*
- * Examples
- *
- * Linked docs examples.
- */
-
-.bs-examples .thumbnail {
+.du-examples .thumbnail {
   margin-bottom: 10px;
 }
-.bs-examples h4 {
+.du-examples h4 {
   margin-bottom: 5px;
 }
-.bs-examples p {
+.du-examples p {
   margin-bottom: 20px;
 }
 
 @media (max-width: 480px) {
-  .bs-examples {
+  .du-examples {
     margin-right: -10px;
     margin-left: -10px;
   }
-  .bs-examples > [class^="col-"] {
+  .du-examples > [class^="col-"] {
     padding-right: 10px;
     padding-left: 10px;
   }
 }
 
-
-/*
- * Side navigation
- *
- * Scrollspy and affixed enhanced navigation to highlight sections and secondary
- * sections of docs content.
- */
-
-/* By default it's not affixed in mobile views, so undo that */
-.bs-docs-sidebar.affix {
+.du-docs-sidebar.affix {
   position: fixed;
 }
 @media (min-width: 768px) {
-  .bs-docs-sidebar {
+  .du-docs-sidebar {
     /* padding-left: 20px; */
   }
 }
 
-/* First level of nav */
-.bs-docs-sidenav {
+.du-docs-sidenav {
   margin-top: 20px;
   margin-bottom: 20px;
 	padding-left:0;
 	list-style:none;
 }
 
-/* All levels of nav */
-.bs-docs-sidebar .nav > li > a {
+.du-docs-sidebar .nav > li > a {
   display: block;
   padding: 4px 20px;
   font-size: 13px;
@@ -66,17 +48,19 @@ body {
   color: #767676;
 	text-decoration:none;
 }
-.bs-docs-sidebar .nav > li > a:hover,
-.bs-docs-sidebar .nav > li > a:focus {
+
+.du-docs-sidebar .nav > li > a:hover,
+.du-docs-sidebar .nav > li > a:focus {
   padding-left: 19px;
   color: #563d7c;
   text-decoration: none;
   background-color: transparent;
   border-left: 1px solid #563d7c;
 }
-.bs-docs-sidebar .nav > .active > a,
-.bs-docs-sidebar .nav > .active:hover > a,
-.bs-docs-sidebar .nav > .active:focus > a {
+
+.du-docs-sidebar .nav > .active > a,
+.du-docs-sidebar .nav > .active:hover > a,
+.du-docs-sidebar .nav > .active:focus > a {
   padding-left: 18px;
   font-weight: bold;
   color: #563d7c;
@@ -84,33 +68,35 @@ body {
   border-left: 2px solid #563d7c;
 }
 
-.bs-docs-sidebar .nav .nav {
+.du-docs-sidebar .nav .nav {
 	list-style:none;
 	padding-left:20px;
   /* display: none; */
   padding-bottom: 10px;
 }
-.bs-docs-sidebar .nav .nav > li > a {
+
+.du-docs-sidebar .nav .nav > li > a {
   padding-top: 1px;
   padding-bottom: 1px;
   /* padding-left: 30px; */
   font-size: 12px;
   font-weight: normal;
 }
-.bs-docs-sidebar .nav .nav > li > a:hover,
-.bs-docs-sidebar .nav .nav > li > a:focus {
+
+.du-docs-sidebar .nav .nav > li > a:hover,
+.du-docs-sidebar .nav .nav > li > a:focus {
   /* padding-left: 29px; */
 }
-.bs-docs-sidebar .nav .nav > .active > a,
-.bs-docs-sidebar .nav .nav > .active:hover > a,
-.bs-docs-sidebar .nav .nav > .active:focus > a {
+
+.du-docs-sidebar .nav .nav > .active > a,
+.du-docs-sidebar .nav .nav > .active:hover > a,
+.du-docs-sidebar .nav .nav > .active:focus > a {
   /*padding-left: 28px;*/
   font-weight: 500;
 }
 
-/* Back to top (hidden on mobile) */
 .back-to-top,
-.bs-docs-theme-toggle {
+.du-docs-theme-toggle {
   display: none;
   padding: 4px 10px;
   margin-top: 10px;
@@ -120,33 +106,31 @@ body {
   color: #999;
 }
 .back-to-top:hover,
-.bs-docs-theme-toggle:hover {
+.du-docs-theme-toggle:hover {
   color: #563d7c;
   text-decoration: none;
 }
-.bs-docs-theme-toggle {
+.du-docs-theme-toggle {
   margin-top: 0;
 }
 
 @media (min-width: 768px) {
   .back-to-top,
-  .bs-docs-theme-toggle {
+  .du-docs-theme-toggle {
     display: block;
   }
 }
 
-/* Show and affix the side nav when space allows it */
 @media (min-width: 992px) {
-  .bs-docs-sidebar .nav > .active > ul {
+  .du-docs-sidebar .nav > .active > ul {
     display: block;
   }
-  /* Widen the fixed sidebar */
-  .bs-docs-sidebar.affix,
-  .bs-docs-sidebar.affix-bottom {
+  .du-docs-sidebar.affix,
+  .du-docs-sidebar.affix-bottom {
     width: 213px;
   }
-  .bs-docs-sidebar.affix {
-    position: fixed; /* Undo the static from mobile first approach */
+  .du-docs-sidebar.affix {
+    position: fixed;
     /*top: 20px;*/
     top: 0;
     bottom: 0;
@@ -154,41 +138,32 @@ body {
     height: 90%;
     overflow: auto;
   }
-  .bs-docs-sidebar.affix-bottom {
-    position: absolute; /* Undo the static from mobile first approach */
+  .du-docs-sidebar.affix-bottom {
+    position: absolute;
   }
-  .bs-docs-sidebar.affix-bottom .bs-docs-sidenav,
-  .bs-docs-sidebar.affix .bs-docs-sidenav {
+  .du-docs-sidebar.affix-bottom .du-docs-sidenav,
+  .du-docs-sidebar.affix .du-docs-sidenav {
     margin-top: 0;
     margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {
-  /* Widen the fixed sidebar again */
-  .bs-docs-sidebar.affix-bottom,
-  .bs-docs-sidebar.affix {
+  .du-docs-sidebar.affix-bottom,
+  .du-docs-sidebar.affix {
     width: 263px;
   }
 }
 
-
-/*
- * Docs sections
- *
- * Content blocks for each component or feature.
- */
-
-/* Space things out */
-.bs-docs-section {
+.du-docs-section {
   margin-bottom: 60px;
 }
-.bs-docs-section:last-child {
+.du-docs-section:last-child {
   margin-bottom: 0;
 }
 
-.bs-docs-section h3,
-.bs-docs-section h4,
-.bs-docs-section p {
+.du-docs-section h3,
+.du-docs-section h4,
+.du-docs-section p {
 	margin-bottom: 10px;
 }
 h1[id] {
@@ -196,15 +171,7 @@ h1[id] {
   margin-top: 0;
 }
 
-
-/*
- * Examples
- *
- * Isolated sections of example content for each component or feature. Usually
- * followed by a code snippet.
- */
-
-.bs-example {
+.du-example {
   position: relative;
   padding: 45px 15px 15px;
   margin: 0 -15px 15px;
@@ -214,8 +181,8 @@ h1[id] {
   -webkit-box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
           box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
 }
-/* Echo out a label for the example */
-.bs-example:after {
+
+.du-example:after {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -227,21 +194,19 @@ h1[id] {
   content: "Example";
 }
 
-.bs-example-padded-bottom {
+.du-example-padded-bottom {
   padding-bottom: 24px;
 }
 
-/* Tweak display of the code snippets when following an example */
-.bs-example + .highlight,
-.bs-example + .zero-clipboard + .highlight {
+.du-example + .highlight,
+.du-example + .zero-clipboard + .highlight {
   margin: -15px -15px 15px;
   border-width: 0 0 1px;
   border-radius: 0;
 }
 
-/* Make the examples and snippets not full-width */
 @media (min-width: 768px) {
-  .bs-example {
+  .du-example {
     margin-right: 0;
     margin-left: 0;
     background-color: #fff;
@@ -251,8 +216,8 @@ h1[id] {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .bs-example + .highlight,
-  .bs-example + .zero-clipboard + .highlight {
+  .du-example + .highlight,
+  .du-example + .zero-clipboard + .highlight {
     margin-top: -16px;
     margin-right: 0;
     margin-left: 0;
@@ -260,41 +225,34 @@ h1[id] {
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
   }
-  .bs-example-standalone {
+  .du-example-standalone {
     border-radius: 4px;
   }
 }
 
-/* Undo width of container */
-.bs-example .container {
+.du-example .container {
   width: auto;
 }
 
-/* Tweak content of examples for optimum awesome */
-.bs-example > p:last-child,
-.bs-example > ul:last-child,
-.bs-example > ol:last-child,
-.bs-example > blockquote:last-child,
-.bs-example > .form-control:last-child,
-.bs-example > .table:last-child,
-.bs-example > .navbar:last-child,
-.bs-example > .jumbotron:last-child,
-.bs-example > .alert:last-child,
-.bs-example > .panel:last-child,
-.bs-example > .list-group:last-child,
-.bs-example > .well:last-child,
-.bs-example > .progress:last-child,
-.bs-example > .table-responsive:last-child > .table {
+.du-example > p:last-child,
+.du-example > ul:last-child,
+.du-example > ol:last-child,
+.du-example > blockquote:last-child,
+.du-example > .form-control:last-child,
+.du-example > .table:last-child,
+.du-example > .navbar:last-child,
+.du-example > .jumbotron:last-child,
+.du-example > .alert:last-child,
+.du-example > .panel:last-child,
+.du-example > .list-group:last-child,
+.du-example > .well:last-child,
+.du-example > .progress:last-child,
+.du-example > .table-responsive:last-child > .table {
   margin-bottom: 0;
 }
-.bs-example > p > .close {
+.du-example > p > .close {
   float: none;
 }
-
-/*
- * Code snippets
- *
- */
 
 .highlight {
   padding: 9px 14px;
@@ -314,94 +272,13 @@ h1[id] {
 }
 .highlight pre code {
   font-size: inherit;
-  color: #333; /* Effectively the base text color */
+  color: #333;
 }
 .highlight pre code:first-child {
   display: inline-block;
   padding-right: 45px;
 }
 
-
-/*
- * ZeroClipboard styles
- */
-
-.zero-clipboard {
-  position: relative;
-  display: none;
-}
-.btn-clipboard {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 10;
-  display: block;
-  padding: 5px 8px;
-  font-size: 12px;
-  color: #767676;
-  cursor: pointer;
-  background-color: #fff;
-  border: 1px solid #e1e1e8;
-  border-radius: 0 4px 0 4px;
-}
-.btn-clipboard-hover {
-  color: #fff;
-  background-color: #563d7c;
-  border-color: #563d7c;
-}
-
-@media (min-width: 768px) {
-  .zero-clipboard {
-    display: block;
-  }
-  .bs-example + .zero-clipboard .btn-clipboard {
-    top: -16px;
-    border-top-right-radius: 0;
-  }
-}
-
-/*
- * AnchorJS Styles
- */
-.anchorjs-link {
-  color: inherit;
-}
-
-@media (max-width: 480px) {
-  .anchorjs-link {
-    display: none;
-  }
-}
-
-*:hover > .anchorjs-link {
-  opacity: .75;
-  -webkit-transition: color .16s linear;
-       -o-transition: color .16s linear;
-          transition: color .16s linear;
-}
-
-*:hover > .anchorjs-link:hover,
-.anchorjs-link:focus {
-  text-decoration: none;
-  opacity: 1;
-}
-
-/* v4 notice above main navbar */
-.v4-tease {
-  display: block;
-  padding: 15px 20px;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-  background-color: #0275d8;
-}
-.v4-tease:hover {
-  color: #fff;
-  text-decoration: none;
-  background-color: #0269c2;
-}
-
-/* Nullify ill-advised printing of hrefs; see #18711 */
 @media print {
   a[href]:after {
     content: "" !important;
@@ -416,7 +293,7 @@ h1[id] {
   background: none;
 }
 
-.bs-docs-sidebar .dxy-go-top {
+.du-docs-sidebar .dxy-go-top {
   position: fixed;
   right: 40px;
   bottom: 40px;

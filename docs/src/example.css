@@ -3,26 +3,26 @@
     margin: 0 auto;
 }
 
-.bs-example > div, .bs-example > h1, .bs-example > h2, .bs-example > h3, .bs-example > h4, .bs-example > h5, .bs-example > h6, .bs-example > p, .bs-example > a, .bs-example > button, .bs-example > ul, .bs-example > dl, .bs-example > table, .bs-example > form, .bs-example > input, .bs-example > textarea, .bs-example > select {
+.du-example > div, .du-example > h1, .du-example > h2, .du-example > h3, .du-example > h4, .du-example > h5, .du-example > h6, .du-example > p, .du-example > a, .du-example > button, .du-example > ul, .du-example > dl, .du-example > table, .du-example > form, .du-example > input, .du-example > textarea, .du-example > select {
     margin-bottom: 10px;
     margin-right: 10px;
 }
 
-.example_area-components_confirm .bs-example {
+.example_area-components_confirm .du-example {
     padding: 20px;
     height: 500px;
     background: rgba(0, 0, 0, .5);
 }
 
-.bs-example .dxy-confirm {
+.du-example .dxy-confirm {
     position: relative;
 }
 
-.bs-example .dxy-row {
+.du-example .dxy-row {
     margin-bottom: 10px;
 }
 
-.bs-example .dxy-row > div {
+.du-example .dxy-row > div {
     padding-top: 15px;
     padding-bottom: 15px;
     line-height: 1.5;
@@ -31,12 +31,12 @@
     font-size: 14px;
 }
 
-.bs-example .dxy-go-top {
+.du-example .dxy-go-top {
     display: inline-block;
     margin-right: 20px;
 }
 
-.bs-example .loading-box {
+.du-example .loading-box {
 	text-align: center;
 	margin-bottom: 30px;
 	height: 300px;
@@ -44,11 +44,11 @@
 	position: relative;
 }
 
-.bs-example .loading-box > .red {
+.du-example .loading-box > .red {
 	color: red;
 }
 
-.bs-example [class*=dxy-margin], .bs-example > [class*=dxy-padding] {
+.du-example [class*=dxy-margin], .du-example > [class*=dxy-padding] {
     background-color: #f4fbff;
     border: 1px solid #89d9fd;
 }
