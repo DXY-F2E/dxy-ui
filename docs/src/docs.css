@@ -52,10 +52,10 @@ body {
 .du-docs-sidebar .nav > li > a:hover,
 .du-docs-sidebar .nav > li > a:focus {
   padding-left: 19px;
-  color: #563d7c;
+  color: #3572fe;
   text-decoration: none;
   background-color: transparent;
-  border-left: 1px solid #563d7c;
+  border-left: 1px solid #3572fe;
 }
 
 .du-docs-sidebar .nav > .active > a,
@@ -63,9 +63,9 @@ body {
 .du-docs-sidebar .nav > .active:focus > a {
   padding-left: 18px;
   font-weight: bold;
-  color: #563d7c;
+  color: #3572fe;
   background-color: transparent;
-  border-left: 2px solid #563d7c;
+  border-left: 2px solid #3572fe;
 }
 
 .du-docs-sidebar .nav .nav {
@@ -115,7 +115,7 @@ body {
 }
 .back-to-top:hover,
 .du-docs-theme-toggle:hover {
-  color: #563d7c;
+  color: #3572fe;
   text-decoration: none;
 }
 .du-docs-theme-toggle {

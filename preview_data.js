@@ -217,7 +217,7 @@ const allData = [
 					},
 					{
 						"name":"button-label",
-						"title":"与按钮，标签组合",
+						"title":"多项组合",
 						"desc":"",
 						"body":""
 					}
@@ -403,13 +403,7 @@ const allData = [
 				"data":[
 					{
 						"name":"thin",
-						"title":"更细",
-						"desc":"",
-						"body":"",
-					},
-					{
-						"name":"result",
-						"title":"成功/失败",
+						"title":"更细的线条",
 						"desc":"",
 						"body":"",
 					}
