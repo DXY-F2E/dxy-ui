@@ -186,19 +186,19 @@ const allData = [
 			{
 				"name":"button-group",
 				"title":"按钮组",
-				"desc":"将按钮组合在同个容器内，自定义各个按钮的状态与功能",
+				"desc":"将按钮组合在同个容器内，自定义各个按钮的状态与功能。",
 				"body":"",
 				"data": [
 					{
 						"name":"more",
 						"title":"三个及以上按钮",
-						"desc":"可以更改按钮数量，假设你需要的话",
+						"desc":"可以更改按钮数量，假设你需要的话。",
 						"body":""
 					},
 					{
 						"name":"vertical",
 						"title":"竖直方向",
-						"desc":"按钮数量，按钮状态一样可以自定义",
+						"desc":"按钮数量，按钮状态一样可以自定义。",
 						"body":""
 					}
 				]
@@ -206,7 +206,7 @@ const allData = [
 			{
 				"name":"input-group",
 				"title":"输入框组",
-				"desc":"对文本输入框进行扩展，添加所需要的文本标签或按钮",
+				"desc":"对文本输入框进行扩展，添加所需要的文本标签或按钮。",
 				"body":"",
 				"data":[
 					{
@@ -226,13 +226,13 @@ const allData = [
 			{
 				"name":"search-select",
 				"title":"下拉选择框",
-				"desc":"具有搜索功能的下拉选择框，需结合`JavaScript`实现",
+				"desc":"具有搜索功能的下拉选择框，需结合`JavaScript`实现。",
 				"body":"",
 				"data":[
 					{
 						"name":"multiple",
 						"title":"多选",
-						"desc":"提供多选功能，已标签形式展现选择结果",
+						"desc":"提供多选功能，已标签形式展现选择结果。",
 						"body":""
 					}
 				]
@@ -240,19 +240,19 @@ const allData = [
 			{
 				"name":"label",
 				"title":"标签",
-				"desc":"用于标记或选择，色值仅仅表示颜色，不表达具体含义",
+				"desc":"用于标记或选择，色值仅仅表示颜色，不表达具体含义。",
 				"body":"",
 				"data":[
 					{
 						"name":"close",
 						"title":"可删除",
-						"desc":"提供删除按钮",
+						"desc":"提供删除按钮。",
 						"body":""
 					},
 					{
 						"name":"badge",
 						"title":"徽章",
-						"desc":"用于展示未读消息等等",
+						"desc":"用于展示未读消息等等。",
 						"body":""
 					}
 				]
@@ -260,13 +260,13 @@ const allData = [
 			{
 				"name":"popover",
 				"title":"气泡提示",
-				"desc":"用于标记提示，提供四个方向可选择",
+				"desc":"用于标记提示，提供四个方向可选择。",
 				"body":"",
 				"data":[
 					{
 						"name":"custom",
 						"title":"内容丰富",
-						"desc":"可以自定义内容，分为标题和主体内容",
+						"desc":"可以自定义内容，分为标题和主体内容。",
 						"body":""
 					}
 				]
@@ -274,7 +274,7 @@ const allData = [
 			{
 				"name":"alert",
 				"title":"警告框",
-				"desc":"一般用于代替浏览器原生的`alert`，统一形式，提供四种色值来代表不同意义",
+				"desc":"一般用于代替浏览器原生的`alert`，统一形式，提供四种色值来代表不同意义。",
 				"body":"",
 				"data":[
 					{
@@ -300,13 +300,13 @@ const allData = [
 			{
 				"name":"confirm",
 				"title":"弹出确认框",
-				"desc":"一般用于代替浏览器原生的`confirm`，统一形式，可添加标题与主体文案",
+				"desc":"一般用于代替浏览器原生的`confirm`，统一形式，可添加标题与主体文案。",
 				"body":"",
 			},
 			{
 				"name":"modal",
 				"title":"模态框",
-				"desc":"显示一块单独的内容，自定义标题与主体内容",
+				"desc":"显示一块单独的内容，自定义标题与主体内容。",
 				"body":"",
 			},
 			{
@@ -350,19 +350,19 @@ const allData = [
 			{
 				"name":"pagination",
 				"title":"分页",
-				"desc":"提供翻页样式，需结合`JavaScript`实现功能",
+				"desc":"提供翻页样式，需结合`JavaScript`实现功能。",
 				"body":"",
 				"data":[
 					{
 						"name":"no-number",
 						"title":"无页码",
-						"desc":"仅仅提供翻页按钮",
+						"desc":"仅提供翻页按钮。",
 						"body":"",
 					},
 					{
 						"name":"jump",
 						"title":"跳转",
-						"desc":"可自定义页码进行跳转",
+						"desc":"可自定义页码进行跳转。",
 						"body":"",
 					}
 				]
@@ -370,7 +370,7 @@ const allData = [
 			{
 				"name":"go-top",
 				"title":"回到顶部",
-				"desc":"一般放置于屏幕下方，供点击返回顶部或指定位置，提供多个图标",
+				"desc":"一般放置于屏幕下方，供点击返回顶部或指定位置，提供多个图标。",
 				"body":"",
 				"data":[
 					{
@@ -384,13 +384,13 @@ const allData = [
 			{
 				"name":"loading",
 				"title":"加载",
-				"desc":"等待数据加载时的动画效果",
+				"desc":"等待数据加载时的动画效果。",
 				"body":"",
 				"data":[
 					{
 						"name":"text",
 						"title":"带文字",
-						"desc":"可添加自定义文字提示",
+						"desc":"可添加自定义文字提示。",
 						"body":"",
 					}
 				]
@@ -398,7 +398,7 @@ const allData = [
 			{
 				"name":"progress",
 				"title":"进度条",
-				"desc":"为当前工作流或者动作提供清晰的进度反馈",
+				"desc":"为当前工作流或者动作提供清晰的进度反馈。",
 				"body":"",
 				"data":[
 					{
@@ -418,7 +418,7 @@ const allData = [
 			{
 				"name":"step-bar",
 				"title":"步骤条",
-				"desc":"用于用户注册，信息填写等等步骤清晰的动作的流程展示",
+				"desc":"用于用户注册，信息填写等等步骤清晰的动作的流程展示。",
 				"body":"",
 				"data":[
 					{
@@ -438,7 +438,7 @@ const allData = [
 			{
 				"name":"tree",
 				"title":"选项树",
-				"desc":"多层级的选项卡，自定义层级及内容",
+				"desc":"多层级的选项卡，自定义层级及内容。",
 				"body":"",
 				"data":[
 					{
