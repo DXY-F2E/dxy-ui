@@ -9,6 +9,7 @@ var postcss = require('gulp-postcss');
 var babel = require("gulp-babel");
 var es2015 = require("babel-preset-es2015");
 var uglify = require('gulp-uglify');
+var tool = require('./tool');
 
 gulp.task('css', function() {
   return gulp
@@ -52,5 +53,8 @@ gulp.task('watch', function() {
   gulp.watch(['sass/**/*.scss', 'sass/mixins/**/*.scss'], ['cssmin']);
 });
 
-gulp.task('docs', ['docscss', 'docsjs']);
+gulp.task('docs', ['docscss', 'docsjs'], function () {
+  tool.getFile('docs');
+});
+
 gulp.task('default', ['css', 'cssmin', 'docs']);
