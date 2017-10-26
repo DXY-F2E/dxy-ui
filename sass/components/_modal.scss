@@ -1,6 +1,7 @@
 .#{$prefix}-modal {
 	box-sizing: $modal-box-sizing;
 	width: $modal-width;
+	max-width: 100%;
 	padding: $modal-padding;
 	background-color: $modal-bgcolor;
 	box-shadow: $modal-shadow;

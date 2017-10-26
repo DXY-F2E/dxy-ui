@@ -15,7 +15,7 @@
 }
 
 @mixin text_input($padding, $border-width, $border-color, $radius) {
-  box-sizing: border-box;
+  //box-sizing: border-box;
   padding: $padding;
   border: $border-width solid $border-color;
   border-radius: $radius;

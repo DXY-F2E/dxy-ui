@@ -46,6 +46,9 @@ $tree: '#{$prefix}-tree';
   &-content {
     padding: $tree-content-pd 0;
     position: relative;
+    & > .dxy-checkbox {
+      margin-left: 0;
+    }
   }
   &-node {
     position: relative;

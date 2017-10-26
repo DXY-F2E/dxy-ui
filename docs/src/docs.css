@@ -1,0 +1,340 @@
+
+body {
+  position: relative;
+}
+
+.du-examples .thumbnail {
+  margin-bottom: 10px;
+}
+.du-examples h4 {
+  margin-bottom: 5px;
+}
+.du-examples p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .du-examples {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+  .du-examples > [class^="col-"] {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.du-docs-sidebar.affix {
+  position: fixed;
+}
+@media (min-width: 768px) {
+  .du-docs-sidebar {
+    /* padding-left: 20px; */
+  }
+}
+
+.du-docs-sidenav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+	padding-left:0;
+	list-style:none;
+}
+
+.du-docs-sidebar .nav > li > a {
+  display: block;
+  padding: 4px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #767676;
+	text-decoration:none;
+}
+
+.du-docs-sidebar .nav > li > a:hover,
+.du-docs-sidebar .nav > li > a:focus {
+  padding-left: 19px;
+  color: #3572fe;
+  text-decoration: none;
+  background-color: transparent;
+  border-left: 1px solid #3572fe;
+}
+
+.du-docs-sidebar .nav > .active > a,
+.du-docs-sidebar .nav > .active:hover > a,
+.du-docs-sidebar .nav > .active:focus > a {
+  padding-left: 18px;
+  font-weight: bold;
+  color: #3572fe;
+  background-color: transparent;
+  border-left: 2px solid #3572fe;
+}
+
+.du-docs-sidebar .nav .nav {
+	list-style:none;
+	padding-left:20px;
+  /* display: none; */
+  padding-bottom: 10px;
+}
+
+.du-docs-sidebar .nav .nav:first-child {
+	padding-top: 10px;
+}
+
+.du-docs-sidebar .nav .nav .nav:last-child {
+	padding-bottom: 0;
+}
+
+.du-docs-sidebar .nav .nav > li > a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  /* padding-left: 30px; */
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.du-docs-sidebar .nav .nav > li > a:hover,
+.du-docs-sidebar .nav .nav > li > a:focus {
+  /* padding-left: 29px; */
+}
+
+.du-docs-sidebar .nav .nav > .active > a,
+.du-docs-sidebar .nav .nav > .active:hover > a,
+.du-docs-sidebar .nav .nav > .active:focus > a {
+  /*padding-left: 28px;*/
+  font-weight: 500;
+}
+
+.back-to-top,
+.du-docs-theme-toggle {
+  display: none;
+  padding: 4px 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
+}
+.back-to-top:hover,
+.du-docs-theme-toggle:hover {
+  color: #3572fe;
+  text-decoration: none;
+}
+.du-docs-theme-toggle {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .back-to-top,
+  .du-docs-theme-toggle {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .du-docs-sidebar .nav > .active > ul {
+    display: block;
+  }
+  .du-docs-sidebar.affix,
+  .du-docs-sidebar.affix-bottom {
+    width: 213px;
+  }
+  .du-docs-sidebar.affix {
+    position: fixed;
+    /*top: 20px;*/
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 90%;
+    overflow: auto;
+  }
+  .du-docs-sidebar.affix-bottom {
+    position: absolute;
+  }
+  .du-docs-sidebar.affix-bottom .du-docs-sidenav,
+  .du-docs-sidebar.affix .du-docs-sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .du-docs-sidebar.affix-bottom,
+  .du-docs-sidebar.affix {
+    width: 263px;
+  }
+}
+
+.du-docs-section {
+  margin-bottom: 60px;
+}
+.du-docs-section:last-child {
+  margin-bottom: 0;
+}
+
+.du-docs-section h3,
+.du-docs-section h4,
+.du-docs-section p {
+	margin-bottom: 10px;
+}
+h1[id] {
+  padding-top: 20px;
+  margin-top: 0;
+}
+
+.du-example {
+  position: relative;
+  padding: 45px 15px 15px;
+  margin: 0 -15px 15px;
+  border-color: #e5e5e5 #eee #eee;
+  border-style: solid;
+  border-width: 1px 0;
+  -webkit-box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
+          box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
+}
+
+.du-example:after {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #959595;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  content: "Example";
+}
+
+.du-example-padded-bottom {
+  padding-bottom: 24px;
+}
+
+.du-example + .highlight,
+.du-example + .zero-clipboard + .highlight {
+  margin: -15px -15px 15px;
+  border-width: 0 0 1px;
+  border-radius: 0;
+}
+
+@media (min-width: 768px) {
+  .du-example {
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 1px;
+    border-radius: 4px 4px 0 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .du-example + .highlight,
+  .du-example + .zero-clipboard + .highlight {
+    margin-top: -16px;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 1px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  .du-example-standalone {
+    border-radius: 4px;
+  }
+}
+
+.du-example .container {
+  width: auto;
+}
+
+.du-example > p:last-child,
+.du-example > ul:last-child,
+.du-example > ol:last-child,
+.du-example > blockquote:last-child,
+.du-example > .form-control:last-child,
+.du-example > .table:last-child,
+.du-example > .navbar:last-child,
+.du-example > .jumbotron:last-child,
+.du-example > .alert:last-child,
+.du-example > .panel:last-child,
+.du-example > .list-group:last-child,
+.du-example > .well:last-child,
+.du-example > .progress:last-child,
+.du-example > .table-responsive:last-child > .table {
+  margin-bottom: 0;
+}
+.du-example > p > .close {
+  float: none;
+}
+
+.highlight {
+  /*padding: 9px 14px;*/
+  margin-bottom: 14px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px;
+}
+.highlight pre {
+  height: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  word-break: normal;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  transition: all .2s;
+  overflow: hidden;
+}
+.highlight pre code {
+  padding: 20px;
+  font-size: inherit;
+  color: #333;
+}
+.highlight pre code:first-child {
+  display: inline-block;
+  padding-right: 45px;
+}
+.highlight > a {
+  display: block;
+  width: 100%;
+  color: #555;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  box-sizing: border-box;
+}
+.highlight > a:hover {
+  color: #3572fe;
+}
+.highlight > a i {
+  /*transition: all .2s;*/
+  display: inline-block;
+}
+.highlight.fold pre {
+  border-bottom: 1px solid #e1e1e8;
+}
+.highlight.fold > a i {
+  transform: rotate(180deg);
+}
+
+@media print {
+  a[href]:after {
+    content: "" !important;
+  }
+}
+
+.highlight {
+  overflow: hidden;
+}
+
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+  background: none;
+}
+
+.du-docs-sidebar .dxy-go-top {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+}
+
+.nav .dxy-tree-content {
+  padding: 0;
+}

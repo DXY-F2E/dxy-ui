@@ -10,9 +10,10 @@
 
 .#{$prefix}-form-inline .#{$prefix}-form-group {
   display: inline-block;
+  margin-right: $form-group-x-margin;
 
-  &:nth-child(n + 2) {
-    margin-left: $form-group-x-margin;
+  &:last-child {
+    margin-left: 0;
   }
 }
 
@@ -131,7 +132,7 @@
     &:checked + span:after {
       content: " ";
       position: absolute;
-      top: -1px;
+      top: -2px;
       bottom: 0;
 
       $width: ($checkbox-width + $checkbox-bd-width * 2) / 2 - 1px;
@@ -141,7 +142,7 @@
       height: ($checkbox-height + $checkbox-bd-width * 2) / 4;
       border-left: 2px solid #fff;
       border-bottom: 2px solid #fff;
-      transform: rotate(-50deg);
+      transform: rotate(-45deg);
     }
     &[disabled] + span:before {
       border-color: $check-disabled-bd-color;

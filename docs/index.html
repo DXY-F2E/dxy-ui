@@ -2,16 +2,3018 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DXY-UI DEMOS</title>
+  <title>DXY-UI DEMO INDEX</title>
   <link rel="stylesheet" href="../dist/css/dxy-ui.min.css">
-  <link rel="stylesheet" href="src/css/index.css">
+	<link rel="stylesheet" href="../docs/dist/docs.min.css">
 </head>
 <body>
-  <div class="side-bar" id="j_side"></div>
-  <div class="main-content" id="j_main"></div>
+<div class="container">
 
-  <script src="src/js/lib/marked.min.js"></script>
-  <script src="src/js/lib/jquery-2.1.4.js"></script>
-  <script src="src/js/index.js"></script>
+<div class="dxy-row">
+	<div class="dxy-col-9">
+		
+		<h2 id="elements">基本元素</h2>
+		<p></p>
+		
+		<div class="du-docs-section example_area-elements_text">
+			<h3 id="elements_text" class="page-header">
+				文本
+			</h3>
+			<p>为 HTML 中不同的标题标签定制了大小，可使用 <code>&lt;h1&gt;</code> 到 <code>&lt;h6&gt;</code> 或 <code>.dxy-h1</code> 到 <code>.dxy-h2</code> 类。正文提供了不同语境的样式，可用于 <code>&lt;p&gt;</code> 标签或其他文字标签中。</p>
+			
+			<div class="du-example">
+				<h1 class="dxy-h-bold">标题1加粗</h1>
+<h1>标题1</h1>
+<h2>标题2</h2>
+<h3>标题3</h3>
+<h4>标题4</h4>
+<h5>标题5</h5>
+<h6>标题6</h6>
+<p class="dxy-text">这是常规正文段落</p>
+<p class="dxy-text-strong">这是强调内容段落</p>
+<p class="dxy-text-quote">这是引用段落</p>
+<p class="dxy-text-quote">多行的引用段落<br />多行的引用段落</p>
+<p><span class="dxy-text-tip">这是提示文本</span></p>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;h1 class=&#34;dxy-h-bold&#34;&gt;标题1加粗&lt;/h1&gt;
+&lt;h1&gt;标题1&lt;/h1&gt;
+&lt;h2&gt;标题2&lt;/h2&gt;
+&lt;h3&gt;标题3&lt;/h3&gt;
+&lt;h4&gt;标题4&lt;/h4&gt;
+&lt;h5&gt;标题5&lt;/h5&gt;
+&lt;h6&gt;标题6&lt;/h6&gt;
+&lt;p class=&#34;dxy-text&#34;&gt;这是常规正文段落&lt;/p&gt;
+&lt;p class=&#34;dxy-text-strong&#34;&gt;这是强调内容段落&lt;/p&gt;
+&lt;p class=&#34;dxy-text-quote&#34;&gt;这是引用段落&lt;/p&gt;
+&lt;p class=&#34;dxy-text-quote&#34;&gt;多行的引用段落&lt;br /&gt;多行的引用段落&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;dxy-text-tip&#34;&gt;这是提示文本&lt;/span&gt;&lt;/p&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+		</div>
+		
+		<div class="du-docs-section example_area-elements_list">
+			<h3 id="elements_list" class="page-header">
+				列表
+			</h3>
+			<p>和原生列表不同，基本列表是去除样式的。</p>
+			
+			<div class="du-example">
+				<ul class="dxy-ul">
+	<li>大学教授</li>
+	<li>同声翻译官</li>
+	<li>软件工程师</li>
+	<li>自由职业者</li>
+</ul>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;ul class=&#34;dxy-ul&#34;&gt;
+	&lt;li&gt;大学教授&lt;/li&gt;
+	&lt;li&gt;同声翻译官&lt;/li&gt;
+	&lt;li&gt;软件工程师&lt;/li&gt;
+	&lt;li&gt;自由职业者&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="elements_list_horizon">水平列表</h4>
+			<p>所有列表项放置在一行的列表。</p>
+			<div class="du-example">
+				<ul class="dxy-ul dxy-ul-horizon">
+  <li>大学教授</li>
+  <li>同声翻译官</li>
+  <li>软件工程师</li>
+  <li>自由职业者</li>
+</ul>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;ul class=&#34;dxy-ul dxy-ul-horizon&#34;&gt;
+  &lt;li&gt;大学教授&lt;/li&gt;
+  &lt;li&gt;同声翻译官&lt;/li&gt;
+  &lt;li&gt;软件工程师&lt;/li&gt;
+  &lt;li&gt;自由职业者&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_list_dot">实心符号列表</h4>
+			<p>左侧带实心圆符号的列表。</p>
+			<div class="du-example">
+				<ul class="dxy-ul dxy-ul-dot">
+  <li>大学教授</li>
+  <li>同声翻译官</li>
+  <li>软件工程师</li>
+  <li>自由职业者</li>
+</ul>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;ul class=&#34;dxy-ul dxy-ul-dot&#34;&gt;
+  &lt;li&gt;大学教授&lt;/li&gt;
+  &lt;li&gt;同声翻译官&lt;/li&gt;
+  &lt;li&gt;软件工程师&lt;/li&gt;
+  &lt;li&gt;自由职业者&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_list_circle">空心符号列表</h4>
+			<p>左侧带空心圆圈的列表。</p>
+			<div class="du-example">
+				<ul class="dxy-ul dxy-ul-circle">
+  <li>大学教授</li>
+  <li>同声翻译官</li>
+  <li>软件工程师</li>
+  <li>自由职业者</li>
+</ul>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;ul class=&#34;dxy-ul dxy-ul-circle&#34;&gt;
+  &lt;li&gt;大学教授&lt;/li&gt;
+  &lt;li&gt;同声翻译官&lt;/li&gt;
+  &lt;li&gt;软件工程师&lt;/li&gt;
+  &lt;li&gt;自由职业者&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_list_dl">短语列表</h4>
+			<p>为 <code>&lt;dl&gt;</code> 提供的样式，适用于短语后有对应定义或长句的情况。</p>
+			<div class="du-example">
+				<dl class="dxy-dl">
+  <dt>Wi-Fi</dt>
+  <dd>一个创建于IEEE 802.11标准的无线局域网技术</dd>
+  <dt>电子计算机</dt>
+  <dd>一种利用电子学原理，根据一系列指令对资料进行处理的工具</dd>
+</dl>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;dl class=&#34;dxy-dl&#34;&gt;
+  &lt;dt&gt;Wi-Fi&lt;/dt&gt;
+  &lt;dd&gt;一个创建于IEEE 802.11标准的无线局域网技术&lt;/dd&gt;
+  &lt;dt&gt;电子计算机&lt;/dt&gt;
+  &lt;dd&gt;一种利用电子学原理，根据一系列指令对资料进行处理的工具&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_list_dl-horizon">水平短语列表</h4>
+			<p>短语和定义放置在一行的列表。</p>
+			<div class="du-example">
+				<dl class="dxy-dl dxy-dl-horizon">
+  <dt>Wi-Fi</dt>
+  <dd>一个创建于IEEE 802.11标准的无线局域网技术</dd>
+  <dt>电子计算机</dt>
+  <dd>一种利用电子学原理，根据一系列指令对資料进行处理的工具</dd>
+</dl>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;dl class=&#34;dxy-dl dxy-dl-horizon&#34;&gt;
+  &lt;dt&gt;Wi-Fi&lt;/dt&gt;
+  &lt;dd&gt;一个创建于IEEE 802.11标准的无线局域网技术&lt;/dd&gt;
+  &lt;dt&gt;电子计算机&lt;/dt&gt;
+  &lt;dd&gt;一种利用电子学原理，根据一系列指令对資料进行处理的工具&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-elements_grid">
+			<h3 id="elements_grid" class="page-header">
+				栅格系统
+			</h3>
+			<p>参考了 <code>Bootstrap</code>，把容器分为12栏，提供 <code>.dxy-col-1</code> 到 <code>.dxy-col-12</code> 类，数字代表占用的栏数。栅格容器使用 <code>.dxy-container</code> 类，在不同屏幕宽度时会有相应合适的最大宽度。如果要使用100%的宽度，可以使用 <code>.dxy-container-fluid</code>。</p>
+			
+			<div class="du-example">
+				<div class="dxy-container">
+  <div class="dxy-row">
+    <div class="dxy-col-12">dxy-col-12</div>
+  </div>
+  <div class="dxy-row">
+    <div class="dxy-col-1">dxy-col-1</div>
+    <div class="dxy-col-1">dxy-col-1</div>
+    <div class="dxy-col-1">dxy-col-1</div>
+    <div class="dxy-col-1">dxy-col-1</div>
+    <div class="dxy-col-1">dxy-col-1</div>
+    <div class="dxy-col-1">dxy-col-1</div>
+    <div class="dxy-col-1">dxy-col-1</div>
+    <div class="dxy-col-1">dxy-col-1</div>
+    <div class="dxy-col-1">dxy-col-1</div>
+    <div class="dxy-col-1">dxy-col-1</div>
+    <div class="dxy-col-1">dxy-col-1</div>
+    <div class="dxy-col-1">dxy-col-1</div>
+  </div>
+  <div class="dxy-row">
+    <div class="dxy-col-2">dxy-col-2</div>
+    <div class="dxy-col-3">dxy-col-3</div>
+    <div class="dxy-col-5">dxy-col-5</div>
+    <div class="dxy-col-7">dxy-col-7</div>
+  </div>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-container&#34;&gt;
+  &lt;div class=&#34;dxy-row&#34;&gt;
+    &lt;div class=&#34;dxy-col-12&#34;&gt;dxy-col-12&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-row&#34;&gt;
+    &lt;div class=&#34;dxy-col-1&#34;&gt;dxy-col-1&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-1&#34;&gt;dxy-col-1&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-1&#34;&gt;dxy-col-1&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-1&#34;&gt;dxy-col-1&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-1&#34;&gt;dxy-col-1&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-1&#34;&gt;dxy-col-1&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-1&#34;&gt;dxy-col-1&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-1&#34;&gt;dxy-col-1&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-1&#34;&gt;dxy-col-1&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-1&#34;&gt;dxy-col-1&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-1&#34;&gt;dxy-col-1&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-1&#34;&gt;dxy-col-1&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-row&#34;&gt;
+    &lt;div class=&#34;dxy-col-2&#34;&gt;dxy-col-2&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-3&#34;&gt;dxy-col-3&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-5&#34;&gt;dxy-col-5&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-7&#34;&gt;dxy-col-7&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="elements_grid_combine">组合</h4>
+			<p>我们按尺寸划分不同的屏幕设备，提供对应的栅格栏，对照如下：<br><code>.dxy-col-*</code>: 无<br><code>.dxy-col-sm-*</code>: @media (min-width: 576px)<br><code>.dxy-col-md-*</code>: @media (min-width: 768px)<br><code>.dxy-col-lg-*</code>: @media (min-width: 992px)<br>以上可组合使用，以适配不同大小的屏幕设备。</p>
+			<div class="du-example">
+				<div class="dxy-container">
+  <div class="dxy-row">
+    <div class="dxy-col-12 dxy-col-lg-3 dxy-col-md-5 dxy-col-sm-1">
+      dxy-col-12<br>dxy-col-lg-3<br>dxy-col-md-4<br>dxy-col-sm-1
+    </div>
+    <div class="dxy-col-12 dxy-col-lg-3 dxy-col-md-4 dxy-col-sm-2">
+      dxy-col-12<br>dxy-col-lg-3<br>dxy-col-md-3<br>dxy-col-sm-2
+    </div>
+    <div class="dxy-col-12 dxy-col-lg-3 dxy-col-md-2 dxy-col-sm-4">
+      dxy-col-12<br>dxy-col-lg-3<br>dxy-col-md-2<br>dxy-col-sm-3
+    </div>
+    <div class="dxy-col-12 dxy-col-lg-3 dxy-col-md-1 dxy-col-sm-5">
+      dxy-col-12<br>dxy-col-lg-3<br>dxy-col-md-1<br>dxy-col-sm-4
+    </div>
+  </div>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-container&#34;&gt;
+  &lt;div class=&#34;dxy-row&#34;&gt;
+    &lt;div class=&#34;dxy-col-12 dxy-col-lg-3 dxy-col-md-5 dxy-col-sm-1&#34;&gt;
+      dxy-col-12&lt;br&gt;dxy-col-lg-3&lt;br&gt;dxy-col-md-4&lt;br&gt;dxy-col-sm-1
+    &lt;/div&gt;
+    &lt;div class=&#34;dxy-col-12 dxy-col-lg-3 dxy-col-md-4 dxy-col-sm-2&#34;&gt;
+      dxy-col-12&lt;br&gt;dxy-col-lg-3&lt;br&gt;dxy-col-md-3&lt;br&gt;dxy-col-sm-2
+    &lt;/div&gt;
+    &lt;div class=&#34;dxy-col-12 dxy-col-lg-3 dxy-col-md-2 dxy-col-sm-4&#34;&gt;
+      dxy-col-12&lt;br&gt;dxy-col-lg-3&lt;br&gt;dxy-col-md-2&lt;br&gt;dxy-col-sm-3
+    &lt;/div&gt;
+    &lt;div class=&#34;dxy-col-12 dxy-col-lg-3 dxy-col-md-1 dxy-col-sm-5&#34;&gt;
+      dxy-col-12&lt;br&gt;dxy-col-lg-3&lt;br&gt;dxy-col-md-1&lt;br&gt;dxy-col-sm-4
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_grid_fill">填充</h4>
+			<p>可使用 <code>.dxy-col</code> 来填充一行（<code>.dxy-row</code>）中剩余的空间。</p>
+			<div class="du-example">
+				<div class="dxy-container">
+  <div class="dxy-row">
+    <div class="dxy-col">dxy-col</div>
+    <div class="dxy-col">dxy-col</div>
+    <div class="dxy-col">dxy-col</div>
+    <div class="dxy-col">dxy-col</div>
+  </div>
+  <div class="dxy-row">
+    <div class="dxy-col-1">dxy-col-1</div>
+    <div class="dxy-col-1">dxy-col-1</div>
+    <div class="dxy-col">dxy-col</div>
+  </div>
+  <div class="dxy-row">
+    <div class="dxy-col">dxy-col</div>
+    <div class="dxy-col-2">dxy-col-2</div>
+    <div class="dxy-col-4">dxy-col-4</div>
+  </div>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-container&#34;&gt;
+  &lt;div class=&#34;dxy-row&#34;&gt;
+    &lt;div class=&#34;dxy-col&#34;&gt;dxy-col&lt;/div&gt;
+    &lt;div class=&#34;dxy-col&#34;&gt;dxy-col&lt;/div&gt;
+    &lt;div class=&#34;dxy-col&#34;&gt;dxy-col&lt;/div&gt;
+    &lt;div class=&#34;dxy-col&#34;&gt;dxy-col&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-row&#34;&gt;
+    &lt;div class=&#34;dxy-col-1&#34;&gt;dxy-col-1&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-1&#34;&gt;dxy-col-1&lt;/div&gt;
+    &lt;div class=&#34;dxy-col&#34;&gt;dxy-col&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-row&#34;&gt;
+    &lt;div class=&#34;dxy-col&#34;&gt;dxy-col&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-2&#34;&gt;dxy-col-2&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-4&#34;&gt;dxy-col-4&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_grid_offset">列偏移</h4>
+			<p>使用 <code>.dxy-offset-*</code>、<code>.dxy-offset-sm-*</code>、<code>.dxy-offset-md-*</code>、<code>.dxy-offset-lg-*</code> 类可以将列向右侧偏移 n 列。</p>
+			<div class="du-example">
+				<div class="dxy-container">
+  <div class="dxy-row">
+    <div class="dxy-col-2">dxy-col-2</div>
+    <div class="dxy-col-2 dxy-offset-3">dxy-col-2<br>dxy-offset-3</div>
+    <div class="dxy-col-2 dxy-offset-2">dxy-col-2<br>dxy-offset-2</div>
+  </div>
+  <div class="dxy-row">
+    <div class="dxy-col-md-3">dxy-col-md-1</div>
+    <div class="dxy-col-md-3 dxy-offset-md-3">dxy-col-md-3<br>dxy-offset-md-3</div>
+  </div>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-container&#34;&gt;
+  &lt;div class=&#34;dxy-row&#34;&gt;
+    &lt;div class=&#34;dxy-col-2&#34;&gt;dxy-col-2&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-2 dxy-offset-3&#34;&gt;dxy-col-2&lt;br&gt;dxy-offset-3&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-2 dxy-offset-2&#34;&gt;dxy-col-2&lt;br&gt;dxy-offset-2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-row&#34;&gt;
+    &lt;div class=&#34;dxy-col-md-3&#34;&gt;dxy-col-md-1&lt;/div&gt;
+    &lt;div class=&#34;dxy-col-md-3 dxy-offset-md-3&#34;&gt;dxy-col-md-3&lt;br&gt;dxy-offset-md-3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-elements_button">
+			<h3 id="elements_button" class="page-header">
+				按钮
+			</h3>
+			<p>提供按钮样式，可用在 <code>&lt;button&gt;</code>、<code>&lt;input&gt;</code> 和 <code>&lt;a&gt;</code> 标签。</p>
+			
+			<div class="du-example">
+				<button type="button" class="dxy-btn">按钮</button>
+<input type="button" value="提交" class="dxy-btn">
+<a href="#" class="dxy-btn">链接</a>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;button type=&#34;button&#34; class=&#34;dxy-btn&#34;&gt;按钮&lt;/button&gt;
+&lt;input type=&#34;button&#34; value=&#34;提交&#34; class=&#34;dxy-btn&#34;&gt;
+&lt;a href=&#34;#&#34; class=&#34;dxy-btn&#34;&gt;链接&lt;/a&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="elements_button_size">多个尺寸</h4>
+			<p>提供其他尺寸的按钮样式，使用 <code>lg</code>、<code>sm</code> 和 <code>xs</code> 区分。</p>
+			<div class="du-example">
+				<button type="button" class="dxy-btn dxy-btn-lg">大按钮</button>
+<button type="button" class="dxy-btn">普通按钮</button>
+<button type="button" class="dxy-btn dxy-btn-sm">小按钮</button>
+<button type="button" class="dxy-btn dxy-btn-xs">超小按钮</button>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-lg&#34;&gt;大按钮&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;dxy-btn&#34;&gt;普通按钮&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-sm&#34;&gt;小按钮&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-xs&#34;&gt;超小按钮&lt;/button&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_button_situation">情景色</h4>
+			<p>提供在不同情景下的按钮样式。</p>
+			<div class="du-example">
+				<button type="button" class="dxy-btn dxy-btn-primary">主要按钮</button>
+<button type="button" class="dxy-btn dxy-btn-success">成功</button>
+<button type="button" class="dxy-btn dxy-btn-info">一般信息</button>
+<button type="button" class="dxy-btn dxy-btn-warning">警告</button>
+<button type="button" class="dxy-btn dxy-btn-danger">危险</button>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-primary&#34;&gt;主要按钮&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-success&#34;&gt;成功&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-info&#34;&gt;一般信息&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-warning&#34;&gt;警告&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-danger&#34;&gt;危险&lt;/button&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_button_link">链接/文字</h4>
+			<p>当按钮是链接或文字时可用无边框和文字颜色突出的按钮。</p>
+			<div class="du-example">
+				<button type="button" class="dxy-btn dxy-btn-link">文字</button>
+<a href="#" class="dxy-btn dxy-btn-link">链接</a>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-link&#34;&gt;文字&lt;/button&gt;
+&lt;a href=&#34;#&#34; class=&#34;dxy-btn dxy-btn-link&#34;&gt;链接&lt;/a&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_button_disabled">禁用状态</h4>
+			<p>提供按钮或链接禁用的样式，支持 <code>.disabled</code> 或 <code>disabled</code> 属性。</p>
+			<div class="du-example">
+				<button type="button" class="dxy-btn" disabled>基本按钮</button>
+<button type="button" class="dxy-btn dxy-btn-danger" disabled>情景按钮</button>
+<button type="button" class="dxy-btn dxy-btn-link" disabled>链接</button>
+<a href="####" class="dxy-btn dxy-btn-link disabled">链接</a>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;button type=&#34;button&#34; class=&#34;dxy-btn&#34; disabled&gt;基本按钮&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-danger&#34; disabled&gt;情景按钮&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-link&#34; disabled&gt;链接&lt;/button&gt;
+&lt;a href=&#34;####&#34; class=&#34;dxy-btn dxy-btn-link disabled&#34;&gt;链接&lt;/a&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-elements_table">
+			<h3 id="elements_table" class="page-header">
+				表格
+			</h3>
+			<p>基本表格是横线边框的样式。</p>
+			
+			<div class="du-example">
+				<table class="dxy-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>姓名</th>
+      <th>性别</th>
+      <th>兴趣</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>马克</td>
+      <td>mark</td>
+      <td>漫画</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>武冬至</td>
+      <td>dong</td>
+      <td>coding</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>夏夏</td>
+      <td>luna</td>
+      <td>算法</td>
+    </tr>
+  </tbody>
+</table>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;table class=&#34;dxy-table&#34;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;ID&lt;/th&gt;
+      &lt;th&gt;姓名&lt;/th&gt;
+      &lt;th&gt;性别&lt;/th&gt;
+      &lt;th&gt;兴趣&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;马克&lt;/td&gt;
+      &lt;td&gt;mark&lt;/td&gt;
+      &lt;td&gt;漫画&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;武冬至&lt;/td&gt;
+      &lt;td&gt;dong&lt;/td&gt;
+      &lt;td&gt;coding&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;夏夏&lt;/td&gt;
+      &lt;td&gt;luna&lt;/td&gt;
+      &lt;td&gt;算法&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="elements_table_hover">鼠标悬停</h4>
+			<p>鼠标悬停时，表格的行会出现背景色。</p>
+			<div class="du-example">
+				<table class="dxy-table dxy-hover">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>姓名</th>
+    <th>性别</th>
+    <th>兴趣</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>马克</td>
+    <td>mark</td>
+    <td>漫画</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>武冬至</td>
+    <td>dong</td>
+    <td>coding</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>夏夏</td>
+    <td>luna</td>
+    <td>算法</td>
+  </tr>
+  </tbody>
+</table>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;table class=&#34;dxy-table dxy-hover&#34;&gt;
+  &lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;ID&lt;/th&gt;
+    &lt;th&gt;姓名&lt;/th&gt;
+    &lt;th&gt;性别&lt;/th&gt;
+    &lt;th&gt;兴趣&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;马克&lt;/td&gt;
+    &lt;td&gt;mark&lt;/td&gt;
+    &lt;td&gt;漫画&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;武冬至&lt;/td&gt;
+    &lt;td&gt;dong&lt;/td&gt;
+    &lt;td&gt;coding&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;夏夏&lt;/td&gt;
+    &lt;td&gt;luna&lt;/td&gt;
+    &lt;td&gt;算法&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_table_striped">条纹状</h4>
+			<p>间隔行有背景色，让每一行更有区分度。</p>
+			<div class="du-example">
+				<table class="dxy-table dxy-striped">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>姓名</th>
+    <th>性别</th>
+    <th>兴趣</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>马克</td>
+    <td>mark</td>
+    <td>漫画</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>武冬至</td>
+    <td>dong</td>
+    <td>coding</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>夏夏</td>
+    <td>luna</td>
+    <td>算法</td>
+  </tr>
+  </tbody>
+</table>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;table class=&#34;dxy-table dxy-striped&#34;&gt;
+  &lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;ID&lt;/th&gt;
+    &lt;th&gt;姓名&lt;/th&gt;
+    &lt;th&gt;性别&lt;/th&gt;
+    &lt;th&gt;兴趣&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;马克&lt;/td&gt;
+    &lt;td&gt;mark&lt;/td&gt;
+    &lt;td&gt;漫画&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;武冬至&lt;/td&gt;
+    &lt;td&gt;dong&lt;/td&gt;
+    &lt;td&gt;coding&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;夏夏&lt;/td&gt;
+    &lt;td&gt;luna&lt;/td&gt;
+    &lt;td&gt;算法&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_table_bordered">全边框</h4>
+			<p>每个单元格都有边框的表格样式。</p>
+			<div class="du-example">
+				<table class="dxy-table dxy-bordered">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>姓名</th>
+    <th>性别</th>
+    <th>兴趣</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>马克</td>
+    <td>mark</td>
+    <td>漫画</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>武冬至</td>
+    <td>dong</td>
+    <td>coding</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>夏夏</td>
+    <td>luna</td>
+    <td>算法</td>
+  </tr>
+  </tbody>
+</table>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;table class=&#34;dxy-table dxy-bordered&#34;&gt;
+  &lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;ID&lt;/th&gt;
+    &lt;th&gt;姓名&lt;/th&gt;
+    &lt;th&gt;性别&lt;/th&gt;
+    &lt;th&gt;兴趣&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;马克&lt;/td&gt;
+    &lt;td&gt;mark&lt;/td&gt;
+    &lt;td&gt;漫画&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;武冬至&lt;/td&gt;
+    &lt;td&gt;dong&lt;/td&gt;
+    &lt;td&gt;coding&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;夏夏&lt;/td&gt;
+    &lt;td&gt;luna&lt;/td&gt;
+    &lt;td&gt;算法&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_table_no-border">无边框</h4>
+			<p>另外提供了无边框的表格，可用在某些布局场景。</p>
+			<div class="du-example">
+				<table class="dxy-table dxy-no-border">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>姓名</th>
+    <th>性别</th>
+    <th>兴趣</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>马克</td>
+    <td>mark</td>
+    <td>漫画</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>武冬至</td>
+    <td>dong</td>
+    <td>coding</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>夏夏</td>
+    <td>luna</td>
+    <td>算法</td>
+  </tr>
+  </tbody>
+</table>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;table class=&#34;dxy-table dxy-no-border&#34;&gt;
+  &lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;ID&lt;/th&gt;
+    &lt;th&gt;姓名&lt;/th&gt;
+    &lt;th&gt;性别&lt;/th&gt;
+    &lt;th&gt;兴趣&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;马克&lt;/td&gt;
+    &lt;td&gt;mark&lt;/td&gt;
+    &lt;td&gt;漫画&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;武冬至&lt;/td&gt;
+    &lt;td&gt;dong&lt;/td&gt;
+    &lt;td&gt;coding&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;夏夏&lt;/td&gt;
+    &lt;td&gt;luna&lt;/td&gt;
+    &lt;td&gt;算法&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-elements_form">
+			<h3 id="elements_form" class="page-header">
+				表单
+			</h3>
+			<p>给表单添加 <code>.dxy-form</code> 类，每一个表单项使用 <code>.dxy-form-group</code> 类，这样可以使每个表单项独占一行。</p>
+			
+			<div class="du-example">
+				<form class="dxy-form">
+  <div class="dxy-form-group">
+    <label class="dxy-label">姓名</label>
+    <div class="dxy-form-content">
+      <input type="text" class="dxy-input" placeholder="姓名">
+    </div>
+  </div>
+  <div class="dxy-form-group">
+    <label class="dxy-label">性别</label>
+    <div class="dxy-form-content">
+      <select class="dxy-select">
+        <option value="">请选择</option>
+        <option value="male">男</option>
+        <option value="female">女</option>
+        <option value="other">其他</option>
+      </select>
+    </div>
+  </div>
+  <div class="dxy-form-group">
+    <label class="dxy-label">个人简介</label>
+    <div class="dxy-form-content">
+      <textarea class="dxy-textarea" rows="3"></textarea>
+    </div>
+  </div>
+</form>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;form class=&#34;dxy-form&#34;&gt;
+  &lt;div class=&#34;dxy-form-group&#34;&gt;
+    &lt;label class=&#34;dxy-label&#34;&gt;姓名&lt;/label&gt;
+    &lt;div class=&#34;dxy-form-content&#34;&gt;
+      &lt;input type=&#34;text&#34; class=&#34;dxy-input&#34; placeholder=&#34;姓名&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-form-group&#34;&gt;
+    &lt;label class=&#34;dxy-label&#34;&gt;性别&lt;/label&gt;
+    &lt;div class=&#34;dxy-form-content&#34;&gt;
+      &lt;select class=&#34;dxy-select&#34;&gt;
+        &lt;option value=&#34;&#34;&gt;请选择&lt;/option&gt;
+        &lt;option value=&#34;male&#34;&gt;男&lt;/option&gt;
+        &lt;option value=&#34;female&#34;&gt;女&lt;/option&gt;
+        &lt;option value=&#34;other&#34;&gt;其他&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-form-group&#34;&gt;
+    &lt;label class=&#34;dxy-label&#34;&gt;个人简介&lt;/label&gt;
+    &lt;div class=&#34;dxy-form-content&#34;&gt;
+      &lt;textarea class=&#34;dxy-textarea&#34; rows=&#34;3&#34;&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="elements_form_inline">行内表单</h4>
+			<p>给表单添加 <code>.dxy-form-inline</code> 类，使用 <code>.dxy-form-group</code> 类的表单项会变成 <code>inline-block</code>。</p>
+			<div class="du-example">
+				<form class="dxy-form-inline">
+  <div class="dxy-form-group">
+    <label class="dxy-label">姓名</label>
+    <div class="dxy-form-content">
+      <input type="text" class="dxy-input" placeholder="姓名">
+    </div>
+  </div>
+  <div class="dxy-form-group">
+    <label class="dxy-label">性别</label>
+    <div class="dxy-form-content">
+      <input type="text" class="dxy-input">
+    </div>
+  </div>
+</form>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;form class=&#34;dxy-form-inline&#34;&gt;
+  &lt;div class=&#34;dxy-form-group&#34;&gt;
+    &lt;label class=&#34;dxy-label&#34;&gt;姓名&lt;/label&gt;
+    &lt;div class=&#34;dxy-form-content&#34;&gt;
+      &lt;input type=&#34;text&#34; class=&#34;dxy-input&#34; placeholder=&#34;姓名&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-form-group&#34;&gt;
+    &lt;label class=&#34;dxy-label&#34;&gt;性别&lt;/label&gt;
+    &lt;div class=&#34;dxy-form-content&#34;&gt;
+      &lt;input type=&#34;text&#34; class=&#34;dxy-input&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_form_label">label</h4>
+			<p>提供了行内标签和单行标签两种形式。</p>
+			<div class="du-example">
+				<div>
+  <label class="dxy-label">行内标签</label>
+  <div class="dxy-form-content justify">
+    <input type="text" class="dxy-input" placeholder="内容">
+  </div>
+</div>
+<div>
+  <label class="dxy-label-block">单行标签</label>
+  <input type="text" class="dxy-input justify" placeholder="内容">
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div&gt;
+  &lt;label class=&#34;dxy-label&#34;&gt;行内标签&lt;/label&gt;
+  &lt;div class=&#34;dxy-form-content justify&#34;&gt;
+    &lt;input type=&#34;text&#34; class=&#34;dxy-input&#34; placeholder=&#34;内容&#34;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;label class=&#34;dxy-label-block&#34;&gt;单行标签&lt;/label&gt;
+  &lt;input type=&#34;text&#34; class=&#34;dxy-input justify&#34; placeholder=&#34;内容&#34;&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_form_input">输入框</h4>
+			<p>输入框有固定宽度和100%宽度两种样式，两者都有 <code>readonly</code> 和 <code>disabled</code> 状态。</p>
+			<div class="du-example">
+				<input class="dxy-input" placeholder="auto">
+<input class="dxy-input justify" placeholder="justify">
+<input class="dxy-input" placeholder="readonly" readonly>
+<input class="dxy-input" placeholder="disabled" disabled>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;input class=&#34;dxy-input&#34; placeholder=&#34;auto&#34;&gt;
+&lt;input class=&#34;dxy-input justify&#34; placeholder=&#34;justify&#34;&gt;
+&lt;input class=&#34;dxy-input&#34; placeholder=&#34;readonly&#34; readonly&gt;
+&lt;input class=&#34;dxy-input&#34; placeholder=&#34;disabled&#34; disabled&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_form_textarea">文本框</h4>
+			<p>文本框和输入框类似，有两种宽度和 <code>readonly</code> 和 <code>disabled</code> 两种状态，用于多行文本输入，竖直方向可拉伸。</p>
+			<div class="du-example">
+				<textarea class="dxy-textarea" placeholder="auto"></textarea>
+<textarea class="dxy-textarea justify" placeholder="justify"></textarea>
+<textarea class="dxy-textarea" placeholder="readonly" readonly></textarea>
+<textarea class="dxy-textarea" placeholder="disabled" disabled></textarea>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;textarea class=&#34;dxy-textarea&#34; placeholder=&#34;auto&#34;&gt;&lt;/textarea&gt;
+&lt;textarea class=&#34;dxy-textarea justify&#34; placeholder=&#34;justify&#34;&gt;&lt;/textarea&gt;
+&lt;textarea class=&#34;dxy-textarea&#34; placeholder=&#34;readonly&#34; readonly&gt;&lt;/textarea&gt;
+&lt;textarea class=&#34;dxy-textarea&#34; placeholder=&#34;disabled&#34; disabled&gt;&lt;/textarea&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_form_radio">单选框</h4>
+			<p>美化了原生的单选框，提供行内和单行两种样式。</p>
+			<div class="du-example">
+				<form>
+  <label class="dxy-radio">
+    <input type="radio">
+    <span>单选框</span>
+  </label>
+  <label class="dxy-radio">
+    <input type="radio" checked>
+    <span>选中</span>
+  </label>
+  <label class="dxy-radio">
+    <input type="radio" disabled>
+    <span>禁用</span>
+  </label>
+  <label class="dxy-radio">
+    <input type="radio" checked disabled>
+    <span>选中&禁用</span>
+  </label>
+  <label class="dxy-radio-block">
+    <input type="radio">
+    <span>块级单选框</span>
+  </label>
+  <label class="dxy-radio-block">
+    <input type="radio">
+    <span>块级单选框</span>
+  </label>
+</form>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;form&gt;
+  &lt;label class=&#34;dxy-radio&#34;&gt;
+    &lt;input type=&#34;radio&#34;&gt;
+    &lt;span&gt;单选框&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&#34;dxy-radio&#34;&gt;
+    &lt;input type=&#34;radio&#34; checked&gt;
+    &lt;span&gt;选中&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&#34;dxy-radio&#34;&gt;
+    &lt;input type=&#34;radio&#34; disabled&gt;
+    &lt;span&gt;禁用&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&#34;dxy-radio&#34;&gt;
+    &lt;input type=&#34;radio&#34; checked disabled&gt;
+    &lt;span&gt;选中&amp;禁用&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&#34;dxy-radio-block&#34;&gt;
+    &lt;input type=&#34;radio&#34;&gt;
+    &lt;span&gt;块级单选框&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&#34;dxy-radio-block&#34;&gt;
+    &lt;input type=&#34;radio&#34;&gt;
+    &lt;span&gt;块级单选框&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/form&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_form_checkbox">复选框</h4>
+			<p>美化了原生的复选框，提供行内和单行两种样式。</p>
+			<div class="du-example">
+				<form>
+  <label class="dxy-checkbox">
+    <input type="checkbox">
+    <span>复选框</span>
+  </label>
+  <label class="dxy-checkbox">
+    <input type="checkbox" checked>
+    <span>选中</span>
+  </label>
+  <label class="dxy-checkbox">
+    <input type="checkbox" disabled>
+    <span>禁用</span>
+  </label>
+  <label class="dxy-checkbox">
+    <input type="checkbox" checked disabled>
+    <span>选中&禁用</span>
+  </label>
+  <label class="dxy-checkbox-block">
+    <input type="checkbox">
+    <span>块级复选框</span>
+  </label>
+  <label class="dxy-checkbox-block">
+    <input type="checkbox">
+    <span>块级复选框</span>
+  </label>
+</form>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;form&gt;
+  &lt;label class=&#34;dxy-checkbox&#34;&gt;
+    &lt;input type=&#34;checkbox&#34;&gt;
+    &lt;span&gt;复选框&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&#34;dxy-checkbox&#34;&gt;
+    &lt;input type=&#34;checkbox&#34; checked&gt;
+    &lt;span&gt;选中&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&#34;dxy-checkbox&#34;&gt;
+    &lt;input type=&#34;checkbox&#34; disabled&gt;
+    &lt;span&gt;禁用&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&#34;dxy-checkbox&#34;&gt;
+    &lt;input type=&#34;checkbox&#34; checked disabled&gt;
+    &lt;span&gt;选中&amp;禁用&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&#34;dxy-checkbox-block&#34;&gt;
+    &lt;input type=&#34;checkbox&#34;&gt;
+    &lt;span&gt;块级复选框&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&#34;dxy-checkbox-block&#34;&gt;
+    &lt;input type=&#34;checkbox&#34;&gt;
+    &lt;span&gt;块级复选框&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/form&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_form_select">下拉框</h4>
+			<p>美化了原生的 <code>select</code>，包括有 <code>multiple</code> 属性的多选 <code>select</code>。提供了自适应宽度和100%宽度。</p>
+			<div class="du-example">
+				<h4>单选下拉框</h4>
+<select class="dxy-select">
+  <option>选项1</option>
+  <option>选项2</option>
+  <option>选项3</option>
+  <option>选项4</option>
+  <option>选项5</option>
+  <option>选项6</option>
+</select>
+
+<select class="dxy-select justify">
+  <option>选项1</option>
+  <option>选项2</option>
+  <option>选项3</option>
+  <option>选项4</option>
+  <option>选项5</option>
+  <option>选项6</option>
+</select>
+
+<h4>多选下拉框</h4>
+<select class="dxy-select" multiple>
+  <option>选项1</option>
+  <option>选项2</option>
+  <option>选项3</option>
+  <option>选项4</option>
+  <option>选项5</option>
+  <option>选项6</option>
+</select>
+
+<select class="dxy-select justify" multiple>
+  <option>选项1</option>
+  <option>选项2</option>
+  <option>选项3</option>
+  <option>选项4</option>
+  <option>选项5</option>
+  <option>选项6</option>
+</select>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;h4&gt;单选下拉框&lt;/h4&gt;
+&lt;select class=&#34;dxy-select&#34;&gt;
+  &lt;option&gt;选项1&lt;/option&gt;
+  &lt;option&gt;选项2&lt;/option&gt;
+  &lt;option&gt;选项3&lt;/option&gt;
+  &lt;option&gt;选项4&lt;/option&gt;
+  &lt;option&gt;选项5&lt;/option&gt;
+  &lt;option&gt;选项6&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class=&#34;dxy-select justify&#34;&gt;
+  &lt;option&gt;选项1&lt;/option&gt;
+  &lt;option&gt;选项2&lt;/option&gt;
+  &lt;option&gt;选项3&lt;/option&gt;
+  &lt;option&gt;选项4&lt;/option&gt;
+  &lt;option&gt;选项5&lt;/option&gt;
+  &lt;option&gt;选项6&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;h4&gt;多选下拉框&lt;/h4&gt;
+&lt;select class=&#34;dxy-select&#34; multiple&gt;
+  &lt;option&gt;选项1&lt;/option&gt;
+  &lt;option&gt;选项2&lt;/option&gt;
+  &lt;option&gt;选项3&lt;/option&gt;
+  &lt;option&gt;选项4&lt;/option&gt;
+  &lt;option&gt;选项5&lt;/option&gt;
+  &lt;option&gt;选项6&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class=&#34;dxy-select justify&#34; multiple&gt;
+  &lt;option&gt;选项1&lt;/option&gt;
+  &lt;option&gt;选项2&lt;/option&gt;
+  &lt;option&gt;选项3&lt;/option&gt;
+  &lt;option&gt;选项4&lt;/option&gt;
+  &lt;option&gt;选项5&lt;/option&gt;
+  &lt;option&gt;选项6&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="elements_form_validate">表单校验</h4>
+			<p>提供表单校验警告的样式，需要结合 <code>.dxy-verify</code> 和 <code>.dxy-verify-danger</code> 使用。</p>
+			<div class="du-example">
+				<form class="dxy-form">
+  <div class="dxy-form-group">
+    <label class="dxy-label">姓名</label>
+    <div class="dxy-form-content dxy-verify dxy-verify-danger">
+      <input type="text" id="dui-input" class="help-target dxy-input">
+      <span class="help-inline">请输入姓名</span>
+    </div>
+  </div>
+  <div class="dxy-form-group">
+    <label class="dxy-label">下拉框</label>
+    <div class="dxy-form-content dxy-verify dxy-verify-danger">
+      <select class="dxy-select help-target" multiple>
+        <option>选项1</option>
+        <option>选项2</option>
+        <option>选项3</option>
+        <option>选项4</option>
+        <option>选项5</option>
+        <option>选项6</option>
+      </select>
+      <span class="help-inline">错误校验</span>
+    </div>
+  </div>
+</form>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;form class=&#34;dxy-form&#34;&gt;
+  &lt;div class=&#34;dxy-form-group&#34;&gt;
+    &lt;label class=&#34;dxy-label&#34;&gt;姓名&lt;/label&gt;
+    &lt;div class=&#34;dxy-form-content dxy-verify dxy-verify-danger&#34;&gt;
+      &lt;input type=&#34;text&#34; id=&#34;dui-input&#34; class=&#34;help-target dxy-input&#34;&gt;
+      &lt;span class=&#34;help-inline&#34;&gt;请输入姓名&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-form-group&#34;&gt;
+    &lt;label class=&#34;dxy-label&#34;&gt;下拉框&lt;/label&gt;
+    &lt;div class=&#34;dxy-form-content dxy-verify dxy-verify-danger&#34;&gt;
+      &lt;select class=&#34;dxy-select help-target&#34; multiple&gt;
+        &lt;option&gt;选项1&lt;/option&gt;
+        &lt;option&gt;选项2&lt;/option&gt;
+        &lt;option&gt;选项3&lt;/option&gt;
+        &lt;option&gt;选项4&lt;/option&gt;
+        &lt;option&gt;选项5&lt;/option&gt;
+        &lt;option&gt;选项6&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;span class=&#34;help-inline&#34;&gt;错误校验&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		
+		<h2 id="components">组件</h2>
+		<p></p>
+		
+		<div class="du-docs-section example_area-components_button-group">
+			<h3 id="components_button-group" class="page-header">
+				按钮组
+			</h3>
+			<p>将按钮组合在同个容器内，自定义各个按钮的状态与功能。</p>
+			
+			<div class="du-example">
+				<div class="dxy-btn-group">
+	<button type="button" class="dxy-btn">Middle</button>
+	<button type="button" class="dxy-btn ">Left</button>
+</div>
+<div class="dxy-btn-group">
+	<button type="button" disabled class="dxy-btn">Middle</button>
+	<button type="button" class="dxy-btn ">Left</button>
+</div>
+<div class="dxy-btn-group">
+	<button type="button" class="dxy-btn">Middle</button>
+	<button type="button" class="dxy-btn dxy-btn-primary">Left</button>
+</div>
+<div class="dxy-btn-group">
+	<button type="button" disabled class="dxy-btn dxy-btn-primary">Left</button>
+	<button type="button" class="dxy-btn dxy-btn-primary">Middle</button>
+</div>
+<div class="dxy-btn-group">
+	<button type="button" class="dxy-btn dxy-btn-primary">Left</button>
+	<button type="button" class="dxy-btn dxy-btn-primary">Middle</button>
+</div>
+
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-btn-group&#34;&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn&#34;&gt;Middle&lt;/button&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn &#34;&gt;Left&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-btn-group&#34;&gt;
+	&lt;button type=&#34;button&#34; disabled class=&#34;dxy-btn&#34;&gt;Middle&lt;/button&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn &#34;&gt;Left&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-btn-group&#34;&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn&#34;&gt;Middle&lt;/button&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-primary&#34;&gt;Left&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-btn-group&#34;&gt;
+	&lt;button type=&#34;button&#34; disabled class=&#34;dxy-btn dxy-btn-primary&#34;&gt;Left&lt;/button&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-primary&#34;&gt;Middle&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-btn-group&#34;&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-primary&#34;&gt;Left&lt;/button&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-primary&#34;&gt;Middle&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="components_button-group_more">多个按钮</h4>
+			<p>假设你需要，可以更改按钮数量。</p>
+			<div class="du-example">
+				<div class="dxy-btn-group">
+	<button type="button" class="dxy-btn ">Left</button>
+	<button type="button" disabled class="dxy-btn">Middle</button>
+	<button type="button" class="dxy-btn ">Right</button>
+</div>
+<div class="dxy-btn-group">
+	<button type="button" class="dxy-btn dxy-btn-primary">Left</button>
+	<button type="button" disabled class="dxy-btn">Middle</button>
+	<button type="button" class="dxy-btn dxy-btn-primary">Right</button>
+</div>
+
+<div class="dxy-btn-group">
+	<button type="button" class="dxy-btn dxy-btn-primary">Left</button>
+	<button type="button" class="dxy-btn dxy-btn-primary">Middle</button>
+	<button type="button" class="dxy-btn dxy-btn-primary">Middle</button>
+	<button type="button" class="dxy-btn dxy-btn-primary">Right</button>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-btn-group&#34;&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn &#34;&gt;Left&lt;/button&gt;
+	&lt;button type=&#34;button&#34; disabled class=&#34;dxy-btn&#34;&gt;Middle&lt;/button&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn &#34;&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-btn-group&#34;&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-primary&#34;&gt;Left&lt;/button&gt;
+	&lt;button type=&#34;button&#34; disabled class=&#34;dxy-btn&#34;&gt;Middle&lt;/button&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-primary&#34;&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;dxy-btn-group&#34;&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-primary&#34;&gt;Left&lt;/button&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-primary&#34;&gt;Middle&lt;/button&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-primary&#34;&gt;Middle&lt;/button&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-primary&#34;&gt;Right&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="components_button-group_vertical">竖直方向</h4>
+			<p>按钮数量，按钮状态一样可以自定义。</p>
+			<div class="du-example">
+				<div class="dxy-btn-group-vertical">
+	<button type="button" class="dxy-btn dxy-btn-primary">Left</button>
+	<button type="button" disabled class="dxy-btn dxy-btn-primary">Middle</button>
+	<button type="button" class="dxy-btn ">Right</button>
+</div>
+<div class="dxy-btn-group-vertical">
+	<button type="button" class="dxy-btn dxy-btn-primary">Left</button>
+	<button type="button" disabled class="dxy-btn dxy-btn-primary">Middle</button>
+	<button type="button" class="dxy-btn dxy-btn-primary">Middle</button>
+	<button type="button" class="dxy-btn ">Right</button>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-btn-group-vertical&#34;&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-primary&#34;&gt;Left&lt;/button&gt;
+	&lt;button type=&#34;button&#34; disabled class=&#34;dxy-btn dxy-btn-primary&#34;&gt;Middle&lt;/button&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn &#34;&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-btn-group-vertical&#34;&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-primary&#34;&gt;Left&lt;/button&gt;
+	&lt;button type=&#34;button&#34; disabled class=&#34;dxy-btn dxy-btn-primary&#34;&gt;Middle&lt;/button&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-primary&#34;&gt;Middle&lt;/button&gt;
+	&lt;button type=&#34;button&#34; class=&#34;dxy-btn &#34;&gt;Right&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-components_input-group">
+			<h3 id="components_input-group" class="page-header">
+				输入框组
+			</h3>
+			<p>对文本输入框进行扩展，添加所需要的文本标签或按钮。</p>
+			
+			<div class="du-example">
+				<div class="dxy-input-group">
+	<span class="dxy-input-group-addon">$</span>
+	<input type="text" class="dxy-input" />
+</div>
+<div class="dxy-input-group">
+	<input type="text" class="dxy-input" />
+	<span class="dxy-input-group-addon">.00</span>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-input-group&#34;&gt;
+	&lt;span class=&#34;dxy-input-group-addon&#34;&gt;$&lt;/span&gt;
+	&lt;input type=&#34;text&#34; class=&#34;dxy-input&#34; /&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-input-group&#34;&gt;
+	&lt;input type=&#34;text&#34; class=&#34;dxy-input&#34; /&gt;
+	&lt;span class=&#34;dxy-input-group-addon&#34;&gt;.00&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="components_input-group_button">与按钮组合</h4>
+			<p>按钮可以是 <code>&lt;button&gt;</code>、<code>&lt;a&gt;</code> 或 <code>&lt;input&gt;</code> 标签。</p>
+			<div class="du-example">
+				<div class="dxy-input-group">
+    <input type="text" class="dxy-input"/>
+    <span class="dxy-input-group-btn">
+        <button class="dxy-btn dxy-btn-primary" type="button">搜索</button>
+    </span>
+</div>
+<div class="dxy-input-group">
+    <span class="dxy-input-group-btn">
+        <input class="dxy-btn dxy-btn-primary" type="button" value="搜索">
+    </span>
+    <input type="text" class="dxy-input"/>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-input-group&#34;&gt;
+    &lt;input type=&#34;text&#34; class=&#34;dxy-input&#34;/&gt;
+    &lt;span class=&#34;dxy-input-group-btn&#34;&gt;
+        &lt;button class=&#34;dxy-btn dxy-btn-primary&#34; type=&#34;button&#34;&gt;搜索&lt;/button&gt;
+    &lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-input-group&#34;&gt;
+    &lt;span class=&#34;dxy-input-group-btn&#34;&gt;
+        &lt;input class=&#34;dxy-btn dxy-btn-primary&#34; type=&#34;button&#34; value=&#34;搜索&#34;&gt;
+    &lt;/span&gt;
+    &lt;input type=&#34;text&#34; class=&#34;dxy-input&#34;/&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="components_input-group_button-label">多项组合</h4>
+			<p></p>
+			<div class="du-example">
+				<div class="dxy-input-group">
+    <span class="dxy-input-group-addon">$</span>
+    <input type="text" class="dxy-input"/>
+    <span class="dxy-input-group-btn">
+        <input class="dxy-btn dxy-btn-primary" type="button" value="搜索">
+    </span>
+</div>
+<div class="dxy-input-group">
+    <span class="dxy-input-group-btn">
+        <input class="dxy-btn dxy-btn-primary" type="button" value="搜索">
+    </span>
+    <input type="text" class="dxy-input"/>
+    <span class="dxy-input-group-addon">$</span>
+</div>
+<div class="dxy-input-group">
+    <span class="dxy-input-group-addon">$</span>
+    <input type="text" class="dxy-input"/>
+    <span class="dxy-input-group-addon">.00</span>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-input-group&#34;&gt;
+    &lt;span class=&#34;dxy-input-group-addon&#34;&gt;$&lt;/span&gt;
+    &lt;input type=&#34;text&#34; class=&#34;dxy-input&#34;/&gt;
+    &lt;span class=&#34;dxy-input-group-btn&#34;&gt;
+        &lt;input class=&#34;dxy-btn dxy-btn-primary&#34; type=&#34;button&#34; value=&#34;搜索&#34;&gt;
+    &lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-input-group&#34;&gt;
+    &lt;span class=&#34;dxy-input-group-btn&#34;&gt;
+        &lt;input class=&#34;dxy-btn dxy-btn-primary&#34; type=&#34;button&#34; value=&#34;搜索&#34;&gt;
+    &lt;/span&gt;
+    &lt;input type=&#34;text&#34; class=&#34;dxy-input&#34;/&gt;
+    &lt;span class=&#34;dxy-input-group-addon&#34;&gt;$&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-input-group&#34;&gt;
+    &lt;span class=&#34;dxy-input-group-addon&#34;&gt;$&lt;/span&gt;
+    &lt;input type=&#34;text&#34; class=&#34;dxy-input&#34;/&gt;
+    &lt;span class=&#34;dxy-input-group-addon&#34;&gt;.00&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-components_search-select">
+			<h3 id="components_search-select" class="page-header">
+				下拉选择框
+			</h3>
+			<p>具有搜索功能的下拉选择框，需结合 <code>JavaScript</code> 实现。</p>
+			
+			<div class="du-example">
+				<div style="width: 150px">
+    <div class="dxy-search-select">
+        <input class="dxy-search-input" placeholder="请选择"/>
+        <i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i>
+        <ul class="dxy-select-list">
+            <li>西瓜</li>
+            <li class="dxy-active">苹果</li>
+            <li>梨子</li>
+            <li>香蕉</li>
+            <li>桔子</li>
+            <li>榴莲</li>
+            <li>葡萄</li>
+            <li>桃子</li>
+        </ul>
+    </div>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div style=&#34;width: 150px&#34;&gt;
+    &lt;div class=&#34;dxy-search-select&#34;&gt;
+        &lt;input class=&#34;dxy-search-input&#34; placeholder=&#34;请选择&#34;/&gt;
+        &lt;i class=&#34;dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill&#34;&gt;&lt;/i&gt;
+        &lt;ul class=&#34;dxy-select-list&#34;&gt;
+            &lt;li&gt;西瓜&lt;/li&gt;
+            &lt;li class=&#34;dxy-active&#34;&gt;苹果&lt;/li&gt;
+            &lt;li&gt;梨子&lt;/li&gt;
+            &lt;li&gt;香蕉&lt;/li&gt;
+            &lt;li&gt;桔子&lt;/li&gt;
+            &lt;li&gt;榴莲&lt;/li&gt;
+            &lt;li&gt;葡萄&lt;/li&gt;
+            &lt;li&gt;桃子&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="components_search-select_multiple">多选</h4>
+			<p>提供多选功能，已选中项以标签显示在搜索框上。</p>
+			<div class="du-example">
+				<div style="width: 300px">
+    <div class="dxy-search-select-multiple">
+        <div class="dxy-search-input">
+            <div class="dxy-tags">
+                <span class="dxy-tag">西瓜<a class="dxy-icon dxy-icon-close"></a></span>
+                <span class="dxy-tag">苹果<a class="dxy-icon dxy-icon-close"></a></span>
+                <span class="dxy-tag">香蕉<a class="dxy-icon dxy-icon-close"></a></span>
+                <span class="dxy-tag">桔子<a class="dxy-icon dxy-icon-close"></a></span>
+                <span class="dxy-tag">葡萄<a class="dxy-icon dxy-icon-close"></a></span>
+                <input type="text" class="dxy-cursor">
+            </div>
+        </div>
+        <i class="dxy-search-input-icon"></i>
+        <ul class="dxy-select-list">
+            <li>西瓜</li>
+            <li class="dxy-active">苹果</li>
+            <li>梨子</li>
+            <li>香蕉</li>
+            <li>桔子</li>
+            <li>榴莲</li>
+            <li>葡萄</li>
+            <li>桃子</li>
+        </ul>
+    </div>
+</div>
+
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div style=&#34;width: 300px&#34;&gt;
+    &lt;div class=&#34;dxy-search-select-multiple&#34;&gt;
+        &lt;div class=&#34;dxy-search-input&#34;&gt;
+            &lt;div class=&#34;dxy-tags&#34;&gt;
+                &lt;span class=&#34;dxy-tag&#34;&gt;西瓜&lt;a class=&#34;dxy-icon dxy-icon-close&#34;&gt;&lt;/a&gt;&lt;/span&gt;
+                &lt;span class=&#34;dxy-tag&#34;&gt;苹果&lt;a class=&#34;dxy-icon dxy-icon-close&#34;&gt;&lt;/a&gt;&lt;/span&gt;
+                &lt;span class=&#34;dxy-tag&#34;&gt;香蕉&lt;a class=&#34;dxy-icon dxy-icon-close&#34;&gt;&lt;/a&gt;&lt;/span&gt;
+                &lt;span class=&#34;dxy-tag&#34;&gt;桔子&lt;a class=&#34;dxy-icon dxy-icon-close&#34;&gt;&lt;/a&gt;&lt;/span&gt;
+                &lt;span class=&#34;dxy-tag&#34;&gt;葡萄&lt;a class=&#34;dxy-icon dxy-icon-close&#34;&gt;&lt;/a&gt;&lt;/span&gt;
+                &lt;input type=&#34;text&#34; class=&#34;dxy-cursor&#34;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;i class=&#34;dxy-search-input-icon&#34;&gt;&lt;/i&gt;
+        &lt;ul class=&#34;dxy-select-list&#34;&gt;
+            &lt;li&gt;西瓜&lt;/li&gt;
+            &lt;li class=&#34;dxy-active&#34;&gt;苹果&lt;/li&gt;
+            &lt;li&gt;梨子&lt;/li&gt;
+            &lt;li&gt;香蕉&lt;/li&gt;
+            &lt;li&gt;桔子&lt;/li&gt;
+            &lt;li&gt;榴莲&lt;/li&gt;
+            &lt;li&gt;葡萄&lt;/li&gt;
+            &lt;li&gt;桃子&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-components_label">
+			<h3 id="components_label" class="page-header">
+				标签
+			</h3>
+			<p>提供多种颜色。</p>
+			
+			<div class="du-example">
+				<label class="dxy-tag">C101</label>
+<label class="dxy-tag dxy-tag-blue">C101</label>
+<label class="dxy-tag dxy-tag-green">C101</label>
+<label class="dxy-tag dxy-tag-orange">C101</label>
+<label class="dxy-tag dxy-tag-red">C101</label>
+
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;label class=&#34;dxy-tag&#34;&gt;C101&lt;/label&gt;
+&lt;label class=&#34;dxy-tag dxy-tag-blue&#34;&gt;C101&lt;/label&gt;
+&lt;label class=&#34;dxy-tag dxy-tag-green&#34;&gt;C101&lt;/label&gt;
+&lt;label class=&#34;dxy-tag dxy-tag-orange&#34;&gt;C101&lt;/label&gt;
+&lt;label class=&#34;dxy-tag dxy-tag-red&#34;&gt;C101&lt;/label&gt;
+</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="components_label_close">可删除</h4>
+			<p>带删除按钮的标签。</p>
+			<div class="du-example">
+				<label class="dxy-tag">C101<a class="dxy-icon dxy-icon-close"></a></label>
+<label class="dxy-tag dxy-tag-blue">C101<a class="dxy-icon dxy-icon-close"></a></label>
+<label class="dxy-tag dxy-tag-green">C101<a class="dxy-icon dxy-icon-close"></a></label>
+<label class="dxy-tag dxy-tag-orange">C101<a class="dxy-icon dxy-icon-close"></a></label>
+<label class="dxy-tag dxy-tag-red">C101<a class="dxy-icon dxy-icon-close"></a></label>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;label class=&#34;dxy-tag&#34;&gt;C101&lt;a class=&#34;dxy-icon dxy-icon-close&#34;&gt;&lt;/a&gt;&lt;/label&gt;
+&lt;label class=&#34;dxy-tag dxy-tag-blue&#34;&gt;C101&lt;a class=&#34;dxy-icon dxy-icon-close&#34;&gt;&lt;/a&gt;&lt;/label&gt;
+&lt;label class=&#34;dxy-tag dxy-tag-green&#34;&gt;C101&lt;a class=&#34;dxy-icon dxy-icon-close&#34;&gt;&lt;/a&gt;&lt;/label&gt;
+&lt;label class=&#34;dxy-tag dxy-tag-orange&#34;&gt;C101&lt;a class=&#34;dxy-icon dxy-icon-close&#34;&gt;&lt;/a&gt;&lt;/label&gt;
+&lt;label class=&#34;dxy-tag dxy-tag-red&#34;&gt;C101&lt;a class=&#34;dxy-icon dxy-icon-close&#34;&gt;&lt;/a&gt;&lt;/label&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="components_label_badge">徽章</h4>
+			<p>使用醒目的颜色，可用于展示未读消息等。</p>
+			<div class="du-example">
+				<i class="dxy-badge">2</i>
+<i class="dxy-badge">88</i>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;i class=&#34;dxy-badge&#34;&gt;2&lt;/i&gt;
+&lt;i class=&#34;dxy-badge&#34;&gt;88&lt;/i&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-components_popover">
+			<h3 id="components_popover" class="page-header">
+				气泡提示
+			</h3>
+			<p>用于标记提示，提供四个方向可选择。</p>
+			
+			<div class="du-example">
+				<div class="dxy-tip left">一个提示</div>
+<div class="dxy-tip right">一个提示</div>
+<div class="dxy-tip top">一个提示</div>
+<div class="dxy-tip bottom">一个提示</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-tip left&#34;&gt;一个提示&lt;/div&gt;
+&lt;div class=&#34;dxy-tip right&#34;&gt;一个提示&lt;/div&gt;
+&lt;div class=&#34;dxy-tip top&#34;&gt;一个提示&lt;/div&gt;
+&lt;div class=&#34;dxy-tip bottom&#34;&gt;一个提示&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="components_popover_custom">内嵌 HTML</h4>
+			<p>可以自定义内容，分为标题和主体内容。</p>
+			<div class="du-example">
+				<div class="dxy-pop">
+	<h5 class="dxy-pop-head">标题</h5>
+	<div class="dxy-pop-body">
+		<p>一段文字</p>
+	</div>
+</div>
+<div class="dxy-pop left">
+	<h5 class="dxy-pop-head">标题</h5>
+	<div class="dxy-pop-body">
+		<p>一段文字</p>
+	</div>
+</div>
+<div class="dxy-pop right">
+	<h5 class="dxy-pop-head">标题</h5>
+	<div class="dxy-pop-body">
+		<p>一段文字</p>
+	</div>
+</div>
+<div class="dxy-pop top">
+	<h5 class="dxy-pop-head">标题</h5>
+	<div class="dxy-pop-body">
+		<p>一段文字</p>
+		<p>一段文字</p>
+	</div>
+</div>
+<div class="dxy-pop bottom">
+	<h5 class="dxy-pop-head">标题</h5>
+	<div class="dxy-pop-body">
+		<p>一段文字一段文字</p>
+		<p>一段文字一段文字</p>
+	</div>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-pop&#34;&gt;
+	&lt;h5 class=&#34;dxy-pop-head&#34;&gt;标题&lt;/h5&gt;
+	&lt;div class=&#34;dxy-pop-body&#34;&gt;
+		&lt;p&gt;一段文字&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-pop left&#34;&gt;
+	&lt;h5 class=&#34;dxy-pop-head&#34;&gt;标题&lt;/h5&gt;
+	&lt;div class=&#34;dxy-pop-body&#34;&gt;
+		&lt;p&gt;一段文字&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-pop right&#34;&gt;
+	&lt;h5 class=&#34;dxy-pop-head&#34;&gt;标题&lt;/h5&gt;
+	&lt;div class=&#34;dxy-pop-body&#34;&gt;
+		&lt;p&gt;一段文字&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-pop top&#34;&gt;
+	&lt;h5 class=&#34;dxy-pop-head&#34;&gt;标题&lt;/h5&gt;
+	&lt;div class=&#34;dxy-pop-body&#34;&gt;
+		&lt;p&gt;一段文字&lt;/p&gt;
+		&lt;p&gt;一段文字&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-pop bottom&#34;&gt;
+	&lt;h5 class=&#34;dxy-pop-head&#34;&gt;标题&lt;/h5&gt;
+	&lt;div class=&#34;dxy-pop-body&#34;&gt;
+		&lt;p&gt;一段文字一段文字&lt;/p&gt;
+		&lt;p&gt;一段文字一段文字&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-components_alert">
+			<h3 id="components_alert" class="page-header">
+				警告框
+			</h3>
+			<p>一般用于代替浏览器原生的 <code>alert</code>，提供四种色值在不同场景使用。</p>
+			
+			<div class="du-example">
+				<div class="dxy-alert-info">
+	<span>info text</span>
+</div>
+<div class="dxy-alert-success">
+	<span>success text</span></div>
+<div class="dxy-alert-warning">
+	<span>warning text</span>
+</div>
+<div class="dxy-alert-error">
+	<span>error text</span>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-alert-info&#34;&gt;
+	&lt;span&gt;info text&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-alert-success&#34;&gt;
+	&lt;span&gt;success text&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&#34;dxy-alert-warning&#34;&gt;
+	&lt;span&gt;warning text&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-alert-error&#34;&gt;
+	&lt;span&gt;error text&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="components_alert_close">可关闭</h4>
+			<p></p>
+			<div class="du-example">
+				<div class="dxy-alert-info">
+	<span>info text</span>
+	<button class="dxy-icon dxy-icon-close close"></button>
+</div>
+<div class="dxy-alert-success">
+	<span>success text</span>
+	<button class="dxy-icon dxy-icon-close close"></button>
+</div>
+<div class="dxy-alert-warning">
+	<span>warning text</span>
+	<button class="dxy-icon dxy-icon-close close"></button>
+</div>
+<div class="dxy-alert-error">
+	<span>error text</span>
+	<button class="dxy-icon dxy-icon-close close"></button>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-alert-info&#34;&gt;
+	&lt;span&gt;info text&lt;/span&gt;
+	&lt;button class=&#34;dxy-icon dxy-icon-close close&#34;&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-alert-success&#34;&gt;
+	&lt;span&gt;success text&lt;/span&gt;
+	&lt;button class=&#34;dxy-icon dxy-icon-close close&#34;&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-alert-warning&#34;&gt;
+	&lt;span&gt;warning text&lt;/span&gt;
+	&lt;button class=&#34;dxy-icon dxy-icon-close close&#34;&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-alert-error&#34;&gt;
+	&lt;span&gt;error text&lt;/span&gt;
+	&lt;button class=&#34;dxy-icon dxy-icon-close close&#34;&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="components_alert_icon">带图标</h4>
+			<p></p>
+			<div class="du-example">
+				<div class="dxy-alert-info">
+	<i class="dxy-icon dxy-icon-info"></i>
+	<span>info text</span>
+</div>
+<div class="dxy-alert-success">
+	<i class="dxy-icon dxy-icon-check-circle"></i>
+	<span>success text</span>
+</div>
+<div class="dxy-alert-warning">
+	<i class="dxy-icon dxy-icon-warning-circle"></i>
+	<span>warning text</span>
+</div>
+<div class="dxy-alert-error">
+	<i class="dxy-icon dxy-icon-close-circle"></i>
+	<span>error text</span>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-alert-info&#34;&gt;
+	&lt;i class=&#34;dxy-icon dxy-icon-info&#34;&gt;&lt;/i&gt;
+	&lt;span&gt;info text&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-alert-success&#34;&gt;
+	&lt;i class=&#34;dxy-icon dxy-icon-check-circle&#34;&gt;&lt;/i&gt;
+	&lt;span&gt;success text&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-alert-warning&#34;&gt;
+	&lt;i class=&#34;dxy-icon dxy-icon-warning-circle&#34;&gt;&lt;/i&gt;
+	&lt;span&gt;warning text&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-alert-error&#34;&gt;
+	&lt;i class=&#34;dxy-icon dxy-icon-close-circle&#34;&gt;&lt;/i&gt;
+	&lt;span&gt;error text&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="components_alert_icon-close">带图标和关闭</h4>
+			<p></p>
+			<div class="du-example">
+				<div class="dxy-alert-info">
+	<i class="dxy-icon dxy-icon-info"></i>
+	<span>info text</span>
+	<button class="dxy-icon dxy-icon-close close"></button>
+</div>
+<div class="dxy-alert-success">
+	<i class="dxy-icon dxy-icon-check-circle"></i>
+	<span>success text</span>
+	<button class="dxy-icon dxy-icon-close close"></button>
+</div>
+<div class="dxy-alert-warning">
+	<i class="dxy-icon dxy-icon-warning-circle"></i>
+	<span>warning text</span>
+	<button class="dxy-icon dxy-icon-close close"></button>
+</div>
+<div class="dxy-alert-error">
+	<i class="dxy-icon dxy-icon-close-circle"></i>
+	<span>error text</span>
+	<button class="dxy-icon dxy-icon-close close"></button>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-alert-info&#34;&gt;
+	&lt;i class=&#34;dxy-icon dxy-icon-info&#34;&gt;&lt;/i&gt;
+	&lt;span&gt;info text&lt;/span&gt;
+	&lt;button class=&#34;dxy-icon dxy-icon-close close&#34;&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-alert-success&#34;&gt;
+	&lt;i class=&#34;dxy-icon dxy-icon-check-circle&#34;&gt;&lt;/i&gt;
+	&lt;span&gt;success text&lt;/span&gt;
+	&lt;button class=&#34;dxy-icon dxy-icon-close close&#34;&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-alert-warning&#34;&gt;
+	&lt;i class=&#34;dxy-icon dxy-icon-warning-circle&#34;&gt;&lt;/i&gt;
+	&lt;span&gt;warning text&lt;/span&gt;
+	&lt;button class=&#34;dxy-icon dxy-icon-close close&#34;&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-alert-error&#34;&gt;
+	&lt;i class=&#34;dxy-icon dxy-icon-close-circle&#34;&gt;&lt;/i&gt;
+	&lt;span&gt;error text&lt;/span&gt;
+	&lt;button class=&#34;dxy-icon dxy-icon-close close&#34;&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-components_confirm">
+			<h3 id="components_confirm" class="page-header">
+				确认框
+			</h3>
+			<p>一般用于代替浏览器原生的 <code>confirm</code>，可添加标题与主体文案。</p>
+			
+			<div class="du-example">
+				<div class="dxy-confirm">
+	<div class="dxy-confirm-head">
+		<h4>提示</h4>
+		<button class="close"><i class="dxy-icon dxy-icon-close"></i></button>
+	</div>
+	<div class="dxy-confirm-body">
+		是否确认离开该页面？
+	</div>
+	<div class="dxy-confirm-foot">
+		<button class="dxy-btn">取消</button>
+		<button class="dxy-btn dxy-btn-primary">确定</button>
+	</div>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-confirm&#34;&gt;
+	&lt;div class=&#34;dxy-confirm-head&#34;&gt;
+		&lt;h4&gt;提示&lt;/h4&gt;
+		&lt;button class=&#34;close&#34;&gt;&lt;i class=&#34;dxy-icon dxy-icon-close&#34;&gt;&lt;/i&gt;&lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class=&#34;dxy-confirm-body&#34;&gt;
+		是否确认离开该页面？
+	&lt;/div&gt;
+	&lt;div class=&#34;dxy-confirm-foot&#34;&gt;
+		&lt;button class=&#34;dxy-btn&#34;&gt;取消&lt;/button&gt;
+		&lt;button class=&#34;dxy-btn dxy-btn-primary&#34;&gt;确定&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+		</div>
+		
+		<div class="du-docs-section example_area-components_modal">
+			<h3 id="components_modal" class="page-header">
+				模态框
+			</h3>
+			<p>显示一块单独的内容，自定义标题与主体内容，主体内容可以是表单，表格等。</p>
+			
+			<div class="du-example">
+				<div class="dxy-modal">
+	<div class="dxy-modal-head">
+		<h4>权限申请</h4>
+		<button class="close"><i class="dxy-icon dxy-icon-close"></i></button>
+	</div>
+	<div class="dxy-modal-body">
+		<p>这是一段内容...</p>
+		<p>这是一段内容...</p>
+		<p>这是一段内容...</p>
+		<p>这是一段内容...</p>
+	</div>
+</div>
+
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-modal&#34;&gt;
+	&lt;div class=&#34;dxy-modal-head&#34;&gt;
+		&lt;h4&gt;权限申请&lt;/h4&gt;
+		&lt;button class=&#34;close&#34;&gt;&lt;i class=&#34;dxy-icon dxy-icon-close&#34;&gt;&lt;/i&gt;&lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class=&#34;dxy-modal-body&#34;&gt;
+		&lt;p&gt;这是一段内容...&lt;/p&gt;
+		&lt;p&gt;这是一段内容...&lt;/p&gt;
+		&lt;p&gt;这是一段内容...&lt;/p&gt;
+		&lt;p&gt;这是一段内容...&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+		</div>
+		
+		<div class="du-docs-section example_area-components_navigation">
+			<h3 id="components_navigation" class="page-header">
+				导航栏
+			</h3>
+			<p>基本导航栏样式较简单，所有项在一行。提供了多种形式的导航栏，还有面包屑和下拉菜单。</p>
+			
+			<div class="du-example">
+				<ul class="dxy-nav">
+  <li class="dxy-active"><a href="#">首页</a></li>
+  <li><a href="#">推荐</a></li>
+  <li><a href="#">帮助</a></li>
+</ul>
+
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;ul class=&#34;dxy-nav&#34;&gt;
+  &lt;li class=&#34;dxy-active&#34;&gt;&lt;a href=&#34;#&#34;&gt;首页&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;#&#34;&gt;推荐&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;#&#34;&gt;帮助&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="components_navigation_tab">标签式</h4>
+			<p></p>
+			<div class="du-example">
+				<ul class="dxy-nav dxy-nav-tab">
+  <li class="dxy-active"><a href="#">首页</a></li>
+  <li><a href="#">推荐</a></li>
+  <li><a href="#">帮助</a></li>
+</ul>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;ul class=&#34;dxy-nav dxy-nav-tab&#34;&gt;
+  &lt;li class=&#34;dxy-active&#34;&gt;&lt;a href=&#34;#&#34;&gt;首页&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;#&#34;&gt;推荐&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;#&#34;&gt;帮助&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="components_navigation_pill">胶囊式</h4>
+			<p></p>
+			<div class="du-example">
+				<ul class="dxy-nav dxy-nav-pill">
+  <li class="dxy-active"><a href="#">首页</a></li>
+  <li><a href="#">推荐</a></li>
+  <li><a href="#">帮助</a></li>
+</ul>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;ul class=&#34;dxy-nav dxy-nav-pill&#34;&gt;
+  &lt;li class=&#34;dxy-active&#34;&gt;&lt;a href=&#34;#&#34;&gt;首页&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;#&#34;&gt;推荐&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;#&#34;&gt;帮助&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="components_navigation_pill-vertical">垂直胶囊式</h4>
+			<p></p>
+			<div class="du-example">
+				<ul class="dxy-nav dxy-nav-pill-vertical">
+  <li class="dxy-active"><a href="#">首页</a></li>
+  <li><a href="#">推荐</a></li>
+  <li><a href="#">帮助</a></li>
+</ul>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;ul class=&#34;dxy-nav dxy-nav-pill-vertical&#34;&gt;
+  &lt;li class=&#34;dxy-active&#34;&gt;&lt;a href=&#34;#&#34;&gt;首页&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;#&#34;&gt;推荐&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;#&#34;&gt;帮助&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="components_navigation_crumb">面包屑</h4>
+			<p></p>
+			<div class="du-example">
+				<ul class="dxy-nav dxy-nav-crumb">
+  <li class="dxy-active"><a href="#">首页</a></li>
+  <li><a href="#">推荐</a></li>
+  <li><a href="#">帮助</a></li>
+</ul>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;ul class=&#34;dxy-nav dxy-nav-crumb&#34;&gt;
+  &lt;li class=&#34;dxy-active&#34;&gt;&lt;a href=&#34;#&#34;&gt;首页&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;#&#34;&gt;推荐&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;#&#34;&gt;帮助&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="components_navigation_menu">下拉菜单</h4>
+			<p></p>
+			<div class="du-example">
+				<ul class="dxy-nav dxy-nav-menu">
+  <li class="dxy-active"><a href="#">首页</a></li>
+  <li><a href="#">推荐</a></li>
+  <li><a href="#">帮助</a></li>
+</ul>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;ul class=&#34;dxy-nav dxy-nav-menu&#34;&gt;
+  &lt;li class=&#34;dxy-active&#34;&gt;&lt;a href=&#34;#&#34;&gt;首页&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;#&#34;&gt;推荐&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;#&#34;&gt;帮助&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-components_pagination">
+			<h3 id="components_pagination" class="page-header">
+				分页
+			</h3>
+			<p>提供带页码的翻页样式，需结合 <code>JavaScript</code> 实现功能。</p>
+			
+			<div class="du-example">
+				<div>
+	<div class="dxy-pagination">
+		<a href="" class="dxy-pagination-btn"><i class="dxy-icon dxy-icon-arrow-left"></i></a>
+		<a href="" class="dxy-pagination-btn">1</a>
+		<a href="" class="dxy-pagination-btn dxy-pagination-cur">2</a>
+		<a href="" class="dxy-pagination-btn">3</a>
+		<a href="" class="dxy-pagination-btn">4</a>
+		<a href="javascript:;" class="dxy-pagination-btn dxy-pagination-omit">...</a>
+		<a href="" class="dxy-pagination-btn">9</a>
+		<!--例：也可支持button标签-->
+		<button class="dxy-pagination-btn" disabled>10</button>
+		<a href="javascript:;" class="dxy-pagination-btn dxy-pagination-disabled" disabled><i class="dxy-icon dxy-icon-arrow-right"></i></a>
+	</div>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div&gt;
+	&lt;div class=&#34;dxy-pagination&#34;&gt;
+		&lt;a href=&#34;&#34; class=&#34;dxy-pagination-btn&#34;&gt;&lt;i class=&#34;dxy-icon dxy-icon-arrow-left&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+		&lt;a href=&#34;&#34; class=&#34;dxy-pagination-btn&#34;&gt;1&lt;/a&gt;
+		&lt;a href=&#34;&#34; class=&#34;dxy-pagination-btn dxy-pagination-cur&#34;&gt;2&lt;/a&gt;
+		&lt;a href=&#34;&#34; class=&#34;dxy-pagination-btn&#34;&gt;3&lt;/a&gt;
+		&lt;a href=&#34;&#34; class=&#34;dxy-pagination-btn&#34;&gt;4&lt;/a&gt;
+		&lt;a href=&#34;javascript:;&#34; class=&#34;dxy-pagination-btn dxy-pagination-omit&#34;&gt;...&lt;/a&gt;
+		&lt;a href=&#34;&#34; class=&#34;dxy-pagination-btn&#34;&gt;9&lt;/a&gt;
+		&lt;!--例：也可支持button标签--&gt;
+		&lt;button class=&#34;dxy-pagination-btn&#34; disabled&gt;10&lt;/button&gt;
+		&lt;a href=&#34;javascript:;&#34; class=&#34;dxy-pagination-btn dxy-pagination-disabled&#34; disabled&gt;&lt;i class=&#34;dxy-icon dxy-icon-arrow-right&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="components_pagination_no-number">无页码</h4>
+			<p>仅提供翻页按钮。</p>
+			<div class="du-example">
+				<div>
+	<div class="dxy-pagination">
+		<a href="" class="dxy-pagination-btn"><i class="dxy-icon dxy-icon-arrow-left"></i></a>
+		<a href="" class="dxy-pagination-btn"><i class="dxy-icon dxy-icon-arrow-right"></i></a>
+	</div>	
+</div>
+<div>
+	<div class="dxy-pagination">
+		<a href="" class="dxy-pagination-btn"><i class="dxy-icon dxy-icon-arrow-left"></i> 上一页</a>
+		<a href="" class="dxy-pagination-btn">下一页 <i class="dxy-icon dxy-icon-arrow-right"></i></a>
+	</div>	
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div&gt;
+	&lt;div class=&#34;dxy-pagination&#34;&gt;
+		&lt;a href=&#34;&#34; class=&#34;dxy-pagination-btn&#34;&gt;&lt;i class=&#34;dxy-icon dxy-icon-arrow-left&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+		&lt;a href=&#34;&#34; class=&#34;dxy-pagination-btn&#34;&gt;&lt;i class=&#34;dxy-icon dxy-icon-arrow-right&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+	&lt;/div&gt;	
+&lt;/div&gt;
+&lt;div&gt;
+	&lt;div class=&#34;dxy-pagination&#34;&gt;
+		&lt;a href=&#34;&#34; class=&#34;dxy-pagination-btn&#34;&gt;&lt;i class=&#34;dxy-icon dxy-icon-arrow-left&#34;&gt;&lt;/i&gt; 上一页&lt;/a&gt;
+		&lt;a href=&#34;&#34; class=&#34;dxy-pagination-btn&#34;&gt;下一页 &lt;i class=&#34;dxy-icon dxy-icon-arrow-right&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+	&lt;/div&gt;	
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="components_pagination_jump">跳转</h4>
+			<p>可自定义页码进行跳转。</p>
+			<div class="du-example">
+				<div>
+	<div class="dxy-pagination">
+		<div class="dxy-pagination-jump">
+			<input type="text" class="dxy-pagination-input" name="" id="" value="" />
+			<button class="dxy-pagination-btn dxy-pagination-btn-jump">GO</button>
+		</div>
+	</div>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div&gt;
+	&lt;div class=&#34;dxy-pagination&#34;&gt;
+		&lt;div class=&#34;dxy-pagination-jump&#34;&gt;
+			&lt;input type=&#34;text&#34; class=&#34;dxy-pagination-input&#34; name=&#34;&#34; id=&#34;&#34; value=&#34;&#34; /&gt;
+			&lt;button class=&#34;dxy-pagination-btn dxy-pagination-btn-jump&#34;&gt;GO&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-components_go-top">
+			<h3 id="components_go-top" class="page-header">
+				回到顶部
+			</h3>
+			<p>点击后返回顶部或指定位置的按钮，提供多个样式。</p>
+			
+			<div class="du-example">
+				<a class="dxy-go-top" href="#">
+	<i class="dxy-icon dxy-icon-arrow-up-fill"></i>
+</a>
+
+<a class="dxy-go-top" href="#">
+	<i class="dxy-icon dxy-icon-arrow-up"></i>
+</a>
+
+<a class="dxy-go-top" href="#">
+	<i class="dxy-icon dxy-icon-arrow-up-underline"></i>
+</a>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;a class=&#34;dxy-go-top&#34; href=&#34;#&#34;&gt;
+	&lt;i class=&#34;dxy-icon dxy-icon-arrow-up-fill&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;a class=&#34;dxy-go-top&#34; href=&#34;#&#34;&gt;
+	&lt;i class=&#34;dxy-icon dxy-icon-arrow-up&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;a class=&#34;dxy-go-top&#34; href=&#34;#&#34;&gt;
+	&lt;i class=&#34;dxy-icon dxy-icon-arrow-up-underline&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="components_go-top_other">其它颜色/形状</h4>
+			<p></p>
+			<div class="du-example">
+				<a class="dxy-go-top dxy-go-top-white" href="#">
+	<i class="dxy-icon dxy-icon-arrow-up-underline"></i>
+</a>
+
+<a class="dxy-go-top dxy-go-top-square-white" href="#">
+	<i class="dxy-icon dxy-icon-arrow-up"></i>
+</a>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;a class=&#34;dxy-go-top dxy-go-top-white&#34; href=&#34;#&#34;&gt;
+	&lt;i class=&#34;dxy-icon dxy-icon-arrow-up-underline&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+&lt;a class=&#34;dxy-go-top dxy-go-top-square-white&#34; href=&#34;#&#34;&gt;
+	&lt;i class=&#34;dxy-icon dxy-icon-arrow-up&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-components_loading">
+			<h3 id="components_loading" class="page-header">
+				加载
+			</h3>
+			<p>等待数据加载时的动画效果。</p>
+			
+			<div class="du-example">
+				<div class="loading-box">
+	<div class="dxy-loading">
+		<div class="dxy-loading-inner">
+			<i class="dxy-loading-img dxy-icon dxy-icon-loading"></i>
+		</div>
+	</div>
+	<div>被loading盖掉的内容</div>
+	<div class="red">被loading盖掉的内容</div>
+</div>
+
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;loading-box&#34;&gt;
+	&lt;div class=&#34;dxy-loading&#34;&gt;
+		&lt;div class=&#34;dxy-loading-inner&#34;&gt;
+			&lt;i class=&#34;dxy-loading-img dxy-icon dxy-icon-loading&#34;&gt;&lt;/i&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div&gt;被loading盖掉的内容&lt;/div&gt;
+	&lt;div class=&#34;red&#34;&gt;被loading盖掉的内容&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="components_loading_text">带文字</h4>
+			<p>可添加自定义文字提示。</p>
+			<div class="du-example">
+				<div class="loading-box">
+	<div class="dxy-loading">
+		<div class="dxy-loading-inner">
+			<i class="dxy-loading-img dxy-icon dxy-icon-loading"></i>
+			<p class="dxy-loading-txt">拼命加载中</p>
+		</div>
+	</div>
+	<div>被loading盖掉的内容</div>
+	<div class="red">被loading盖掉的内容</div>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;loading-box&#34;&gt;
+	&lt;div class=&#34;dxy-loading&#34;&gt;
+		&lt;div class=&#34;dxy-loading-inner&#34;&gt;
+			&lt;i class=&#34;dxy-loading-img dxy-icon dxy-icon-loading&#34;&gt;&lt;/i&gt;
+			&lt;p class=&#34;dxy-loading-txt&#34;&gt;拼命加载中&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div&gt;被loading盖掉的内容&lt;/div&gt;
+	&lt;div class=&#34;red&#34;&gt;被loading盖掉的内容&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-components_progress">
+			<h3 id="components_progress" class="page-header">
+				进度条
+			</h3>
+			<p>为当前动作提供清晰的进度反馈。</p>
+			
+			<div class="du-example">
+				<div class="dxy-progress">
+  <div class="dxy-progress-bar">
+    <div class="dxy-progress-done" style="width: 0;"><span>0%</span></div>
+  </div>
+</div>
+
+<div class="dxy-progress">
+  <div class="dxy-progress-bar">
+    <div class="dxy-progress-done" style="width: 70%;"><span>70%</span></div>
+  </div>
+</div>
+
+<div class="dxy-progress dxy-progress-success">
+  <div class="dxy-progress-bar">
+    <div class="dxy-progress-done" style="width: 100%;"><span>100%</span></div>
+  </div>
+</div>
+
+<div class="dxy-progress dxy-progress-fail">
+  <div class="dxy-progress-bar">
+    <div class="dxy-progress-done" style="width: 80%;"><span>80%</span></div>
+  </div>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-progress&#34;&gt;
+  &lt;div class=&#34;dxy-progress-bar&#34;&gt;
+    &lt;div class=&#34;dxy-progress-done&#34; style=&#34;width: 0;&#34;&gt;&lt;span&gt;0%&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;dxy-progress&#34;&gt;
+  &lt;div class=&#34;dxy-progress-bar&#34;&gt;
+    &lt;div class=&#34;dxy-progress-done&#34; style=&#34;width: 70%;&#34;&gt;&lt;span&gt;70%&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;dxy-progress dxy-progress-success&#34;&gt;
+  &lt;div class=&#34;dxy-progress-bar&#34;&gt;
+    &lt;div class=&#34;dxy-progress-done&#34; style=&#34;width: 100%;&#34;&gt;&lt;span&gt;100%&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;dxy-progress dxy-progress-fail&#34;&gt;
+  &lt;div class=&#34;dxy-progress-bar&#34;&gt;
+    &lt;div class=&#34;dxy-progress-done&#34; style=&#34;width: 80%;&#34;&gt;&lt;span&gt;80%&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="components_progress_thin">更细的线条</h4>
+			<p></p>
+			<div class="du-example">
+				<div class="dxy-progress-sm">
+  <div class="dxy-progress-bar">
+    <div class="dxy-progress-done" style="width: 0;"></div>
+  </div>
+  <span class="dxy-progress-text">0%</span>
+</div>
+
+<div class="dxy-progress-sm">
+  <div class="dxy-progress-bar">
+    <div class="dxy-progress-done" style="width: 70%;"></div>
+  </div>
+  <span class="dxy-progress-text">70%</span>
+</div>
+
+<div class="dxy-progress-sm dxy-progress-success">
+  <div class="dxy-progress-bar">
+    <div class="dxy-progress-done" style="width: 100%;"></div>
+  </div>
+  <span class="dxy-progress-text">
+    <i class="dxy-icon dxy-icon-check-circle"></i>
+  </span>
+</div>
+
+<div class="dxy-progress-sm dxy-progress-fail">
+  <div class="dxy-progress-bar">
+    <div class="dxy-progress-done" style="width: 70%;"></div>
+  </div>
+  <span class="dxy-progress-text">
+    <i class="dxy-icon dxy-icon-close-circle"></i>
+  </span>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-progress-sm&#34;&gt;
+  &lt;div class=&#34;dxy-progress-bar&#34;&gt;
+    &lt;div class=&#34;dxy-progress-done&#34; style=&#34;width: 0;&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;span class=&#34;dxy-progress-text&#34;&gt;0%&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;dxy-progress-sm&#34;&gt;
+  &lt;div class=&#34;dxy-progress-bar&#34;&gt;
+    &lt;div class=&#34;dxy-progress-done&#34; style=&#34;width: 70%;&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;span class=&#34;dxy-progress-text&#34;&gt;70%&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;dxy-progress-sm dxy-progress-success&#34;&gt;
+  &lt;div class=&#34;dxy-progress-bar&#34;&gt;
+    &lt;div class=&#34;dxy-progress-done&#34; style=&#34;width: 100%;&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;span class=&#34;dxy-progress-text&#34;&gt;
+    &lt;i class=&#34;dxy-icon dxy-icon-check-circle&#34;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;dxy-progress-sm dxy-progress-fail&#34;&gt;
+  &lt;div class=&#34;dxy-progress-bar&#34;&gt;
+    &lt;div class=&#34;dxy-progress-done&#34; style=&#34;width: 70%;&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;span class=&#34;dxy-progress-text&#34;&gt;
+    &lt;i class=&#34;dxy-icon dxy-icon-close-circle&#34;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-components_step-bar">
+			<h3 id="components_step-bar" class="page-header">
+				步骤条
+			</h3>
+			<p>用于步骤进度提示，或流程展示。</p>
+			
+			<div class="du-example">
+				<div class="dxy-step-bar">
+  <div class="dxy-step-item dxy-step-done">
+    <span class="dxy-icon dxy-icon-check-thin"></span>
+    已完成
+  </div>
+  <div class="dxy-step-item dxy-step-active">
+    <span>2</span>
+    进行中
+  </div>
+  <div class="dxy-step-item">
+    <span>3</span>
+    下一步
+  </div>
+  <div class="dxy-step-item">
+    <span>4</span>
+    最后一步
+  </div>
+</div>
+
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-step-bar&#34;&gt;
+  &lt;div class=&#34;dxy-step-item dxy-step-done&#34;&gt;
+    &lt;span class=&#34;dxy-icon dxy-icon-check-thin&#34;&gt;&lt;/span&gt;
+    已完成
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-step-item dxy-step-active&#34;&gt;
+    &lt;span&gt;2&lt;/span&gt;
+    进行中
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-step-item&#34;&gt;
+    &lt;span&gt;3&lt;/span&gt;
+    下一步
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-step-item&#34;&gt;
+    &lt;span&gt;4&lt;/span&gt;
+    最后一步
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="components_step-bar_full">宽度撑满</h4>
+			<p>步骤条两端撑满整个容器。</p>
+			<div class="du-example">
+				<div class="dxy-step-bar-wide">
+  <div class="dxy-step-item dxy-step-done">
+    <span>1</span>
+    已完成
+  </div>
+  <div class="dxy-step-item dxy-step-active">
+    <span>2</span>
+    进行中
+  </div>
+  <div class="dxy-step-item">
+    <span>3</span>
+    下一步
+  </div>
+  <div class="dxy-step-item">
+    <span>4</span>
+    最后一步
+  </div>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-step-bar-wide&#34;&gt;
+  &lt;div class=&#34;dxy-step-item dxy-step-done&#34;&gt;
+    &lt;span&gt;1&lt;/span&gt;
+    已完成
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-step-item dxy-step-active&#34;&gt;
+    &lt;span&gt;2&lt;/span&gt;
+    进行中
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-step-item&#34;&gt;
+    &lt;span&gt;3&lt;/span&gt;
+    下一步
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-step-item&#34;&gt;
+    &lt;span&gt;4&lt;/span&gt;
+    最后一步
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="components_step-bar_vertical">竖直方向</h4>
+			<p>当步骤较多时，为了更好的观感可以使用竖直方向的步骤条。</p>
+			<div class="du-example">
+				<div class="dxy-step-bar-vertical">
+  <div class="dxy-step-item dxy-step-done">
+    <span>1</span>
+    已完成
+  </div>
+  <div class="dxy-step-item dxy-step-active">
+    <span>2</span>
+    进行中
+  </div>
+  <div class="dxy-step-item">
+    <span>3</span>
+    下一步
+  </div>
+  <div class="dxy-step-item">
+    <span>4</span>
+    最后一步
+  </div>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-step-bar-vertical&#34;&gt;
+  &lt;div class=&#34;dxy-step-item dxy-step-done&#34;&gt;
+    &lt;span&gt;1&lt;/span&gt;
+    已完成
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-step-item dxy-step-active&#34;&gt;
+    &lt;span&gt;2&lt;/span&gt;
+    进行中
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-step-item&#34;&gt;
+    &lt;span&gt;3&lt;/span&gt;
+    下一步
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-step-item&#34;&gt;
+    &lt;span&gt;4&lt;/span&gt;
+    最后一步
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-components_tree">
+			<h3 id="components_tree" class="page-header">
+				选项树
+			</h3>
+			<p>多层级的选项卡，自定义层级及内容。</p>
+			
+			<div class="du-example">
+				<div class="dxy-tree">
+  <div class="dxy-tree-node dxy-tree-expanded">
+    <div class="dxy-tree-content">
+      <span class="dxy-tree-expand-icon"></span>
+      <label class="dxy-checkbox">
+        <input type="checkbox" checked>
+        <span>parent-1</span>
+      </label>
+    </div>
+    <div class="dxy-tree-children">
+      <div class="dxy-tree-node" disabled>
+        <div class="dxy-tree-content">
+          <span class="dxy-tree-expand-icon"></span>
+          <label class="dxy-checkbox">
+            <input type="checkbox" checked disabled>
+            <span>child-1</span>
+          </label>
+        </div>
+        <div class="dxy-tree-children">
+          <div class="dxy-tree-node" disabled>
+            <div class="dxy-tree-content">
+            <label class="dxy-checkbox">
+              <input type="checkbox" checked disabled>
+              <span>child-1-1</span>
+            </label>
+            </div>
+          </div>
+          <div class="dxy-tree-node">
+            <div class="dxy-tree-content">
+              <label class="dxy-checkbox">
+                <input type="checkbox" checked>
+                <span>child-1-2</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dxy-tree-node">
+        <div class="dxy-tree-content">
+          <label class="dxy-checkbox">
+            <input type="checkbox">
+            <span>child-2</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-tree&#34;&gt;
+  &lt;div class=&#34;dxy-tree-node dxy-tree-expanded&#34;&gt;
+    &lt;div class=&#34;dxy-tree-content&#34;&gt;
+      &lt;span class=&#34;dxy-tree-expand-icon&#34;&gt;&lt;/span&gt;
+      &lt;label class=&#34;dxy-checkbox&#34;&gt;
+        &lt;input type=&#34;checkbox&#34; checked&gt;
+        &lt;span&gt;parent-1&lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dxy-tree-children&#34;&gt;
+      &lt;div class=&#34;dxy-tree-node&#34; disabled&gt;
+        &lt;div class=&#34;dxy-tree-content&#34;&gt;
+          &lt;span class=&#34;dxy-tree-expand-icon&#34;&gt;&lt;/span&gt;
+          &lt;label class=&#34;dxy-checkbox&#34;&gt;
+            &lt;input type=&#34;checkbox&#34; checked disabled&gt;
+            &lt;span&gt;child-1&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;dxy-tree-children&#34;&gt;
+          &lt;div class=&#34;dxy-tree-node&#34; disabled&gt;
+            &lt;div class=&#34;dxy-tree-content&#34;&gt;
+            &lt;label class=&#34;dxy-checkbox&#34;&gt;
+              &lt;input type=&#34;checkbox&#34; checked disabled&gt;
+              &lt;span&gt;child-1-1&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&#34;dxy-tree-node&#34;&gt;
+            &lt;div class=&#34;dxy-tree-content&#34;&gt;
+              &lt;label class=&#34;dxy-checkbox&#34;&gt;
+                &lt;input type=&#34;checkbox&#34; checked&gt;
+                &lt;span&gt;child-1-2&lt;/span&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;dxy-tree-node&#34;&gt;
+        &lt;div class=&#34;dxy-tree-content&#34;&gt;
+          &lt;label class=&#34;dxy-checkbox&#34;&gt;
+            &lt;input type=&#34;checkbox&#34;&gt;
+            &lt;span&gt;child-2&lt;/span&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+			<h4 id="components_tree_text">文字展示</h4>
+			<p>仅以文字展示关系的多级树。</p>
+			<div class="du-example">
+				<div class="dxy-tree">
+  <div class="dxy-tree-node dxy-tree-expanded">
+    <div class="dxy-tree-content">
+      <span class="dxy-tree-expand-icon"></span>
+      <div>parent-1</div>
+    </div>
+    <div class="dxy-tree-children">
+      <div class="dxy-tree-node">
+        <div class="dxy-tree-content">
+          <span class="dxy-tree-expand-icon"></span>
+          <div>child-1</div>
+        </div>
+        <div class="dxy-tree-children">
+            <div class="dxy-tree-node">
+              <div class="dxy-tree-content">
+                <div>child-1-1</div>
+              </div>
+            </div>
+            <div class="dxy-tree-node">
+              <div class="dxy-tree-content">
+                <div>child-1-2</div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="dxy-tree-node">
+        <div class="dxy-tree-content">
+          <div>child-2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-tree&#34;&gt;
+  &lt;div class=&#34;dxy-tree-node dxy-tree-expanded&#34;&gt;
+    &lt;div class=&#34;dxy-tree-content&#34;&gt;
+      &lt;span class=&#34;dxy-tree-expand-icon&#34;&gt;&lt;/span&gt;
+      &lt;div&gt;parent-1&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dxy-tree-children&#34;&gt;
+      &lt;div class=&#34;dxy-tree-node&#34;&gt;
+        &lt;div class=&#34;dxy-tree-content&#34;&gt;
+          &lt;span class=&#34;dxy-tree-expand-icon&#34;&gt;&lt;/span&gt;
+          &lt;div&gt;child-1&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;dxy-tree-children&#34;&gt;
+            &lt;div class=&#34;dxy-tree-node&#34;&gt;
+              &lt;div class=&#34;dxy-tree-content&#34;&gt;
+                &lt;div&gt;child-1-1&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;dxy-tree-node&#34;&gt;
+              &lt;div class=&#34;dxy-tree-content&#34;&gt;
+                &lt;div&gt;child-1-2&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;dxy-tree-node&#34;&gt;
+        &lt;div class=&#34;dxy-tree-content&#34;&gt;
+          &lt;div&gt;child-2&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		
+		<h2 id="extra">辅助和修饰</h2>
+		<p></p>
+		
+		<div class="du-docs-section example_area-extra_font">
+			<h3 id="extra_font" class="page-header">
+				文本修饰
+			</h3>
+			<p></p>
+			
+			<div class="du-example">
+				<p class="dxy-highlight">高亮</p>
+<p class="dxy-text-through">中划线</p>
+<p class="dxy-text-underline">下划线</p>
+<hr>
+<h4>对齐</h4>
+<p class="dxy-text-left">文字靠左</p>
+<p class="dxy-text-center">文字居中</p>
+<p class="dxy-text-right">文字靠右</p>
+<p>文字不加修饰：一段中文的测试文本一段中文的测试文本一段中文的测试文本。The common situation is that the words in the English sentence can not be aligned, so we test the situation in English. The common situation is that the words in the English sentence can not be aligned, so we test the situation in English.</p>
+<p class="dxy-text-justify">文字两端对齐：一段中文的测试文本一段中文的测试文本一段中文的测试文本。The common situation is that the words in the English sentence can not be aligned, so we test the situation in English. The common situation is that the words in the English sentence can not be aligned, so we test the situation in English.</p>
+<hr>
+<h4>字母大小写</h4>
+<p class="dxy-lowercase">字母小写 HELLO WORD</p>
+<p class="dxy-uppercase">字母大写 hello word</p>
+<p class="dxy-capitalize">首字母大写 hello word</p>
+<hr>
+<h4>文字截断</h4>
+<p class="dxy-overflow-ellipsis" style="width: 160px;">截断文字(需要设定宽度)文字</p>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;p class=&#34;dxy-highlight&#34;&gt;高亮&lt;/p&gt;
+&lt;p class=&#34;dxy-text-through&#34;&gt;中划线&lt;/p&gt;
+&lt;p class=&#34;dxy-text-underline&#34;&gt;下划线&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;对齐&lt;/h4&gt;
+&lt;p class=&#34;dxy-text-left&#34;&gt;文字靠左&lt;/p&gt;
+&lt;p class=&#34;dxy-text-center&#34;&gt;文字居中&lt;/p&gt;
+&lt;p class=&#34;dxy-text-right&#34;&gt;文字靠右&lt;/p&gt;
+&lt;p&gt;文字不加修饰：一段中文的测试文本一段中文的测试文本一段中文的测试文本。The common situation is that the words in the English sentence can not be aligned, so we test the situation in English. The common situation is that the words in the English sentence can not be aligned, so we test the situation in English.&lt;/p&gt;
+&lt;p class=&#34;dxy-text-justify&#34;&gt;文字两端对齐：一段中文的测试文本一段中文的测试文本一段中文的测试文本。The common situation is that the words in the English sentence can not be aligned, so we test the situation in English. The common situation is that the words in the English sentence can not be aligned, so we test the situation in English.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;字母大小写&lt;/h4&gt;
+&lt;p class=&#34;dxy-lowercase&#34;&gt;字母小写 HELLO WORD&lt;/p&gt;
+&lt;p class=&#34;dxy-uppercase&#34;&gt;字母大写 hello word&lt;/p&gt;
+&lt;p class=&#34;dxy-capitalize&#34;&gt;首字母大写 hello word&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;文字截断&lt;/h4&gt;
+&lt;p class=&#34;dxy-overflow-ellipsis&#34; style=&#34;width: 160px;&#34;&gt;截断文字(需要设定宽度)文字&lt;/p&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+		</div>
+		
+		<div class="du-docs-section example_area-extra_situation">
+			<h3 id="extra_situation" class="page-header">
+				情景色
+			</h3>
+			<p></p>
+			
+			<div class="du-example">
+				<h4>文字状态颜色</h4>
+<p class="dxy-font-active">active</p>
+<p class="dxy-font-success">success</p>
+<p class="dxy-font-info">info</p>
+<p class="dxy-font-warning">warning</p>
+<p class="dxy-font-danger">danger</p>
+
+<h4>背景状态颜色</h4>
+<p class="dxy-bg-active">active</p>
+<p class="dxy-bg-success">success</p>
+<p class="dxy-bg-info">info</p>
+<p class="dxy-bg-warning">warning</p>
+<p class="dxy-bg-danger">danger</p>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;h4&gt;文字状态颜色&lt;/h4&gt;
+&lt;p class=&#34;dxy-font-active&#34;&gt;active&lt;/p&gt;
+&lt;p class=&#34;dxy-font-success&#34;&gt;success&lt;/p&gt;
+&lt;p class=&#34;dxy-font-info&#34;&gt;info&lt;/p&gt;
+&lt;p class=&#34;dxy-font-warning&#34;&gt;warning&lt;/p&gt;
+&lt;p class=&#34;dxy-font-danger&#34;&gt;danger&lt;/p&gt;
+
+&lt;h4&gt;背景状态颜色&lt;/h4&gt;
+&lt;p class=&#34;dxy-bg-active&#34;&gt;active&lt;/p&gt;
+&lt;p class=&#34;dxy-bg-success&#34;&gt;success&lt;/p&gt;
+&lt;p class=&#34;dxy-bg-info&#34;&gt;info&lt;/p&gt;
+&lt;p class=&#34;dxy-bg-warning&#34;&gt;warning&lt;/p&gt;
+&lt;p class=&#34;dxy-bg-danger&#34;&gt;danger&lt;/p&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+		</div>
+		
+		<div class="du-docs-section example_area-extra_appearance">
+			<h3 id="extra_appearance" class="page-header">
+				外观
+			</h3>
+			<p></p>
+			
+
+			
+			<h4 id="extra_appearance_border">边框</h4>
+			<p></p>
+			<div class="du-example">
+				<div class="dxy-border">边框</div>
+<div class="dxy-border-top">上边框</div>
+<div class="dxy-border-right">右边框</div>
+<div class="dxy-border-bottom">下边框</div>
+<div class="dxy-border-left">左边框</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-border&#34;&gt;边框&lt;/div&gt;
+&lt;div class=&#34;dxy-border-top&#34;&gt;上边框&lt;/div&gt;
+&lt;div class=&#34;dxy-border-right&#34;&gt;右边框&lt;/div&gt;
+&lt;div class=&#34;dxy-border-bottom&#34;&gt;下边框&lt;/div&gt;
+&lt;div class=&#34;dxy-border-left&#34;&gt;左边框&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="extra_appearance_border-radius">圆角</h4>
+			<p></p>
+			<div class="du-example">
+				<div class="dxy-border dxy-border-radius">圆角</div>
+<div class="dxy-border dxy-border-top-radius">顶部圆角</div>
+<div class="dxy-border dxy-border-right-radius">右侧圆角</div>
+<div class="dxy-border dxy-border-bottom-radius">底部圆角</div>
+<div class="dxy-border dxy-border-left-radius">左侧圆角</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-border dxy-border-radius&#34;&gt;圆角&lt;/div&gt;
+&lt;div class=&#34;dxy-border dxy-border-top-radius&#34;&gt;顶部圆角&lt;/div&gt;
+&lt;div class=&#34;dxy-border dxy-border-right-radius&#34;&gt;右侧圆角&lt;/div&gt;
+&lt;div class=&#34;dxy-border dxy-border-bottom-radius&#34;&gt;底部圆角&lt;/div&gt;
+&lt;div class=&#34;dxy-border dxy-border-left-radius&#34;&gt;左侧圆角&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="extra_appearance_margin">外边距 margin</h4>
+			<p></p>
+			<div class="du-example">
+				<div class="dxy-border">
+  <div class="dxy-margin">dxy-margin</div>
+  <div class="dxy-margin-top">dxy-margin-top</div>
+  <div class="dxy-margin-right">dxy-margin-right</div>
+  <div class="dxy-margin-bottom">dxy-margin-bottom</div>
+  <div class="dxy-margin-left">dxy-margin-left</div>
+  <div class="dxy-margin-top-bottom">dxy-margin-top-bottom</div>
+  <div class="dxy-margin-left-right">dxy-margin-left-right</div>
+</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-border&#34;&gt;
+  &lt;div class=&#34;dxy-margin&#34;&gt;dxy-margin&lt;/div&gt;
+  &lt;div class=&#34;dxy-margin-top&#34;&gt;dxy-margin-top&lt;/div&gt;
+  &lt;div class=&#34;dxy-margin-right&#34;&gt;dxy-margin-right&lt;/div&gt;
+  &lt;div class=&#34;dxy-margin-bottom&#34;&gt;dxy-margin-bottom&lt;/div&gt;
+  &lt;div class=&#34;dxy-margin-left&#34;&gt;dxy-margin-left&lt;/div&gt;
+  &lt;div class=&#34;dxy-margin-top-bottom&#34;&gt;dxy-margin-top-bottom&lt;/div&gt;
+  &lt;div class=&#34;dxy-margin-left-right&#34;&gt;dxy-margin-left-right&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+			<h4 id="extra_appearance_padding">内边距 padding</h4>
+			<p></p>
+			<div class="du-example">
+				<div class="dxy-padding">内边距</div>
+<div class="dxy-padding-top">顶部内边距</div>
+<div class="dxy-padding-right">右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距</div>
+<div class="dxy-padding-bottom">底部内边距</div>
+<div class="dxy-padding-left">左侧内边距</div>
+<div class="dxy-padding-top-bottom">上下内边距</div>
+<div class="dxy-padding-left-right">左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距</div>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div class=&#34;dxy-padding&#34;&gt;内边距&lt;/div&gt;
+&lt;div class=&#34;dxy-padding-top&#34;&gt;顶部内边距&lt;/div&gt;
+&lt;div class=&#34;dxy-padding-right&#34;&gt;右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距&lt;/div&gt;
+&lt;div class=&#34;dxy-padding-bottom&#34;&gt;底部内边距&lt;/div&gt;
+&lt;div class=&#34;dxy-padding-left&#34;&gt;左侧内边距&lt;/div&gt;
+&lt;div class=&#34;dxy-padding-top-bottom&#34;&gt;上下内边距&lt;/div&gt;
+&lt;div class=&#34;dxy-padding-left-right&#34;&gt;左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距&lt;/div&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+		</div>
+		
+		<div class="du-docs-section example_area-extra_float">
+			<h3 id="extra_float" class="page-header">
+				浮动
+			</h3>
+			<p>提供左浮动和右浮动，分别使用 <code>.dxy-float-left</code>、<code>.dxy-float-right</code>，在容器中使用 <code>.dxy-float-left</code> 类可以清除浮动。</p>
+			
+			<div class="du-example">
+				<div>
+    <p class="dxy-float-left">左浮动</p>
+    <p>（左浮动后面的内容）</p>
+    <p class="dxy-float-right">右浮动</p>
+    <p>（右浮动后面的内容）</p>
+</div>
+<div class="dxy-clear-fix">
+    <p class="dxy-float-left">左浮动</p>
+</div>
+<p>清除浮动了！</p>
+			</div>
+			<figure class="highlight">
+				<pre><code class="language-html">&lt;div&gt;
+    &lt;p class=&#34;dxy-float-left&#34;&gt;左浮动&lt;/p&gt;
+    &lt;p&gt;（左浮动后面的内容）&lt;/p&gt;
+    &lt;p class=&#34;dxy-float-right&#34;&gt;右浮动&lt;/p&gt;
+    &lt;p&gt;（右浮动后面的内容）&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;dxy-clear-fix&#34;&gt;
+    &lt;p class=&#34;dxy-float-left&#34;&gt;左浮动&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;清除浮动了！&lt;/p&gt;</code></pre>
+				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
+			</figure>
+			
+
+			
+		</div>
+		
+		
+	</div>
+	
+	<div class="dxy-col-3 dxy-tree">
+		<nav class="du-docs-sidebar affix" id="j_nav">
+			<ul class="nav dxy-tree-node dxy-tree-expanded"><li class="dxy-tree-content"><a href="#elements">基本元素</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_text">文本</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_list">列表</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_list_horizon">水平列表</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_list_dot">实心符号列表</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_list_circle">空心符号列表</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_list_dl">短语列表</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_list_dl-horizon">水平短语列表</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_grid">栅格系统</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_grid_combine">组合</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_grid_fill">填充</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_grid_offset">列偏移</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_button">按钮</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_button_size">多个尺寸</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_button_situation">情景色</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_button_link">链接/文字</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_button_disabled">禁用状态</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_table">表格</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_table_hover">鼠标悬停</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_table_striped">条纹状</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_table_bordered">全边框</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_table_no-border">无边框</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_form">表单</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_form_inline">行内表单</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_form_label">label</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_form_input">输入框</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_form_textarea">文本框</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_form_radio">单选框</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_form_checkbox">复选框</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_form_select">下拉框</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#elements_form_validate">表单校验</a></li></ul></li></ul></li></ul><ul class="nav dxy-tree-node dxy-tree-expanded"><li class="dxy-tree-content"><a href="#components">组件</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_button-group">按钮组</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_button-group_more">多个按钮</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_button-group_vertical">竖直方向</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_input-group">输入框组</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_input-group_button">与按钮组合</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_input-group_button-label">多项组合</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_search-select">下拉选择框</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_search-select_multiple">多选</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_label">标签</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_label_close">可删除</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_label_badge">徽章</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_popover">气泡提示</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_popover_custom">内嵌 HTML</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_alert">警告框</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_alert_close">可关闭</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_alert_icon">带图标</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_alert_icon-close">带图标和关闭</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_confirm">确认框</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_modal">模态框</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_navigation">导航栏</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_navigation_tab">标签式</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_navigation_pill">胶囊式</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_navigation_pill-vertical">垂直胶囊式</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_navigation_crumb">面包屑</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_navigation_menu">下拉菜单</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_pagination">分页</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_pagination_no-number">无页码</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_pagination_jump">跳转</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_go-top">回到顶部</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_go-top_other">其它颜色/形状</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_loading">加载</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_loading_text">带文字</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_progress">进度条</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_progress_thin">更细的线条</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_step-bar">步骤条</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_step-bar_full">宽度撑满</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_step-bar_vertical">竖直方向</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_tree">选项树</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#components_tree_text">文字展示</a></li></ul></li></ul></li></ul><ul class="nav dxy-tree-node dxy-tree-expanded"><li class="dxy-tree-content"><a href="#extra">辅助和修饰</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#extra_font">文本修饰</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#extra_situation">情景色</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#extra_appearance">外观</a></li><li class="dxy-tree-children"><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#extra_appearance_border">边框</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#extra_appearance_border-radius">圆角</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#extra_appearance_margin">外边距 margin</a></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#extra_appearance_padding">内边距 padding</a></li></ul></li></ul><ul class="nav dxy-tree-node"><li class="dxy-tree-content"><a href="#extra_float">浮动</a></li></ul></li></ul>
+			<a class="dxy-go-top dxy-go-top-square-white" href="#top"><i class="dxy-icon dxy-icon-arrow-up"></i></a>
+		</nav>
+	</div>
+</div>
+
+</div>
+
+<script src="../docs/dist/docs.min.js"></script>
 </body>
 </html>

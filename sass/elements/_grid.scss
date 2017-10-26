@@ -1,3 +1,5 @@
+* {box-sizing: border-box;}
+
 .#{$prefix}-container {
   @include make-container();
   @include make-container-max-widths();

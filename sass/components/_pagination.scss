@@ -44,7 +44,7 @@
 	}
 	.#{$prefix}-pagination-input {
 		width: $pagination-input-width;
-		height: $pagination-height;
+		height: $pagination-jump-height;
 		border: $pagination-border;
 		border-right: none;
 		padding: 0;
@@ -57,5 +57,6 @@
 		border: $pagination-border;
 		border-color: $pagination-cur-bgcolor;
 		color: #ffffff;
+		cursor: pointer;
 	}
 }
