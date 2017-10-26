@@ -3,12 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>DXY-UI DEMO INDEX</title>
-  <link rel="stylesheet" href="/dist/css/dxy-ui.min.css">
-	<!--<link rel="stylesheet" href="/docs/src/prism.css">
-  <link rel="stylesheet" href="/docs/src/docs.css">
-  <link rel="stylesheet" href="/docs/src/code.css">
-	<link rel="stylesheet" href="/docs/src/example.css">-->
-	<link rel="stylesheet" href="/docs/dist/docs.min.css">
+  <link rel="stylesheet" href="../dist/css/dxy-ui.min.css">
+	<link rel="stylesheet" href="../docs/dist/docs.min.css">
 </head>
 <body>
 <div class="container">
@@ -54,16 +50,12 @@
 		<nav class="du-docs-sidebar affix" id="j_nav">
 			<%- nav %>
 			<a class="dxy-go-top dxy-go-top-square-white" href="#top"><i class="dxy-icon dxy-icon-arrow-up"></i></a>
-			<!--<a class="back-to-top" href="#top">-->
-				<!--返回顶部-->
-			<!--</a>-->
 		</nav>
 	</div>
 </div>
 
 </div>
-<!--<script src="/docs/src/prism.js"></script>
-<script src="/docs/src/index.js"></script>-->
-<script src="/docs/dist/docs.min.js"></script>
+
+<script src="../docs/dist/docs.min.js"></script>
 </body>
 </html>
