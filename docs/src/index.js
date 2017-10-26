@@ -27,13 +27,22 @@
       };
       forEach.call(document.querySelectorAll('.dxy-tree'), treeNode => {
         treeNode.onclick = function (e) {
-          e.path.forEach(node => {
+          let node = e.target;
+          while (node !== treeNode) {
             Object.keys(events).forEach(event => {
               if (node.className && node.className.indexOf(event) > -1 && node.className.indexOf('active') === -1) {
                 events[event](node);
               }
             });
-          });
+            node = node.parentNode;
+          }
+          // e.path.forEach(node => {
+          //   Object.keys(events).forEach(event => {
+          //     if (node.className && node.className.indexOf(event) > -1 && node.className.indexOf('active') === -1) {
+          //       events[event](node);
+          //     }
+          //   });
+          // });
         }
       });
 

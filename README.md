@@ -12,7 +12,11 @@ DXY-UI提供了一套适用于桌面端的前端UI库，不包含任何JS，仅�
 ./dist/css/dxy-ui.css   //未压缩版本
 ./dist/css/dxy-ui.min.css   //压缩版本
 ```
- 为方便使用，建议先查看使用文档。   
+ 为方便使用，建议先查看[使用文档](https://dxy-f2e.github.io/dxy-ui/)。
+ 
+### 使用文档
+[快速开始吧](https://dxy-f2e.github.io/dxy-ui/)
+ 
 ### 开发构建
 
 #### 效果预览
