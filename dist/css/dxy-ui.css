@@ -2337,7 +2337,8 @@ p {
     background: #3572fe;
     border: 1px solid #dddddd;
     border-color: #3572fe;
-    color: #ffffff; }
+    color: #ffffff;
+    cursor: pointer; }
 
 .dxy-tip {
   display: inline-block;

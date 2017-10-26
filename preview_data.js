@@ -52,8 +52,33 @@ const allData = [
       {
         "name": "grid",
         "title": "栅格系统",
-        "desc": "",
-        "body": ""
+        "desc": "参考了 `Bootstrap`，把容器分为12栏，提供 `.dxy-col-1` 到 `.dxy-col-12` 类，数字代表占用的栏数。栅格容器使用 `.dxy-container` 类，在不同屏幕宽度时会有相应合适的最大宽度。如果要使用100%的宽度，可以使用 `.dxy-container-fluid`。",
+        "body": "",
+				"data": [
+          {
+            "name": "combine",
+						"title": "组合",
+						"desc": "我们按尺寸划分不同的屏幕设备，提供对应的栅格栏，对照如下：<br>" +
+							"`.dxy-col-*`: 无<br>" +
+							"`.dxy-col-sm-*`: @media (min-width: 576px)<br>" +
+							"`.dxy-col-md-*`: @media (min-width: 768px)<br>" +
+							"`.dxy-col-lg-*`: @media (min-width: 992px)<br>" +
+							"以上可组合使用，以适配不同大小的屏幕设备。",
+						"body": ""
+          },
+					{
+						"name": "fill",
+						"title": "填充",
+						"desc": "可使用 `.dxy-col` 来填充一行（`.dxy-row`）中剩余的空间。",
+						"body": ""
+					},
+					{
+						"name": "offset",
+						"title": "列偏移",
+						"desc": "使用 `.dxy-offset-*`、`.dxy-offset-sm-*`、`.dxy-offset-md-*`、`.dxy-offset-lg-*` 类可以将列向右侧偏移 n 列。",
+						"body": ""
+					}
+				]
       },
       {
         "name":"button",
@@ -82,7 +107,7 @@ const allData = [
           {
             "name": "disabled",
             "title": "禁用状态",
-            "desc": "提供按钮或链接禁用的样式。",
+            "desc": "提供按钮或链接禁用的样式，支持 `.disabled` 或 `disabled` 属性。",
             "body": ""
           }
 				]
@@ -90,31 +115,31 @@ const allData = [
       {
         "name": "table",
         "title": "表格",
-        "desc": "",
+        "desc": "基本表格是横线边框的样式。",
         "body": "",
         "data": [
           {
             "name": "hover",
             "title": "鼠标悬停",
-            "desc": "",
+            "desc": "鼠标悬停时，表格的行会出现背景色。",
             "body": ""
           },
           {
             "name": "striped",
             "title": "条纹状",
-            "desc": "",
+            "desc": "间隔行有背景色，让每一行更有区分度。",
             "body": ""
           },
           {
             "name": "bordered",
             "title": "全边框",
-            "desc": "",
+            "desc": "每个单元格都有边框的表格样式。",
             "body": ""
           },
           {
             "name": "no-border",
             "title": "无边框",
-            "desc": "",
+            "desc": "另外提供了无边框的表格，可用在某些布局场景。",
             "body": ""
           }
         ]
@@ -122,55 +147,55 @@ const allData = [
       {
         "name": "form",
         "title": "表单",
-        "desc": "",
+        "desc": "给表单添加 `.dxy-form` 类，每一个表单项使用 `.dxy-form-group` 类，这样可以使每个表单项独占一行。",
         "body": "",
         "data": [
           {
             "name": "inline",
             "title": "行内表单",
-            "desc": "",
+            "desc": "给表单添加 `.dxy-form-inline` 类，使用 `.dxy-form-group` 类的表单项会变成 `inline-block`。",
             "body": ""
           },
           {
             "name": "label",
             "title": "label",
-            "desc": "",
+            "desc": "提供了行内标签和单行标签两种形式。",
             "body": ""
           },
           {
             "name": "input",
             "title": "输入框",
-            "desc": "",
+            "desc": "输入框有固定宽度和100%宽度两种样式，两者都有 `readonly` 和 `disabled` 状态。",
             "body": ""
           },
           {
             "name": "textarea",
             "title": "文本框",
-            "desc": "",
+            "desc": "文本框和输入框类似，有两种宽度和 `readonly` 和 `disabled` 两种状态，用于多行文本输入，竖直方向可拉伸。",
             "body": ""
           },
           {
             "name": "radio",
             "title": "单选框",
-            "desc": "",
+            "desc": "美化了原生的单选框，提供行内和单行两种样式。",
             "body": ""
           },
           {
             "name": "checkbox",
             "title": "复选框",
-            "desc": "",
+            "desc": "美化了原生的复选框，提供行内和单行两种样式。",
             "body": ""
           },
           {
             "name": "select",
             "title": "下拉框",
-            "desc": "",
+            "desc": "美化了原生的 `select`，包括有 `multiple` 属性的多选 `select`。提供了自适应宽度和100%宽度。",
             "body": ""
           },
           {
             "name": "validate",
             "title": "表单校验",
-            "desc": "",
+            "desc": "提供表单校验警告的样式，需要结合 `.dxy-verify` 和 `.dxy-verify-danger` 使用。",
             "body": ""
           },
         ]
@@ -191,8 +216,8 @@ const allData = [
 				"data": [
 					{
 						"name":"more",
-						"title":"三个及以上按钮",
-						"desc":"可以更改按钮数量，假设你需要的话。",
+						"title":"多个按钮",
+						"desc":"假设你需要，可以更改按钮数量。",
 						"body":""
 					},
 					{
@@ -212,7 +237,7 @@ const allData = [
 					{
 						"name":"button",
 						"title":"与按钮组合",
-						"desc":"",
+						"desc":"按钮可以是 `<button>`、`<a>` 或 `<input>` 标签。",
 						"body":""
 					},
 					{
@@ -226,13 +251,13 @@ const allData = [
 			{
 				"name":"search-select",
 				"title":"下拉选择框",
-				"desc":"具有搜索功能的下拉选择框，需结合`JavaScript`实现。",
+				"desc":"具有搜索功能的下拉选择框，需结合 `JavaScript` 实现。",
 				"body":"",
 				"data":[
 					{
 						"name":"multiple",
 						"title":"多选",
-						"desc":"提供多选功能，已标签形式展现选择结果。",
+						"desc":"提供多选功能，已选中项以标签显示在搜索框上。",
 						"body":""
 					}
 				]
@@ -240,19 +265,19 @@ const allData = [
 			{
 				"name":"label",
 				"title":"标签",
-				"desc":"用于标记或选择，色值仅仅表示颜色，不表达具体含义。",
+				"desc":"提供多种颜色。",
 				"body":"",
 				"data":[
 					{
 						"name":"close",
 						"title":"可删除",
-						"desc":"提供删除按钮。",
+						"desc":"带删除按钮的标签。",
 						"body":""
 					},
 					{
 						"name":"badge",
 						"title":"徽章",
-						"desc":"用于展示未读消息等等。",
+						"desc":"使用醒目的颜色，可用于展示未读消息等。",
 						"body":""
 					}
 				]
@@ -265,7 +290,7 @@ const allData = [
 				"data":[
 					{
 						"name":"custom",
-						"title":"内容丰富",
+						"title":"内嵌 HTML",
 						"desc":"可以自定义内容，分为标题和主体内容。",
 						"body":""
 					}
@@ -274,7 +299,7 @@ const allData = [
 			{
 				"name":"alert",
 				"title":"警告框",
-				"desc":"一般用于代替浏览器原生的`alert`，统一形式，提供四种色值来代表不同意义。",
+				"desc":"一般用于代替浏览器原生的 `alert`，提供四种色值在不同场景使用。",
 				"body":"",
 				"data":[
 					{
@@ -291,7 +316,7 @@ const allData = [
 					},
 					{
 						"name":"icon-close",
-						"title":"带图标，可关闭",
+						"title":"带图标和关闭",
 						"desc":"",
 						"body":"",
 					}
@@ -299,20 +324,20 @@ const allData = [
 			},
 			{
 				"name":"confirm",
-				"title":"弹出确认框",
-				"desc":"一般用于代替浏览器原生的`confirm`，统一形式，可添加标题与主体文案。",
+				"title":"确认框",
+				"desc":"一般用于代替浏览器原生的 `confirm`，可添加标题与主体文案。",
 				"body":"",
 			},
 			{
 				"name":"modal",
 				"title":"模态框",
-				"desc":"显示一块单独的内容，自定义标题与主体内容。",
+				"desc":"显示一块单独的内容，自定义标题与主体内容，主体内容可以是表单，表格等。",
 				"body":"",
 			},
 			{
 				"name":"navigation",
 				"title":"导航栏",
-				"desc":"",
+				"desc":"基本导航栏样式较简单，所有项在一行。提供了多种形式的导航栏，还有面包屑和下拉菜单。",
 				"body":"",
 				"data":[
 					{
@@ -350,7 +375,7 @@ const allData = [
 			{
 				"name":"pagination",
 				"title":"分页",
-				"desc":"提供翻页样式，需结合`JavaScript`实现功能。",
+				"desc":"提供带页码的翻页样式，需结合 `JavaScript` 实现功能。",
 				"body":"",
 				"data":[
 					{
@@ -370,7 +395,7 @@ const allData = [
 			{
 				"name":"go-top",
 				"title":"回到顶部",
-				"desc":"一般放置于屏幕下方，供点击返回顶部或指定位置，提供多个图标。",
+				"desc":"点击后返回顶部或指定位置的按钮，提供多个样式。",
 				"body":"",
 				"data":[
 					{
@@ -398,7 +423,7 @@ const allData = [
 			{
 				"name":"progress",
 				"title":"进度条",
-				"desc":"为当前工作流或者动作提供清晰的进度反馈。",
+				"desc":"为当前动作提供清晰的进度反馈。",
 				"body":"",
 				"data":[
 					{
@@ -412,19 +437,19 @@ const allData = [
 			{
 				"name":"step-bar",
 				"title":"步骤条",
-				"desc":"用于用户注册，信息填写等等步骤清晰的动作的流程展示。",
+				"desc":"用于步骤进度提示，或流程展示。",
 				"body":"",
 				"data":[
 					{
 						"name":"full",
 						"title":"宽度撑满",
-						"desc":"",
+						"desc":"步骤条两端撑满整个容器。",
 						"body":"",
 					},
 					{
 						"name":"vertical",
 						"title":"竖直方向",
-						"desc":"",
+						"desc":"当步骤较多时，为了更好的观感可以使用竖直方向的步骤条。",
 						"body":"",
 					}
 				]
@@ -438,7 +463,7 @@ const allData = [
 					{
 						"name":"text",
 						"title":"文字展示",
-						"desc":"",
+						"desc":"仅以文字展示关系的多级树。",
 						"body":"",
 					}
 				]
@@ -498,7 +523,7 @@ const allData = [
       {
         "name": "float",
         "title": "浮动",
-        "desc": "",
+        "desc": "提供左浮动和右浮动，分别使用 `.dxy-float-left`、`.dxy-float-right`，在容器中使用 `.dxy-float-left` 类可以清除浮动。",
         "body": ""
       }
 		]
@@ -514,12 +539,14 @@ function createPath(data, lastName) {
       item.path = lastName + "." + item.name;
       dataMap[item.path] = item;
 		}
-		item.desc = item.desc.replace(/<|>/g, function (word) {
-			if (word === '<') {
-				return '&lt;';
-			}
-			return '&gt;';
-    }).replace(/`(.+?)`/g, '<code>$1</code>');
+		item.desc = item.desc.replace(/`(.+?)`/g, function (word) {
+			return '<code>' + word.replace(/`/g, '').replace(/<|>/g, function (word2) {
+          if (word2 === '<') {
+            return '&lt;';
+          }
+          return '&gt;';
+        }) + '</code>';
+    });
 		if (item.data) {
 			createPath(item.data, (lastName ? lastName + "." : "") + item.name);
 		}
