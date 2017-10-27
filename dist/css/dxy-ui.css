@@ -2047,6 +2047,7 @@ p {
     border-radius: 0;
     float: left;
     width: 100%;
+    height: 36px;
     display: table-cell;
     color: #333; }
     .dxy-input-group input:not([type="button"]):last-child {

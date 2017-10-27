@@ -12,6 +12,7 @@
     border-radius: 0;
     float: left;
     width: 100%;
+    height: $input-group-input-height;
     display: table-cell;
     color: $input-group-color;
     &:last-child {

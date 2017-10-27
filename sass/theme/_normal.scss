@@ -365,6 +365,7 @@ $button-group-radius : $btn-radius;
 //
 
 $input-group-height: 34px;
+$input-group-input-height: $input-group-height + $input-bd-width * 2;
 $input-group-font-size: 14px;
 $input-group-color: #333;
 $input-group-addon-color: #bbb;
