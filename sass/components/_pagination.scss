@@ -13,6 +13,7 @@
 		text-decoration: none;
 		color: $pagination-font-color;
 		border: $pagination-border;
+		border-radius: $pagination-btn-radius;
 		margin-right: $pagination-btn-mr;
 		&:last-child {
 			margin-right: 0;
