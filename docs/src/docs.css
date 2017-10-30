@@ -169,9 +169,9 @@ body {
   margin-bottom: 0;
 }
 
-.du-docs-section h3,
-.du-docs-section h4,
-.du-docs-section p {
+.du-docs-section > h3,
+.du-docs-section > h4,
+.du-docs-section > p {
 	margin-bottom: 10px;
 }
 h1[id] {
