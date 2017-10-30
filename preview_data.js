@@ -101,7 +101,7 @@ const allData = [
           {
             "name": "link",
             "title": "链接/文字",
-            "desc": "当按钮是链接或文字时可用无边框和文字颜色突出的按钮。",
+            "desc": "当按钮是链接或文字时可用无边框和文字颜色突出的按钮。如果不想使用按钮的形态，去掉 `.dxy-btn` 类即可，只使用 `.dxy-btn-link`。",
             "body": ""
           },
           {
@@ -509,13 +509,13 @@ const allData = [
           {
             "name": "margin",
             "title": "外边距 margin",
-            "desc": "",
+            "desc": "提供了4组值的 `margin` 值，分别是10px、15px、20px、30px，包括`top`、`right`、`bottom`和`left`4个方向，使用 `dxy-mg10`、`dxy-mg10-top` 等类名，详见下例。",
             "body": ""
           },
           {
             "name": "padding",
             "title": "内边距 padding",
-            "desc": "",
+            "desc": "提供了4组值的 `padding` 值，分别是10px、15px、20px、30px，包括`top`、`right`、`bottom`和`left`4个方向，使用 `dxy-pd10`、`dxy-pd10-top` 等类名，详见下例。",
             "body": ""
           }
         ]

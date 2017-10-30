@@ -28,32 +28,28 @@
   }
 }
 
-.#{$prefix}-padding{
-  padding: $padding;
-}
-@each $name in $direction {
-  .#{$prefix}-padding-#{$name} {
-    padding-#{$name}: $padding;
+// 按值定义
+@each $value in $paddings {
+  .#{$prefix}-pd#{$value} {
+    padding: $value + px;
   }
-}
-.#{$prefix}-padding-top-bottom{
-  padding: $padding 0;
-}
-.#{$prefix}-padding-left-right{
-  padding: 0 $padding;
+  // 按方向定义
+  @each $name in $direction {
+    .#{$prefix}-pd#{$value}-#{$name} {
+      padding-#{$name}: $value + px;
+    }
+  }
 }
 
-.#{$prefix}-margin{
-  margin: $margin;
-}
-@each $name in $direction {
-  .#{$prefix}-margin-#{$name} {
-    margin-#{$name}: $padding;
+// 按值定义
+@each $value in $margins {
+  .#{$prefix}-mg#{$value} {
+    margin: $value + px;
   }
-}
-.#{$prefix}-margin-top-bottom{
-  margin: $margin 0;
-}
-.#{$prefix}-margin-left-right{
-  margin: 0 $margin;
+  // 按方向定义
+  @each $name in $direction {
+    .#{$prefix}-mg#{$value}-#{$name} {
+      margin-#{$name}: $value + px;
+    }
+  }
 }

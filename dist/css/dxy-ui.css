@@ -416,47 +416,125 @@ a {
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px; }
 
-.dxy-padding {
+.dxy-pd10 {
   padding: 10px; }
 
-.dxy-padding-top {
+.dxy-pd10-top {
   padding-top: 10px; }
 
-.dxy-padding-right {
+.dxy-pd10-right {
   padding-right: 10px; }
 
-.dxy-padding-bottom {
+.dxy-pd10-bottom {
   padding-bottom: 10px; }
 
-.dxy-padding-left {
+.dxy-pd10-left {
   padding-left: 10px; }
 
-.dxy-padding-top-bottom {
-  padding: 10px 0; }
+.dxy-pd15 {
+  padding: 15px; }
 
-.dxy-padding-left-right {
-  padding: 0 10px; }
+.dxy-pd15-top {
+  padding-top: 15px; }
 
-.dxy-margin {
-  margin: 20px; }
+.dxy-pd15-right {
+  padding-right: 15px; }
 
-.dxy-margin-top {
+.dxy-pd15-bottom {
+  padding-bottom: 15px; }
+
+.dxy-pd15-left {
+  padding-left: 15px; }
+
+.dxy-pd20 {
+  padding: 20px; }
+
+.dxy-pd20-top {
+  padding-top: 20px; }
+
+.dxy-pd20-right {
+  padding-right: 20px; }
+
+.dxy-pd20-bottom {
+  padding-bottom: 20px; }
+
+.dxy-pd20-left {
+  padding-left: 20px; }
+
+.dxy-pd30 {
+  padding: 30px; }
+
+.dxy-pd30-top {
+  padding-top: 30px; }
+
+.dxy-pd30-right {
+  padding-right: 30px; }
+
+.dxy-pd30-bottom {
+  padding-bottom: 30px; }
+
+.dxy-pd30-left {
+  padding-left: 30px; }
+
+.dxy-mg10 {
+  margin: 10px; }
+
+.dxy-mg10-top {
   margin-top: 10px; }
 
-.dxy-margin-right {
+.dxy-mg10-right {
   margin-right: 10px; }
 
-.dxy-margin-bottom {
+.dxy-mg10-bottom {
   margin-bottom: 10px; }
 
-.dxy-margin-left {
+.dxy-mg10-left {
   margin-left: 10px; }
 
-.dxy-margin-top-bottom {
-  margin: 20px 0; }
+.dxy-mg15 {
+  margin: 15px; }
 
-.dxy-margin-left-right {
-  margin: 0 20px; }
+.dxy-mg15-top {
+  margin-top: 15px; }
+
+.dxy-mg15-right {
+  margin-right: 15px; }
+
+.dxy-mg15-bottom {
+  margin-bottom: 15px; }
+
+.dxy-mg15-left {
+  margin-left: 15px; }
+
+.dxy-mg20 {
+  margin: 20px; }
+
+.dxy-mg20-top {
+  margin-top: 20px; }
+
+.dxy-mg20-right {
+  margin-right: 20px; }
+
+.dxy-mg20-bottom {
+  margin-bottom: 20px; }
+
+.dxy-mg20-left {
+  margin-left: 20px; }
+
+.dxy-mg30 {
+  margin: 30px; }
+
+.dxy-mg30-top {
+  margin-top: 30px; }
+
+.dxy-mg30-right {
+  margin-right: 30px; }
+
+.dxy-mg30-bottom {
+  margin-bottom: 30px; }
+
+.dxy-mg30-left {
+  margin-left: 30px; }
 
 .dxy-float-left {
   float: left; }
@@ -553,8 +631,10 @@ a {
   padding: 10px 18px;
   font-size: 14px; }
   .dxy-btn:hover {
+    border-color: #ebebeb;
     background-color: #ebebeb; }
   .dxy-btn:active, .dxy-btn:focus {
+    border-color: #d6d6d6;
     background-color: #d6d6d6; }
   .dxy-btn.disabled, .dxy-btn[disabled] {
     color: #aaaaaa;
@@ -583,8 +663,10 @@ a {
   border-color: #2c7cec;
   background-color: #2c7cec; }
   .dxy-btn-primary:hover {
+    border-color: #1467db;
     background-color: #1467db; }
   .dxy-btn-primary:active, .dxy-btn-primary:focus {
+    border-color: #1055b6;
     background-color: #1055b6; }
   .dxy-btn-primary[disabled] {
     color: #bcbcbc;
@@ -597,8 +679,10 @@ a {
   border-color: #22c93d;
   background-color: #22c93d; }
   .dxy-btn-success:hover {
+    border-color: #1ca632;
     background-color: #1ca632; }
   .dxy-btn-success:active, .dxy-btn-success:focus {
+    border-color: #168328;
     background-color: #168328; }
   .dxy-btn-success[disabled] {
     color: #bcbcbc;
@@ -611,8 +695,10 @@ a {
   border-color: #84c2fd;
   background-color: #84c2fd; }
   .dxy-btn-info:hover {
+    border-color: #5caefc;
     background-color: #5caefc; }
   .dxy-btn-info:active, .dxy-btn-info:focus {
+    border-color: #349afc;
     background-color: #349afc; }
   .dxy-btn-info[disabled] {
     color: #bcbcbc;
@@ -625,8 +711,10 @@ a {
   border-color: #ff9110;
   background-color: #ff9110; }
   .dxy-btn-warning:hover {
+    border-color: #e67c00;
     background-color: #e67c00; }
   .dxy-btn-warning:active, .dxy-btn-warning:focus {
+    border-color: #bd6600;
     background-color: #bd6600; }
   .dxy-btn-warning[disabled] {
     color: #bcbcbc;
@@ -639,8 +727,10 @@ a {
   border-color: #ff3939;
   background-color: #ff3939; }
   .dxy-btn-danger:hover {
+    border-color: #ff1010;
     background-color: #ff1010; }
   .dxy-btn-danger:active, .dxy-btn-danger:focus {
+    border-color: #e60000;
     background-color: #e60000; }
   .dxy-btn-danger[disabled] {
     color: #bcbcbc;

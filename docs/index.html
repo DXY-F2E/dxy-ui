@@ -418,14 +418,18 @@
 			</figure>
 			
 			<h4 id="elements_button_link">链接/文字</h4>
-			<p>当按钮是链接或文字时可用无边框和文字颜色突出的按钮。</p>
+			<p>当按钮是链接或文字时可用无边框和文字颜色突出的按钮。如果不想使用按钮的形态，去掉 <code>.dxy-btn</code> 类即可，只使用 <code>.dxy-btn-link</code>。</p>
 			<div class="du-example">
-				<button type="button" class="dxy-btn dxy-btn-link">文字</button>
-<a href="#" class="dxy-btn dxy-btn-link">链接</a>
+				<a href="#" class="dxy-btn-link">只是链接</a>
+<br>
+<button type="button" class="dxy-btn dxy-btn-link">文字按钮</button>
+<a href="#" class="dxy-btn dxy-btn-link">链接按钮</a>
 			</div>
 			<figure class="highlight">
-				<pre><code class="language-html">&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-link&#34;&gt;文字&lt;/button&gt;
-&lt;a href=&#34;#&#34; class=&#34;dxy-btn dxy-btn-link&#34;&gt;链接&lt;/a&gt;</code></pre>
+				<pre><code class="language-html">&lt;a href=&#34;#&#34; class=&#34;dxy-btn-link&#34;&gt;只是链接&lt;/a&gt;
+&lt;br&gt;
+&lt;button type=&#34;button&#34; class=&#34;dxy-btn dxy-btn-link&#34;&gt;文字按钮&lt;/button&gt;
+&lt;a href=&#34;#&#34; class=&#34;dxy-btn dxy-btn-link&#34;&gt;链接按钮&lt;/a&gt;</code></pre>
 				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
 			</figure>
 			
@@ -2916,50 +2920,54 @@
 			</figure>
 			
 			<h4 id="extra_appearance_margin">外边距 margin</h4>
-			<p></p>
+			<p>提供了4组值的 <code>margin</code> 值，分别是10px、15px、20px、30px，包括<code>top</code>、<code>right</code>、<code>bottom</code>和<code>left</code>4个方向，使用 <code>dxy-mg10</code>、<code>dxy-mg10-top</code> 等类名，详见下例。</p>
 			<div class="du-example">
 				<div class="dxy-border">
-  <div class="dxy-margin">dxy-margin</div>
-  <div class="dxy-margin-top">dxy-margin-top</div>
-  <div class="dxy-margin-right">dxy-margin-right</div>
-  <div class="dxy-margin-bottom">dxy-margin-bottom</div>
-  <div class="dxy-margin-left">dxy-margin-left</div>
-  <div class="dxy-margin-top-bottom">dxy-margin-top-bottom</div>
-  <div class="dxy-margin-left-right">dxy-margin-left-right</div>
+  <div class="dxy-mg10">dxy-mg10</div>
+  <div class="dxy-mg10-bottom">dxy-mg10-bottom</div>
+  <div class="dxy-mg10-left">dxy-mg10-left</div>
+  <div class="dxy-mg10-right">dxy-mg10-right</div>
+  <div class="dxy-mg10-top">dxy-mg10-top</div>
+  <div class="dxy-mg15">dxy-mg15</div>
+  <div class="dxy-mg20">dxy-mg20</div>
+  <div class="dxy-mg30">dxy-mg30</div>
 </div>
 			</div>
 			<figure class="highlight">
 				<pre><code class="language-html">&lt;div class=&#34;dxy-border&#34;&gt;
-  &lt;div class=&#34;dxy-margin&#34;&gt;dxy-margin&lt;/div&gt;
-  &lt;div class=&#34;dxy-margin-top&#34;&gt;dxy-margin-top&lt;/div&gt;
-  &lt;div class=&#34;dxy-margin-right&#34;&gt;dxy-margin-right&lt;/div&gt;
-  &lt;div class=&#34;dxy-margin-bottom&#34;&gt;dxy-margin-bottom&lt;/div&gt;
-  &lt;div class=&#34;dxy-margin-left&#34;&gt;dxy-margin-left&lt;/div&gt;
-  &lt;div class=&#34;dxy-margin-top-bottom&#34;&gt;dxy-margin-top-bottom&lt;/div&gt;
-  &lt;div class=&#34;dxy-margin-left-right&#34;&gt;dxy-margin-left-right&lt;/div&gt;
+  &lt;div class=&#34;dxy-mg10&#34;&gt;dxy-mg10&lt;/div&gt;
+  &lt;div class=&#34;dxy-mg10-bottom&#34;&gt;dxy-mg10-bottom&lt;/div&gt;
+  &lt;div class=&#34;dxy-mg10-left&#34;&gt;dxy-mg10-left&lt;/div&gt;
+  &lt;div class=&#34;dxy-mg10-right&#34;&gt;dxy-mg10-right&lt;/div&gt;
+  &lt;div class=&#34;dxy-mg10-top&#34;&gt;dxy-mg10-top&lt;/div&gt;
+  &lt;div class=&#34;dxy-mg15&#34;&gt;dxy-mg15&lt;/div&gt;
+  &lt;div class=&#34;dxy-mg20&#34;&gt;dxy-mg20&lt;/div&gt;
+  &lt;div class=&#34;dxy-mg30&#34;&gt;dxy-mg30&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
 			</figure>
 			
 			<h4 id="extra_appearance_padding">内边距 padding</h4>
-			<p></p>
+			<p>提供了4组值的 <code>padding</code> 值，分别是10px、15px、20px、30px，包括<code>top</code>、<code>right</code>、<code>bottom</code>和<code>left</code>4个方向，使用 <code>dxy-pd10</code>、<code>dxy-pd10-top</code> 等类名，详见下例。</p>
 			<div class="du-example">
-				<div class="dxy-padding">内边距</div>
-<div class="dxy-padding-top">顶部内边距</div>
-<div class="dxy-padding-right">右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距</div>
-<div class="dxy-padding-bottom">底部内边距</div>
-<div class="dxy-padding-left">左侧内边距</div>
-<div class="dxy-padding-top-bottom">上下内边距</div>
-<div class="dxy-padding-left-right">左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距</div>
+				<div class="dxy-pd10">dxy-pd10</div>
+<div class="dxy-pd10-bottom">dxy-pd10-bottom</div>
+<div class="dxy-pd10-left">dxy-pd10-left</div>
+<div class="dxy-pd10-right">dxy-pd10-right 示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例</div>
+<div class="dxy-pd10-top">dxy-pd10-top</div>
+<div class="dxy-pd15">dxy-pd15</div>
+<div class="dxy-pd20">dxy-pd20</div>
+<div class="dxy-pd30">dxy-pd30</div>
 			</div>
 			<figure class="highlight">
-				<pre><code class="language-html">&lt;div class=&#34;dxy-padding&#34;&gt;内边距&lt;/div&gt;
-&lt;div class=&#34;dxy-padding-top&#34;&gt;顶部内边距&lt;/div&gt;
-&lt;div class=&#34;dxy-padding-right&#34;&gt;右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距右侧内边距&lt;/div&gt;
-&lt;div class=&#34;dxy-padding-bottom&#34;&gt;底部内边距&lt;/div&gt;
-&lt;div class=&#34;dxy-padding-left&#34;&gt;左侧内边距&lt;/div&gt;
-&lt;div class=&#34;dxy-padding-top-bottom&#34;&gt;上下内边距&lt;/div&gt;
-&lt;div class=&#34;dxy-padding-left-right&#34;&gt;左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距左右内边距&lt;/div&gt;</code></pre>
+				<pre><code class="language-html">&lt;div class=&#34;dxy-pd10&#34;&gt;dxy-pd10&lt;/div&gt;
+&lt;div class=&#34;dxy-pd10-bottom&#34;&gt;dxy-pd10-bottom&lt;/div&gt;
+&lt;div class=&#34;dxy-pd10-left&#34;&gt;dxy-pd10-left&lt;/div&gt;
+&lt;div class=&#34;dxy-pd10-right&#34;&gt;dxy-pd10-right 示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例示例&lt;/div&gt;
+&lt;div class=&#34;dxy-pd10-top&#34;&gt;dxy-pd10-top&lt;/div&gt;
+&lt;div class=&#34;dxy-pd15&#34;&gt;dxy-pd15&lt;/div&gt;
+&lt;div class=&#34;dxy-pd20&#34;&gt;dxy-pd20&lt;/div&gt;
+&lt;div class=&#34;dxy-pd30&#34;&gt;dxy-pd30&lt;/div&gt;</code></pre>
 				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
 			</figure>
 			

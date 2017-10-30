@@ -1,5 +1,6 @@
 @mixin btn_hover($bg-color) {
   &:hover {
+    border-color: darken($bg-color, $btn-hover-darken);
     background-color: darken($bg-color, $btn-hover-darken);
   }
 }
@@ -7,6 +8,7 @@
 @mixin btn_active($bg-color) {
   &:active,
   &:focus {
+    border-color: darken($bg-color, $btn-focus-darken);
     background-color: darken($bg-color, $btn-focus-darken);
   }
 }
