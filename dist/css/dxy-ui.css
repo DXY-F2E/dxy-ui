@@ -718,6 +718,7 @@ a {
   display: block;
   resize: vertical;
   height: auto;
+  min-height: 37px;
   padding: 9px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -831,7 +832,7 @@ a {
 .dxy-select {
   line-height: 22px;
   padding: 5px 9px;
-  border: 1px solid #999;
+  border: 1px solid #ccc;
   border-radius: 4px;
   outline: none;
   -webkit-appearance: none;
@@ -1837,9 +1838,6 @@ h6, .dxy-h6 {
 .dxy-h-bold {
   font-weight: bold; }
 
-p {
-  font-size: 14px; }
-
 .dxy-help-block,
 .dxy-help-inline {
   color: #777;
@@ -1975,7 +1973,7 @@ p {
   .dxy-confirm .dxy-confirm-head {
     line-height: 1;
     position: relative;
-    padding-bottom: 32px; }
+    padding-bottom: 30px; }
     .dxy-confirm .dxy-confirm-head h4 {
       line-height: 1; }
     .dxy-confirm .dxy-confirm-head .close {
@@ -1992,7 +1990,7 @@ p {
         font-size: 20px;
         color: #bcbcbc; }
   .dxy-confirm .dxy-confirm-body {
-    height: 70px;
+    min-height: 70px;
     overflow: hidden; }
   .dxy-confirm .dxy-confirm-foot {
     text-align: right; }
@@ -2190,7 +2188,7 @@ p {
   .dxy-modal .dxy-modal-head {
     line-height: 1;
     position: relative;
-    padding-bottom: 32px; }
+    padding-bottom: 30px; }
     .dxy-modal .dxy-modal-head h4 {
       line-height: 1; }
     .dxy-modal .dxy-modal-head .close {
@@ -2245,7 +2243,7 @@ p {
       color: #333;
       border-color: #3572fe; }
     .dxy-nav-tab li:hover:not(.dxy-active) {
-      border-bottom-width: 1px; }
+      border-bottom: 1px solid #ccc; }
 
 .dxy-nav-pill li, .dxy-nav-pill-vertical li {
   border-radius: 4px; }
@@ -2289,7 +2287,7 @@ p {
       background-color: #f5f5f5; }
     .dxy-nav-menu li.dxy-active {
       color: #fff;
-      background-color: #0bb9fa; }
+      background-color: #3572fe; }
 
 .dxy-pagination {
   white-space: nowrap;
@@ -2311,6 +2309,7 @@ p {
     .dxy-pagination .dxy-pagination-btn:last-child {
       margin-right: 0; }
     .dxy-pagination .dxy-pagination-btn .dxy-icon-arrow-left, .dxy-pagination .dxy-pagination-btn .dxy-icon-arrow-right {
+      font-size: inherit;
       margin: 0 -4px 0; }
   .dxy-pagination .dxy-pagination-btn-arrow {
     padding: 0 4px; }
@@ -2326,7 +2325,8 @@ p {
     color: #e0e0e0;
     cursor: not-allowed; }
   .dxy-pagination .dxy-pagination-jump {
-    display: inline-block; }
+    display: inline-block;
+    border-radius: 0 0 0 0; }
   .dxy-pagination .dxy-pagination-input {
     width: 30px;
     height: 26px;
@@ -2346,6 +2346,8 @@ p {
 .dxy-tip {
   display: inline-block;
   position: relative;
+  color: #555;
+  font-size: 12px;
   line-height: 1;
   padding: 5px 8px;
   border: 1px solid #dddddd;
@@ -2423,6 +2425,8 @@ p {
   display: inline-block;
   position: relative;
   padding: 12px;
+  color: #555;
+  font-size: 12px;
   border: none;
   border-radius: 3px;
   -webkit-box-shadow: 0 0 14px 2px #dddddd;
@@ -2536,24 +2540,24 @@ p {
   width: 100%; }
   .dxy-search-select .dxy-search-input {
     width: 100%;
-    height: 40px;
+    height: 34px;
     font-size: 14px;
     color: #333;
     line-height: 1;
-    padding: 0 0 0 10px;
+    padding: 0 30px 0 10px;
     border: solid 1px #cccccc;
     border-radius: 4px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
   .dxy-search-select .dxy-search-input-icon {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 34px;
     right: 0;
     top: 0;
     font-size: 17px;
     text-align: center;
-    line-height: 40px; }
+    line-height: 34px; }
 
 .dxy-search-select .dxy-select-list, .dxy-search-select-multiple .dxy-select-list {
   position: relative;
@@ -2588,7 +2592,7 @@ p {
     font-size: 14px;
     color: #333;
     line-height: 1;
-    padding: 4px;
+    padding: 3px;
     border: solid 1px #cccccc;
     background-color: #ffffff;
     border-radius: 4px;
@@ -2596,10 +2600,18 @@ p {
   .dxy-search-select-multiple .dxy-cursor {
     width: 100px;
     display: inline-block;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     border: none;
     outline: none;
     background-color: transparent; }
   .dxy-search-select-multiple .dxy-tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0 -3px -3px 0; }
   .dxy-search-select-multiple .dxy-tag {
     display: inline-block;
@@ -2799,7 +2811,7 @@ p {
     left: 50%;
     width: 0;
     height: 0;
-    border-top: 4px solid #000;
+    border-top: 4px solid #555;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent; }
 

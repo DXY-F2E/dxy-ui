@@ -53,6 +53,7 @@
   display: block;
   resize: vertical;
   height: $textarea-height;
+  min-height: $textarea-min-height;
   @include text_input($textarea-pd, $textarea-bd-width, $textarea-bd-color, $textarea-bd-radius);
 }
 
@@ -171,10 +172,12 @@
   }
 }
 
+// select
+
 .#{$prefix}-select {
   line-height: $input-line-height;
   padding: $input-pd;
-  border: $border-width solid $border-color;
+  border: $border-width solid $form-bd-color;
   border-radius: $border-radius;
   outline: none;
   appearance: none;
