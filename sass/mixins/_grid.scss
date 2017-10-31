@@ -2,7 +2,7 @@
 //
 
 @mixin make-container() {
-  width: 100%;
+  //width: 100%; // 因为有padding
   margin-left: auto;
   margin-right: auto;
   padding-left: ($grid-gutter-width / 2);

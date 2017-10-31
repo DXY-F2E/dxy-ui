@@ -961,7 +961,6 @@ a {
           box-sizing: border-box; }
 
 .dxy-container {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -980,7 +979,6 @@ a {
       max-width: 1140px; } }
 
 .dxy-container-fluid {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
