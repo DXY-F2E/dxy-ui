@@ -38,7 +38,7 @@ $tree: '#{$prefix}-tree';
       left: 50%;
       width: 0;
       height: 0;
-      border-top: $tree-expand-icon-width / 2 solid $black;
+      border-top: $tree-expand-icon-width / 2 solid $tree-arrow-color;
       border-left: $tree-expand-icon-width / 2 solid transparent;
       border-right: $tree-expand-icon-width / 2 solid transparent;
     }

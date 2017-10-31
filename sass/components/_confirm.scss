@@ -32,7 +32,7 @@
 		}
 	}
 	.#{$prefix}-confirm-body {
-		height: $confirm-body-h;
+		min-height: $confirm-body-h;
 		overflow: hidden;
 	}
 	.#{$prefix}-confirm-foot {

@@ -160,8 +160,8 @@ $direction: top right bottom left;
 $border-radius: 4px;
 $border-width: 1px;
 $border-color: #999;
-$padding: 10px;
-$margin: 20px;
+$paddings: 10 15 20 30;
+$margins: 10 15 20 30;
 
 $highlight: #feefcc;
 
@@ -213,6 +213,7 @@ $input-bd-radius: $form-bd-radius;
 $input-line-height: 22px;
 
 // textarea
+$textarea-min-height: 37px;
 $textarea-height: auto;
 $textarea-pd: 9px;
 $textarea-bd-width: $form-bd-width;
@@ -326,7 +327,7 @@ $nav-menu-bg-color: #fff;
 $nav-menu-bd-radius: 4px;
 $nav-menu-bd-width: 1px;
 $nav-menu-bd-color: #ccc;
-$nav-menu-active: #0bb9fa;
+$nav-menu-active: #3572fe;
 $nav-menu-line-height: 30px;
 
 
@@ -351,6 +352,7 @@ $tree-expand-icon-width: 8px; // 只能偶数
 $tree-indent: 24px;
 $tree-content-pd: 15px;
 $tree-disabled-color: #ccc;
+$tree-arrow-color: #555;
 
 
 /////////////
@@ -365,6 +367,7 @@ $button-group-radius : $btn-radius;
 //
 
 $input-group-height: 34px;
+$input-group-input-height: $input-group-height + $input-bd-width * 2;
 $input-group-font-size: 14px;
 $input-group-color: #333;
 $input-group-addon-color: #bbb;
@@ -395,10 +398,14 @@ $alert-situations: (
 );
 
 //tip
+$tip-color: #555;
+$tip-font-size: 12px;
 $tip-padding: 5px 8px;
 $tip-border: 1px solid #dddddd;
 $tip-radius: 3px;
 //pop
+$pop-color: #555;
+$pop-font-size: 12px;
 $pop-padding: 12px;
 $pop-border: none;
 $pop-radius: 3px;
@@ -410,7 +417,7 @@ $confirm-box-sizing: border-box;
 $confirm-width: 420px;
 $confirm-padding: 20px;
 $confirm-radius: 3px;
-$confirm-hd-pb: 32px;
+$confirm-hd-pb: 30px;
 $confirm-body-h: 70px;
 $confirm-close-size: 20px;
 $confirm-close-color: #bcbcbc;
@@ -431,11 +438,11 @@ $modal-hd-pb: 32px;
 $select-min-width: 120px;
 $select-input-font-size: 14px;
 $select-input-color: #333;
-$select-input-height: 40px;
-$select-input-padding: 0 0 0 10px;
+$select-input-height: 34px;
+$select-input-padding: 0 30px 0 10px;
 $select-input-border: solid 1px #cccccc;
 $select-input-border-radius:  4px;
-$select-icon-width:  40px;
+$select-icon-width:  30px;
 $select-icon-font-size:  17px;
 
 $select-li-padding-left: 13px;
@@ -453,7 +460,7 @@ $select-list-height: $select-li-height * 7;
 $select-list-multiple-height: $select-li-height * 7;
 $select-input-multiple-font-size: 14px;
 $select-input-multiple-color: #333;
-$select-input-multiple-padding: 4px;
+$select-input-multiple-padding: 3px;
 $select-input-multiple-border: solid 1px #cccccc;
 $select-input-multiple-bg-color: #ffffff;
 $select-input-multiple-border-radius: 4px;
@@ -517,6 +524,7 @@ $pagination-border: 1px solid #dddddd;
 $pagination-content-pd: 8px;
 $pagination-font-color: #555555;
 $pagination-btn-bgcolor: #ffffff;
+$pagination-btn-radius: 0;
 $pagination-btn-mr: 5px;
 $pagination-cur-bgcolor: #3572fe;
 $pagination-cur-color: #ffffff;

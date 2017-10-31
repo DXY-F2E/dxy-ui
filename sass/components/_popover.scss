@@ -1,6 +1,8 @@
 .#{$prefix}-tip {
 	display: inline-block;
 	position: relative;
+	color: $tip-color;
+	font-size: $tip-font-size;
 	line-height: 1;
 	padding: $tip-padding;
 	border: $tip-border;
@@ -51,6 +53,8 @@
 	display: inline-block;
 	position: relative;
 	padding: $pop-padding;
+	color: $pop-color;
+	font-size: $pop-font-size;
 	border: $pop-border;
 	border-radius: $pop-radius;
 	box-shadow: $pop-shadow;

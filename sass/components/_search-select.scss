@@ -74,11 +74,14 @@
   .#{$prefix}-cursor{
     width: $select-cursor-border-width;
     display: inline-block;
+    flex: 1;
     border: none;
     outline: none;
     background-color: transparent;
   }
   .#{$prefix}-tags{
+    display: flex;
+    flex-wrap: wrap;
     margin: $select-tag-wrap-margin;
   }
   .#{$prefix}-tag{

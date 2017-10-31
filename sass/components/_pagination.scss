@@ -13,11 +13,13 @@
 		text-decoration: none;
 		color: $pagination-font-color;
 		border: $pagination-border;
+		border-radius: $pagination-btn-radius;
 		margin-right: $pagination-btn-mr;
 		&:last-child {
 			margin-right: 0;
 		}
 		.#{$prefix}-icon-arrow-left, .#{$prefix}-icon-arrow-right {
+			font-size: inherit;
 			margin: 0 -4px 0;
 		}
 	}
@@ -41,6 +43,7 @@
 	.#{$prefix}-pagination-jump {
 		@extend .#{$prefix}-clear-fix;
 		display: inline-block;
+		border-radius: 0 $pagination-btn-radius $pagination-btn-radius 0;
 	}
 	.#{$prefix}-pagination-input {
 		width: $pagination-input-width;

@@ -48,7 +48,7 @@
 	color: red;
 }
 
-.du-example [class*=dxy-margin], .du-example > [class*=dxy-padding] {
+.du-example [class*=dxy-mg], .du-example > [class*=dxy-pd] {
     background-color: #f4fbff;
     border: 1px solid #89d9fd;
 }

@@ -55,7 +55,7 @@
       border-color: $nav-item-active;
     }
     &:hover:not(.#{$prefix}-active) {
-      border-bottom-width: $nav-tab-active-bd-width - $nav-tab-bd-width;
+      border-bottom: $nav-tab-active-bd-width - $nav-tab-bd-width solid $nav-tab-bd-color;
     }
   }
 }
