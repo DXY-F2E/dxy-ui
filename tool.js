@@ -14,7 +14,7 @@ tpl_docs = getTplFn("./docs/src/index.tpl");
 function createNav(data) {
   var html = "";
   data.forEach(function(item) {
-    html += '<ul class="nav dxy-tree-node' + (item.expanded ? ' dxy-tree-expanded' : '') + '">'
+    html += '<ul class="dxy-tree-node' + (item.expanded ? ' dxy-tree-expanded' : '') + '">'
       + '<li class="dxy-tree-content"><a href="#' + (item.path ? item.path.replace(/\./g, "_") : item.name) + '">' + item.title + '</a></li>';
     if (item.data) {
       html += '<li class="dxy-tree-children">' + createNav(item.data) + '</li>';
@@ -56,13 +56,17 @@ function getFile(url, res) {
 
   }
 
-  if(/favicon/.test(filePath) ){
+  var data = '';
+  if(/\.(png|ico|jpg)$/.test(filePath) ){
+    data = fs.readFileSync(filePath, 'binary');
+    res.write(data,'binary');
+    res.statusCode = 200;
+    res.end();
     return;
   }
   console.log('return', type, filePath);
 
   // 找不到文件也能正常显示页面
-  var data = '';
   try {
     var stat = fs.statSync(filePath);
     if (stat && stat.isFile()) {
@@ -71,7 +75,7 @@ function getFile(url, res) {
   } catch (e) {
     // res.statusCode = 404;
     // res.end('未找到文件');
-    console.log(e);
+    // console.log(e);
   }
 
   if(type=='example' && tpl_item){
@@ -85,12 +89,12 @@ function getFile(url, res) {
     for(var itPath in PAGE_INFO.map){
       var item = PAGE_INFO.map[itPath];
       var t_filePath = path.resolve(__dirname, 'examples/'+item.path.replace(/\./g,"/")+'.html');
-      console.log("filePath",t_filePath);
+      // console.log("filePath",t_filePath);
       try {
         item.body = fs.readFileSync(t_filePath, 'utf8');
       } catch (e) {
         item.body = "";
-        console.log(e);
+        // console.log(e);
       }
     }
     renderPageInfo.map = PAGE_INFO.map;
@@ -118,7 +122,7 @@ function getTplFn(filePath){
       return tplFnName;
     }
   } catch (e) {
-    console.log(e);
+    // console.log(e);
   }
 }
 

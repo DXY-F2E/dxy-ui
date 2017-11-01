@@ -2910,7 +2910,6 @@ h6, .dxy-h6 {
     margin-left: 0; }
 
 .dxy-tree-node {
-  position: relative;
   padding-left: 24px;
   line-height: 1; }
   .dxy-tree-node[disabled] > .dxy-tree-content {
