@@ -113,6 +113,7 @@ h1[id] {
   border-width: 1px 0;
   -webkit-box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
           box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
+  overflow: hidden;
 }
 
 .du-example:after {
@@ -290,17 +291,18 @@ header .version {
   margin: 20px 50px 50px;
   background-color: #fff;
 }
+.container .nav, .container .content {
+  -webkit-overflow-scrolling:touch;
+  height: 100%;
+  overflow: auto;
+}
 .container .nav {
   float: left;
   width: 219px;
-  height: 100%;
-  overflow: auto;
   border-right: 1px solid #ddd;
 }
 .container .content {
   margin-left: 220px;
-  height: 100%;
-  overflow: auto;
   padding: 0 40px;
 }
 .nav .dxy-tree-content {
