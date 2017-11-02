@@ -12,7 +12,7 @@
 <body>
 <header class="dxy-clear-fix">
 	<div class="logo dxy-float-left">
-		<img src="../docs/img/logo-3@3x.png" width="125" height="32">
+		<img src="../docs/img/logo.svg" width="125" height="32">
 	</div>
 	<div class="version dxy-float-right">1.0</div>
 	<ul class="tab dxy-float-right" id="j_tab">

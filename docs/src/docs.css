@@ -287,7 +287,8 @@ header .version {
 .container {
   padding: 30px 0;
   flex: 1;
-  overflow: hidden;
+  height: 90%;
+  overflow: auto;
   margin: 20px 50px 50px;
   background-color: #fff;
 }

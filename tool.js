@@ -57,8 +57,17 @@ function getFile(url, res) {
   }
 
   var data = '';
-  if(/\.(png|ico|jpg)$/.test(filePath) ){
+  if(/\.(png|ico|jpg|svg|gif|jpeg)$/.test(filePath)){
+    let type = {
+      "gif": "image/gif",
+      "ico": "image/x-icon",
+      "jpeg": "image/jpeg",
+      "jpg": "image/jpeg",
+      "png": "image/png",
+      "svg": "image/svg+xml"
+    };
     data = fs.readFileSync(filePath, 'binary');
+    res.setHeader('Content-Type', type[RegExp.$1]);
     res.write(data,'binary');
     res.statusCode = 200;
     res.end();
