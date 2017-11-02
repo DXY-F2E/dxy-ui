@@ -100,7 +100,10 @@
         nav.scrollTop = navTarget.offsetTop + navTarget.clientHeight  - offsetTop - clientHeight;
       }
 
-      // nav.querySelector('a[href="' + anchor + '"]').parentNode.classList.add('active-leaf');
+      if (nav.querySelector('.active-leaf')) {
+        nav.querySelector('.active-leaf').classList.remove('active-leaf');
+      }
+      nav.querySelector('a[href="' + anchor + '"]').parentNode.classList.add('active-leaf');
       let items = anchor.replace('#', '').split('_');
       let names = [];
 

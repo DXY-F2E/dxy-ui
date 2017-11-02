@@ -320,7 +320,7 @@ header .version {
 .nav .active a {
   color: #722DD8;
 }
-.nav .active:last-child {
+.nav .active-leaf {
   background-color: #f0edf5;
   border-left: 3px solid #7341d8;
 }
