@@ -1,6 +1,12 @@
+html, body {
+  height: 100%;
+}
 
 body {
+  display: flex;
+  flex-direction: column;
   position: relative;
+  background-color: #edeeef;
 }
 
 .du-examples .thumbnail {
@@ -24,86 +30,6 @@ body {
   }
 }
 
-.du-docs-sidebar.affix {
-  position: fixed;
-}
-@media (min-width: 768px) {
-  .du-docs-sidebar {
-    /* padding-left: 20px; */
-  }
-}
-
-.du-docs-sidenav {
-  margin-top: 20px;
-  margin-bottom: 20px;
-	padding-left:0;
-	list-style:none;
-}
-
-.du-docs-sidebar .nav > li > a {
-  display: block;
-  padding: 4px 20px;
-  font-size: 13px;
-  font-weight: 500;
-  color: #767676;
-	text-decoration:none;
-}
-
-.du-docs-sidebar .nav > li > a:hover,
-.du-docs-sidebar .nav > li > a:focus {
-  padding-left: 19px;
-  color: #3572fe;
-  text-decoration: none;
-  background-color: transparent;
-  border-left: 1px solid #3572fe;
-}
-
-.du-docs-sidebar .nav > .active > a,
-.du-docs-sidebar .nav > .active:hover > a,
-.du-docs-sidebar .nav > .active:focus > a {
-  padding-left: 18px;
-  font-weight: bold;
-  color: #3572fe;
-  background-color: transparent;
-  border-left: 2px solid #3572fe;
-}
-
-.du-docs-sidebar .nav .nav {
-	list-style:none;
-	padding-left:20px;
-  /* display: none; */
-  padding-bottom: 10px;
-}
-
-.du-docs-sidebar .nav .nav:first-child {
-	padding-top: 10px;
-}
-
-.du-docs-sidebar .nav .nav .nav:last-child {
-	padding-bottom: 0;
-}
-
-.du-docs-sidebar .nav .nav > li > a {
-  padding-top: 1px;
-  padding-bottom: 1px;
-  /* padding-left: 30px; */
-  font-size: 12px;
-  font-weight: normal;
-}
-
-.du-docs-sidebar .nav .nav > li > a:hover,
-.du-docs-sidebar .nav .nav > li > a:focus {
-  /* padding-left: 29px; */
-}
-
-.du-docs-sidebar .nav .nav > .active > a,
-.du-docs-sidebar .nav .nav > .active:hover > a,
-.du-docs-sidebar .nav .nav > .active:focus > a {
-  /*padding-left: 28px;*/
-  font-weight: 500;
-}
-
-.back-to-top,
 .du-docs-theme-toggle {
   display: none;
   padding: 4px 10px;
@@ -113,7 +39,6 @@ body {
   font-weight: 500;
   color: #999;
 }
-.back-to-top:hover,
 .du-docs-theme-toggle:hover {
   color: #3572fe;
   text-decoration: none;
@@ -188,6 +113,7 @@ h1[id] {
   border-width: 1px 0;
   -webkit-box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
           box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
+  overflow: hidden;
 }
 
 .du-example:after {
@@ -263,6 +189,7 @@ h1[id] {
 }
 
 .highlight {
+  overflow: hidden;
   /*padding: 9px 14px;*/
   margin-bottom: 14px;
   background-color: #f7f7f9;
@@ -321,20 +248,98 @@ h1[id] {
   }
 }
 
-.highlight {
-  overflow: hidden;
+header {
+  height: 80px;
+  background-color: #fff;
+}
+
+header .logo {
+  margin-top: 24px;
+  margin-left: 60px;
+}
+
+.tab li {
+  float: left;
+}
+.tab a {
+  display: block;
+  padding: 0 23px;
+  height: 80px;
+  color: #222;
+  line-height: 80px;
+  box-sizing: border-box;
+}
+.tab .active a, .tab a:hover {
+  color: #722DD8;
+  border-bottom: 3px solid #722DD8;
+}
+
+header .version {
+  margin: 30px 50px 0 35px;
+  padding: 0 11px;
+  color: #555;
+  font-size: 10px;
+  line-height: 18px;
+  border: 1px solid #EDEEEF;
+  border-radius: 2px;
+}
+
+.container {
+  padding: 30px 0;
+  flex: 1;
+  height: 90%;
+  overflow: auto;
+  margin: 20px 50px 50px;
+  background-color: #fff;
+}
+.container .nav, .container .content {
+  -webkit-overflow-scrolling:touch;
+  height: 100%;
+  overflow: auto;
+}
+.container .nav {
+  float: left;
+  width: 219px;
+  border-right: 1px solid #ddd;
+}
+.container .content {
+  margin-left: 220px;
+  padding: 0 40px;
+}
+.nav .dxy-tree-content {
+  padding: 0;
+  height: 34px;
+  line-height: 34px;
+  font-size: 12px;
+}
+.nav a {
+  display: block;
+  color: #555;
+}
+.nav a:hover,
+.nav .active a {
+  color: #722DD8;
+}
+.nav .active-leaf {
+  background-color: #f0edf5;
+  border-left: 3px solid #7341d8;
+}
+.nav .dxy-tree-node {
+  padding-left: 0;
+}
+.nav .dxy-tree-content {
+  padding-left: 20px;
+}
+.nav .dxy-tree-children .dxy-tree-content {
+  padding-left: 32px;
+}
+.nav .dxy-tree-children .dxy-tree-children .dxy-tree-content {
+  padding-left: 44px;
+}
+.nav > .dxy-tree-node > .dxy-tree-content {
+  font-size: 14px;
 }
 
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
   background: none;
-}
-
-.du-docs-sidebar .dxy-go-top {
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-}
-
-.nav .dxy-tree-content {
-  padding: 0;
 }
