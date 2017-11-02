@@ -1,6 +1,9 @@
 {
   "name": "dxy-ui",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "license": "MIT",
+  "style": "dist/css/dxy-ui.min.css",
+  "homepage": "https://dxy-f2e.github.io/dxy-ui/docs/",
   "devDependencies": {
     "autoprefixer": "7.1.1",
     "babel-core": "6.26.0",
@@ -23,5 +26,29 @@
     "build": "gulp",
     "watch": "gulp watch",
     "doc": "node index.js"
-  }
+  },
+  "description": "DXY-UI是一套适用于桌面端的前端UI库，不包含任何JS，仅仅关注样式。囊括了文本标题，列表表格，表单按钮，栅格系统等基础样式以及十余个基础组件。",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "dependencies": {
+    "autoprefixer": "7.1.1",
+    "gulp": "3.9.1",
+    "gulp-postcss": "7.0.0",
+    "gulp-sass": "3.1.0",
+    "gulp-cssmin": "0.2.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sass-glob": "1.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.dxy.net:f2e/dxy-ui.git"
+  },
+  "keywords": [
+    "dxy-ui",
+    "dxy"
+  ],
+  "author": "DXY-F2E"
 }
