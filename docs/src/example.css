@@ -3,6 +3,10 @@
     margin-right: 10px;
 }
 
+.du-example > [class*=dxy-container] {
+    margin-right: auto;
+}
+
 .example_area-components_confirm .du-example {
     padding: 20px;
     height: 500px;
