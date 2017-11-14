@@ -996,7 +996,7 @@ a {
     margin-right: 0;
     margin-left: 0; }
     .dxy-row .no-gutters > .dxy-col,
-    .dxy-row .no-gutters > [class*="dxy-col-"] {
+    .dxy-row .no-gutters > [class*="dxy--col-"] {
       padding-right: 0;
       padding-left: 0; }
 
@@ -2262,6 +2262,14 @@ h6, .dxy-h6 {
   to {
     -webkit-transform: rotate(360deg) translateZ(0);
             transform: rotate(360deg) translateZ(0); } }
+
+.dxy-mark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .dxy-modal {
   -webkit-box-sizing: border-box;

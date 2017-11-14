@@ -1,4 +1,4 @@
-.#{$prefix}-go-top {
+.#{$prefix}go-top {
 	display: block;
 	width: $go-top-round-size;
 	height: $go-top-round-size;
@@ -10,14 +10,14 @@
 	border: none;
 	text-align: center;
 	line-height: $go-top-round-size;
-	.#{$prefix}-icon {
+	.#{$prefix}icon {
 		font-size: $go-top-icon-size;
 	}
 	&:hover {
 		background: $go-top-bg-hover;
 	}
 }
-.#{$prefix}-go-top-white {
+.#{$prefix}go-top-white {
 	background: $go-top-bg-white;
 	box-shadow: $go-top-shadow;
 	color: $go-top-color-grey;
@@ -25,16 +25,16 @@
 		color: $go-top-color;
 	}
 }
-.#{$prefix}-go-top-square-white {
-	@extend .#{$prefix}-go-top-white;
+.#{$prefix}go-top-square-white {
+	@extend .#{$prefix}go-top-white;
 	width: $go-top-width;
 	height: $go-top-height;
 	line-height: $go-top-height;
 	border-radius: $go-top-square-radius;
-	.#{$prefix}-icon {
+	.#{$prefix}icon {
 		font-size: $go-top-square-icon-size;
 	}
 }
-.#{$prefix}-go-top-grey {
+.#{$prefix}go-top-grey {
 	background: $go-top-bg-grey;
 }

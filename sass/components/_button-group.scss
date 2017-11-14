@@ -1,4 +1,4 @@
-.#{$prefix}-btn-group, .#{$prefix}-btn-group-vertical {
+.#{$prefix}btn-group, .#{$prefix}btn-group-vertical {
   display: inline-block;
   vertical-align: middle;
   > .dxy-btn:not(:first-child):not(:last-child) {
@@ -9,7 +9,7 @@
   }
 }
 
-.#{$prefix}-btn-group {
+.#{$prefix}btn-group {
   > .dxy-btn {
     float: left;
   }
@@ -43,7 +43,7 @@
 
 }
 
-.#{$prefix}-btn-group-vertical {
+.#{$prefix}btn-group-vertical {
   > .dxy-btn {
     display: block;
     width: 100%;

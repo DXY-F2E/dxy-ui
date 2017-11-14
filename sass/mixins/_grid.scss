@@ -56,42 +56,42 @@
 
     // Allow columns to stretch full width below their breakpoints
     @for $i from 1 through $columns {
-      .#{$prefix}-col#{$infix}-#{$i} {
+      .#{$prefix}col#{$infix}-#{$i} {
         @extend %grid-column;
       }
     }
-    .#{$prefix}-col#{$infix},
-    .#{$prefix}-col#{$infix}-auto {
+    .#{$prefix}col#{$infix},
+    .#{$prefix}col#{$infix}-auto {
       @extend %grid-column;
     }
 
     @include media-breakpoint-up($breakpoint, $breakpoints) {
-      .#{$prefix}-col#{$infix} {
+      .#{$prefix}col#{$infix} {
         flex-basis: 0;
         flex-grow: 1;
         max-width: 100%;
       }
-      .#{$prefix}-col#{$infix}-auto {
+      .#{$prefix}col#{$infix}-auto {
         flex: 0 0 auto;
         width: auto;
         max-width: none;
       }
 
       @for $i from 1 through $columns {
-        .#{$prefix}-col#{$infix}-#{$i} {
+        .#{$prefix}col#{$infix}-#{$i} {
           @include make-col($i, $columns);
         }
       }
 
       @for $i from 1 through $columns {
-        .#{$prefix}-order#{$infix}-#{$i} {
+        .#{$prefix}order#{$infix}-#{$i} {
           order: $i;
         }
       }
 
       @for $i from 0 through ($columns - 1) {
         @if not ($infix == "" and $i == 0) { // 允许offset后缀为空或为0
-          .#{$prefix}-offset#{$infix}-#{$i} {
+          .#{$prefix}offset#{$infix}-#{$i} {
             @include make-col-offset($i, $columns)
           }
         }

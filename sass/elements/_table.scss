@@ -1,4 +1,4 @@
-.#{$prefix}-table {
+.#{$prefix}table {
   width: 100%;
   text-align: center;
   border-collapse: collapse;
@@ -19,25 +19,25 @@
     text-align: left
   }
 
-  &.#{$prefix}-hover {
+  &.#{$prefix}hover {
     tbody tr:hover {
       background-color: $table-hover-bg-color;
     }
   }
 
-  &.#{$prefix}-no-border {
+  &.#{$prefix}no-border {
     td, th {
       border: none;
     }
   }
 
-  &.#{$prefix}-bordered {
+  &.#{$prefix}bordered {
     td, th {
       border: 1px solid $table-border-color;
     }
   }
 
-  &.#{$prefix}-striped {
+  &.#{$prefix}striped {
     //td, th {
     //  border: 1px solid $table-border-color;
     //}
@@ -46,8 +46,8 @@
     }
   }
 
-  &.#{$prefix}-bordered,
-  &.#{$prefix}-striped {
+  &.#{$prefix}bordered,
+  &.#{$prefix}striped {
     th {
       border-bottom-width: 2px;
     }

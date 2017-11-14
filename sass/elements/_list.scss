@@ -1,23 +1,23 @@
-.#{$prefix}-ul {
+.#{$prefix}ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.#{$prefix}-ul-dot {
+.#{$prefix}ul-dot {
     li {
         padding-left: $list-li-padding;
         position: relative;
         @include list-dot-style($list-style-size,$list-style-color);
     }
 }
-.#{$prefix}-ul-circle {
+.#{$prefix}ul-circle {
     li {
         padding-left: $list-li-padding;
         position: relative;
         @include list-circle-style($list-style-size,$list-style-color);
     }
 }
-.#{$prefix}-ul-horizon {
+.#{$prefix}ul-horizon {
     font-size: 0;
     li {
         font-size: $font-size;
@@ -25,7 +25,7 @@
         padding-right: $list-li-spacing;
     }
 }
-.#{$prefix}-dl {
+.#{$prefix}dl {
     dt {
         font-weight: bold;
     }
@@ -33,7 +33,7 @@
         
     }
 }
-.#{$prefix}-dl-horizon {
+.#{$prefix}dl-horizon {
     font-size: 0;
     dt {
         font-weight: bold;

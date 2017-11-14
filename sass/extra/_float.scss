@@ -1,12 +1,12 @@
-.#{$prefix}-float-left {
+.#{$prefix}float-left {
   float: left;
 }
 
-.#{$prefix}-float-right {
+.#{$prefix}float-right {
   float: right;
 }
 
-.#{$prefix}-clear-fix {
+.#{$prefix}clear-fix {
   &:after {
     content:" ";
     display: table;

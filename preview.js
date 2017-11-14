@@ -57,6 +57,6 @@ bs.init({
 	port: port
 });
 
-console.log(`服务器运行在 http://${hostname}:${port}/examples/`);
+console.log(`服务器运行在 http://${hostname}:${port}/docs`);
 
 });

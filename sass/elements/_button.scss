@@ -1,4 +1,4 @@
-.#{$prefix}-btn {
+.#{$prefix}btn {
   color: $btn-color;
   display: inline-block;
   text-align: center;
@@ -26,7 +26,7 @@
   }
 }
 
-.#{$prefix}-btn-link {
+.#{$prefix}btn-link {
   color: $btn-link-color;
   border-color: transparent;
   background-color: transparent;
@@ -48,19 +48,19 @@
 }
 
 @each $name,$color in $btn-situations {
-  .#{$prefix}-btn-#{$name} {
+  .#{$prefix}btn-#{$name} {
     @include btn_situation($color);
   }
 }
 
-.#{$prefix}-btn-lg {
+.#{$prefix}btn-lg {
   @include btn_size($btn-lg-pd, $btn-lg-font-size);
 }
 
-.#{$prefix}-btn-sm {
+.#{$prefix}btn-sm {
   @include btn_size($btn-sm-pd, $btn-sm-font-size);
 }
 
-.#{$prefix}-btn-xs {
+.#{$prefix}btn-xs {
   @include btn_size($btn-xs-pd, $btn-xs-font-size);
 }

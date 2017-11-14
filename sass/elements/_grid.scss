@@ -1,22 +1,22 @@
 * {box-sizing: border-box;}
 
-.#{$prefix}-container {
+.#{$prefix}container {
   @include make-container();
   @include make-container-max-widths();
 }
 
-.#{$prefix}-container-fluid {
+.#{$prefix}container-fluid {
   @include make-container();
 }
 
-.#{$prefix}-row {
+.#{$prefix}row {
   @include make-row();
   
   .no-gutters {
     margin-right: 0;
     margin-left: 0;
 
-    > .#{$prefix}-col,
+    > .#{$prefix}col,
     > [class*="#{$prefix}-col-"] {
       padding-right: 0;
       padding-left: 0;

@@ -1,6 +1,6 @@
 // form group
 
-.#{$prefix}-form .#{$prefix}-form-group {
+.#{$prefix}form .#{$prefix}form-group {
   display: block;
 
   &:nth-child(n + 2) {
@@ -8,7 +8,7 @@
   }
 }
 
-.#{$prefix}-form-inline .#{$prefix}-form-group {
+.#{$prefix}form-inline .#{$prefix}form-group {
   display: inline-block;
   margin-right: $form-group-x-margin;
 
@@ -20,7 +20,7 @@
 
 // label
 
-.#{$prefix}-label {
+.#{$prefix}label {
   float: left;
   width: $label-width;
   padding-right: $label-right;
@@ -29,19 +29,19 @@
   @include label_required;
 }
 
-.#{$prefix}-label-block {
+.#{$prefix}label-block {
   display: block;
   line-height: $label-line-height;
   @include label_required;
 }
 
-.#{$prefix}-form-content {
+.#{$prefix}form-content {
   margin-left: $label-width + $label-right;
 }
 
 // input text
 
-.#{$prefix}-input {
+.#{$prefix}input {
   line-height: $input-line-height;
   @include text_input($input-pd, $input-bd-width, $input-bd-color, $input-bd-radius);
 }
@@ -49,7 +49,7 @@
 
 // textarea
 
-.#{$prefix}-textarea {
+.#{$prefix}textarea {
   display: block;
   resize: vertical;
   height: $textarea-height;
@@ -60,7 +60,7 @@
 
 // radio
 
-.#{$prefix}-radio {
+.#{$prefix}radio {
   position: relative;
 
   input[type=radio] {
@@ -105,8 +105,8 @@
   }
 }
 
-.#{$prefix}-radio-block {
-  @extend .#{$prefix}-radio;
+.#{$prefix}radio-block {
+  @extend .#{$prefix}radio;
   display: block;
 
   &:nth-child(n + 2) {
@@ -117,7 +117,7 @@
 
 // checkbox
 
-.#{$prefix}-checkbox {
+.#{$prefix}checkbox {
   position: relative;
 
   input[type=checkbox] {
@@ -163,8 +163,8 @@
   }
 }
 
-.#{$prefix}-checkbox-block {
-  @extend .#{$prefix}-checkbox;
+.#{$prefix}checkbox-block {
+  @extend .#{$prefix}checkbox;
   display: block;
 
   &:nth-child(n + 2) {
@@ -174,7 +174,7 @@
 
 // select
 
-.#{$prefix}-select {
+.#{$prefix}select {
   line-height: $input-line-height;
   padding: $input-pd;
   border: $border-width solid $form-bd-color;
@@ -206,7 +206,7 @@
 }
 
 // 校验状态
-.#{$prefix}-verify {
+.#{$prefix}verify {
   position: relative;
 
   & .help-target:focus {

@@ -1,4 +1,4 @@
-.#{$prefix}-modal {
+.#{$prefix}modal {
 	box-sizing: $modal-box-sizing;
 	width: $modal-width;
 	max-width: 100%;
@@ -6,7 +6,7 @@
 	background-color: $modal-bgcolor;
 	box-shadow: $modal-shadow;
 	border-radius: $modal-radius;
-	.#{$prefix}-modal-head {
+	.#{$prefix}modal-head {
 		line-height: 1;
 		position: relative;
 		padding-bottom: $confirm-hd-pb;
@@ -29,7 +29,7 @@
 			}
 		}
 	}
-	.#{$prefix}-modal-body {
+	.#{$prefix}modal-body {
 		
 	}
 }
