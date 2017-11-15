@@ -785,6 +785,7 @@ a {
 
 .dxy-input {
   line-height: 22px;
+  vertical-align: middle;
   padding: 5px 9px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -829,7 +830,8 @@ a {
     width: 100%; }
 
 .dxy-radio, .dxy-radio-block {
-  position: relative; }
+  position: relative;
+  line-height: 34px; }
   .dxy-radio input[type=radio], .dxy-radio-block input[type=radio] {
     display: none; }
     .dxy-radio input[type=radio] + span:before, .dxy-radio-block input[type=radio] + span:before {
@@ -873,7 +875,8 @@ a {
     margin-left: 0; }
 
 .dxy-checkbox, .dxy-checkbox-block {
-  position: relative; }
+  position: relative;
+  line-height: 34px; }
   .dxy-checkbox input[type=checkbox], .dxy-checkbox-block input[type=checkbox] {
     display: none; }
     .dxy-checkbox input[type=checkbox] + span:before, .dxy-checkbox-block input[type=checkbox] + span:before {
@@ -921,6 +924,7 @@ a {
 
 .dxy-select {
   line-height: 22px;
+  vertical-align: middle;
   padding: 5px 9px;
   border: 1px solid #ccc;
   border-radius: 4px;

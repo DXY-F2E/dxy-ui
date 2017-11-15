@@ -43,6 +43,7 @@
 
 .#{$prefix}input {
   line-height: $input-line-height;
+  vertical-align: middle;
   @include text_input($input-pd, $input-bd-width, $input-bd-color, $input-bd-radius);
 }
 
@@ -62,7 +63,8 @@
 
 .#{$prefix}radio {
   position: relative;
-
+  line-height: $label-line-height;
+  
   input[type=radio] {
     display: none;
 
@@ -119,7 +121,8 @@
 
 .#{$prefix}checkbox {
   position: relative;
-
+  line-height: $label-line-height;
+  
   input[type=checkbox] {
     display: none;
 
@@ -176,6 +179,7 @@
 
 .#{$prefix}select {
   line-height: $input-line-height;
+  vertical-align: middle;
   padding: $input-pd;
   border: $border-width solid $form-bd-color;
   border-radius: $border-radius;
