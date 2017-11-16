@@ -1,4 +1,4 @@
-.#{$prefix}-alert {
+.#{$prefix}alert {
 	@include alert_size($alert-width, $alert-height, $alert-padding);
 	border-radius: $alert-radius;
 	overflow: hidden;
@@ -20,8 +20,8 @@
 }
 
 @each $name,$color in $alert-situations {
-  .#{$prefix}-alert-#{$name} {
-  		@extend .#{$prefix}-alert;
+  .#{$prefix}alert-#{$name} {
+  		@extend .#{$prefix}alert;
     @include alert_color($color);
   }
 }

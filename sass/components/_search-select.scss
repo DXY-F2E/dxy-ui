@@ -1,9 +1,9 @@
-.#{$prefix}-search-select{
+.#{$prefix}search-select{
   display: inline-block;
   position: relative;
   min-width: $select-min-width;
   width: 100%;
-  .#{$prefix}-search-input{
+  .#{$prefix}search-input{
     width: 100%;
     height: $select-input-height;
     font-size: $select-input-font-size;
@@ -14,7 +14,7 @@
     border-radius: $select-input-border-radius;
     box-sizing: border-box;
   }
-  .#{$prefix}-search-input-icon{
+  .#{$prefix}search-input-icon{
     position: absolute;
     width: $select-icon-width;
     height: $select-input-height;
@@ -26,8 +26,8 @@
   }
 }
 
-.#{$prefix}-search-select, .#{$prefix}-search-select-multiple{
-  .#{$prefix}-select-list{
+.#{$prefix}search-select, .#{$prefix}search-select-multiple{
+  .#{$prefix}select-list{
     position: relative;
     overflow-y: scroll;
     left: 0;
@@ -45,22 +45,22 @@
         background-color: $select-li-hover-bg-color;
       }
     }
-    li.#{$prefix}-active{
+    li.#{$prefix}active{
       background-color: $select-li-active-bg-color;
       color: $select-li-active-color;
     }
   }
 }
-.#{$prefix}-search-select .#{$prefix}-select-list{
+.#{$prefix}search-select .#{$prefix}select-list{
   max-height: $select-list-height;
 }
-.#{$prefix}-search-select-multiple .#{$prefix}-select-list{
+.#{$prefix}search-select-multiple .#{$prefix}select-list{
   max-height: $select-list-multiple-height
 }
 
-.#{$prefix}-search-select-multiple{
+.#{$prefix}search-select-multiple{
   width: 100%;
-  .#{$prefix}-search-input{
+  .#{$prefix}search-input{
     max-width: 100%;
     font-size: $select-input-multiple-font-size;
     color: $select-input-multiple-color;
@@ -71,7 +71,7 @@
     border-radius: $select-input-multiple-border-radius;
     display: inline-block;
   }
-  .#{$prefix}-cursor{
+  .#{$prefix}cursor{
     width: $select-cursor-border-width;
     display: inline-block;
     flex: 1;
@@ -79,12 +79,12 @@
     outline: none;
     background-color: transparent;
   }
-  .#{$prefix}-tags{
+  .#{$prefix}tags{
     display: flex;
     flex-wrap: wrap;
     margin: $select-tag-wrap-margin;
   }
-  .#{$prefix}-tag{
+  .#{$prefix}tag{
     display: inline-block;
     //padding:$select-tag-padding;
     //background-color: $select-tag-bg-color;

@@ -1,17 +1,17 @@
-.#{$prefix}-border{
+.#{$prefix}border{
   border: $border-width solid $border-color;
 }
 @each $name in $direction {
-  .#{$prefix}-border-#{$name} {
+  .#{$prefix}border-#{$name} {
     border-#{$name}: $border-width solid $border-color;
   }
 }
 
-.#{$prefix}-border-radius {
+.#{$prefix}border-radius {
   border-radius: $border-radius;
 }
 @each $name in $direction {
-  .#{$prefix}-border-#{$name}-radius {
+  .#{$prefix}border-#{$name}-radius {
     @if $name == top{
       border-top-right-radius: $border-radius;
       border-top-left-radius: $border-radius;
@@ -30,12 +30,12 @@
 
 // 按值定义
 @each $value in $paddings {
-  .#{$prefix}-pd#{$value} {
+  .#{$prefix}pd#{$value} {
     padding: $value + px;
   }
   // 按方向定义
   @each $name in $direction {
-    .#{$prefix}-pd#{$value}-#{$name} {
+    .#{$prefix}pd#{$value}-#{$name} {
       padding-#{$name}: $value + px;
     }
   }
@@ -43,12 +43,12 @@
 
 // 按值定义
 @each $value in $margins {
-  .#{$prefix}-mg#{$value} {
+  .#{$prefix}mg#{$value} {
     margin: $value + px;
   }
   // 按方向定义
   @each $name in $direction {
-    .#{$prefix}-mg#{$value}-#{$name} {
+    .#{$prefix}mg#{$value}-#{$name} {
       margin-#{$name}: $value + px;
     }
   }

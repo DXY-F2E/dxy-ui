@@ -785,6 +785,7 @@ a {
 
 .dxy-input {
   line-height: 22px;
+  vertical-align: middle;
   padding: 5px 9px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -829,16 +830,17 @@ a {
     width: 100%; }
 
 .dxy-radio, .dxy-radio-block {
-  position: relative; }
+  position: relative;
+  display: inline-block;
+  padding-top: 6.5px;
+  line-height: 1.5; }
   .dxy-radio input[type=radio], .dxy-radio-block input[type=radio] {
     display: none; }
     .dxy-radio input[type=radio] + span:before, .dxy-radio-block input[type=radio] + span:before {
       content: " ";
       position: absolute;
-      top: 0;
+      top: 8px;
       left: 0;
-      bottom: 0;
-      margin: auto 0;
       width: 16px;
       height: 16px;
       border: 1px solid #b5b5b5;
@@ -849,10 +851,8 @@ a {
     .dxy-radio input[type=radio]:checked + span:after, .dxy-radio-block input[type=radio]:checked + span:after {
       content: " ";
       position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 9px;
-      margin: auto 0 auto -4px;
+      top: 13px;
+      left: 5px;
       width: 8px;
       height: 8px;
       border-radius: 100%;
@@ -863,6 +863,7 @@ a {
     .dxy-radio input[type=radio][disabled]:checked + span:after, .dxy-radio-block input[type=radio][disabled]:checked + span:after {
       background-color: #ddd; }
   .dxy-radio span, .dxy-radio-block span {
+    display: inline-block;
     padding-left: 21px; }
   .dxy-radio:nth-child(n + 2), .dxy-radio-block:nth-child(n + 2) {
     margin-left: 18px; }
@@ -873,16 +874,17 @@ a {
     margin-left: 0; }
 
 .dxy-checkbox, .dxy-checkbox-block {
-  position: relative; }
+  position: relative;
+  display: inline-block;
+  padding-top: 6.5px;
+  line-height: 1.5; }
   .dxy-checkbox input[type=checkbox], .dxy-checkbox-block input[type=checkbox] {
     display: none; }
     .dxy-checkbox input[type=checkbox] + span:before, .dxy-checkbox-block input[type=checkbox] + span:before {
       content: " ";
       position: absolute;
-      top: 0;
+      top: 8px;
       left: 0;
-      bottom: 0;
-      margin: auto 0;
       width: 16px;
       height: 16px;
       border: 1px solid #b5b5b5;
@@ -894,10 +896,9 @@ a {
     .dxy-checkbox input[type=checkbox]:checked + span:after, .dxy-checkbox-block input[type=checkbox]:checked + span:after {
       content: " ";
       position: absolute;
-      top: -2px;
+      top: 12.75px;
       bottom: 0;
-      left: 8px;
-      margin: auto 0 auto -4px;
+      left: 4px;
       width: 8px;
       height: 4.5px;
       border-left: 2px solid #fff;
@@ -910,6 +911,7 @@ a {
       border-color: #ddd;
       background-color: #ddd; }
   .dxy-checkbox span, .dxy-checkbox-block span {
+    display: inline-block;
     padding-left: 21px; }
   .dxy-checkbox:nth-child(n + 2), .dxy-checkbox-block:nth-child(n + 2) {
     margin-left: 18px; }
@@ -921,6 +923,7 @@ a {
 
 .dxy-select {
   line-height: 22px;
+  vertical-align: middle;
   padding: 5px 9px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -996,7 +999,7 @@ a {
     margin-right: 0;
     margin-left: 0; }
     .dxy-row .no-gutters > .dxy-col,
-    .dxy-row .no-gutters > [class*="dxy-col-"] {
+    .dxy-row .no-gutters > [class*="dxy--col-"] {
       padding-right: 0;
       padding-left: 0; }
 
@@ -2056,6 +2059,7 @@ h6, .dxy-h6 {
   position: fixed;
   left: 50%;
   top: 50%;
+  z-index: 10;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
   .dxy-confirm .dxy-confirm-head {
@@ -2263,16 +2267,32 @@ h6, .dxy-h6 {
     -webkit-transform: rotate(360deg) translateZ(0);
             transform: rotate(360deg) translateZ(0); } }
 
+.dxy-mark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+
 .dxy-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 694px;
-  max-width: 100%;
+  max-width: 90%;
+  max-height: 90%;
   padding: 20px;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 14px 2px #dddddd;
-          box-shadow: 0 0 14px 2px #dddddd;
-  border-radius: 3px; }
+  -webkit-box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
   .dxy-modal .dxy-modal-head {
     line-height: 1;
     position: relative;

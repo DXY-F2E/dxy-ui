@@ -1,12 +1,19 @@
-.#{$prefix}-modal {
+.#{$prefix}modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 10;
 	box-sizing: $modal-box-sizing;
 	width: $modal-width;
-	max-width: 100%;
+	max-width: 90%;
+	max-height: 90%;
 	padding: $modal-padding;
 	background-color: $modal-bgcolor;
 	box-shadow: $modal-shadow;
 	border-radius: $modal-radius;
-	.#{$prefix}-modal-head {
+	transform: translate(-50%, -50%);
+
+	.#{$prefix}modal-head {
 		line-height: 1;
 		position: relative;
 		padding-bottom: $confirm-hd-pb;
@@ -29,7 +36,7 @@
 			}
 		}
 	}
-	.#{$prefix}-modal-body {
-		
+	.#{$prefix}modal-body {
+
 	}
 }

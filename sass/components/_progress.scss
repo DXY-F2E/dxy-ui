@@ -1,7 +1,7 @@
-.#{$prefix}-progress {
+.#{$prefix}progress {
   line-height: $progress-height;
 
-  .#{$prefix}-progress-bar {
+  .#{$prefix}progress-bar {
     display: inline-block;
     width: 100%;
     height: $progress-height;
@@ -9,7 +9,7 @@
     background-color: $progress-bar-color;
     overflow: hidden;
 
-    .#{$prefix}-progress-done {
+    .#{$prefix}progress-done {
       height: 100%;
       color: $white;
       text-align: right;
@@ -22,32 +22,32 @@
     }
   }
 
-  &.#{$prefix}-progress-success {
-    .#{$prefix}-progress-done {
+  &.#{$prefix}progress-success {
+    .#{$prefix}progress-done {
       background-color: $progress-success-color;
     }
   }
 
-  &.#{$prefix}-progress-fail {
-    .#{$prefix}-progress-done {
+  &.#{$prefix}progress-fail {
+    .#{$prefix}progress-done {
       background-color: $progress-fail-color;
     }
   }
 }
 
 /* 小进度条 */
-.#{$prefix}-progress-sm {
+.#{$prefix}progress-sm {
   position: relative;
   padding-right: 45px;
   line-height: $progress-height-sm;
-  @extend .#{$prefix}-progress;
+  @extend .#{$prefix}progress;
 
-  .#{$prefix}-progress-bar {
+  .#{$prefix}progress-bar {
     height: $progress-height-sm;
     border-radius: $progress-height-sm;
   }
 
-  .#{$prefix}-progress-text {
+  .#{$prefix}progress-text {
     position: absolute;
     top: 0;
     right: 0;
@@ -56,11 +56,11 @@
     text-align: left;
   }
 
-  &.#{$prefix}-progress-success {
+  &.#{$prefix}progress-success {
     color: $progress-success-color;
   }
 
-  &.#{$prefix}-progress-fail {
+  &.#{$prefix}progress-fail {
     color: $progress-fail-color;
   }
 }

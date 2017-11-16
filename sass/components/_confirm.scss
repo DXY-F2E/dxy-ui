@@ -1,4 +1,4 @@
-.#{$prefix}-confirm {
+.#{$prefix}confirm {
 	box-sizing: $confirm-box-sizing;
 	width: $confirm-width;
 	padding: $confirm-padding;
@@ -7,8 +7,10 @@
 	position: fixed;
 	left: 50%;
 	top: 50%;
+	z-index: 10;
 	transform: translate(-50%, -50%);
-	.#{$prefix}-confirm-head {
+
+	.#{$prefix}confirm-head {
 		line-height: 1;
 		position: relative;
 		padding-bottom: $confirm-hd-pb;
@@ -31,11 +33,11 @@
 			}
 		}
 	}
-	.#{$prefix}-confirm-body {
+	.#{$prefix}confirm-body {
 		min-height: $confirm-body-h;
 		overflow: hidden;
 	}
-	.#{$prefix}-confirm-foot {
+	.#{$prefix}confirm-foot {
 		text-align: right;
 		button {
 			margin-left: 8px;

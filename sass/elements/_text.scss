@@ -5,36 +5,36 @@ body {
   line-height: $line-height;
 }
 
-//h1, .#{$prefix}-h1 {
+//h1, .#{$prefix}h1 {
 //  @include h_text($h1-font-size);
 //}
 //
-//h2, .#{$prefix}-h2 {
+//h2, .#{$prefix}h2 {
 //  @include h_text($h2-font-size);
 //}
 //
-//h3, .#{$prefix}-h3 {
+//h3, .#{$prefix}h3 {
 //  @include h_text($h3-font-size);
 //}
 //
-//h4, .#{$prefix}-h4 {
+//h4, .#{$prefix}h4 {
 //  @include h_text($h4-font-size);
 //}
 //
-//h5, .#{$prefix}-h5 {
+//h5, .#{$prefix}h5 {
 //  @include h_text($h5-font-size);
 //}
 //
-//h6, .#{$prefix}-h6 {
+//h6, .#{$prefix}h6 {
 //  @include h_text($h6-font-size);
 //}
 
 @each $name, $value in $font-size-h {
-  #{$name}, .#{$prefix}-#{$name} {
+  #{$name}, .#{$prefix}#{$name} {
     @include h_text($value);
   }
 }
-.#{$prefix}-h-bold {
+.#{$prefix}h-bold {
     font-weight: bold;
 }
 
@@ -42,31 +42,31 @@ body {
 //  font-size: $font-size;
 //}
 
-.#{$prefix}-help-block,
-.#{$prefix}-help-inline {
+.#{$prefix}help-block,
+.#{$prefix}help-inline {
   color: $font-color-tip;
   font-size: $font-size-sm;
 }
 
-.#{$prefix}-help-block {
+.#{$prefix}help-block {
   display: block;
 }
 
-.#{$prefix}-help-inline {
+.#{$prefix}help-inline {
   display: inline;
 }
-.#{$prefix}-text {
+.#{$prefix}text {
     font-size: $font-size;
     font-family: $font-family;
 }
-.#{$prefix}-text-strong {
-    @extend .#{$prefix}-text;
+.#{$prefix}text-strong {
+    @extend .#{$prefix}text;
     font-weight: bold;
 }
-.#{$prefix}-text-quote {
+.#{$prefix}text-quote {
     @include quote_border(4px, #eee, 15px);
 }
-.#{$prefix}-text-tip {
+.#{$prefix}text-tip {
     font-size: $font-size-sm;
     color: $font-color-tip;
 }

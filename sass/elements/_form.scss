@@ -1,6 +1,6 @@
 // form group
 
-.#{$prefix}-form .#{$prefix}-form-group {
+.#{$prefix}form .#{$prefix}form-group {
   display: block;
 
   &:nth-child(n + 2) {
@@ -8,7 +8,7 @@
   }
 }
 
-.#{$prefix}-form-inline .#{$prefix}-form-group {
+.#{$prefix}form-inline .#{$prefix}form-group {
   display: inline-block;
   margin-right: $form-group-x-margin;
 
@@ -20,7 +20,7 @@
 
 // label
 
-.#{$prefix}-label {
+.#{$prefix}label {
   float: left;
   width: $label-width;
   padding-right: $label-right;
@@ -29,27 +29,28 @@
   @include label_required;
 }
 
-.#{$prefix}-label-block {
+.#{$prefix}label-block {
   display: block;
   line-height: $label-line-height;
   @include label_required;
 }
 
-.#{$prefix}-form-content {
+.#{$prefix}form-content {
   margin-left: $label-width + $label-right;
 }
 
 // input text
 
-.#{$prefix}-input {
+.#{$prefix}input {
   line-height: $input-line-height;
+  vertical-align: middle;
   @include text_input($input-pd, $input-bd-width, $input-bd-color, $input-bd-radius);
 }
 
 
 // textarea
 
-.#{$prefix}-textarea {
+.#{$prefix}textarea {
   display: block;
   resize: vertical;
   height: $textarea-height;
@@ -60,8 +61,11 @@
 
 // radio
 
-.#{$prefix}-radio {
+.#{$prefix}radio {
   position: relative;
+  display: inline-block;
+  padding-top: ($label-line-height - $font-size * $line-height) / 2;
+  line-height: $line-height;
 
   input[type=radio] {
     display: none;
@@ -73,17 +77,17 @@
       border-color: $check-checked-color;
     }
     &:checked + span:after {
+      $width: ($radio-width + $radio-bd-width * 2) / 2 - 1px;
+      $height: ($radio-height + $radio-bd-width * 2) / 2 - 1px;
+
       content: " ";
       position: absolute;
-      top: 0;
-      bottom: 0;
-      left: ($radio-width + $radio-bd-width * 2) / 2;
-
-      $width: ($radio-width + $radio-bd-width * 2) / 2 - 1px;
-
-      margin: auto 0 auto -#{$width / 2};
+      top: ($label-line-height - $height) / 2;
+      //bottom: 0;
+      left: ($radio-width + $radio-bd-width * 2 - $width) / 2;
+      //margin: auto 0 auto -#{$width / 2};
       width: $width;
-      height: ($radio-height + $radio-bd-width * 2) / 2 - 1px;
+      height: $height;
       border-radius: 100%;
       background-color: $check-checked-color;
     }
@@ -97,6 +101,7 @@
   }
 
   span {
+    display: inline-block;
     padding-left: $radio-width + $radio-right;
   }
 
@@ -105,8 +110,8 @@
   }
 }
 
-.#{$prefix}-radio-block {
-  @extend .#{$prefix}-radio;
+.#{$prefix}radio-block {
+  @extend .#{$prefix}radio;
   display: block;
 
   &:nth-child(n + 2) {
@@ -117,9 +122,12 @@
 
 // checkbox
 
-.#{$prefix}-checkbox {
+.#{$prefix}checkbox {
   position: relative;
-
+  display: inline-block;
+  padding-top: ($label-line-height - $font-size * $line-height) / 2;
+  line-height: $line-height;
+  
   input[type=checkbox] {
     display: none;
 
@@ -131,16 +139,17 @@
       background-color: $check-checked-color;
     }
     &:checked + span:after {
+      $width: ($checkbox-width + $checkbox-bd-width * 2) / 2 - 1px;
+      $height: ($checkbox-height + $checkbox-bd-width * 2) / 4;
+
       content: " ";
       position: absolute;
-      top: -2px;
+      top: ($label-line-height - $height) / 2 - 2px;
       bottom: 0;
-
-      $width: ($checkbox-width + $checkbox-bd-width * 2) / 2 - 1px;
-      left: $width;
-      margin: auto 0 auto -#{$width/2};
+      left: $width / 2;
+      //margin: auto 0 auto -#{$width/2};
       width: $width;
-      height: ($checkbox-height + $checkbox-bd-width * 2) / 4;
+      height: $height;
       border-left: 2px solid #fff;
       border-bottom: 2px solid #fff;
       transform: rotate(-45deg);
@@ -155,6 +164,7 @@
   }
 
   span {
+    display: inline-block;
     padding-left: $checkbox-width + $checkbox-right;
   }
 
@@ -163,8 +173,8 @@
   }
 }
 
-.#{$prefix}-checkbox-block {
-  @extend .#{$prefix}-checkbox;
+.#{$prefix}checkbox-block {
+  @extend .#{$prefix}checkbox;
   display: block;
 
   &:nth-child(n + 2) {
@@ -174,8 +184,9 @@
 
 // select
 
-.#{$prefix}-select {
+.#{$prefix}select {
   line-height: $input-line-height;
+  vertical-align: middle;
   padding: $input-pd;
   border: $border-width solid $form-bd-color;
   border-radius: $border-radius;
@@ -206,7 +217,7 @@
 }
 
 // 校验状态
-.#{$prefix}-verify {
+.#{$prefix}verify {
   position: relative;
 
   & .help-target:focus {

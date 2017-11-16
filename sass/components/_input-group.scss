@@ -1,4 +1,4 @@
-.#{$prefix}-input-group {
+.#{$prefix}input-group {
   display: table;
   border-collapse: separate;
   height: $input-group-height;
@@ -25,11 +25,11 @@
     }
   }
 
-  .#{$prefix}-input-group-addon, .#{$prefix}-input-group-btn {
+  .#{$prefix}input-group-addon, .#{$prefix}input-group-btn {
     vertical-align: middle;
     display: table-cell;
   }
-  .#{$prefix}-input-group-addon {
+  .#{$prefix}input-group-addon {
     padding:$input-group-padding;
     font-size: $input-group-font-size;
     color: $input-group-addon-color;
@@ -49,7 +49,7 @@
     }
   }
 
-  .#{$prefix}-input-group-btn {
+  .#{$prefix}input-group-btn {
     .dxy-btn{
       color: $input-group-btn-color;
     }

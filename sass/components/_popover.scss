@@ -1,4 +1,4 @@
-.#{$prefix}-tip {
+.#{$prefix}tip {
 	display: inline-block;
 	position: relative;
 	color: $tip-color;
@@ -8,7 +8,7 @@
 	border: $tip-border;
 	border-radius: $tip-radius;
 }
-.#{$prefix}-tip.left {
+.#{$prefix}tip.left {
 	&::before {
 		@include tip_arrow();
 		right: 0;
@@ -18,7 +18,7 @@
 		transform: rotateZ(-45deg);
 	}
 }
-.#{$prefix}-tip.right {
+.#{$prefix}tip.right {
 	&::before {
 		@include tip_arrow();
 		left: 0;
@@ -28,7 +28,7 @@
 		transform: rotateZ(135deg);
 	}
 }
-.#{$prefix}-tip.top {
+.#{$prefix}tip.top {
 	&::before {
 		@include tip_arrow();
 		left: 50%;
@@ -38,7 +38,7 @@
 		transform: rotateZ(-135deg);
 	}
 }
-.#{$prefix}-tip.bottom {
+.#{$prefix}tip.bottom {
 	&::before {
 		@include tip_arrow();
 		left: 50%;
@@ -49,7 +49,7 @@
 	}
 }
 
-.#{$prefix}-pop {
+.#{$prefix}pop {
 	display: inline-block;
 	position: relative;
 	padding: $pop-padding;
@@ -58,12 +58,12 @@
 	border: $pop-border;
 	border-radius: $pop-radius;
 	box-shadow: $pop-shadow;
-	.#{$prefix}-pop-head {
+	.#{$prefix}pop-head {
 		line-height: 1;
 		padding-bottom: $pop-head-spacing;
 	}
 }
-.#{$prefix}-pop.left {
+.#{$prefix}pop.left {
 	&::before {
 		@include pop_arrow();
 		right: 0;
@@ -73,7 +73,7 @@
 		transform: rotateZ(-45deg);
 	}
 }
-.#{$prefix}-pop.right {
+.#{$prefix}pop.right {
 	&::before {
 		@include pop_arrow();
 		left: 0;
@@ -83,7 +83,7 @@
 		transform: rotateZ(-45deg);
 	}
 }
-.#{$prefix}-pop.top {
+.#{$prefix}pop.top {
 	&::before {
 		@include pop_arrow();
 		left: 50%;
@@ -93,7 +93,7 @@
 		transform: rotateZ(-45deg);
 	}
 }
-.#{$prefix}-pop.bottom {
+.#{$prefix}pop.bottom {
 	&::before {
 		@include pop_arrow();
 		left: 50%;

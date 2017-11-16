@@ -1,4 +1,4 @@
-.#{$prefix}-tag {
+.#{$prefix}tag {
 	display: inline-block;
 	color: $tag-color-normal;
 	background-color: $tag-bgcolor-normal;
@@ -6,19 +6,19 @@
 	border-radius: $tag-radius;
 	@include tag_size($tag-padding, $tag-fontsize);
 	line-height: 1;
-	.#{$prefix}-icon {
+	.#{$prefix}icon {
 		font-size: inherit;
 		line-height: inherit;
 		margin-left: $tag-close-ml;
 	}
 }
 @each $name,$color in $tag-colors {
-  .#{$prefix}-tag-#{$name} {
+  .#{$prefix}tag-#{$name} {
     @include tag_colorful($color);
   }
 }
 
-.#{$prefix}-badge {
+.#{$prefix}badge {
 	color: $badge-color;
 	background-color: $badge-bgcolor;
 	line-height: 1;

@@ -7,14 +7,12 @@
     margin-right: auto;
 }
 
-.example_area-components_confirm .du-example {
-    padding: 20px;
-    height: 500px;
-    background: rgba(0, 0, 0, .5);
-}
-
-.du-example .dxy-confirm {
+.du-example .dxy-confirm, .du-example .dxy-modal {
     position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+    transform: none;
 }
 
 .du-example .dxy-row {
@@ -50,4 +48,8 @@
 .du-example [class*=dxy-mg], .du-example > [class*=dxy-pd] {
     background-color: #f4fbff;
     border: 1px solid #89d9fd;
+}
+
+.du-example .dxy-mark {
+    position: absolute;
 }

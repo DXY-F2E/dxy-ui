@@ -46,7 +46,7 @@ function getFile(url, res) {
 
     }
 
-  } else if ( /^\/docs$/.test(url.pathname) || url === 'docs') {
+  } else if ( /^\/docs\/?$/.test(url.pathname) || url === 'docs') {
     // 文档
     type = "docs";
     filePath = path.resolve(__dirname, 'docs/src/index.tpl');
