@@ -42,10 +42,11 @@
 @mixin check_box_wp($width, $height, $border-width, $radius) {
   content: " ";
   position: absolute;
-  top: 0;
+  //top: 0;
+  top: ($label-line-height - $height) / 2 - $border-width;
   left: 0;
-  bottom: 0;
-  margin: auto 0;
+  //bottom: 0;
+  //margin: auto 0;
   width: $width;
   height: $height;
   border: $border-width solid $check-bd-color;

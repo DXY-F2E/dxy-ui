@@ -67,3 +67,11 @@ DXY-UI 默认带前缀 `dxy-`，如果想去掉或修改前缀，修改 `theme/_
 ### 参考&使用的项目
 - [bootstrap](https://github.com/twbs/bootstrap)
 - [iconfont](http://www.iconfont.cn/)
+
+
+### 更新日志
+
+#### v1.0.1
+1. 修复本地开发问题
+2. 修复弹窗样式
+3. 兼容表单单选框和复选框文字换行样式

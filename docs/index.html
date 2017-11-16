@@ -14,7 +14,7 @@
 	<div class="logo dxy-float-left">
 		<img src="../docs/img/logo.svg" width="125" height="32">
 	</div>
-	<div class="version dxy-float-right">1.0</div>
+	<div class="version dxy-float-right">1.0.1</div>
 	<ul class="tab dxy-float-right" id="j_tab">
 		<li><a href="#elements">基本元素</a></li>
 		<li><a href="#components">组件</a></li>
@@ -981,11 +981,11 @@
 			<div class="du-example">
 				<form>
   <label class="dxy-radio">
-    <input type="radio">
+    <input type="radio" name="test">
     <span>单选框</span>
   </label>
   <label class="dxy-radio">
-    <input type="radio" checked>
+    <input type="radio" checked name="test">
     <span>选中</span>
   </label>
   <label class="dxy-radio">
@@ -997,23 +997,53 @@
     <span>选中&禁用</span>
   </label>
   <label class="dxy-radio-block">
-    <input type="radio">
+    <input type="radio" name="test">
     <span>块级单选框</span>
   </label>
   <label class="dxy-radio-block">
-    <input type="radio">
-    <span>块级单选框</span>
+    <input type="radio" name="test">
+    <span>建议文字过长时使用 .dxy-radio-block，避免出现左边的间距。当文字过长需要换行时，单选框还是保持原来的位置，文字正常换行带缩进。当文字过长需要换行时，单选框还是保持原来的位置，文字正常换行带缩进。</span>
   </label>
+</form>
+
+<h4>配合表单label使用</h4>
+<form class="dxy-form">
+  <div class="dxy-form-group">
+    <label class="dxy-label">性别</label>
+    <div class="dxy-form-content">
+      <label class="dxy-radio">
+        <input type="radio" name="gender">
+        <span>男</span>
+      </label>
+      <label class="dxy-radio">
+        <input type="radio" name="gender">
+        <span>女</span>
+      </label>
+    </div>
+  </div>
+  <div class="dxy-form-group">
+    <label class="dxy-label">性别</label>
+    <div class="dxy-form-content">
+      <label class="dxy-radio-block">
+        <input type="radio" name="gender">
+        <span>男</span>
+      </label>
+      <label class="dxy-radio-block">
+        <input type="radio" name="gender">
+        <span>女</span>
+      </label>
+    </div>
+  </div>
 </form>
 			</div>
 			<figure class="highlight">
 				<pre><code class="language-html">&lt;form&gt;
   &lt;label class=&#34;dxy-radio&#34;&gt;
-    &lt;input type=&#34;radio&#34;&gt;
+    &lt;input type=&#34;radio&#34; name=&#34;test&#34;&gt;
     &lt;span&gt;单选框&lt;/span&gt;
   &lt;/label&gt;
   &lt;label class=&#34;dxy-radio&#34;&gt;
-    &lt;input type=&#34;radio&#34; checked&gt;
+    &lt;input type=&#34;radio&#34; checked name=&#34;test&#34;&gt;
     &lt;span&gt;选中&lt;/span&gt;
   &lt;/label&gt;
   &lt;label class=&#34;dxy-radio&#34;&gt;
@@ -1025,13 +1055,43 @@
     &lt;span&gt;选中&amp;禁用&lt;/span&gt;
   &lt;/label&gt;
   &lt;label class=&#34;dxy-radio-block&#34;&gt;
-    &lt;input type=&#34;radio&#34;&gt;
+    &lt;input type=&#34;radio&#34; name=&#34;test&#34;&gt;
     &lt;span&gt;块级单选框&lt;/span&gt;
   &lt;/label&gt;
   &lt;label class=&#34;dxy-radio-block&#34;&gt;
-    &lt;input type=&#34;radio&#34;&gt;
-    &lt;span&gt;块级单选框&lt;/span&gt;
+    &lt;input type=&#34;radio&#34; name=&#34;test&#34;&gt;
+    &lt;span&gt;建议文字过长时使用 .dxy-radio-block，避免出现左边的间距。当文字过长需要换行时，单选框还是保持原来的位置，文字正常换行带缩进。当文字过长需要换行时，单选框还是保持原来的位置，文字正常换行带缩进。&lt;/span&gt;
   &lt;/label&gt;
+&lt;/form&gt;
+
+&lt;h4&gt;配合表单label使用&lt;/h4&gt;
+&lt;form class=&#34;dxy-form&#34;&gt;
+  &lt;div class=&#34;dxy-form-group&#34;&gt;
+    &lt;label class=&#34;dxy-label&#34;&gt;性别&lt;/label&gt;
+    &lt;div class=&#34;dxy-form-content&#34;&gt;
+      &lt;label class=&#34;dxy-radio&#34;&gt;
+        &lt;input type=&#34;radio&#34; name=&#34;gender&#34;&gt;
+        &lt;span&gt;男&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;label class=&#34;dxy-radio&#34;&gt;
+        &lt;input type=&#34;radio&#34; name=&#34;gender&#34;&gt;
+        &lt;span&gt;女&lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-form-group&#34;&gt;
+    &lt;label class=&#34;dxy-label&#34;&gt;性别&lt;/label&gt;
+    &lt;div class=&#34;dxy-form-content&#34;&gt;
+      &lt;label class=&#34;dxy-radio-block&#34;&gt;
+        &lt;input type=&#34;radio&#34; name=&#34;gender&#34;&gt;
+        &lt;span&gt;男&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;label class=&#34;dxy-radio-block&#34;&gt;
+        &lt;input type=&#34;radio&#34; name=&#34;gender&#34;&gt;
+        &lt;span&gt;女&lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/form&gt;</code></pre>
 				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
 			</figure>
@@ -1062,8 +1122,38 @@
   </label>
   <label class="dxy-checkbox-block">
     <input type="checkbox">
-    <span>块级复选框</span>
+    <span>建议文字过长时使用 .dxy-checkbox-block，避免出现左边的间距。当文字过长需要换行时，复选框还是保持原来的位置，文字正常换行带缩进。当文字过长需要换行时，复选框还是保持原来的位置，文字正常换行带缩进。</span>
   </label>
+</form>
+
+<h4>配合表单label使用</h4>
+<form class="dxy-form">
+  <div class="dxy-form-group">
+    <label class="dxy-label">喜欢的水果</label>
+    <div class="dxy-form-content">
+      <label class="dxy-checkbox">
+        <input type="checkbox">
+        <span>苹果</span>
+      </label>
+      <label class="dxy-checkbox">
+        <input type="checkbox">
+        <span>西瓜</span>
+      </label>
+    </div>
+  </div>
+  <div class="dxy-form-group">
+    <label class="dxy-label">喜欢的水果</label>
+    <div class="dxy-form-content">
+      <label class="dxy-checkbox-block">
+        <input type="checkbox">
+        <span>苹果</span>
+      </label>
+      <label class="dxy-checkbox-block">
+        <input type="checkbox">
+        <span>西瓜</span>
+      </label>
+    </div>
+  </div>
 </form>
 			</div>
 			<figure class="highlight">
@@ -1090,8 +1180,38 @@
   &lt;/label&gt;
   &lt;label class=&#34;dxy-checkbox-block&#34;&gt;
     &lt;input type=&#34;checkbox&#34;&gt;
-    &lt;span&gt;块级复选框&lt;/span&gt;
+    &lt;span&gt;建议文字过长时使用 .dxy-checkbox-block，避免出现左边的间距。当文字过长需要换行时，复选框还是保持原来的位置，文字正常换行带缩进。当文字过长需要换行时，复选框还是保持原来的位置，文字正常换行带缩进。&lt;/span&gt;
   &lt;/label&gt;
+&lt;/form&gt;
+
+&lt;h4&gt;配合表单label使用&lt;/h4&gt;
+&lt;form class=&#34;dxy-form&#34;&gt;
+  &lt;div class=&#34;dxy-form-group&#34;&gt;
+    &lt;label class=&#34;dxy-label&#34;&gt;喜欢的水果&lt;/label&gt;
+    &lt;div class=&#34;dxy-form-content&#34;&gt;
+      &lt;label class=&#34;dxy-checkbox&#34;&gt;
+        &lt;input type=&#34;checkbox&#34;&gt;
+        &lt;span&gt;苹果&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;label class=&#34;dxy-checkbox&#34;&gt;
+        &lt;input type=&#34;checkbox&#34;&gt;
+        &lt;span&gt;西瓜&lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;dxy-form-group&#34;&gt;
+    &lt;label class=&#34;dxy-label&#34;&gt;喜欢的水果&lt;/label&gt;
+    &lt;div class=&#34;dxy-form-content&#34;&gt;
+      &lt;label class=&#34;dxy-checkbox-block&#34;&gt;
+        &lt;input type=&#34;checkbox&#34;&gt;
+        &lt;span&gt;苹果&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;label class=&#34;dxy-checkbox-block&#34;&gt;
+        &lt;input type=&#34;checkbox&#34;&gt;
+        &lt;span&gt;西瓜&lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/form&gt;</code></pre>
 				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
 			</figure>

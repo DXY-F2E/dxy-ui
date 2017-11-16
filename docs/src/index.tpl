@@ -14,7 +14,7 @@
 	<div class="logo dxy-float-left">
 		<img src="../docs/img/logo.svg" width="125" height="32">
 	</div>
-	<div class="version dxy-float-right">1.0</div>
+	<div class="version dxy-float-right">1.0.1</div>
 	<ul class="tab dxy-float-right" id="j_tab">
 		<li><a href="#elements">基本元素</a></li>
 		<li><a href="#components">组件</a></li>

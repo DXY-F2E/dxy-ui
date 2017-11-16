@@ -831,16 +831,16 @@ a {
 
 .dxy-radio, .dxy-radio-block {
   position: relative;
-  line-height: 34px; }
+  display: inline-block;
+  padding-top: 6.5px;
+  line-height: 1.5; }
   .dxy-radio input[type=radio], .dxy-radio-block input[type=radio] {
     display: none; }
     .dxy-radio input[type=radio] + span:before, .dxy-radio-block input[type=radio] + span:before {
       content: " ";
       position: absolute;
-      top: 0;
+      top: 8px;
       left: 0;
-      bottom: 0;
-      margin: auto 0;
       width: 16px;
       height: 16px;
       border: 1px solid #b5b5b5;
@@ -851,10 +851,8 @@ a {
     .dxy-radio input[type=radio]:checked + span:after, .dxy-radio-block input[type=radio]:checked + span:after {
       content: " ";
       position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 9px;
-      margin: auto 0 auto -4px;
+      top: 13px;
+      left: 5px;
       width: 8px;
       height: 8px;
       border-radius: 100%;
@@ -865,6 +863,7 @@ a {
     .dxy-radio input[type=radio][disabled]:checked + span:after, .dxy-radio-block input[type=radio][disabled]:checked + span:after {
       background-color: #ddd; }
   .dxy-radio span, .dxy-radio-block span {
+    display: inline-block;
     padding-left: 21px; }
   .dxy-radio:nth-child(n + 2), .dxy-radio-block:nth-child(n + 2) {
     margin-left: 18px; }
@@ -876,16 +875,16 @@ a {
 
 .dxy-checkbox, .dxy-checkbox-block {
   position: relative;
-  line-height: 34px; }
+  display: inline-block;
+  padding-top: 6.5px;
+  line-height: 1.5; }
   .dxy-checkbox input[type=checkbox], .dxy-checkbox-block input[type=checkbox] {
     display: none; }
     .dxy-checkbox input[type=checkbox] + span:before, .dxy-checkbox-block input[type=checkbox] + span:before {
       content: " ";
       position: absolute;
-      top: 0;
+      top: 8px;
       left: 0;
-      bottom: 0;
-      margin: auto 0;
       width: 16px;
       height: 16px;
       border: 1px solid #b5b5b5;
@@ -897,10 +896,9 @@ a {
     .dxy-checkbox input[type=checkbox]:checked + span:after, .dxy-checkbox-block input[type=checkbox]:checked + span:after {
       content: " ";
       position: absolute;
-      top: -2px;
+      top: 12.75px;
       bottom: 0;
-      left: 8px;
-      margin: auto 0 auto -4px;
+      left: 4px;
       width: 8px;
       height: 4.5px;
       border-left: 2px solid #fff;
@@ -913,6 +911,7 @@ a {
       border-color: #ddd;
       background-color: #ddd; }
   .dxy-checkbox span, .dxy-checkbox-block span {
+    display: inline-block;
     padding-left: 21px; }
   .dxy-checkbox:nth-child(n + 2), .dxy-checkbox-block:nth-child(n + 2) {
     margin-left: 18px; }

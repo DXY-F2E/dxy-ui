@@ -63,8 +63,10 @@
 
 .#{$prefix}radio {
   position: relative;
-  line-height: $label-line-height;
-  
+  display: inline-block;
+  padding-top: ($label-line-height - $font-size * $line-height) / 2;
+  line-height: $line-height;
+
   input[type=radio] {
     display: none;
 
@@ -75,17 +77,17 @@
       border-color: $check-checked-color;
     }
     &:checked + span:after {
+      $width: ($radio-width + $radio-bd-width * 2) / 2 - 1px;
+      $height: ($radio-height + $radio-bd-width * 2) / 2 - 1px;
+
       content: " ";
       position: absolute;
-      top: 0;
-      bottom: 0;
-      left: ($radio-width + $radio-bd-width * 2) / 2;
-
-      $width: ($radio-width + $radio-bd-width * 2) / 2 - 1px;
-
-      margin: auto 0 auto -#{$width / 2};
+      top: ($label-line-height - $height) / 2;
+      //bottom: 0;
+      left: ($radio-width + $radio-bd-width * 2 - $width) / 2;
+      //margin: auto 0 auto -#{$width / 2};
       width: $width;
-      height: ($radio-height + $radio-bd-width * 2) / 2 - 1px;
+      height: $height;
       border-radius: 100%;
       background-color: $check-checked-color;
     }
@@ -99,6 +101,7 @@
   }
 
   span {
+    display: inline-block;
     padding-left: $radio-width + $radio-right;
   }
 
@@ -121,7 +124,9 @@
 
 .#{$prefix}checkbox {
   position: relative;
-  line-height: $label-line-height;
+  display: inline-block;
+  padding-top: ($label-line-height - $font-size * $line-height) / 2;
+  line-height: $line-height;
   
   input[type=checkbox] {
     display: none;
@@ -134,16 +139,17 @@
       background-color: $check-checked-color;
     }
     &:checked + span:after {
+      $width: ($checkbox-width + $checkbox-bd-width * 2) / 2 - 1px;
+      $height: ($checkbox-height + $checkbox-bd-width * 2) / 4;
+
       content: " ";
       position: absolute;
-      top: -2px;
+      top: ($label-line-height - $height) / 2 - 2px;
       bottom: 0;
-
-      $width: ($checkbox-width + $checkbox-bd-width * 2) / 2 - 1px;
-      left: $width;
-      margin: auto 0 auto -#{$width/2};
+      left: $width / 2;
+      //margin: auto 0 auto -#{$width/2};
       width: $width;
-      height: ($checkbox-height + $checkbox-bd-width * 2) / 4;
+      height: $height;
       border-left: 2px solid #fff;
       border-bottom: 2px solid #fff;
       transform: rotate(-45deg);
@@ -158,6 +164,7 @@
   }
 
   span {
+    display: inline-block;
     padding-left: $checkbox-width + $checkbox-right;
   }
 

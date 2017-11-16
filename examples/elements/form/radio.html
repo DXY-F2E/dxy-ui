@@ -1,10 +1,10 @@
 <form>
   <label class="dxy-radio">
-    <input type="radio">
+    <input type="radio" name="test">
     <span>单选框</span>
   </label>
   <label class="dxy-radio">
-    <input type="radio" checked>
+    <input type="radio" checked name="test">
     <span>选中</span>
   </label>
   <label class="dxy-radio">
@@ -16,11 +16,41 @@
     <span>选中&禁用</span>
   </label>
   <label class="dxy-radio-block">
-    <input type="radio">
+    <input type="radio" name="test">
     <span>块级单选框</span>
   </label>
   <label class="dxy-radio-block">
-    <input type="radio">
-    <span>块级单选框</span>
+    <input type="radio" name="test">
+    <span>建议文字过长时使用 .dxy-radio-block，避免出现左边的间距。当文字过长需要换行时，单选框还是保持原来的位置，文字正常换行带缩进。当文字过长需要换行时，单选框还是保持原来的位置，文字正常换行带缩进。</span>
   </label>
+</form>
+
+<h4>配合表单label使用</h4>
+<form class="dxy-form">
+  <div class="dxy-form-group">
+    <label class="dxy-label">性别</label>
+    <div class="dxy-form-content">
+      <label class="dxy-radio">
+        <input type="radio" name="gender">
+        <span>男</span>
+      </label>
+      <label class="dxy-radio">
+        <input type="radio" name="gender">
+        <span>女</span>
+      </label>
+    </div>
+  </div>
+  <div class="dxy-form-group">
+    <label class="dxy-label">性别</label>
+    <div class="dxy-form-content">
+      <label class="dxy-radio-block">
+        <input type="radio" name="gender">
+        <span>男</span>
+      </label>
+      <label class="dxy-radio-block">
+        <input type="radio" name="gender">
+        <span>女</span>
+      </label>
+    </div>
+  </div>
 </form>
