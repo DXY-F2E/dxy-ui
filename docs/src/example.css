@@ -41,6 +41,10 @@
 	position: relative;
 }
 
+.du-example .dxy-loading {
+    position: absolute;
+}
+
 .du-example .loading-box > .red {
 	color: red;
 }

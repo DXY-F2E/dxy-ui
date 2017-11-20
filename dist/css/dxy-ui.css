@@ -2221,7 +2221,7 @@ h6, .dxy-h6 {
   border-radius: 9px; }
 
 .dxy-loading {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   left: 0;
