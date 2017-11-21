@@ -20,6 +20,7 @@
   border: $border-width solid $border-color;
   border-radius: $radius;
   font-size: $font-size;
+  background-color: $white;
   @include form_foucs;
 
   &[readonly] {
