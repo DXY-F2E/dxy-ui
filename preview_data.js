@@ -195,7 +195,7 @@ const allData = [
           {
             "name": "validate",
             "title": "表单校验",
-            "desc": "提供表单校验警告的样式，需要结合 `.dxy-verify` 和 `.dxy-verify-danger` 使用。",
+            "desc": "提供表单校验错误的样式，结合 `.dxy-validate-error` 和提示文本 `.dxy-help-inline` 或 `.dxy-help-block` 使用。",
             "body": ""
           },
         ]

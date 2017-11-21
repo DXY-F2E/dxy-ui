@@ -1299,20 +1299,20 @@
 			</figure>
 			
 			<h4 id="elements_form_validate">表单校验</h4>
-			<p>提供表单校验警告的样式，需要结合 <code>.dxy-verify</code> 和 <code>.dxy-verify-danger</code> 使用。</p>
+			<p>提供表单校验错误的样式，结合 <code>.dxy-validate-error</code> 和提示文本 <code>.dxy-help-inline</code> 或 <code>.dxy-help-block</code> 使用。</p>
 			<div class="du-example">
 				<form class="dxy-form">
   <div class="dxy-form-group">
     <label class="dxy-label">姓名</label>
-    <div class="dxy-form-content dxy-verify dxy-verify-danger">
-      <input type="text" id="dui-input" class="help-target dxy-input">
-      <span class="help-inline">请输入姓名</span>
+    <div class="dxy-form-content">
+      <input type="text" id="dui-input" class="dxy-validate-error dxy-input">
+      <span class="dxy-help-inline">请输入姓名</span>
     </div>
   </div>
   <div class="dxy-form-group">
     <label class="dxy-label">下拉框</label>
-    <div class="dxy-form-content dxy-verify dxy-verify-danger">
-      <select class="dxy-select help-target" multiple>
+    <div class="dxy-form-content">
+      <select class="dxy-select dxy-validate-error" multiple>
         <option>选项1</option>
         <option>选项2</option>
         <option>选项3</option>
@@ -1320,7 +1320,7 @@
         <option>选项5</option>
         <option>选项6</option>
       </select>
-      <span class="help-inline">错误校验</span>
+      <span class="dxy-help-block">错误校验</span>
     </div>
   </div>
 </form>
@@ -1329,15 +1329,15 @@
 				<pre><code class="language-html">&lt;form class=&#34;dxy-form&#34;&gt;
   &lt;div class=&#34;dxy-form-group&#34;&gt;
     &lt;label class=&#34;dxy-label&#34;&gt;姓名&lt;/label&gt;
-    &lt;div class=&#34;dxy-form-content dxy-verify dxy-verify-danger&#34;&gt;
-      &lt;input type=&#34;text&#34; id=&#34;dui-input&#34; class=&#34;help-target dxy-input&#34;&gt;
-      &lt;span class=&#34;help-inline&#34;&gt;请输入姓名&lt;/span&gt;
+    &lt;div class=&#34;dxy-form-content&#34;&gt;
+      &lt;input type=&#34;text&#34; id=&#34;dui-input&#34; class=&#34;dxy-validate-error dxy-input&#34;&gt;
+      &lt;span class=&#34;dxy-help-inline&#34;&gt;请输入姓名&lt;/span&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&#34;dxy-form-group&#34;&gt;
     &lt;label class=&#34;dxy-label&#34;&gt;下拉框&lt;/label&gt;
-    &lt;div class=&#34;dxy-form-content dxy-verify dxy-verify-danger&#34;&gt;
-      &lt;select class=&#34;dxy-select help-target&#34; multiple&gt;
+    &lt;div class=&#34;dxy-form-content&#34;&gt;
+      &lt;select class=&#34;dxy-select dxy-validate-error&#34; multiple&gt;
         &lt;option&gt;选项1&lt;/option&gt;
         &lt;option&gt;选项2&lt;/option&gt;
         &lt;option&gt;选项3&lt;/option&gt;
@@ -1345,7 +1345,7 @@
         &lt;option&gt;选项5&lt;/option&gt;
         &lt;option&gt;选项6&lt;/option&gt;
       &lt;/select&gt;
-      &lt;span class=&#34;help-inline&#34;&gt;错误校验&lt;/span&gt;
+      &lt;span class=&#34;dxy-help-block&#34;&gt;错误校验&lt;/span&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/form&gt;</code></pre>

@@ -202,7 +202,7 @@
 
   &[multiple] {
     height: auto;
-    background: '';
+    background: none;
     padding: $select-pd;
 
     & option {
@@ -217,27 +217,17 @@
 }
 
 // 校验状态
-.#{$prefix}verify {
-  position: relative;
-
-  & .help-target:focus {
-    box-shadow: 0 0 2px 0 $danger;
-  }
-
-  & .help-inline {
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    font-size: $font-size-sm;
-  }
-
-  &-danger {
-    & .help-target {
+.#{$prefix}validate-error {
+  input, select, textarea {
+    border-color: $danger;
+    &:focus {
       border-color: $danger;
+      box-shadow: 0 0 2px 0 $danger;
     }
+  }
 
-    & .help-inline {
-      color: $danger;
-    }
+  .#{$prefix}help-inline,
+  .#{$prefix}help-block {
+    color: $danger;
   }
 }

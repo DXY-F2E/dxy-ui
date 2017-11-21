@@ -937,27 +937,23 @@ a {
     width: 100%; }
   .dxy-select[multiple] {
     height: auto;
-    background: '';
+    background: none;
     padding: 5px 0; }
     .dxy-select[multiple] option {
       padding: 3px 9px; }
   .dxy-select::-ms-expand {
     display: none; }
 
-.dxy-verify {
-  position: relative; }
-  .dxy-verify .help-target:focus {
+.dxy-validate-error input, .dxy-validate-error select, .dxy-validate-error textarea {
+  border-color: #ff3939; }
+  .dxy-validate-error input:focus, .dxy-validate-error select:focus, .dxy-validate-error textarea:focus {
+    border-color: #ff3939;
     -webkit-box-shadow: 0 0 2px 0 #ff3939;
             box-shadow: 0 0 2px 0 #ff3939; }
-  .dxy-verify .help-inline {
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    font-size: 12px; }
-  .dxy-verify-danger .help-target {
-    border-color: #ff3939; }
-  .dxy-verify-danger .help-inline {
-    color: #ff3939; }
+
+.dxy-validate-error .dxy-help-inline,
+.dxy-validate-error .dxy-help-block {
+  color: #ff3939; }
 
 * {
   -webkit-box-sizing: border-box;
