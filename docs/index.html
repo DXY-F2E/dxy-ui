@@ -1304,15 +1304,15 @@
 				<form class="dxy-form">
   <div class="dxy-form-group">
     <label class="dxy-label">姓名</label>
-    <div class="dxy-form-content">
-      <input type="text" id="dui-input" class="dxy-validate-error dxy-input">
+    <div class="dxy-form-content dxy-validate-error">
+      <input type="text" id="dui-input" class="dxy-input">
       <span class="dxy-help-inline">请输入姓名</span>
     </div>
   </div>
   <div class="dxy-form-group">
     <label class="dxy-label">下拉框</label>
-    <div class="dxy-form-content">
-      <select class="dxy-select dxy-validate-error" multiple>
+    <div class="dxy-form-content dxy-validate-error">
+      <select class="dxy-select" multiple>
         <option>选项1</option>
         <option>选项2</option>
         <option>选项3</option>
@@ -1329,15 +1329,15 @@
 				<pre><code class="language-html">&lt;form class=&#34;dxy-form&#34;&gt;
   &lt;div class=&#34;dxy-form-group&#34;&gt;
     &lt;label class=&#34;dxy-label&#34;&gt;姓名&lt;/label&gt;
-    &lt;div class=&#34;dxy-form-content&#34;&gt;
-      &lt;input type=&#34;text&#34; id=&#34;dui-input&#34; class=&#34;dxy-validate-error dxy-input&#34;&gt;
+    &lt;div class=&#34;dxy-form-content dxy-validate-error&#34;&gt;
+      &lt;input type=&#34;text&#34; id=&#34;dui-input&#34; class=&#34;dxy-input&#34;&gt;
       &lt;span class=&#34;dxy-help-inline&#34;&gt;请输入姓名&lt;/span&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&#34;dxy-form-group&#34;&gt;
     &lt;label class=&#34;dxy-label&#34;&gt;下拉框&lt;/label&gt;
-    &lt;div class=&#34;dxy-form-content&#34;&gt;
-      &lt;select class=&#34;dxy-select dxy-validate-error&#34; multiple&gt;
+    &lt;div class=&#34;dxy-form-content dxy-validate-error&#34;&gt;
+      &lt;select class=&#34;dxy-select&#34; multiple&gt;
         &lt;option&gt;选项1&lt;/option&gt;
         &lt;option&gt;选项2&lt;/option&gt;
         &lt;option&gt;选项3&lt;/option&gt;
@@ -2030,7 +2030,7 @@
 			<h3 id="components_confirm" class="page-header">
 				确认框
 			</h3>
-			<p>一般用于代替浏览器原生的 <code>confirm</code>，可添加标题与主体文案。可使用 <code>.dxy-mark</code> 添加背景遮罩层。</p>
+			<p>一般用于代替浏览器原生的 <code>confirm</code>，可添加标题与主体文案。可使用 <code>.dxy-mask</code> 添加背景遮罩层。</p>
 			
 			<div class="du-example">
 				<div class="dxy-confirm">
@@ -2046,7 +2046,7 @@
 		<button class="dxy-btn dxy-btn-primary">确定</button>
 	</div>
 </div>
-<div class="dxy-mark"></div>
+<div class="dxy-mask"></div>
 			</div>
 			<figure class="highlight">
 				<pre><code class="language-html">&lt;div class=&#34;dxy-confirm&#34;&gt;
@@ -2062,7 +2062,7 @@
 		&lt;button class=&#34;dxy-btn dxy-btn-primary&#34;&gt;确定&lt;/button&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&#34;dxy-mark&#34;&gt;&lt;/div&gt;</code></pre>
+&lt;div class=&#34;dxy-mask&#34;&gt;&lt;/div&gt;</code></pre>
 				<a class="j_preview_code"><span>查看代码</span><i class="dxy-search-input-icon dxy-icon dxy-icon-arrow-down-fill"></i></a>
 			</figure>
 			
@@ -2074,7 +2074,7 @@
 			<h3 id="components_modal" class="page-header">
 				模态框
 			</h3>
-			<p>显示一块单独的内容，自定义标题与主体内容，主体内容可以是表单，表格等。可使用 <code>.dxy-mark</code> 添加背景遮罩层。</p>
+			<p>显示一块单独的内容，自定义标题与主体内容，主体内容可以是表单，表格等。可使用 <code>.dxy-mask</code> 添加背景遮罩层。</p>
 			
 			<div class="du-example">
 				<div class="dxy-modal">

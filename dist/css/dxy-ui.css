@@ -2263,7 +2263,7 @@ h6, .dxy-h6 {
     -webkit-transform: rotate(360deg) translateZ(0);
             transform: rotate(360deg) translateZ(0); } }
 
-.dxy-mark {
+.dxy-mask {
   position: fixed;
   top: 0;
   left: 0;
