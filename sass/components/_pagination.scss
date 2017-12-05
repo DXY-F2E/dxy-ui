@@ -15,8 +15,12 @@
 		border: $pagination-border;
 		border-radius: $pagination-btn-radius;
 		margin-right: $pagination-btn-mr;
+		cursor: pointer;
 		&:last-child {
 			margin-right: 0;
+		}
+		&:focus {
+			outline: 0;
 		}
 		.#{$prefix}icon-arrow-left, .#{$prefix}icon-arrow-right {
 			font-size: inherit;

@@ -1963,21 +1963,41 @@ h6, .dxy-h6 {
   color: #0bb9fa;
   border-color: rgba(11, 185, 250, 0.5);
   background-color: rgba(11, 185, 250, 0.05); }
+  .dxy-tag-blue .dxy-icon {
+    padding: 0;
+    border: none;
+    color: #0bb9fa;
+    background: none; }
 
 .dxy-tag-green {
   color: #24c54a;
   border-color: rgba(36, 197, 74, 0.5);
   background-color: rgba(36, 197, 74, 0.05); }
+  .dxy-tag-green .dxy-icon {
+    padding: 0;
+    border: none;
+    color: #24c54a;
+    background: none; }
 
 .dxy-tag-orange {
   color: #f8af00;
   border-color: rgba(248, 175, 0, 0.5);
   background-color: rgba(248, 175, 0, 0.05); }
+  .dxy-tag-orange .dxy-icon {
+    padding: 0;
+    border: none;
+    color: #f8af00;
+    background: none; }
 
 .dxy-tag-red {
   color: #f33237;
   border-color: rgba(243, 50, 55, 0.5);
   background-color: rgba(243, 50, 55, 0.05); }
+  .dxy-tag-red .dxy-icon {
+    padding: 0;
+    border: none;
+    color: #f33237;
+    background: none; }
 
 .dxy-badge {
   color: #fff;
@@ -2181,9 +2201,12 @@ h6, .dxy-h6 {
     color: #555555;
     border: 1px solid #dddddd;
     border-radius: 0;
-    margin-right: 5px; }
+    margin-right: 5px;
+    cursor: pointer; }
     .dxy-pagination .dxy-pagination-btn:last-child {
       margin-right: 0; }
+    .dxy-pagination .dxy-pagination-btn:focus {
+      outline: 0; }
     .dxy-pagination .dxy-pagination-btn .dxy-icon-arrow-left, .dxy-pagination .dxy-pagination-btn .dxy-icon-arrow-right {
       font-size: inherit;
       margin: 0 -4px 0; }
