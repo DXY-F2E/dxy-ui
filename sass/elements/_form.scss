@@ -43,7 +43,6 @@
 
 .#{$prefix}input {
   line-height: $input-line-height;
-  vertical-align: middle;
   @include text_input($input-pd, $input-bd-width, $input-bd-color, $input-bd-radius);
 }
 

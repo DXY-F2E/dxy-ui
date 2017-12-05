@@ -555,11 +555,12 @@ a {
 
 .dxy-input {
   line-height: 22px;
-  vertical-align: middle;
+  display: inline;
   padding: 5px 9px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
+  vertical-align: middle;
   background-color: #fff; }
   .dxy-input:focus {
     outline: 0;
@@ -574,6 +575,7 @@ a {
     background-color: #f5f5f5;
     cursor: not-allowed; }
   .justify .dxy-input, .dxy-input.justify {
+    display: block;
     width: 100%; }
 
 .dxy-textarea {
@@ -581,10 +583,12 @@ a {
   resize: vertical;
   height: auto;
   min-height: 37px;
+  display: inline;
   padding: 9px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
+  vertical-align: middle;
   background-color: #fff; }
   .dxy-textarea:focus {
     outline: 0;
@@ -599,6 +603,7 @@ a {
     background-color: #f5f5f5;
     cursor: not-allowed; }
   .justify .dxy-textarea, .dxy-textarea.justify {
+    display: block;
     width: 100%; }
 
 .dxy-radio, .dxy-radio-block {
