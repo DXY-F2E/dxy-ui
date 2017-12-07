@@ -57,3 +57,7 @@
 .du-example .dxy-mask {
     position: absolute;
 }
+
+.du-example .dxy-select-list {
+    position: relative;
+}

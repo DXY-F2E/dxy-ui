@@ -1,6 +1,5 @@
 .#{$prefix}search-select{
   display: inline-block;
-  position: relative;
   min-width: $select-min-width;
   width: 100%;
   .#{$prefix}search-input{
@@ -12,7 +11,11 @@
     padding: $select-input-padding;
     border: $select-input-border;
     border-radius: $select-input-border-radius;
+    background-color: $select-input-bg-color;
     box-sizing: border-box;
+    &:focus {
+      outline: 0;
+    }
   }
   .#{$prefix}search-input-icon{
     position: absolute;
@@ -27,8 +30,12 @@
 }
 
 .#{$prefix}search-select, .#{$prefix}search-select-multiple{
+  position: relative;
+  vertical-align: middle;
   .#{$prefix}select-list{
-    position: relative;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
     overflow-y: scroll;
     left: 0;
     list-style: none;
@@ -36,6 +43,7 @@
     margin:$select-list-margin;
     border-radius: $select-list-border-radius;
     border: $select-list-border;
+    background-color: $select-list-bg-color;
     li{
       padding-left: $select-li-padding-left;
       height: $select-li-height;
@@ -61,7 +69,8 @@
 .#{$prefix}search-select-multiple{
   width: 100%;
   .#{$prefix}search-input{
-    max-width: 100%;
+    width: 100%;
+    min-height: $select-input-height;
     font-size: $select-input-multiple-font-size;
     color: $select-input-multiple-color;
     line-height: 1;

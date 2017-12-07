@@ -2439,7 +2439,6 @@ h6, .dxy-h6 {
 
 .dxy-search-select {
   display: inline-block;
-  position: relative;
   min-width: 120px;
   width: 100%; }
   .dxy-search-select .dxy-search-input {
@@ -2451,8 +2450,11 @@ h6, .dxy-h6 {
     padding: 0 30px 0 10px;
     border: solid 1px #cccccc;
     border-radius: 4px;
+    background-color: #fff;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
+    .dxy-search-select .dxy-search-input:focus {
+      outline: 0; }
   .dxy-search-select .dxy-search-input-icon {
     position: absolute;
     width: 30px;
@@ -2463,25 +2465,31 @@ h6, .dxy-h6 {
     text-align: center;
     line-height: 34px; }
 
-.dxy-search-select .dxy-select-list, .dxy-search-select-multiple .dxy-select-list {
+.dxy-search-select, .dxy-search-select-multiple {
   position: relative;
-  overflow-y: scroll;
-  left: 0;
-  list-style: none;
-  padding: 0;
-  margin: 5px 0 0 0;
-  border-radius: 4px;
-  border: solid 1px #cccccc; }
-  .dxy-search-select .dxy-select-list li, .dxy-search-select-multiple .dxy-select-list li {
-    padding-left: 13px;
-    height: 30px;
-    line-height: 30px;
-    cursor: pointer; }
-    .dxy-search-select .dxy-select-list li:hover, .dxy-search-select-multiple .dxy-select-list li:hover {
-      background-color: #f5f5f5; }
-  .dxy-search-select .dxy-select-list li.dxy-active, .dxy-search-select-multiple .dxy-select-list li.dxy-active {
-    background-color: #3572fe;
-    color: #fff; }
+  vertical-align: middle; }
+  .dxy-search-select .dxy-select-list, .dxy-search-select-multiple .dxy-select-list {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    overflow-y: scroll;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+    border-radius: 4px;
+    border: solid 1px #cccccc;
+    background-color: #fff; }
+    .dxy-search-select .dxy-select-list li, .dxy-search-select-multiple .dxy-select-list li {
+      padding-left: 13px;
+      height: 30px;
+      line-height: 30px;
+      cursor: pointer; }
+      .dxy-search-select .dxy-select-list li:hover, .dxy-search-select-multiple .dxy-select-list li:hover {
+        background-color: #f5f5f5; }
+    .dxy-search-select .dxy-select-list li.dxy-active, .dxy-search-select-multiple .dxy-select-list li.dxy-active {
+      background-color: #3572fe;
+      color: #fff; }
 
 .dxy-search-select .dxy-select-list {
   max-height: 210px; }
@@ -2492,7 +2500,8 @@ h6, .dxy-h6 {
 .dxy-search-select-multiple {
   width: 100%; }
   .dxy-search-select-multiple .dxy-search-input {
-    max-width: 100%;
+    width: 100%;
+    min-height: 34px;
     font-size: 14px;
     color: #333;
     line-height: 1;
