@@ -1752,23 +1752,23 @@ h6, .dxy-h6 {
 
 .dxy-alert-info {
   color: #0bb9fa;
-  border: 1px solid rgba(11, 185, 250, 0.5);
-  background-color: rgba(11, 185, 250, 0.05); }
+  border: 1px solid #9be2fd;
+  background-color: #f5fcff; }
 
 .dxy-alert-success {
   color: #33bb3f;
-  border: 1px solid rgba(51, 187, 63, 0.5);
-  background-color: rgba(51, 187, 63, 0.05); }
+  border: 1px solid #afe9b4;
+  background-color: #f7fdf8; }
 
 .dxy-alert-warning {
   color: #f19f00;
-  border: 1px solid rgba(241, 159, 0, 0.5);
-  background-color: rgba(241, 159, 0, 0.05); }
+  border: 1px solid #ffdc99;
+  background-color: #fffcf5; }
 
 .dxy-alert-error {
   color: #f76569;
-  border: 1px solid rgba(247, 101, 105, 0.5);
-  background-color: rgba(247, 101, 105, 0.05); }
+  border: 1px solid #fa9ea1;
+  background-color: #fef5f6; }
 
 .dxy-btn-group, .dxy-btn-group-vertical {
   display: inline-block;
@@ -2207,7 +2207,8 @@ h6, .dxy-h6 {
     border: 1px solid #dddddd;
     border-radius: 0;
     margin-right: 5px;
-    cursor: pointer; }
+    cursor: pointer;
+    outline: none; }
     .dxy-pagination .dxy-pagination-btn:last-child {
       margin-right: 0; }
     .dxy-pagination .dxy-pagination-btn:focus {

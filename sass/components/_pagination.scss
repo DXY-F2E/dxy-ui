@@ -16,6 +16,7 @@
 		border-radius: $pagination-btn-radius;
 		margin-right: $pagination-btn-mr;
 		cursor: pointer;
+		outline: none;
 		&:last-child {
 			margin-right: 0;
 		}
