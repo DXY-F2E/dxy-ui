@@ -2078,7 +2078,6 @@ h6, .dxy-h6 {
           box-sizing: border-box;
   width: 694px;
   max-width: 90%;
-  max-height: 90%;
   padding: 20px;
   background-color: #fff;
   -webkit-box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.2);
@@ -2105,6 +2104,9 @@ h6, .dxy-h6 {
       .dxy-modal .dxy-modal-head .close i {
         font-size: 20px;
         color: #bcbcbc; }
+  .dxy-modal .dxy-modal-body {
+    max-height: 500px;
+    overflow-y: auto; }
 
 .dxy-nav {
   margin: 0;

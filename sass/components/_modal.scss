@@ -6,7 +6,7 @@
 	box-sizing: $modal-box-sizing;
 	width: $modal-width;
 	max-width: 90%;
-	max-height: 90%;
+	//max-height: 90%;
 	padding: $modal-padding;
 	background-color: $modal-bgcolor;
 	box-shadow: $modal-shadow;
@@ -37,6 +37,7 @@
 		}
 	}
 	.#{$prefix}modal-body {
-
+		max-height: 500px;
+		overflow-y: auto;
 	}
 }
