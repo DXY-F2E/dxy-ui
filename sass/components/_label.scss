@@ -14,7 +14,14 @@
 }
 @each $name,$color in $tag-colors {
   .#{$prefix}tag-#{$name} {
-    @include tag_colorful($color);
+	  @include tag_colorful($color);
+
+	  .#{$prefix}icon {
+		  padding: 0;
+		  border: none;
+		  color: $color;
+		  background: none;
+	  }
   }
 }
 

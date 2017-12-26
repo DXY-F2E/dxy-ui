@@ -195,7 +195,7 @@ const allData = [
           {
             "name": "validate",
             "title": "表单校验",
-            "desc": "提供表单校验警告的样式，需要结合 `.dxy-verify` 和 `.dxy-verify-danger` 使用。",
+            "desc": "提供表单校验错误的样式，结合 `.dxy-validate-error` 和提示文本 `.dxy-help-inline` 或 `.dxy-help-block` 使用。",
             "body": ""
           },
         ]
@@ -325,13 +325,13 @@ const allData = [
 			{
 				"name":"confirm",
 				"title":"确认框",
-				"desc":"一般用于代替浏览器原生的 `confirm`，可添加标题与主体文案。可使用 `.dxy-mark` 添加背景遮罩层。",
+				"desc":"一般用于代替浏览器原生的 `confirm`，可添加标题与主体文案。可使用 `.dxy-mask` 添加背景遮罩层。",
 				"body":"",
 			},
 			{
 				"name":"modal",
 				"title":"模态框",
-				"desc":"显示一块单独的内容，自定义标题与主体内容，主体内容可以是表单，表格等。可使用 `.dxy-mark` 添加背景遮罩层。",
+				"desc":"显示一块单独的内容，自定义标题与主体内容，主体内容可以是表单，表格等。可使用 `.dxy-mask` 添加背景遮罩层。",
 				"body":"",
 			},
 			{

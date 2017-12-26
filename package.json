@@ -1,6 +1,6 @@
 {
   "name": "dxy-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "style": "dist/css/dxy-ui.min.css",
   "homepage": "https://dxy-f2e.github.io/dxy-ui/docs/",

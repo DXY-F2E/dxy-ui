@@ -43,7 +43,6 @@
 
 .#{$prefix}input {
   line-height: $input-line-height;
-  vertical-align: middle;
   @include text_input($input-pd, $input-bd-width, $input-bd-color, $input-bd-radius);
 }
 
@@ -185,6 +184,7 @@
 // select
 
 .#{$prefix}select {
+  font-size: $font-size;
   line-height: $input-line-height;
   vertical-align: middle;
   padding: $input-pd;
@@ -192,7 +192,7 @@
   border-radius: $border-radius;
   outline: none;
   appearance: none;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAFBAMAAABV8cp5AAAAHlBMVEX///9VVVX7+/v19fXx8fGkpKSSkpKBgYF4eHiFhYUcD+weAAAAJklEQVQI12MIFBQUDGAAAzZBQTEGCGAqFCxigAILCQMYk2UKlAEAYGEDIb0LYqIAAAAASUVORK5CYII=') center right no-repeat;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAFBAMAAABV8cp5AAAAHlBMVEX///9VVVX7+/v19fXx8fGkpKSSkpKBgYF4eHiFhYUcD+weAAAAJklEQVQI12MIFBQUDGAAAzZBQTEGCGAqFCxigAILCQMYk2UKlAEAYGEDIb0LYqIAAAAASUVORK5CYII=') center right no-repeat $white;
   padding-right: 30px;
 
   .justify &,
@@ -202,7 +202,7 @@
 
   &[multiple] {
     height: auto;
-    background: '';
+    background: none;
     padding: $select-pd;
 
     & option {
@@ -217,27 +217,17 @@
 }
 
 // 校验状态
-.#{$prefix}verify {
-  position: relative;
-
-  & .help-target:focus {
-    box-shadow: 0 0 2px 0 $danger;
-  }
-
-  & .help-inline {
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    font-size: $font-size-sm;
-  }
-
-  &-danger {
-    & .help-target {
+.#{$prefix}validate-error {
+  input, select, textarea {
+    border-color: $danger;
+    &:focus {
       border-color: $danger;
+      box-shadow: 0 0 2px 0 $danger;
     }
+  }
 
-    & .help-inline {
-      color: $danger;
-    }
+  .#{$prefix}help-inline,
+  .#{$prefix}help-block {
+    color: $danger;
   }
 }

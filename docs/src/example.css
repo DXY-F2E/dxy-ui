@@ -41,6 +41,10 @@
 	position: relative;
 }
 
+.du-example .dxy-loading {
+    position: absolute;
+}
+
 .du-example .loading-box > .red {
 	color: red;
 }
@@ -50,6 +54,10 @@
     border: 1px solid #89d9fd;
 }
 
-.du-example .dxy-mark {
+.du-example .dxy-mask {
     position: absolute;
+}
+
+.du-example .dxy-select-list {
+    position: relative;
 }

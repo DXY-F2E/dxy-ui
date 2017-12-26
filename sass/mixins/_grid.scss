@@ -44,7 +44,7 @@
 /// Grid layout-core
 @mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
   %grid-column {
-    position: relative;
+    //position: relative;
     width: 100%;
     min-height: 1px;
     padding-right: ($gutter / 2);
