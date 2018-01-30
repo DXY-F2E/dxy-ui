@@ -533,7 +533,7 @@ a {
 
 .dxy-label {
   float: left;
-  width: 80px;
+  width: 100px;
   padding-right: 10px;
   text-align: right;
   line-height: 34px; }
@@ -551,7 +551,7 @@ a {
     color: #f33237; }
 
 .dxy-form-content {
-  margin-left: 90px; }
+  margin-left: 110px; }
 
 .dxy-input {
   line-height: 22px;
