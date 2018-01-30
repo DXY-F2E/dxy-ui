@@ -1735,7 +1735,8 @@ h6, .dxy-h6 {
   line-height: 32px;
   padding: 0 9px;
   border-radius: 3px;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 10; }
   .dxy-alert .dxy-icon, .dxy-alert-info .dxy-icon, .dxy-alert-success .dxy-icon, .dxy-alert-warning .dxy-icon, .dxy-alert-error .dxy-icon {
     margin-right: 10px; }
   .dxy-alert .close, .dxy-alert-info .close, .dxy-alert-success .close, .dxy-alert-warning .close, .dxy-alert-error .close {

@@ -2,6 +2,7 @@
 	@include alert_size($alert-width, $alert-height, $alert-padding);
 	border-radius: $alert-radius;
 	overflow: hidden;
+    z-index: 10;
 	.dxy-icon {
 		margin-right: 10px;
 	}
