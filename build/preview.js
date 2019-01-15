@@ -4,18 +4,26 @@ const fs = require('fs');
 const path = require('path');
 const bs = require('browser-sync').create();
 const exec = require('child_process').exec;
-// console.log('PAGE_INFO', PAGE_INFO);
 const tool = require('./tool');
-const getTplFn = tool.getTplFn;
 const getFile = tool.getFile;
 
 const hostname = '127.0.0.1';
 let port = 3002;
 
 const server = http.createServer((req, res) => {
-  var currUrl = url.parse(req.url, true);
-  console.log('get', req.url);
-  getFile(currUrl, res);
+  var pUrl = url.parse(req.url, true);
+  console.log('TCL: req.url', req.url);
+	// console.log('TCL: pUrl', pUrl);
+	if (req.pathname === '/favicon.ico') {
+    res.end()
+	}else if(/^\/dxy-ui\/docs$/.test(pUrl.pathname)){
+		res.writeHead(301, {
+      'Location': '/docs'
+    });
+    res.end();
+	}else{
+		getFile(pUrl, res);
+	}
 });
 
 //设置监听端口
@@ -30,7 +38,7 @@ bs.init({
 		{
 			match:['./docs/src/*','./examples/**/*','./sass/**/*.scss', './sass/mixins/**/*.scss'],
 			fn:function(e, e_path){
-				console.log(e_path);
+				// console.log(e_path);
 				
 				// 显示变更的行为，文件路径
 				if( e=="change" ){
