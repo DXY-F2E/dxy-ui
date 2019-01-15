@@ -4,3 +4,4 @@ node_modules
 .idea
 *.log
 temp
+package-lock.json
