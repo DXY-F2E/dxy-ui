@@ -56,8 +56,8 @@ function reanderPageDocs() {
   // if (!checkFilePath(filePath)) return
   // // console.log('TCL: getFile -> filePath', filePath);
   let resData;
-  const tpl_docs = getTplFn(filePath);
-  if (tpl_docs) {
+  const tpl_fn = getTplFn(filePath);
+  if (tpl_fn) {
     // 页面中所有块的数据
     for (const itPath in previewData.map) {
       const item = previewData.map[itPath];
@@ -76,7 +76,7 @@ function reanderPageDocs() {
     renderPageInfo.map = previewData.map;
     renderPageInfo.data = previewData.data;
     renderPageInfo.nav = createNav(previewData.data);
-    resData = tpl_docs(renderPageInfo);
+    resData = tpl_fn(renderPageInfo);
     // // console.log('TCL: getFile -> resData', resData);
   }
   return resData;
@@ -88,7 +88,9 @@ function readerPageExamples({ pathname } = { pathname: '/examples' }) {
 
   if (['', '/'].includes(urlR)) {
     // 首页
-    resData = fs.readFileSync(resoveRoot('examples/index.html'), 'utf8');
+    const filePath = resoveRoot('examples/inc/index.tpl');
+    const tpl_fn = getTplFn(filePath);
+    resData = tpl_fn({ data: previewData.data });
   } else {
     // 子模块
     const urlObjPath = urlR.slice(1).replace(/\//g, '.');

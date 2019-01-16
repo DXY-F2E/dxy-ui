@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/docs/src/example.css">
 </head>
 <body>
+<h2><a href="/examples/">Examples</a></h2>
 <h3><%=data.title%></h3>
 <br>
 <div class="example_area-<%=data.path.replace(".","_")%>">
