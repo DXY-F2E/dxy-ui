@@ -1,33 +1,25 @@
 {
   "name": "dxy-ui",
+  "description": "DXY-UI是一套适用于桌面端的前端UI库，不包含任何JS，仅仅关注样式。囊括了文本标题，列表表格，表单按钮，栅格系统等基础样式以及十余个基础组件。",
   "version": "1.0.2",
   "license": "MIT",
   "style": "dist/css/dxy-ui.min.css",
   "homepage": "https://dxy-f2e.github.io/dxy-ui/docs/",
-  "devDependencies": {
-    "autoprefixer": "7.1.1",
-    "babel-core": "6.26.0",
-    "babel-preset-es2015": "6.24.1",
-    "browser-sync": "2.18.13",
-    "ejs": "2.5.7",
-    "gulp": "3.9.1",
-    "gulp-babel": "7.0.0",
-    "gulp-concat": "2.6.1",
-    "gulp-cssmin": "0.2.0",
-    "gulp-postcss": "7.0.0",
-    "gulp-rename": "1.2.2",
-    "gulp-sass": "3.1.0",
-    "gulp-sass-glob": "1.0.8",
-    "gulp-uglify": "3.0.0",
-    "nodemon": "1.12.1"
-  },
   "scripts": {
-    "start": "nodemon -e js,html preview.js",
+    "start": "nodemon -e js,html build/preview.js",
     "build": "gulp",
     "watch": "gulp watch",
-    "doc": "node index.js"
+    "output": "node build/output.js"
   },
-  "description": "DXY-UI是一套适用于桌面端的前端UI库，不包含任何JS，仅仅关注样式。囊括了文本标题，列表表格，表单按钮，栅格系统等基础样式以及十余个基础组件。",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DXY-F2E/dxy-ui.git"
+  },
+  "keywords": [
+    "dxy-ui",
+    "dxy"
+  ],
+  "author": "DXY-F2E",
   "main": "index.js",
   "directories": {
     "doc": "docs",
@@ -42,13 +34,25 @@
     "gulp-rename": "1.2.2",
     "gulp-sass-glob": "1.0.8"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@gitlab.dxy.net:f2e/dxy-ui.git"
-  },
-  "keywords": [
-    "dxy-ui",
-    "dxy"
-  ],
-  "author": "DXY-F2E"
+  "devDependencies": {
+    "autoprefixer": "7.1.1",
+    "babel-core": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
+    "browser-sync": "2.18.13",
+    "ejs": "2.5.7",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "gulp": "3.9.1",
+    "gulp-babel": "7.0.0",
+    "gulp-concat": "2.6.1",
+    "gulp-cssmin": "0.2.0",
+    "gulp-postcss": "7.0.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "3.1.0",
+    "gulp-sass-glob": "1.0.8",
+    "gulp-uglify": "3.0.0",
+    "html-minifier": "^3.5.21",
+    "nodemon": "1.12.1"
+  }
 }

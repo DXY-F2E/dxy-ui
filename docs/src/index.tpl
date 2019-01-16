@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
   <title>DXY-UI 使用文档</title>
 	<meta name="description" content="DXY-UI 是一款简洁、优雅、轻量、零侵入的样式库"/>
 	<meta name="keywords" content="DXY-UI,DXY UI,样式库,UI库,丁香园"/>
-	<link rel="short icon" href="../docs/img/favicon.ico">
+	<!-- <link rel="short icon" href="../docs/img/favicon.ico"> -->
   <link rel="stylesheet" href="../dist/css/dxy-ui.min.css">
 	<link rel="stylesheet" href="../docs/dist/docs.min.css">
 </head>
 <body>
 <header class="dxy-clear-fix">
 	<div class="logo dxy-float-left">
-		<img src="../docs/img/logo.svg" width="125" height="32">
+		<a href="/dxy-ui/docs"><img src="../docs/img/logo.svg" width="125" height="32"></a>
 	</div>
 	<div class="version dxy-float-right">1.0.1</div>
 	<ul class="tab dxy-float-right" id="j_tab">
 		<li><a href="#elements">基本元素</a></li>
 		<li><a href="#components">组件</a></li>
 		<li><a href="#extra">辅助和修饰</a></li>
+		<li><a target="blank" href="https://github.com/DXY-F2E/dxy-ui">GitHub</a></li>
 	</ul>
 </header>
 
