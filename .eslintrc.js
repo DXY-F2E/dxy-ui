@@ -1,18 +1,20 @@
 module.exports = {
   root: true,
   parserOptions: {
-    "ecmaVersion": 6
   },
   env: {
-    node: true
+    node: true,
+    browser: true
   },
   globals:{
   },
-  extends: ['standard'],
+  extends: ['airbnb-base'],
   plugins: [
-    
   ],
-  rules: {
+  'rules': {
+    'camelcase': 0,
+    'func-names': 0,
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
 
   }
 }
