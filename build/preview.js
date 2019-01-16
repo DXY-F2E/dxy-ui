@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
   const pUrl = url.parse(req.url, true);
   // console.log('TCL: req.url', req.url);
   // console.log('TCL: pUrl', pUrl);
-  if (req.pathname === '/favicon.ico') {
+  if (/\/favicon\.ico/.test(req.url)) {
     res.end();
   } else if (/^\/dxy-ui\/docs$/.test(pUrl.pathname)) {
     res.writeHead(301, {
